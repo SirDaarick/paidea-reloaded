@@ -1,0 +1,12 @@
+[
+  {
+    "chunk_id": "TXTS/plan_LCD_normalizado_chunk_1",
+    "source": "TXTS/plan_LCD_normalizado.txt",
+    "text": "lcd  licenciatura en ciencia de datos\nmapa curricular 2020\nsemestre 1\n- fundamentos de programacion\n- matematicas discretas\n- calculo\n- comunicacion oral y escrita\n- introduccion a la ciencia de datos\nsemestre 2\n- algoritmos y estructuras de datos\n- calculo multivariable\n- algebra lineal\n- etica y legalidad\n- fundamentos economicos\nsemestre 3\n- analisis y diseno de algoritmos\n- programacion para ciencia de datos\n- probabilidad\n- bases de datos\n- metodos numericos\n- finanzas empresariales\nsemestre 4\n- desarrollo de aplicaciones web\n- computo de alto desempeno\n- estadistica\n- bases de datos avanzadas\n- desarrollo de aplicaciones para analisis de datos\n- liderazgo personal\nsemestre 5\n- mineria de datos\n- matematicas avanzadas para ciencia de datos\n- procesos estocasticos\n- aprendizaje de maquina e inteligencia artificial\n- analitica y visualizacion de datos\n- metodologias de la investigacion y divulgacion cientifica\nsemestre 6\n- modelado predictivo\n- procesamiento de lenguaje natural"
+  },
+  {
+    "chunk_id": "TXTS/plan_LCD_normalizado_chunk_2",
+    "source": "TXTS/plan_LCD_normalizado.txt",
+    "text": "- metodologias de la investigacion y divulgacion cientifica\nsemestre 6\n- modelado predictivo\n- procesamiento de lenguaje natural\n- analisis de series de tiempo\n- analitica avanzada de datos\n- optativa a\n- optativa b\nsemestre 7\n- big data\n- modelos econometricos\n- trabajo terminal i\n- administracion de proyectos de ti\n- optativa c\n- optativa d\nsemestre 8\n- desarrollo de habilidades sociales para la alta direccion\n- gestion empresarial\n- trabajo terminal ii\n- estancia profesional\noptativas semestre 6\n- estadistica avanzada\n- temas selectos de inteligencia artificial\n- temas selectos de aprendizaje profundo\n- temas selectos de procesamiento de lenguaje natural\n- bioinformatica basica\n- propiedad intelectual\n- simulacion basica\noptativas semestre 7\n- bioinformatica avanzada\n- sistemas de informacion geografica\n- ciberseguridad\n- proteccion de datos\n- innovacion y emprendimientos tecnologico\n- simulacion avanzada"
+  }
+]

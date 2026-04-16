@@ -1,0 +1,52 @@
+/* Página */
+.ra-page {
+  margin-top: 20px;
+  padding: 0 24px;
+}
+
+/* Contenedor general */
+.ra-container {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+/* Cuadro de datos MÁS PEQUEÑO */
+.ra-cuadro {
+  transform: scale(0.92);
+  transform-origin: top left;
+}
+
+/* Sección principal */
+.ra-main {
+  width: 100%;
+}
+
+/* Título */
+.ra-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #3e517d;
+  margin-bottom: 4px;
+}
+
+/* Descripción */
+.ra-description {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 12px;
+}
+
+/* Tarjeta del gráfico */
+.ra-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* Contenedor gráfico */
+.ra-chart {
+  height: 380px;
+}

@@ -1,0 +1,82 @@
+.optativas-container {
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Contenedor principal */
+.contenido-plan {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* títulos alineados a la izquierda */
+  padding: 40px 120px;
+  width: 100%;
+}
+
+/* Título principal */
+.titulo-principal {
+  font-size: 2.5rem;
+  color: #3E517D;
+  font-weight: bold;
+  margin-bottom: 5px; /* menos espacio debajo */
+  text-align: left;
+}
+
+/* Subtítulo (carrera) */
+.subtitulo {
+  font-size: 1.2rem;
+  color: #333333;
+  margin-bottom: 15px; /* menos espacio antes de Optativas */
+  text-align: left;
+}
+
+/* Contenedor de optativas */
+.contenido-optativas {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* título alineado a la izquierda */
+  margin-top: 0; /* eliminamos espacio extra */
+  width: 100%;
+}
+
+/* Título de optativas alineado a la izquierda */
+.optativas-titulo {
+  font-size: 2rem;
+  color: #0047B6;
+  font-weight: bold;
+  margin-bottom: 20px; /* mantiene espacio con la imagen */
+  text-align: left;
+}
+
+/* Contenedor de la imagen centrada */
+.optativas-imagen-container {
+  width: 950px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  align-self: center; /* centra la imagen */
+}
+
+/* Imagen responsive */
+.optativas-imagen {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Estilo del enlace */
+.enlace-optativas {
+  color: #0047B6;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+  margin-top: 10px;
+}
+
+.enlace-optativas:hover {
+  color: #0d47a1;
+  text-decoration: underline;
+}

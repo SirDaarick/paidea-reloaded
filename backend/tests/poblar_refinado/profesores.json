@@ -1,0 +1,777 @@
+[
+  {
+    "boleta": 2025000001,
+    "nombre": "Miguel Gómez Pérez",
+    "correo": "miguel.gómez@ipn.mx",
+    "contrasena": "nuevoPass2025",
+    "datosPersonales": {
+      "apellidoPaterno": "Gómez",
+      "apellidoMaterno": "Pérez",
+      "rfc": "GÓPM770324Y6D",
+      "curp": "GÓPM770324MCOX01",
+      "fechaNacimiento": "1977-03-24",
+      "estadoNacimiento": "Coahuila",
+      "sexo": "M",
+      "telefonoPersonal": "5566629388"
+    },
+    "direcciones": [
+      {
+        "calle": "Av. Insurgentes",
+        "numero": "31",
+        "colonia": "Del Valle",
+        "codigoPostal": "31495",
+        "municipio": "Coyoacán",
+        "estado": "Ciudad de México"
+      }
+    ],
+    "dataProfesor": {
+      "departamento": "Sistemas Computacionales",
+      "especializacion": "Bases de Datos",
+      "numeroEmpleado": "EMP101"
+    }
+  },
+  {
+    "boleta": 2025000002,
+    "nombre": "Daniel Sánchez Romero",
+    "correo": "daniel.sánchez@ipn.mx",
+    "contrasena": "nuevoPass2025",
+    "datosPersonales": {
+      "apellidoPaterno": "Sánchez",
+      "apellidoMaterno": "Romero",
+      "rfc": "SÁRD8304153A3",
+      "curp": "SÁRD830415MNAX01",
+      "fechaNacimiento": "1983-04-15",
+      "estadoNacimiento": "Nayarit",
+      "sexo": "M",
+      "telefonoPersonal": "5566722344"
+    },
+    "direcciones": [
+      {
+        "calle": "Calle Madero",
+        "numero": "285",
+        "colonia": "Polanco",
+        "codigoPostal": "45118",
+        "municipio": "Coyoacán",
+        "estado": "Ciudad de México"
+      }
+    ],
+    "dataProfesor": {
+      "departamento": "Ingeniería de Software",
+      "especializacion": "Arquitectura de Software",
+      "numeroEmpleado": "EMP102"
+    }
+  },
+  {
+    "boleta": 2025000003,
+    "nombre": "José Hernández Fernández",
+    "correo": "josé.hernández@ipn.mx",
+    "contrasena": "nuevoPass2025",
+    "datosPersonales": {
+      "apellidoPaterno": "Hernández",
+      "apellidoMaterno": "Fernández",
+      "rfc": "HEFJ81062030T",
+      "curp": "HEFJ810620MMOX01",
+      "fechaNacimiento": "1981-06-20",
+      "estadoNacimiento": "Morelos",
+      "sexo": "M",
+      "telefonoPersonal": "5560806024"
+    },
+    "direcciones": [
+      {
+        "calle": "Av. Reforma",
+        "numero": "566",
+        "colonia": "Roma",
+        "codigoPostal": "76674",
+        "municipio": "Gustavo A. Madero",
+        "estado": "Ciudad de México"
+      }
+    ],
+    "dataProfesor": {
+      "departamento": "Redes y Telecomunicaciones",
+      "especializacion": "Redes de Computadoras",
+      "numeroEmpleado": "EMP103"
+    }
+  },
+  {
+    "boleta": 2025000004,
+    "nombre": "Roberto Rodríguez González",
+    "correo": "roberto.rodríguez@ipn.mx",
+    "contrasena": "nuevoPass2025",
+    "datosPersonales": {
+      "apellidoPaterno": "Rodríguez",
+      "apellidoMaterno": "González",
+      "rfc": "ROGR910425945",
+      "curp": "ROGR910425MNUX01",
+      "fechaNacimiento": "1991-04-25",
+      "estadoNacimiento": "Nuevo León",
+      "sexo": "M",
+      "telefonoPersonal": "5561019678"
+    },
+    "direcciones": [
+      {
+        "calle": "Av. Revolución",
+        "numero": "465",
+        "colonia": "Tepeyac",
+        "codigoPostal": "22319",
+        "municipio": "Gustavo A. Madero",
+        "estado": "Ciudad de México"
+      }
+    ],
+    "dataProfesor": {
+      "departamento": "Sistemas Computacionales",
+      "especializacion": "Inteligencia Artificial",
+      "numeroEmpleado": "EMP104"
+    }
+  },
+  {
+    "boleta": 2025000005,
+    "nombre": "Verónica Sánchez Gómez",
+    "correo": "verónica.sánchez@ipn.mx",
+    "contrasena": "nuevoPass2025",
+    "datosPersonales": {
+      "apellidoPaterno": "Sánchez",
+      "apellidoMaterno": "Gómez",
+      "rfc": "SÁGV921121VG0",
+      "curp": "SÁGV921121FCHX01",
+      "fechaNacimiento": "1992-11-21",
+      "estadoNacimiento": "Chiapas",
+      "sexo": "F",
+      "telefonoPersonal": "5531931511"
+    },
+    "direcciones": [
+      {
+        "calle": "Av. Universidad",
+        "numero": "389",
+        "colonia": "Roma",
+        "codigoPostal": "90733",
+        "municipio": "Coyoacán",
+        "estado": "Ciudad de México"
+      }
+    ],
+    "dataProfesor": {
+      "departamento": "Desarrollo Web",
+      "especializacion": "Aplicaciones Web Modernas",
+      "numeroEmpleado": "EMP105"
+    }
+  },
+  {
+    "boleta": 2025000006,
+    "nombre": "Ana González Pérez",
+    "correo": "ana.gonzález@ipn.mx",
+    "contrasena": "nuevoPass2025",
+    "datosPersonales": {
+      "apellidoPaterno": "González",
+      "apellidoMaterno": "Pérez",
+      "rfc": "GOPA710613C6U",
+      "curp": "GOPA710613FNAX01",
+      "fechaNacimiento": "1971-06-13",
+      "estadoNacimiento": "Nayarit",
+      "sexo": "F",
+      "telefonoPersonal": "5552235350"
+    },
+    "direcciones": [
+      {
+        "calle": "Calle Juárez",
+        "numero": "672",
+        "colonia": "San Ángel",
+        "codigoPostal": "85259",
+        "municipio": "Iztapalapa",
+        "estado": "Ciudad de México"
+      }
+    ],
+    "dataProfesor": {
+      "departamento": "Sistemas Computacionales",
+      "especializacion": "Bases de Datos",
+      "numeroEmpleado": "EMP106"
+    }
+  },
+  {
+    "boleta": 2025000007,
+    "nombre": "Juana Gómez López",
+    "correo": "juana.gómez@ipn.mx",
+    "contrasena": "nuevoPass2025",
+    "datosPersonales": {
+      "apellidoPaterno": "Gómez",
+      "apellidoMaterno": "López",
+      "rfc": "GÓLJ7712180PV",
+      "curp": "GÓLJ771218FMOX01",
+      "fechaNacimiento": "1977-12-18",
+      "estadoNacimiento": "Morelos",
+      "sexo": "F",
+      "telefonoPersonal": "5558586340"
+    },
+    "direcciones": [
+      {
+        "calle": "Calle Juárez",
+        "numero": "142",
+        "colonia": "Pedregal",
+        "codigoPostal": "12915",
+        "municipio": "Venustiano Carranza",
+        "estado": "Ciudad de México"
+      }
+    ],
+    "dataProfesor": {
+      "departamento": "Ingeniería de Software",
+      "especializacion": "Arquitectura de Software",
+      "numeroEmpleado": "EMP107"
+    }
+  },
+  {
+    "boleta": 2025000008,
+    "nombre": "Francisco Fernández López",
+    "correo": "francisco.fernández@ipn.mx",
+    "contrasena": "nuevoPass2025",
+    "datosPersonales": {
+      "apellidoPaterno": "Fernández",
+      "apellidoMaterno": "López",
+      "rfc": "FELF900326VNV",
+      "curp": "FELF900326MTAX01",
+      "fechaNacimiento": "1990-03-26",
+      "estadoNacimiento": "Tamaulipas",
+      "sexo": "M",
+      "telefonoPersonal": "5572820592"
+    },
+    "direcciones": [
+      {
+        "calle": "Calle Zaragoza",
+        "numero": "258",
+        "colonia": "Pedregal",
+        "codigoPostal": "90166",
+        "municipio": "Cuauhtémoc",
+        "estado": "Ciudad de México"
+      }
+    ],
+    "dataProfesor": {
+      "departamento": "Redes y Telecomunicaciones",
+      "especializacion": "Redes de Computadoras",
+      "numeroEmpleado": "EMP108"
+    }
+  },
+  {
+    "boleta": 2025000009,
+    "nombre": "David Romero Gómez",
+    "correo": "david.romero@ipn.mx",
+    "contrasena": "nuevoPass2025",
+    "datosPersonales": {
+      "apellidoPaterno": "Romero",
+      "apellidoMaterno": "Gómez",
+      "rfc": "ROGD941111KFA",
+      "curp": "ROGD941111MCOX01",
+      "fechaNacimiento": "1994-11-11",
+      "estadoNacimiento": "Colima",
+      "sexo": "M",
+      "telefonoPersonal": "5545351479"
+    },
+    "direcciones": [
+      {
+        "calle": "Calle Zaragoza",
+        "numero": "781",
+        "colonia": "Polanco",
+        "codigoPostal": "82959",
+        "municipio": "Benito Juárez",
+        "estado": "Ciudad de México"
+      }
+    ],
+    "dataProfesor": {
+      "departamento": "Sistemas Computacionales",
+      "especializacion": "Inteligencia Artificial",
+      "numeroEmpleado": "EMP109"
+    }
+  },
+  {
+    "boleta": 2025000010,
+    "nombre": "Rosa Álvarez Gutiérrez",
+    "correo": "rosa.álvarez@ipn.mx",
+    "contrasena": "nuevoPass2025",
+    "datosPersonales": {
+      "apellidoPaterno": "Álvarez",
+      "apellidoMaterno": "Gutiérrez",
+      "rfc": "ÁLGR760312T2T",
+      "curp": "ÁLGR760312FGUX01",
+      "fechaNacimiento": "1976-03-12",
+      "estadoNacimiento": "Guanajuato",
+      "sexo": "F",
+      "telefonoPersonal": "5510076758"
+    },
+    "direcciones": [
+      {
+        "calle": "Av. Central",
+        "numero": "332",
+        "colonia": "San Ángel",
+        "codigoPostal": "15662",
+        "municipio": "Cuauhtémoc",
+        "estado": "Ciudad de México"
+      }
+    ],
+    "dataProfesor": {
+      "departamento": "Desarrollo Web",
+      "especializacion": "Aplicaciones Web Modernas",
+      "numeroEmpleado": "EMP110"
+    }
+  },
+  {
+    "boleta": 2025000011,
+    "nombre": "Ana Martin Pérez",
+    "correo": "ana.martin@ipn.mx",
+    "contrasena": "nuevoPass2025",
+    "datosPersonales": {
+      "apellidoPaterno": "Martin",
+      "apellidoMaterno": "Pérez",
+      "rfc": "MAPA710419DRC",
+      "curp": "MAPA710419FCHX01",
+      "fechaNacimiento": "1971-04-19",
+      "estadoNacimiento": "Chihuahua",
+      "sexo": "F",
+      "telefonoPersonal": "5581498611"
+    },
+    "direcciones": [
+      {
+        "calle": "Calle 5 de Mayo",
+        "numero": "132",
+        "colonia": "Tepeyac",
+        "codigoPostal": "73063",
+        "municipio": "Venustiano Carranza",
+        "estado": "Ciudad de México"
+      }
+    ],
+    "dataProfesor": {
+      "departamento": "Sistemas Computacionales",
+      "especializacion": "Bases de Datos",
+      "numeroEmpleado": "EMP111"
+    }
+  },
+  {
+    "boleta": 2025000012,
+    "nombre": "Antonio Álvarez Gutiérrez",
+    "correo": "antonio.álvarez@ipn.mx",
+    "contrasena": "nuevoPass2025",
+    "datosPersonales": {
+      "apellidoPaterno": "Álvarez",
+      "apellidoMaterno": "Gutiérrez",
+      "rfc": "ÁLGA830418ZOY",
+      "curp": "ÁLGA830418MHIX01",
+      "fechaNacimiento": "1983-04-18",
+      "estadoNacimiento": "Hidalgo",
+      "sexo": "M",
+      "telefonoPersonal": "5560119651"
+    },
+    "direcciones": [
+      {
+        "calle": "Av. Universidad",
+        "numero": "922",
+        "colonia": "Pedregal",
+        "codigoPostal": "16860",
+        "municipio": "Venustiano Carranza",
+        "estado": "Ciudad de México"
+      }
+    ],
+    "dataProfesor": {
+      "departamento": "Ingeniería de Software",
+      "especializacion": "Arquitectura de Software",
+      "numeroEmpleado": "EMP112"
+    }
+  },
+  {
+    "boleta": 2025000013,
+    "nombre": "Pedro Rodríguez Jiménez",
+    "correo": "pedro.rodríguez@ipn.mx",
+    "contrasena": "nuevoPass2025",
+    "datosPersonales": {
+      "apellidoPaterno": "Rodríguez",
+      "apellidoMaterno": "Jiménez",
+      "rfc": "ROJP701018VAZ",
+      "curp": "ROJP701018MMÉX01",
+      "fechaNacimiento": "1970-10-18",
+      "estadoNacimiento": "México",
+      "sexo": "M",
+      "telefonoPersonal": "5517901903"
+    },
+    "direcciones": [
+      {
+        "calle": "Calle Juárez",
+        "numero": "70",
+        "colonia": "Centro",
+        "codigoPostal": "10287",
+        "municipio": "Gustavo A. Madero",
+        "estado": "Ciudad de México"
+      }
+    ],
+    "dataProfesor": {
+      "departamento": "Redes y Telecomunicaciones",
+      "especializacion": "Redes de Computadoras",
+      "numeroEmpleado": "EMP113"
+    }
+  },
+  {
+    "boleta": 2025000014,
+    "nombre": "Antonio Muñoz Sánchez",
+    "correo": "antonio.muñoz@ipn.mx",
+    "contrasena": "nuevoPass2025",
+    "datosPersonales": {
+      "apellidoPaterno": "Muñoz",
+      "apellidoMaterno": "Sánchez",
+      "rfc": "MUSA870324IRO",
+      "curp": "MUSA870324MYUX01",
+      "fechaNacimiento": "1987-03-24",
+      "estadoNacimiento": "Yucatán",
+      "sexo": "M",
+      "telefonoPersonal": "5522660194"
+    },
+    "direcciones": [
+      {
+        "calle": "Av. Reforma",
+        "numero": "675",
+        "colonia": "Coyoacán",
+        "codigoPostal": "56519",
+        "municipio": "Gustavo A. Madero",
+        "estado": "Ciudad de México"
+      }
+    ],
+    "dataProfesor": {
+      "departamento": "Sistemas Computacionales",
+      "especializacion": "Inteligencia Artificial",
+      "numeroEmpleado": "EMP114"
+    }
+  },
+  {
+    "boleta": 2025000015,
+    "nombre": "Alejandra González Fernández",
+    "correo": "alejandra.gonzález@ipn.mx",
+    "contrasena": "nuevoPass2025",
+    "datosPersonales": {
+      "apellidoPaterno": "González",
+      "apellidoMaterno": "Fernández",
+      "rfc": "GOFA7107242DG",
+      "curp": "GOFA710724FQUX01",
+      "fechaNacimiento": "1971-07-24",
+      "estadoNacimiento": "Querétaro",
+      "sexo": "F",
+      "telefonoPersonal": "5581979055"
+    },
+    "direcciones": [
+      {
+        "calle": "Av. Universidad",
+        "numero": "144",
+        "colonia": "Coyoacán",
+        "codigoPostal": "37509",
+        "municipio": "Miguel Hidalgo",
+        "estado": "Ciudad de México"
+      }
+    ],
+    "dataProfesor": {
+      "departamento": "Desarrollo Web",
+      "especializacion": "Aplicaciones Web Modernas",
+      "numeroEmpleado": "EMP115"
+    }
+  },
+  {
+    "boleta": 2025000016,
+    "nombre": "Margarita Rodríguez Moreno",
+    "correo": "margarita.rodríguez@ipn.mx",
+    "contrasena": "nuevoPass2025",
+    "datosPersonales": {
+      "apellidoPaterno": "Rodríguez",
+      "apellidoMaterno": "Moreno",
+      "rfc": "ROMM950904XTA",
+      "curp": "ROMM950904FCAX01",
+      "fechaNacimiento": "1995-09-04",
+      "estadoNacimiento": "Campeche",
+      "sexo": "F",
+      "telefonoPersonal": "5522517517"
+    },
+    "direcciones": [
+      {
+        "calle": "Calle Juárez",
+        "numero": "171",
+        "colonia": "Coyoacán",
+        "codigoPostal": "64092",
+        "municipio": "Venustiano Carranza",
+        "estado": "Ciudad de México"
+      }
+    ],
+    "dataProfesor": {
+      "departamento": "Sistemas Computacionales",
+      "especializacion": "Bases de Datos",
+      "numeroEmpleado": "EMP116"
+    }
+  },
+  {
+    "boleta": 2025000017,
+    "nombre": "Francisco Hernández González",
+    "correo": "francisco.hernández@ipn.mx",
+    "contrasena": "nuevoPass2025",
+    "datosPersonales": {
+      "apellidoPaterno": "Hernández",
+      "apellidoMaterno": "González",
+      "rfc": "HEGF750701J2Q",
+      "curp": "HEGF750701MSIX01",
+      "fechaNacimiento": "1975-07-01",
+      "estadoNacimiento": "Sinaloa",
+      "sexo": "M",
+      "telefonoPersonal": "5566775103"
+    },
+    "direcciones": [
+      {
+        "calle": "Calle Allende",
+        "numero": "981",
+        "colonia": "Guerrero",
+        "codigoPostal": "21289",
+        "municipio": "Venustiano Carranza",
+        "estado": "Ciudad de México"
+      }
+    ],
+    "dataProfesor": {
+      "departamento": "Ingeniería de Software",
+      "especializacion": "Arquitectura de Software",
+      "numeroEmpleado": "EMP117"
+    }
+  },
+  {
+    "boleta": 2025000018,
+    "nombre": "Antonio Sánchez González",
+    "correo": "antonio.sánchez@ipn.mx",
+    "contrasena": "nuevoPass2025",
+    "datosPersonales": {
+      "apellidoPaterno": "Sánchez",
+      "apellidoMaterno": "González",
+      "rfc": "SÁGA8812180CV",
+      "curp": "SÁGA881218MCAX01",
+      "fechaNacimiento": "1988-12-18",
+      "estadoNacimiento": "Campeche",
+      "sexo": "M",
+      "telefonoPersonal": "5577491435"
+    },
+    "direcciones": [
+      {
+        "calle": "Calle Zaragoza",
+        "numero": "162",
+        "colonia": "Centro",
+        "codigoPostal": "25356",
+        "municipio": "Benito Juárez",
+        "estado": "Ciudad de México"
+      }
+    ],
+    "dataProfesor": {
+      "departamento": "Redes y Telecomunicaciones",
+      "especializacion": "Redes de Computadoras",
+      "numeroEmpleado": "EMP118"
+    }
+  },
+  {
+    "boleta": 2025000019,
+    "nombre": "Jorge Rodríguez Pérez",
+    "correo": "jorge.rodríguez@ipn.mx",
+    "contrasena": "nuevoPass2025",
+    "datosPersonales": {
+      "apellidoPaterno": "Rodríguez",
+      "apellidoMaterno": "Pérez",
+      "rfc": "ROPJ820219UBC",
+      "curp": "ROPJ820219MMIX01",
+      "fechaNacimiento": "1982-02-19",
+      "estadoNacimiento": "Michoacán",
+      "sexo": "M",
+      "telefonoPersonal": "5598231132"
+    },
+    "direcciones": [
+      {
+        "calle": "Av. Central",
+        "numero": "579",
+        "colonia": "Pedregal",
+        "codigoPostal": "35179",
+        "municipio": "Gustavo A. Madero",
+        "estado": "Ciudad de México"
+      }
+    ],
+    "dataProfesor": {
+      "departamento": "Sistemas Computacionales",
+      "especializacion": "Inteligencia Artificial",
+      "numeroEmpleado": "EMP119"
+    }
+  },
+  {
+    "boleta": 2025000020,
+    "nombre": "David Jiménez Pérez",
+    "correo": "david.jiménez@ipn.mx",
+    "contrasena": "nuevoPass2025",
+    "datosPersonales": {
+      "apellidoPaterno": "Jiménez",
+      "apellidoMaterno": "Pérez",
+      "rfc": "JIPD780705Q77",
+      "curp": "JIPD780705MOAX01",
+      "fechaNacimiento": "1978-07-05",
+      "estadoNacimiento": "Oaxaca",
+      "sexo": "M",
+      "telefonoPersonal": "5511250299"
+    },
+    "direcciones": [
+      {
+        "calle": "Av. Universidad",
+        "numero": "637",
+        "colonia": "Lindavista",
+        "codigoPostal": "10602",
+        "municipio": "Benito Juárez",
+        "estado": "Ciudad de México"
+      }
+    ],
+    "dataProfesor": {
+      "departamento": "Desarrollo Web",
+      "especializacion": "Aplicaciones Web Modernas",
+      "numeroEmpleado": "EMP120"
+    }
+  },
+  {
+    "boleta": 2025000021,
+    "nombre": "Daniel Gómez López",
+    "correo": "daniel.gómez@ipn.mx",
+    "contrasena": "nuevoPass2025",
+    "datosPersonales": {
+      "apellidoPaterno": "Gómez",
+      "apellidoMaterno": "López",
+      "rfc": "GÓLD810208KPT",
+      "curp": "GÓLD810208MSAX01",
+      "fechaNacimiento": "1981-02-08",
+      "estadoNacimiento": "San Luis Potosí",
+      "sexo": "M",
+      "telefonoPersonal": "5550603163"
+    },
+    "direcciones": [
+      {
+        "calle": "Av. Central",
+        "numero": "827",
+        "colonia": "Tepeyac",
+        "codigoPostal": "88538",
+        "municipio": "Cuauhtémoc",
+        "estado": "Ciudad de México"
+      }
+    ],
+    "dataProfesor": {
+      "departamento": "Sistemas Computacionales",
+      "especializacion": "Bases de Datos",
+      "numeroEmpleado": "EMP121"
+    }
+  },
+  {
+    "boleta": 2025000022,
+    "nombre": "Rosa Fernández López",
+    "correo": "rosa.fernández@ipn.mx",
+    "contrasena": "nuevoPass2025",
+    "datosPersonales": {
+      "apellidoPaterno": "Fernández",
+      "apellidoMaterno": "López",
+      "rfc": "FELR780204JVZ",
+      "curp": "FELR780204FDUX01",
+      "fechaNacimiento": "1978-02-04",
+      "estadoNacimiento": "Durango",
+      "sexo": "F",
+      "telefonoPersonal": "5537326368"
+    },
+    "direcciones": [
+      {
+        "calle": "Calle Morelos",
+        "numero": "650",
+        "colonia": "Roma",
+        "codigoPostal": "33914",
+        "municipio": "Venustiano Carranza",
+        "estado": "Ciudad de México"
+      }
+    ],
+    "dataProfesor": {
+      "departamento": "Ingeniería de Software",
+      "especializacion": "Arquitectura de Software",
+      "numeroEmpleado": "EMP122"
+    }
+  },
+  {
+    "boleta": 2025000023,
+    "nombre": "José Díaz Gómez",
+    "correo": "josé.díaz@ipn.mx",
+    "contrasena": "nuevoPass2025",
+    "datosPersonales": {
+      "apellidoPaterno": "Díaz",
+      "apellidoMaterno": "Gómez",
+      "rfc": "DÍGJ710111WJ0",
+      "curp": "DÍGJ710111MCIX01",
+      "fechaNacimiento": "1971-01-11",
+      "estadoNacimiento": "Ciudad de México",
+      "sexo": "M",
+      "telefonoPersonal": "5584045292"
+    },
+    "direcciones": [
+      {
+        "calle": "Calle Allende",
+        "numero": "438",
+        "colonia": "Pedregal",
+        "codigoPostal": "15663",
+        "municipio": "Cuauhtémoc",
+        "estado": "Ciudad de México"
+      }
+    ],
+    "dataProfesor": {
+      "departamento": "Redes y Telecomunicaciones",
+      "especializacion": "Redes de Computadoras",
+      "numeroEmpleado": "EMP123"
+    }
+  },
+  {
+    "boleta": 2025000024,
+    "nombre": "Luis López Romero",
+    "correo": "luis.lópez@ipn.mx",
+    "contrasena": "nuevoPass2025",
+    "datosPersonales": {
+      "apellidoPaterno": "López",
+      "apellidoMaterno": "Romero",
+      "rfc": "LÓRL710619PBN",
+      "curp": "LÓRL710619MDUX01",
+      "fechaNacimiento": "1971-06-19",
+      "estadoNacimiento": "Durango",
+      "sexo": "M",
+      "telefonoPersonal": "5515354599"
+    },
+    "direcciones": [
+      {
+        "calle": "Calle Madero",
+        "numero": "216",
+        "colonia": "Tepeyac",
+        "codigoPostal": "88416",
+        "municipio": "Coyoacán",
+        "estado": "Ciudad de México"
+      }
+    ],
+    "dataProfesor": {
+      "departamento": "Sistemas Computacionales",
+      "especializacion": "Inteligencia Artificial",
+      "numeroEmpleado": "EMP124"
+    }
+  },
+  {
+    "boleta": 2025000025,
+    "nombre": "Alejandro Romero Díaz",
+    "correo": "alejandro.romero@ipn.mx",
+    "contrasena": "nuevoPass2025",
+    "datosPersonales": {
+      "apellidoPaterno": "Romero",
+      "apellidoMaterno": "Díaz",
+      "rfc": "RODA891205593",
+      "curp": "RODA891205MMIX01",
+      "fechaNacimiento": "1989-12-05",
+      "estadoNacimiento": "Michoacán",
+      "sexo": "M",
+      "telefonoPersonal": "5565337219"
+    },
+    "direcciones": [
+      {
+        "calle": "Av. Insurgentes",
+        "numero": "184",
+        "colonia": "Guerrero",
+        "codigoPostal": "54964",
+        "municipio": "Gustavo A. Madero",
+        "estado": "Ciudad de México"
+      }
+    ],
+    "dataProfesor": {
+      "departamento": "Desarrollo Web",
+      "especializacion": "Aplicaciones Web Modernas",
+      "numeroEmpleado": "EMP125"
+    }
+  }
+]

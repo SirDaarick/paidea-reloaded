@@ -1,0 +1,39 @@
+.plan-estudios-container {
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.contenido-plan {
+  padding: 40px 80px;
+  width: 100%;
+}
+
+.titulo-principal {
+  font-size: 2.5rem;
+  color: #3E517D;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.subtitulo {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.link-materia {
+  text-decoration: none;
+  color: #4f46e5;
+  border-bottom: 1px dashed #4f46e5;
+}
+
+.link-materia:hover {
+  border-bottom-style: solid;
+}
+
+.vacio {
+  color: #cbd5e1;
+}

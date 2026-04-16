@@ -1,0 +1,71 @@
+capitulo primero disposiciones generales articulo 1 las disposiciones del presente reglamento son de observancia general y obligatoria en el instituto politecnico nacional
+definicion academia organo constituido por profesores que tiene la finalidad de proponer analizar opinar estructurar y evaluar el proceso educativo
+definicion actividades complementarias aquellas que contribuyen a la formacion integral del alumno y que no necesariamente forman parte del programa academico en el que se encuentra inscrito
+definicion alumno persona inscrita en algun programa academico que se imparta en cualquier nivel educativo y modalidad educativa que ofrece el instituto politecnico nacional
+definicion alumno en movilidad aquel en situacion escolar regular que cursa unidades de aprendizaje desarrolla actividades de investigacion o complementarias en una institucion educativa de investigacion o del sector productivo nacional o extranjera de conformidad con la normatividad institucional y convenios
+definicion alumno visitante aquel de otra institucion educativa nacional o extranjera que cursa unidades de aprendizaje o desarrolla actividades de investigacion o complementarias en el instituto de conformidad con la normatividad institucional y convenios sera considerado alumno durante el tiempo inscrito
+definicion ambientes de aprendizaje espacios y recursos disponibles para la intermediacion en la adquisicion y generacion del conocimiento
+definicion calendario academico programacion que define los tiempos en los cuales se realizan anualmente las actividades academicas y de gestion escolar en las diversas modalidades educativas
+definicion carga maxima en creditos resultado de dividir el numero total de creditos del programa academico entre el numero de periodos escolares de la duracion minima del plan de estudio
+definicion carga media en creditos resultado de dividir el numero total de creditos del programa academico entre el numero de periodos escolares de la duracion establecida en el plan de estudio
+definicion carga minima en creditos resultado de dividir el numero total de creditos del programa academico entre el numero de periodos escolares de la duracion maxima del plan de estudio
+definicion ciclo escolar lapso anual que define el calendario academico del instituto
+definicion comision de situacion escolar organo colegiado que emana de los consejos tecnicos consultivos escolares del consejo general consultivo o es reconocido por este y se encarga de dictaminar los asuntos derivados de la situacion escolar
+definicion cooperacion academica acciones conjuntas entre dos o mas instituciones nacionales o extranjeras en las que participan alumnos profesores investigadores y personal administrativo relacionadas con docencia investigacion extension y difusion
+definicion credito unidad de reconocimiento academico que mide y cuantifica las actividades de aprendizaje contempladas en un plan de estudio es universal transferible entre programas academicos y equivalente al trabajo academico del alumno
+definicion direccion de coordinacion direcciones de educacion media superior de educacion superior de posgrado de educacion continua de formacion en lenguas extranjeras de administracion escolar y coordinacion de cooperacion academica
+definicion egreso proceso mediante el cual el alumno concluye sus estudios y acredita la totalidad del programa academico en el que estuvo inscrito
+definicion evaluacion a titulo de suficiencia la que comprende el total de los contenidos del programa de estudios y que el alumno podra presentar cuando no haya acreditado de manera ordinaria o extraordinaria alguna unidad de aprendizaje
+definicion evaluacion de saberes previamente adquiridos la que permite acreditar unidades de aprendizaje sin haberlas cursado su aplicacion se sujetara a lo descrito en el plan y programa de estudios y a los lineamientos aplicables
+definicion evaluacion extraordinaria la que comprende el total de los contenidos del programa de estudios y que el alumno podra presentar voluntariamente dentro del mismo periodo escolar una vez que curso la unidad de aprendizaje y no haya obtenido un resultado aprobatorio o para mejorar calificacion
+definicion evaluacion ordinaria la que se presenta con fines de acreditacion durante el periodo escolar y considera las evidencias de aprendizaje senaladas en el programa de estudios
+definicion expediente academico documento que contiene la informacion y el historial academico del alumno
+definicion flexibilidad caracteristica del plan de estudio que permite al alumno definir su trayectoria escolar dentro del marco de la normatividad aplicable
+definicion ingreso proceso a traves del cual el aspirante a incorporarse como alumno o usuario de servicios educativos complementarios cumple con todos los requisitos de admision establecidos
+definicion mapa curricular representacion grafica de las unidades de aprendizaje que conforman un plan de estudio
+definicion modalidad educativa forma en que se organizan distribuyen y desarrollan los planes y programas de estudio para su imparticion
+definicion movilidad academica proceso que permite al alumno en situacion escolar regular participar en programas academicos o desarrollar actividades academicas complementarias en instituciones nacionales o extranjeras con convenio
+definicion nivel educativo cada una de las etapas en las que se estructuran los estudios medio superior superior y posgrado
+definicion periodo escolar lapso senalado en el calendario academico para cursar unidades de aprendizaje de un programa academico
+definicion plan de estudio estructura curricular que se deriva de un programa academico y permite cumplir propositos de formacion general adquisicion de conocimientos y desarrollo de capacidades
+definicion programa academico conjunto organizado de elementos necesarios para generar adquirir y aplicar conocimiento desarrollar habilidades actitudes y valores en el alumno
+definicion programa academico en red el que desarrollan e imparten conjuntamente varias unidades academicas del instituto o con otras instituciones con convenio
+definicion programa de estudios contenidos formativos de una unidad de aprendizaje especifica objetivos carga horaria creditos bibliografia y plan de evaluacion
+definicion trayectoria escolar proceso a traves del cual el alumno construye su formacion con base en un plan de estudio
+definicion tutor personal academico asignado para acompanar orientar y asesorar al alumno en su trayectoria escolar
+definicion unidad de aprendizaje estructura didactica que integra los contenidos formativos de un curso materia modulo asignatura o sus equivalentes
+definicion usuario de servicios educativos complementarios persona registrada en programas de capacitacion actualizacion formacion empresarial educacion continua o lenguas extranjeras
+capitulo primero disposiciones generales articulo 4 oferta educativa bachillerato bivalente en nivel medio superior licenciatura en nivel superior especialidad maestria y doctorado en posgrado titulos y grados corresponden a registros en direccion general de profesiones
+capitulo primero disposiciones generales articulo 5 servicios educativos complementarios cursos talleres seminarios diplomados y otras formas de organizacion de aprendizaje no senaladas en el articulo 4
+capitulo segundo del ingreso articulo 6 requisitos alumno cumplir antecedentes academicos examen de admision o proceso de posgrado y ser seleccionado articulo 7 requisitos usuario servicios complementarios cumplir requisitos del programa y convocatoria
+capitulo segundo del ingreso articulo 8 calidad de alumno o usuario se adquiere al cumplir requisitos de ingreso y realizar tramites de inscripcion o registro en tiempo y forma adquiriendo derechos y obligaciones
+capitulo segundo del ingreso articulo 9 acreditacion caracter de alumno con numero de boleta y credencial vigente caracter de usuario con numero de registro
+capitulo segundo del ingreso articulo 10 derechos del ingreso iniciar continuar y concluir programa cursar unidades de aprendizaje realizar movilidad solicitar equivalencia o revalidacion y cursar unidades en otros programas para complementar formacion
+capitulo segundo del ingreso articulo 11 informacion al inicio de trayectoria el alumno recibira informacion sobre mapa curricular evaluacion acreditacion egreso practicas estancias movilidad servicio social titulacion y normatividad
+capitulo segundo del ingreso articulo 12 simultaneidad de estudios nivel superior se puede cursar otro programa simultaneo o subsecuente cumpliendo requisitos tener 60 por ciento de creditos para simultaneos o 100 por ciento para subsecuentes promedio global minimo de ocho y que la oferta lo permita
+capitulo segundo del ingreso articulo 13 y 14 cancelacion y nulidad si no concluye inscripcion se cancelan tramites la inscripcion sera nula de pleno derecho si entrega documentacion falsa o alterada y no podra gestionar nueva inscripcion
+capitulo tercero equivalencia y revalidacion articulo 15 equivalencia valida estudios dentro del sistema educativo nacional articulo 16 revalidacion acredita estudios fuera del sistema educativo nacional
+capitulo tercero equivalencia y revalidacion articulo 17 y 18 procedencia y vigencia aplica para ingreso posterior cambio de plan programa o modalidad y movilidad estudios no deben exceder cinco anos de antiguedad dictamen vigente por doce meses
+capitulo cuarto modalidades educativas articulo 19 a 22 tipos de modalidad escolarizada en aulas y horarios determinados no escolarizada fuera de aulas sin horarios determinados y mixta combinacion de ambas
+capitulo quinto programas academicos articulo 24 documentos probatorios certificado y titulo tecnico para medio superior certificado y titulo profesional para licenciatura certificado y diploma de grado para especialidad maestria y doctorado
+capitulo quinto programas academicos articulo 30 caracteristicas plan de estudio debe ser pertinente flexible disenado por creditos conformado por unidades de aprendizaje organizado en periodos escolares y permitir transito entre modalidades
+capitulo quinto programas academicos articulo 31 contenido plan de estudio modalidad perfiles duracion mapa curricular cargas de creditos evaluacion practicas servicio social y requisitos de titulacion
+capitulo quinto programas academicos articulo 32 actualizacion planes estudio no afecta retroactivamente alumno puede solicitar equivalencia al nuevo plan si se desfasa cuenta con oferta hasta concluir tiempo maximo de ultima generacion
+capitulo sexto trayectoria escolar articulo 34 clasificacion unidades obligatorias indispensables optativas formacion especifica electivas satisfaccion vocacional
+capitulo sexto trayectoria escolar articulo 36 inscripcion inscribirse en periodo inicial definir trayectoria en posgrado inscribirse segun dictamen de equivalencia y definir creditos con tutor
+capitulo sexto trayectoria escolar articulo 37 y 39 alumno regular y avance es regular quien tiene acreditadas todas las unidades inscritas el avance se determina por creditos obtenidos y acumulados
+capitulo sexto trayectoria escolar articulo 40 calificaciones escala cero a diez minima aprobatoria seis en medio superior y superior ocho en posgrado
+capitulo sexto trayectoria escolar articulo 45 evaluacion extraordinaria derecho en medio superior y superior para acreditar o mejorar calificacion se registra la mas alta si se reprueba ordinaria se registra extraordinaria
+capitulo sexto trayectoria escolar articulo 46 evaluacion extemporanea por causa justificada solicitar por escrito al titular en plazo no mayor a cinco dias habiles respuesta en tres dias habiles
+capitulo sexto trayectoria escolar articulo 47 evaluacion saberes previamente adquiridos solicitar en diez dias habiles al inicio periodo una sola oportunidad si se acredita es ordinaria si no se debe cursar
+capitulo sexto trayectoria escolar articulo 48 no acreditacion opciones titulo de suficiencia recursar una vez en misma modalidad si falla recursar una vez en modalidad diferente posgrado solo recursa una vez
+capitulo sexto trayectoria escolar articulo 49 tiempo estudios minimo 50 por ciento duracion plan maximo 50 por ciento mas de duracion plan al agotar tiempo causa baja pero puede solicitar ampliacion a comision de situacion escolar
+capitulo sexto trayectoria escolar articulo 50 y 51 registro y revision calificaciones registro en tres dias habiles revision solicitar en ocho dias habiles resolucion en tres dias habiles
+capitulo sexto trayectoria escolar articulo 52 reinscripcion segun creditos faltantes si es menor a carga media reinscribe entre minima y maxima si tiene adeudos recursa y completa carga minima si resultado division es mayor a carga media solicita reinscripcion y ampliacion a comision de situacion escolar
+capitulo sexto trayectoria escolar articulo 54 baja unidades aprendizaje solicitud primeras tres semanas maximo dos ocasiones por materia no procede si se esta recursando mantener carga minima
+capitulo sexto trayectoria escolar articulo 55 baja temporal hasta dos periodos escolares solicitud primer mes o cualquier tiempo por fuerza mayor
+capitulo sexto trayectoria escolar articulo 57 baja programa causas solicitud escrita no reinscripcion agotar oportunidades evaluacion o tiempo maximo resolucion de comision
+capitulo septimo movilidad academica articulo 61 y 62 alumno regular participa en convocatorias requiere propuesta de unidad academica y aceptacion de destino posgrado requiere autorizacion colegio profesores
+capitulo octavo egreso y certificacion articulo 66 expedicion documentos constancias certificados titulos diplomas grados a solicitud del alumno
+capitulo noveno recurso reconsideracion articulo 73 inconformidad ante titular unidad academica respuesta quince dias habiles
+capitulo noveno recurso reconsideracion articulo 74 y 75 recurso reconsideracion ante comision situacion escolar si respuesta titular no satisfactoria escrito con requisitos y pruebas plazo correccion diez dias habiles resolucion quince dias habiles

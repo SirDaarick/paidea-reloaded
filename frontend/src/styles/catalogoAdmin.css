@@ -1,0 +1,125 @@
+/* Panel lateral (estilo similar a Reinscripciones) */
+.catalogo-container {}
+
+/* reutiliza .ra-container y .ra-side del index.css para grid y colores,
+   pero añadimos ajustes específicos aquí */
+
+.catalogo-table-wrapper {
+  width: 90%;
+  overflow-x: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 12px;
+  border: 1px solid #e0e4f0;
+  background: #fff;
+}
+
+
+/* Si tu Table.module.css aplica .table th/td, los respetará.
+   Aquí reforzamos header azul oscuro igual al mock */
+.table th {
+  background-color: #1f3b6d; /* azul oscuro */
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  padding: 12px 10px;
+  text-align: left;
+}
+
+.table td {
+  padding: 12px 10px;
+  border-bottom: 1px solid #eaedf3;
+  color: #222;
+}
+
+/* estilo filas alternas */
+.table tbody tr:nth-child(even) {
+  background-color: #f9faff;
+}
+
+/* Buscador */
+.catalogo-search-wrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 6px 10px;
+  border: 1px solid #e6e9f6;
+  width: 320px;
+}
+
+.catalogo-search-input {
+  border: none;
+  outline: none;
+  padding: 6px 8px;
+  width: 220px;
+  font-size: 14px;
+}
+
+.catalogo-search-clear {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Botones Alta/Baja */
+.catalogo-btn-success {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.catalogo-btn-success:hover { background-color: #218838; }
+
+.catalogo-btn-danger {
+  background-color: #d9534f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.catalogo-btn-danger:hover { background-color: #c9302c; }
+
+/* Paginación */
+.catalogo-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.catalogo-page {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: 600;
+}
+.catalogo-page.active {
+  background-color: #1f3b6d;
+  color: white;
+}
+
+/* pequeño ajuste para los botones dentro de las celdas */
+.acciones-botones {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+/* pequeños retoques responsive */
+@media (max-width: 1100px) {
+  .ra-container { grid-template-columns: 1fr; padding: 16px; }
+  .catalogo-search-wrap { width: 100%; }
+}

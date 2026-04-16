@@ -1,0 +1,207 @@
+.gestionar-grupos-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+.gestionar-grupos-main {
+  width: 85%;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 2rem;
+}
+
+/* === FILTROS SUPERIORES === */
+.filtros-superiores {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.filtros {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.95rem;
+}
+
+.campo label {
+  margin-bottom: 4px;
+  color: #333;
+  font-weight: 500;
+}
+
+.campo select {
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  font-size: 0.9rem;
+  min-width: 180px;
+}
+
+/* === BOTONES === */
+.btn-primario {
+  background-color: #2f5aa8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1.8rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  transition: background-color 0.2s;
+}
+
+.btn-primario:hover {
+  background-color: #1d428a;
+}
+
+/* === SECCIÓN AGREGAR UNIDADES === */
+.agregar-unidades {
+  background-color: #f7f9fc;
+  border: 1px solid #dbe1ec;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.agregar-unidades h2 {
+  margin-bottom: 1.2rem;
+  color: #1a1a1a;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.agregar-unidades.deshabilitado {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.fila {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+/* === CHECKBOX DE DÍAS === */
+.dias-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  justify-content: flex-start;
+}
+
+.dia {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+  width: calc(33.33% - 1rem);
+  box-sizing: border-box;
+}
+
+.dia:nth-child(n+4) {
+  width: calc(33.33% - 1rem);
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+.dia-checkbox {
+  width: 18px;
+  height: 18px;
+  accent-color: #2f5aa8;
+  cursor: pointer;
+}
+
+.dia-nombre {
+  font-weight: 500;
+  color: #333;
+  min-width: 70px;
+}
+
+.dia-select {
+  flex: 1;
+  max-width: 180px;
+  padding: 6px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #333;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+.dia-select:disabled {
+  background-color: #f5f5f5;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.dia-select:focus {
+  border-color: #2f5aa8;
+  outline: none;
+}
+
+/* === TABLA DE GRUPOS === */
+.tabla-grupos table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.tabla-grupos th,
+.tabla-grupos td {
+  border: 1px solid #dcdcdc;
+  text-align: center;
+  padding: 0.6rem;
+}
+
+.tabla-grupos th {
+  background-color: #2f5aa8;
+  color: white;
+  font-weight: 600;
+}
+
+.tabla-grupos td {
+  background-color: #fff;
+}
+
+.btn-eliminar {
+  background-color: #d9534f;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-eliminar:hover {
+  background-color: #b32b28;
+}
+
+.contenedor-boton {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}

@@ -1,0 +1,127 @@
+#ISC — INGENIERÍA EN SISTEMAS COMPUTACIONALES
+Mapa curricular 2020
+
+#SEMESTRE 1
+- Fundamentos De Programación
+- Matemáticas Discretas
+- Cálculo
+- Comunicación Oral Y Escrita
+- Análisis Vectorial
+
+#SEMESTRE 2
+- Algoritmos Y Estructuras De Datos
+- Cálculo Aplicado
+- Mecánica Y Electromagnetismo
+- Ingeniería Ética Y Sociedad
+- Álgebra Lineal
+- Fundamentos Económicos
+
+#SEMESTRE 3
+- Análisis Y Diseño De Algoritmos
+- Paradigmas De Programación
+- Ecuaciones Diferenciales
+- Circuitos Eléctricos
+- Fundamentos De Diseño Digital
+- Bases De Datos
+- Finanzas Empresariales
+
+#SEMESTRE 4
+- Probabilidad Y Estadística
+- Matemáticas Avanzadas Para La Ingeniería
+- Electrónica Analógica
+- Diseño De Sistemas Digitales
+- Tecnologías De Desarrollo De Aplicaciones Web
+- Sistemas Operativos
+- Teoría De La Computación
+
+#SEMESTRE 5
+- Procesamiento De Señales Digitales
+- Instrumentación Y Control
+- Arquitectura De Computadoras
+- Análisis Y Diseño De Sistemas
+- Formulación Y Evaluación De Proyectos Informáticos
+- Compiladores
+- Redes De Computadoras
+
+#SEMESTRE 6
+- Sistemas En Chip 	
+- Optativa A1
+- Optativa B1
+- Métodos Cuantitativos Para La Toma De Decisiones 
+- Ingeniería De Software 
+- Inteligencia Artificial 
+- Aplicaciones Para Comunicaciones En Red 
+
+#SEMESTRE 7
+- Desarrollo De Aplicaciones Móviles Nativas
+- Optativa A2
+- Optativa B2
+- Trabajo Terminal I
+- Sistemas Distribuidos
+- Administración De Servicios En Red
+
+#SEMESTRE 8
+- Gestión Empresarial
+- Trabajo Terminal II
+- Estancia Profesional
+- Desarrollo De Habilidades Sociales Para La Alta Dirección
+- Liderazgo Personal
+
+#OPTATIVAS SEMESTRE 6
+- Seguridad Informática	
+- Algoritmos Genéticos
+- Introducción A La Criptografía	
+- Aprendizaje Automático
+- Aseguramiento De La Calidad Del Software Y Patrones De Diseño
+- Bioinformática
+- Gobernanza De TI	
+- Procesamiento Del Lenguaje Natural
+- Temas Seleccionados De Criptografía	
+- Realidad Virtual Y Aumentada
+- Marcos De Desarrollo De Clientes Web Y Backend	
+- Big Data
+- Sistemas Complejos	
+- Informática Temas Seleccionados I
+- Informática Temas Seleccionados II	
+- Minería De Datos
+- Ingeniería Económica	
+- Análisis De Imágenes
+- Internet De Las Cosas	
+- Instrumentación Virtual
+- Aplicaciones De Instrumentación Virtual	
+- Célula Automatizada
+- Sistemas Embebidos	
+- Gestión De Empresas De Alta Tecnología
+- Bases De Datos No Relacionales
+- Herramientas Estadísticas Para Análisis De Datos
+
+#OPTATIVAS SEMESTRE 6
+- Genetic Algorithms	
+- Computer Graphics
+- Bioinformatics
+- Natural Language Processing
+- Machine Learning
+- Big Data
+- Computing Selected Topics I		
+- Data Mining		
+- Image Analysis		
+- Virtual Instrumentation		
+- Cellula Automata		
+- High Technology Enterprise Management		
+- Statistical Tools For Data Analytics
+
+#OPTATIVAS SEMESTRE 7
+- Virtual and Augmented Reality		
+- Computer Security		
+- Introduction to Cryptography			
+- Software Quality Assurance and Design Patterns			
+- IT Governance			
+- Selected Topics of Cryptography			
+- Web Client and Backend Development Frameworks		
+- Complex Systems	
+- Computing Selected Topics II	
+- Economic Engineering	
+- Internet of Things	
+- Virtual Instrumentation Applications	
+- Embedded Systems	
+- Non Relational Databases	

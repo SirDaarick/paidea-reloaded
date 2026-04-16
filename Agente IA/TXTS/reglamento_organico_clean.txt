@@ -1,0 +1,143 @@
+Este es el **Reglamento Orgánico del Instituto Politécnico Nacional** limpio, clasificado y estructurado conforme a las instrucciones solicitadas. Se han eliminado los directorios, preámbulos, números de Gaceta y artículos transitorios, y se han agrupado los artículos por temas que definen la estructura y las competencias institucionales.
+
+### Disposiciones Generales, Competencia y Estructura
+
+- **Artículo 1:** El presente Reglamento establece las **bases de organización y distribución de competencias** entre las distintas dependencias politécnicas, órganos de apoyo y organismos auxiliares que conforman la estructura orgánico-funcional del Instituto Politécnico Nacional. Sus autoridades ejercerán las facultades, obligaciones y atribuciones que les confieren la Ley Orgánica, el Reglamento Interno, el presente ordenamiento y las demás disposiciones aplicables.
+- **Artículo 2:** Al frente del Instituto Politécnico Nacional estará el titular de la Dirección General, quien se asistirá de unidades administrativas, unidades académicas, órganos de apoyo y organismos auxiliares.
+    *   **I. Dependencias Politécnicas:** Incluyen Unidades Administrativas (de soporte, Direcciones de Coordinación y Coordinaciones) y Unidades Académicas (Medio Superior, Superior, Investigación, Vinculación, Innovación y Apoyo Educativo).
+    *   **II. Órganos de Apoyo:** Estación de Televisión XEIPN Canal Once y Centro Nacional de Cálculo.
+    *   **III. Organismos Auxiliares:** Centro de Investigación y de Estudios Avanzados del IPN (CINVESTAV), Comisión de Operación y Fomento de Actividades Académicas (COFAA) y Patronato de Obras e Instalaciones del IPN (POI).
+- **Artículo 3:** **Dependencias politécnicas** son aquellas que cuentan con estructura orgánica propia autorizada por el titular de la Dirección General para el cumplimiento de sus atribuciones y facultades; dentro de éstas, son **unidades responsables** las que ejercen presupuesto de gasto institucional.
+- **Artículo 4:** Las dependencias politécnicas realizarán sus funciones de acuerdo con la Ley Orgánica, el Reglamento Interno, el presente Reglamento y la planeación institucional. Los Programas Estratégicos de Desarrollo de Mediano Plazo y Operativo Anual serán los instrumentos de apoyo para su dirección, ejecución, administración, control y evaluación.
+- **Artículo 29:** Las dependencias politécnicas contarán con subdirecciones y jefaturas de sección de estudios de posgrado e investigación; jefaturas de división y de departamento, o puestos equivalentes, y con el personal necesario para el cumplimiento de las funciones.
+- **Artículo 30:** El titular de la Dirección General expedirá los **manuales de organización, de procedimientos y de servicios al público** necesarios para el funcionamiento del Instituto.
+- **Artículo 98:** El Instituto contará con el Centro de Investigación y de Estudios Avanzados (CINVESTAV), la Comisión de Operación y Fomento de Actividades Académicas (COFAA) y el Patronato de Obras e Instalaciones (POI) como **organismos auxiliares**.
+- **Resumen:** Este grupo establece el **marco legal y la estructura orgánica jerárquica** del IPN. Define y enumera las **Dependencias Politécnicas** (académicas y administrativas), los **Órganos de Apoyo** (Canal Once y CENAC), y los tres **Organismos Auxiliares**. Señala que la operación se rige por la planeación institucional y diversos manuales.
+
+### El Director General: Atribuciones y Resolución de Conflictos
+
+- **Artículo 5:** Corresponde originalmente al Director General la **representación legal del Instituto**, así como el trámite y resolución de los asuntos de su competencia, pudiendo **delegar sus facultades** en servidores públicos subalternos, salvo aquellas que deba ejercer directamente por disposición expresa.
+- **Artículo 6:** El Titular de la Dirección General tendrá las siguientes atribuciones (entre otras):
+    *   I. **Establecer y dirigir las políticas del Instituto**.
+    *   VI. **Aprobar la organización y funcionamiento del Instituto** y expedir el manual de organización general y los demás manuales administrativos.
+    *   XV. Determinar las condiciones, requisitos y procedimientos a que se sujetará el otorgamiento de la **equivalencia y la revalidación de estudios**.
+    *   XVII. **Establecer o suprimir las dependencias politécnicas** que requiera el Instituto y cambiar su ubicación o denominación, previo acuerdo del Consejo General Consultivo.
+    *   XVIII. Expedir las autorizaciones en favor de terceros para la utilización del **escudo, lema e himno del Instituto**.
+    *   XXI. Autorizar el otorgamiento y, en su caso, la revocación de permisos a terceros para el **uso, aprovechamiento o explotación temporal de espacios físicos** en los inmuebles que conforman el patrimonio del Instituto, así como para realizar cualquier acto de comercio o publicidad.
+    *   XXIII. **Resolver las dudas** que se susciten con motivo de la interpretación y aplicación de este Reglamento y sobre los **casos no previstos** en el mismo.
+- **Resumen:** El Director General ostenta la máxima **representación legal** y es la autoridad suprema en la definición de **políticas y organización institucional**. Tiene la facultad de autorizar el uso del **patrimonio y la imagen institucional** (escudo, lema, himno) y, crucialmente, la autoridad para **resolver cualquier caso no previsto** en el Reglamento.
+
+### Suplencia de Altos Funcionarios
+
+- **Artículo 99:** Durante las ausencias del Director General, el despacho y la resolución de los asuntos quedan a cargo del **Secretario General**. Las ausencias del Secretario General serán suplidas por los Secretarios Académico, de Investigación y Posgrado, de Innovación e Integración Social, de Servicios Educativos y de Administración, así como por el Abogado General, en ese orden.
+- **Artículo 100:** Las ausencias de los secretarios de área serán suplidas por los **directores de coordinación** que dependan de ellos, en los asuntos de sus respectivas competencias.
+- **Artículo 101:** Las ausencias del titular de la Oficina del Abogado General serán suplidas por los **directores de Asuntos Jurídicos, de Legislación, Consulta y Transparencia y de Convenios y Trámite Registral**, en ese orden.
+- **Artículo 102:** Los titulares de las direcciones de coordinación serán suplidos en sus ausencias por los **jefes de división** que dependan de ellos.
+- **Artículo 103:** Los directores de las unidades académicas de los niveles medio superior y superior y centros de investigación serán suplidos en ausencias no mayores de tres meses, por el **subdirector** que determine el Director General. En caso de ausencia definitiva, asumirá la dirección el **maestro decano**, previa autorización.
+- **Resumen:** Este grupo establece la **línea jerárquica y el mecanismo de suplencia** para garantizar la continuidad de las funciones. El **Secretario General** es el sustituto inmediato del Director General, y los demás altos mandos son suplidos por sus subalternos inmediatos en orden de designación.
+
+### Secretaría General, Abogado General y Decanato
+
+- **Artículo 8:** Al titular de la Secretaría General le corresponde, además de auxiliar y suplir al Director General, fungir como **secretario del Consejo General Consultivo** y autorizar las **convocatorias para la elección de directores** y representantes ante los consejos.
+- **Artículo 10:** Al titular de la Oficina del Abogado General le corresponde:
+    *   II. **Representar legalmente al Instituto** ante toda clase de autoridades y particulares.
+    *   V. Establecer los **criterios de interpretación de la legislación** aplicable en el Instituto.
+    *   X. Dirigir la formulación, elaboración, revisión y registro de los **convenios, contratos y demás instrumentos jurídicos**.
+    *   XI. Emitir el dictamen jurídico sobre la procedencia o improcedencia de las solicitudes de **reconocimiento de validez oficial de estudios (RVOE)**.
+    *   XX. Realizar las funciones de **Unidad de Transparencia** del Instituto Politécnico Nacional.
+- **Artículo 12:** Al titular de la Presidencia del Decanato le corresponde:
+    *   I. Promover y realizar **estudios históricos**.
+    *   III. Formar y conservar el **archivo histórico** del Instituto.
+    *   V. Proponer acciones de **actualización y desarrollo académico** para el personal que integra el decanato.
+- **Resumen:** La Secretaría General es el órgano de **soporte administrativo y de gobierno**. La Oficina del Abogado General es el órgano **legal y de representación jurídica**, controlando la normativa, convenios y la **Transparencia**. El Decanato se enfoca en preservar la **identidad y la memoria histórica** del Instituto.
+
+### Secretaría Académica: Educación y Formación
+
+- **Artículo 15:** Al titular de la Secretaría Académica le corresponde:
+    *   I. Proponer el diseño, estructuración, evaluación y actualización de los **modelos educativo, académico y pedagógico** institucionales.
+    *   III. Coordinar el diseño, estructuración, evaluación y actualización de los **planes y programas de estudio** con criterios de flexibilidad y pertinencia.
+    *   IX. Proponer, implantar y evaluar las políticas que definen las **tutorías académicas** en los niveles medio superior y superior.
+    *   XVI. Promover y evaluar las acciones de **movilidad académica** intra e interinstitucional de los niveles medio superior y superior.
+    *   XXI. Diseñar, instrumentar y evaluar los programas de **formación, actualización y desarrollo permanente del personal académico**.
+    *   XXIV. Dirigir el diseño, estructuración y evaluación de los planes y programas de estudio para la **formación en lenguas extranjeras**.
+    *   XXVI. Atender las solicitudes de **reconocimiento de validez oficial (RVOE) y equivalencia de estudios** de los niveles medio superior y superior.
+- **Artículo 33:** El Director de Educación Media Superior propone, actualiza y evalúa la estructura curricular de nivel medio superior, e impulsa la **creatividad y la innovación tecnológica** mediante la integración armónica del personal académico y alumnos.
+- **Artículo 34:** El Director de Educación Superior tiene funciones similares para el nivel superior, incluyendo la elaboración de los **exámenes de admisión** y la supervisión de la **eficiencia terminal**.
+- **Artículo 37:** El Director de Educación Virtual propone, desarrolla, opera y evalúa la **oferta educativa en las modalidades no escolarizada y mixta**.
+- **Resumen:** La Secretaría Académica es el órgano rector de la **calidad y la estructura educativa**. Sus funciones abarcan desde el desarrollo de los modelos pedagógicos y el sistema de **tutorías**, hasta la gestión de la **movilidad académica**, la formación docente y la **educación en lenguas extranjeras**.
+
+### Secretaría de Investigación y Posgrado: Ciencia, Tecnología y Grados Avanzados
+
+- **Artículo 16:** Al titular de la Secretaría de Investigación y Posgrado le corresponde:
+    *   I. Proponer las políticas para la integración, operación y evaluación de la **investigación y el posgrado**.
+    *   II. Integrar, proponer e implantar el **modelo y sistema académico del posgrado** y las líneas de generación de conocimiento.
+    *   VIII. Regular y evaluar los requisitos para los procesos de admisión, acreditación, y **otorgamiento de diplomas y grados académicos de posgrado**.
+    *   XI. Regular la investigación y el desarrollo tecnológico que realizan las dependencias politécnicas y asociarlos con la **formación de recursos humanos de alto nivel**.
+    *   XXI. Participar en la dirección y evaluación de los programas de asignación de **becas, estímulos y otros medios de apoyo**, dirigidos a alumnos y personal académico que participa en posgrado e investigación.
+    *   XXX. **Representar al Instituto ante el Consejo Nacional de Ciencia y Tecnología (CONACYT)**, o su equivalente, y otros organismos relacionados con el fomento del posgrado e investigación.
+- **Artículo 38:** El Director de Posgrado controla, valida y supervisa el diseño, la impartición y la acreditación de los programas académicos de posgrado, y autoriza la realización de los **exámenes de grado**.
+- **Artículo 39:** El Director de Investigación diseña, actualiza y evalúa los criterios para la realización de **proyectos de investigación**, y promueve la **movilidad de investigadores**.
+- **Artículo 40:** El Director de Difusión de Ciencia y Tecnología coordina las acciones de **divulgación de la ciencia y la tecnología**, administrando espacios como el **planetario “Luis Enrique Erro”**.
+- **Resumen:** Esta Secretaría rige el **posgrado** (maestrías, doctorados) y la **investigación de alto nivel**. Es responsable de representar al IPN ante organismos clave como el **CONACYT**, regular el otorgamiento de grados avanzados, impulsar la **movilidad de investigadores** y promover la **divulgación de la ciencia** al público en general.
+
+### Secretaría de Innovación e Integración Social: Vinculación, Empresas y Servicios
+
+- **Artículo 17:** Al titular de la Secretaría de Innovación e Integración Social le corresponde:
+    *   I. Proponer los proyectos de normas, políticas y estrategias para la planeación, operación, gestión y evaluación de las acciones institucionales sobre **innovación, seguimiento de egresados, vinculación y fomento empresarial**.
+    *   III. Establecer los lineamientos generales en materia de **servicio social, protección de la propiedad intelectual, internacionalización y movilidad** de profesores y alumnos.
+    *   V. Proponer, controlar y evaluar la organización y funcionamiento de los **Centros de Vinculación y Desarrollo Regional (CVDR)** y los **Centros de Innovación e Integración de Tecnologías Avanzadas (CIITA)**.
+    *   XII. Establecer lineamientos y estrategias para la realización de proyectos que apoyen la **innovación y la creación de empresas de base tecnológica**.
+    *   XIX. Coordinar, supervisar y evaluar las estrategias de los programas de **servicio social**.
+- **Artículo 42:** El Director de Egresados y Servicio Social promueve el **seguimiento de egresados**, opera la **bolsa de trabajo**, y dirige brigadas multidisciplinarias de **servicio social** en apoyo a comunidades.
+- **Artículo 43:** El Director de Relaciones Internacionales promueve la **cooperación académica e internacionalización**, coordina la concertación de **convenios**, y dirige los **programas de movilidad** de alumnos y personal.
+- **Artículo 44:** El Director de Servicios Empresariales y Transferencia Tecnológica funge como enlace entre el Instituto y su entorno tecnológico, y dirige las actividades que se realizan en materia de **propiedad intelectual, transferencia del conocimiento** y el **Centro de Patentamiento “Guillermo González Camarena”**.
+- **Artículo 46:** El Director de Incubación de Empresas Tecnológicas fomenta la **cultura emprendedora** y promueve la **creación de empresas de innovación tecnológica**, a través del proceso de incubación.
+- **Resumen:** Esta Secretaría articula la **interacción del IPN con la sociedad y los sectores productivos**. Sus funciones abarcan la **internacionalización** y **movilidad**, la gestión integral del **Servicio Social y la Bolsa de Trabajo** para egresados, y la promoción de la **innovación, emprendimiento y transferencia de tecnología** mediante la incubación de empresas y la protección de la propiedad intelectual.
+
+### Secretaría de Servicios Educativos: Gestión Administrativa y Formación Complementaria
+
+- **Artículo 18:** Al titular de la Secretaría de Servicios Educativos le corresponde:
+    *   IV. Coordinar la administración y operación de la **gestión escolar** para todos los niveles y modalidades educativas, que permita la planeación, operación, supervisión y control de los procesos y servicios de **selección, admisión, inscripción, reinscripción, expedición de certificados, títulos profesionales y grados académicos**.
+    *   VII. Promover y regular el **sistema de becas, estímulos y otros medios de apoyo para alumnos**.
+    *   X. Coordinar los apoyos y asesorías para la organización de **actividades y eventos culturales, deportivos y de cultura física**.
+- **Artículo 47:** El Director de Administración Escolar opera los procesos de **selección, admisión e ingreso**, de **inscripción, reinscripción, cambios de programa o unidad académica** y movilidad, y registra la trayectoria escolar para la expedición de **documentos oficiales** (títulos, certificados).
+- **Artículo 48:** El Director de Apoyos a Estudiantes planea, opera y evalúa la prestación de los **servicios médicos, de seguro facultativo**, y el **programa institucional de becas, estímulos y otros medios de apoyo para los alumnos**.
+- **Artículo 49:** El Director de Actividades Deportivas dirige y supervisa las **actividades deportivas y la cultura física**, e impulsa el desarrollo de **deportistas y equipos de alto rendimiento**.
+- **Artículo 51:** El Director de Bibliotecas y Publicaciones dirige, coordina y controla los **servicios de información bibliográfica**, y el **programa de publicaciones** del Instituto.
+- **Resumen:** Esta Secretaría centraliza la **gestión escolar** crucial para la trayectoria académica (desde la admisión hasta la expedición de títulos y grados). También es la responsable de la **promoción del sistema de becas**, y del desarrollo de la **formación integral** a través de la dirección de actividades culturales, deportivas y la administración de las bibliotecas y el programa editorial.
+
+### Secretaría de Administración: Finanzas, Recursos Materiales y Capital Humano
+
+- **Artículo 19:** Al titular de la Secretaría de Administración le corresponde:
+    *   I. Proponer los proyectos de normas, políticas y metas para el **Sistema Institucional de Administración** y la **programación y presupuestación**.
+    *   III. Regular y controlar la gestión y ministración de los **recursos financieros y materiales y los servicios generales**.
+    *   XII. Fungir como **responsable inmobiliario** del Instituto ante las autoridades competentes.
+    *   XVI. Coordinar la integración y actualización del **catálogo de puestos** del Instituto.
+    *   XX. Regular, controlar y evaluar la organización y funcionamiento de los **centros de desarrollo infantil (CENDI)**.
+- **Artículo 52:** El Director de Capital Humano gestiona, regula y evalúa el **capital humano**, controla la asignación de **plazas autorizadas**, coordina el otorgamiento de **prestaciones económicas y servicios al personal**.
+- **Artículo 53:** El Director de Programación y Presupuesto dirige el proceso de **programación y presupuestación institucional**, y elabora el **anteproyecto de presupuesto anual**.
+- **Artículo 54:** El Director de Recursos Financieros administra, coordina y controla los **recursos financieros**, realiza el **pago oportuno de nómina y becas**, y concentra y aplica los **recursos autogenerados**.
+- **Artículo 55:** El Director de Recursos Materiales e Infraestructura dirige los procesos de adjudicación y contratación en materia de **adquisiciones, mantenimiento, arrendamiento de bienes muebles e inmuebles y prestación de servicios**, y realiza el registro y aseguramiento de los **bienes muebles e inmuebles**.
+- **Resumen:** Esta Secretaría es el órgano responsable de la **administración financiera y de recursos**. Sus áreas controlan el **presupuesto institucional**, el **pago de nómina y becas**, las **adquisiciones y la infraestructura**, y la gestión del **Capital Humano** (plazas y prestaciones). También supervisa la operación de los CENDI.
+
+### Coordinación General de Planeación e Información Institucional
+
+- **Artículo 21:** Al titular de la Coordinación General le corresponde:
+    *   I. Proponer proyectos de normas, políticas para la **planeación, organización, evaluación, administración y control de la información e indicadores**.
+    *   II. Coordinar y evaluar la integración y actualización de los programas de **Desarrollo Institucional e Institucional de Mediano Plazo**.
+    *   IV. Proporcionar y consolidar la información para el **Sistema Institucional de Información y para la estadística**.
+    *   VI. Diseñar y proponer al Director General el **modelo de estructuras orgánico-funcionales**.
+    *   VIII. Regular, controlar, dictaminar y evaluar las **estructuras orgánicas** del Instituto.
+- **Artículo 57:** El Director de Planeación y Organización formula e integra el **Programa de Desarrollo Institucional y el Programa Institucional de Mediano Plazo**, y elabora los proyectos de **Reglamento Orgánico** y Manual de Organización General.
+- **Artículo 58:** El Director de Información Institucional establece parámetros para **verificar y medir el desempeño** del quehacer institucional, y coordina la **evaluación de los modelos educativo y de integración social**.
+- **Artículo 59:** El Director de Cómputo y Comunicaciones dirige, administra y controla la **infraestructura de cómputo, súper cómputo, laboratorios de cómputo y redes de comunicaciones**.
+- **Artículo 60:** El Director de Sistemas Informáticos dirige el **diseño, desarrollo, programación, validación e implementación de los sistemas informáticos y aplicaciones**, y establece las **guías técnicas obligatorias** en la selección y uso de software.
+- **Resumen:** Esta Coordinación funciona como el **órgano estratégico y tecnológico** del Instituto. Es responsable de toda la **planeación institucional**, la **evaluación del desempeño**, la definición de las **estructuras orgánicas** y la dirección de la **infraestructura de tecnologías de la información, cómputo y comunicaciones** a nivel institucional.
+
+### Órganos de Apoyo y Unidades de Difusión
+
+- **Artículo 94:** El Instituto cuenta con la **Estación de Televisión XEIPN Canal Once del Distrito Federal** y el **Centro Nacional de Cálculo (CENAC)** como órganos de apoyo.
+- **Artículo 95:** Al titular de Canal Once le corresponde operar la estación para la **difusión educativa, científica, cultural, tecnológica, deportiva y de orientación social**, y tiene la facultad de **comercializar los servicios** que presta.
+- **Artículo 97:** Al titular del CENAC le corresponde asegurar la **disponibilidad, confiabilidad, consolidación, actualización y crecimiento de la infraestructura de cómputo y comunicaciones**, y dirigir los **proyectos institucionales en materia de software**.
+- **Artículo 22:** Al titular de la Estación de Radiodifusión XHIPN-FM (Radio IPN) le corresponde **difundir la oferta educativa, académica, científica, tecnológica, cultural, recreativa y deportiva** y operar la programación radiofónica en términos de la concesión.
+- **Resumen:** Este grupo abarca los órganos clave para la infraestructura tecnológica avanzada y la proyección pública. El **Canal Once** y **Radio IPN** son plataformas de difusión educativa, científica y cultural. El **CENAC** es fundamental para asegurar la **disponibilidad y el crecimiento de la infraestructura de cómputo y comunicaciones** y el desarrollo de software a nivel institucional.

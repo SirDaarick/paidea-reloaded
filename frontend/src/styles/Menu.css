@@ -1,0 +1,78 @@
+/* === Header === */
+.header-container {
+  background-color: #3E517D;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  width: 100%;
+}
+
+.header-title {
+  font-size: 40px;
+  text-align: center;
+  flex: 1;
+  line-height: 1.2;
+}
+
+.header-logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* === Menú === */
+.menu-container {
+  background-color: #425AA1;
+  width: 100%;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px 0;
+  margin: 0;
+  font-weight: bold;
+  color: white;
+}
+
+.menu-item {
+  position: relative;
+  cursor: pointer;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #5277CC;
+  border: 1px solid #ccc;
+  list-style: none;
+  padding: 10px 0;
+  min-width: 180px;
+  z-index: 1000;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.menu-item:hover .submenu {
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.submenu li {
+  padding: 8px 15px;
+  cursor: pointer;
+  color: white;
+}
+
+.submenu li:hover {
+  background-color: #2e3c7e;
+}

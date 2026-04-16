@@ -1,0 +1,84 @@
+/* CONTENEDOR GENERAL (1 cm sin afectar menú) */
+.dg-container {
+  padding: 1cm;
+  background-color: #ffffff;
+}
+
+/* TÍTULO */
+.dg-title {
+  color: #3E517D;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+/* FILTROS */
+.dg-filtros {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(220px, 1fr));
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.dg-promedio {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* MENSAJES */
+.dg-loading {
+  text-align: center;
+  padding: 40px;
+}
+
+.dg-empty {
+  text-align: center;
+  padding: 40px;
+  background: #f8f9fa;
+  border-radius: 12px;
+}
+
+/* GRÁFICAS */
+.dg-graficas {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 16px;
+}
+
+.dg-card {
+  height: 340px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+/* TABLA */
+.dg-table-wrapper {
+  overflow-x: auto;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.dg-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dg-table th {
+  text-align: left;
+  padding: 10px 12px;
+  background: #f1f5f9;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.dg-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.dg-footer {
+  padding: 12px;
+}

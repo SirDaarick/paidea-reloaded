@@ -1,0 +1,106 @@
+/* src/styles/Calificaciones.css */
+
+.ra-container {
+  display: flex;
+  gap: 24px;
+  padding: 1cm;
+  align-items: flex-start;
+}
+
+/* NUEVO: Contenedor para el CuadroDatos */
+/* flex: 0 0 auto asegura que respete el tamaño original del componente 
+   y no intente estirarlo ni encogerlo */
+.sidebar-fija {
+  flex: 0 0 auto; 
+  width: 300px;
+}
+
+/* Sección principal de calificaciones (derecha) */
+.calif-main {
+  flex: 1; /* Toma todo el espacio RESTANTE */
+  background: white;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  min-width: 0; /* Permite el scroll interno de la tabla */
+}
+
+.page-subtitle {
+  color: #3E517D;
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 1.5rem;
+}
+
+.muted {
+  color: #6b7280;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* --- TABLA --- */
+.calif-table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* --- COLORES FILAS --- */
+.calif-rojo {
+  background-color: #fee2e2 !important;
+}
+.calif-rojo:hover {
+  background-color: #fecaca !important;
+}
+
+.calif-naranja {
+  background-color: #ffedd5 !important;
+}
+.calif-naranja:hover {
+  background-color: #fed7aa !important;
+}
+
+/* --- RECOMENDACIONES --- */
+.calif-recom-title {
+  color: #3E517D;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+
+.calif-recomendaciones {
+  background-color: #f3f4f6;
+  border-left: 4px solid #3E517D;
+  padding: 16px;
+  border-radius: 0 8px 8px 0;;
+}
+
+.calif-recom-lista {
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.calif-recom-lista li {
+  margin-bottom: 6px;
+  color: #374151;
+}
+
+/* --- MÓVILES --- */
+@media (max-width: 768px) {
+  .ra-container {
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .calif-main {
+    width: 100%;
+    padding: 16px;
+  }
+  
+  /* En móvil dejamos que el cuadro ocupe el ancho disponible */
+  .sidebar-fija {
+    width: 100%;
+  }
+}

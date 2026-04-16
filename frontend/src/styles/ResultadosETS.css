@@ -1,0 +1,41 @@
+/* Fondo general blanco */
+.ets-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+/* Distribución horizontal */
+.ets-main {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+/* Área izquierda para CuadroDatos */
+.ets-left {
+  flex: 0 0 280px;   /* ← ANTES era flex: 1; ahora ancho fijo de 280px */
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+/* Área derecha (tabla) */
+.ets-right {
+  flex: 2;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+
+/* Título */
+.ets-title {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #425AA1;
+}

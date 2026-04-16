@@ -1,0 +1,687 @@
+[
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_1",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "materia: algebra lineal carrera: iia semestre: 2 objetivo: aplica los metodos de eliminacion de gauss-jordan matricial con pivoteo a partir de las transformaciones lineales, los espacios vectoriales, valores y vectores propios.\ntemario: unidad 1: sistemas de ecuaciones lineales resuelve los sistemas de ecuaciones lineales a partir de las matrices, determinantes y la inversa de una matriz. (contenidos detallados no visibles en los extractos.)\nunidad 2: espacios vectoriales emplea las bases de una espacio vectorial con base en espacios vectoriales y subespacios. espacios vectoriales propiedades escalares, vectores, operaciones de vectores subespacios combinaciones lineales espacio generado dependencia e independencia lineal bases de un espacio vectorial dimension de un espacio vectorial rango y nulidad de una matriz cambio de base matriz cambio de base espacios con producto interno bases ortogonales y ortonormales proceso de ortonormalizacion de gram-schmidt"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_2",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad 3: transformaciones lineales desarrolla isomorfismos a partir de transformaciones lineales y su representacion matricial. transformaciones lineales propiedades imagen y kernel de una transformacion lineal representacion matricial de una transformacion lineal matrices semejantes y cambio de base en la representacion matricial de una transformacion isomorfismos transformacion inversa ejemplos de espacios isomorfos\nunidad 4: valores y vectores propios aplica la factorizacion lu a las matrices a partir de su diagonalizacion. valores y vectores propios polinomio caracteristico calculo de vectores propios diagonalizacion de matrices matrices simetricas y diagonalizacion ortogonal factorizacion lu"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_3",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "resultados de aprendizaje: resuelve los sistemas de ecuaciones lineales a partir de las matrices, determinantes y la inversa de una matriz. emplea las bases de una espacio vectorial con base en espacios vectoriales y subespacios. desarrolla isomorfismos a partir de transformaciones lineales y su representacion matricial. aplica la factorizacion lu a las matrices a partir de su diagonalizacion.\nprerrequisitos: calculo multivariable (se relaciona lateralmente)\n--------------------------------------------------------------------------------\nmateria: algoritmos bioinspirados carrera: iia semestre: 5 objetivo: implementa soluciones a problemas con base en algoritmos bioinspirados.\ntemario: unidad 1: introduccion algoritmos bioinspirados describe los problemas y algoritmos de optimizacion con base en la evolucion de la inteligencia en la naturaleza. (contenidos detallados no visibles en los extractos.)"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_4",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad 2: computo evolutivo 1: algoritmos geneticos hipotesis y teoremas del funcionamiento de algoritmos geneticos hipotesis de bloques de construccion hipotesis de macromutacion hipotesis de mutacion adaptativa teorema del esquema aplicaciones de los algoritmos geneticos\nunidad 3: computo evolutivo 2: programacion genetica atributos consideraciones en la programacion genetica consideraciones previas consideraciones en la ejecucion caracteristicas aplicaciones\nunidad 4: automatas celulares metodo de la lattice boltzmann automata de red automata complejo automata asincrono automata celular cuantico wetware automata celular de valores reales aplicaciones\nunidad 5: inteligencia de enjambre modelos basados en microorganismos alimentacion bacterial modelos basados en animales algoritmo de enjambre de murcielagos optimizacion por enjambre de gatos"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_5",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "resultados de aprendizaje: describe los problemas y algoritmos de optimizacion con base en la evolucion de la inteligencia en la naturaleza. implementa soluciones a problemas con base en algoritmos bioinspirados.\nprerrequisitos: ninguno\n--------------------------------------------------------------------------------\nmateria: algoritmos y estructuras de datos carrera: iia semestre: 2 objetivo: utiliza algoritmos y estructuras de datos con base en sus ordenes de complejidad y caracteristicas."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_6",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "temario: unidad 1: algoritmos fundamentales identifica algoritmos fundamentales de la computacion con base en sus ordenes de complejidad. algoritmia caracteristicas de los algoritmos y tipos representacion de algoritmos en pseudocodigo abstraccion y tipo de dato abstracto orden de complejidad o() de un algoritmo el problema del ordenamiento ordenamiento por insercion ordenamiento por seleccion ordenamiento de burbuja ordenamiento por mezcla comparacion de ordenes de complejidad el problema de la busqueda busqueda secuencial busqueda binaria busqueda indexada comparacion de ordenes de complejidad exploracion exhaustiva y vuelta atras exploracion exhaustiva programacion por vuelta atras nociones de complejidad de la exploracion exhaustiva y vuelta atras"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_7",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad 2: estructuras de datos lineales construye estructuras de datos lineales a partir de especificaciones genericas. pila especificacion generica implementacion estatica implementacion dinamica nociones de complejidad de las operaciones aplicaciones cola especificacion generica implementacion estatica implementacion dinamica colas de prioridad nociones de complejidad de las operaciones aplicaciones listas especificacion generica listas simplemente enlazadas listas doblemente enlazadas listas circulares arreglos y vectores vs listas nociones de complejidad de las operaciones implementaciones y aplicaciones tablas hash especificacion generica funcion hash resolucion de colisiones tablas hash cerradas tablas hash abiertas nociones de complejidad de las operaciones implementaciones y aplicaciones"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_8",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad 3: estructuras de datos no lineales manipula estructuras de datos no lineales a partir de sus aplicaciones, complejidad y representaciones. (contenido detallado no visible en los extractos, pero se asume que incluye: arboles binarios, monticulo, recorridos en amplitud y en profundidad sobre grafos, soluciones con grafos.)\nresultados de aprendizaje: identifica algoritmos fundamentales de la computacion con base en sus ordenes de complejidad. construye estructuras de datos lineales a partir de especificaciones genericas. manipula estructuras de datos no lineales a partir de sus aplicaciones, complejidad y representaciones.\nprerrequisitos: fundamentos de programacion matematicas discretas\n--------------------------------------------------------------------------------\nmateria: analisis y diseno de algoritmos carrera: iia semestre: 3 objetivo: determina el algoritmo mas adecuado en la solucion de problemas a partir de las estrategias de diseno y la complejidad algoritmica."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_9",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "temario: unidad 1: contextualizacion y notaciones determina la complejidad de los algoritmos a partir de las diferentes notaciones. (contenido detallado no visible en los extractos.)\nunidad 2: estrategias de diseno deterministas aplica las diferentes estrategias de diseno deterministas a partir de las caracteristicas del problema a solucionar. la estrategia divide y venceras problema del maximo subarreglo el algoritmo de strassen ecuaciones de recurrencia metodo de sustitucion metodo de iteraciones el teorema maestro y su demostracion programacion dinamica el problema de corte de varilla el problema de multiplicacion de una cadena de matrices elementos de la programacion dinamica caracteristicas aplicaciones la estrategia avariciosa (greedy) el problema de la seleccion de actividades codigos de huffman elementos de la estrategia avariciosa matroides y la estrategia avariciosa"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_10",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad 3: analisis probabilistico y algoritmos aleatorizados (contenido detallado no visible en los extractos.)\nunidad 4: estrategias para enfrentar la clase np (contenido detallado no visible en los extractos.)\nresultados de aprendizaje: determina la complejidad de los algoritmos a partir de las diferentes notaciones. aplica las diferentes estrategias de diseno deterministas a partir de las caracteristicas del problema a solucionar.\nprerrequisitos: fundamentos de programacion algoritmos y estructuras de datos\n--------------------------------------------------------------------------------\nmateria: analisis y diseno de sistemas carrera: iia semestre: 4 objetivo: disena sistemas de informacion a partir de las metodologias de analisis, modelado de sistemas, las herramientas de diseno estatico y dinamico de sistema.\ntemario: unidad 1: fundamentos y metodologias (contenidos detallados no visibles en los extractos.)"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_11",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "temario: unidad 1: fundamentos y metodologias (contenidos detallados no visibles en los extractos.)\nunidad 2: analisis para el desarrollo de sistemas herramientas case modelado de requerimientos elementos de los casos de uso especificacion de casos de uso vistas de procesos modelado de procesos diagramas de procesos diagrama de actividades\nunidad 3: diseno estatico de sistema disena sistemas de tecnologia de la informacion a traves de los modelo de datos, diagramas de clases, despliegue, paquetes y componentes. vista logica diagrama de clases diseno del modelo de datos diagrama de despliegue diagrama de paquetes diagrama de componentes"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_12",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad 4: diseno dinamico de sistema disena sistemas de tecnologia de la informacion a traves de los diagramas de secuencia, estados, distribucion y uso de tarjetas crc y el diseno de interfaces. tarjetas clase responsabilidad y colaboracion (crc) diagrama de secuencia diagrama de estados diseno de interfaces de usuario diseno primario de interfaces diagrama de navegacion de sistema diagrama de distribucion\nresultados de aprendizaje: disena sistemas de tecnologia de la informacion a traves de los modelo de datos, diagramas de clases, despliegue, paquetes y componentes. disena sistemas de tecnologia de la informacion a traves de los diagramas de secuencia, estados, distribucion y uso de tarjetas crc y el diseno de interfaces.\nprerrequisitos: ninguno\n--------------------------------------------------------------------------------"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_13",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "prerrequisitos: ninguno\n--------------------------------------------------------------------------------\nmateria: aprendizaje de maquina carrera: iia semestre: 5 objetivo: implementa sistemas de aprendizaje automatizado a partir de sus principios, algoritmos y analisis de complejidad.\ntemario: unidad 1: principios del aprendizaje de maquina inspecciona una maquina de aprendizaje de acuerdo a la tarea que desarrolla, su complejidad, el modo de aprendizaje y su desempeno. (contenidos detallados no visibles en los extractos.)\nunidad 2: algoritmos para tareas descriptivas aprendizaje analitico basado en induccion analisis de componentes principales mapas auto organizados asociacion de reglas analisis de correlacion"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_14",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad 3: algoritmos para tareas predictivas resuelve problemas de prediccion a partir de algoritmos de maquinas de aprendizaje. clasificadores principios matematicos bayesianos esperanza de maximizacion regresion lineal no lineal maquinas de soporte vectorial conceptos algoritmos kernel no lineal algoritmos basados en instancias metodos de ensamble algoritmo boosting y bagging bosques aleatorios\nunidad 4: aprendizaje de series de tiempo construye maquinas de aprendizaje predictivas a partir de modelos de series de tiempo. estacionalidad modelos autoregresivos y de promedio movil proceso ar proceso pm modelos ocultos de markov"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_15",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad 5: programacion dinamica y aprendizaje por refuerzo implementa maquinas de aprendizaje descriptivas con base en algoritmos por refuerzo. programacion dinamica ecuacion fundamental tipos de problemas de la programacion dinamica aprendizaje por refuerzo caracteristicas marco de trabajo exploracion y explotacion algoritmos para aprendizaje por refuerzo algoritmo q algoritmo sarsa recompensas y acciones no-deterministas\nresultados de aprendizaje: inspecciona una maquina de aprendizaje de acuerdo a la tarea que desarrolla, su complejidad, el modo de aprendizaje y su desempeno. resuelve problemas de prediccion a partir de algoritmos de maquinas de aprendizaje. construye maquinas de aprendizaje predictivas a partir de modelos de series de tiempo. implementa maquinas de aprendizaje descriptivas con base en algoritmos por refuerzo.\nprerrequisitos: ninguno\n--------------------------------------------------------------------------------"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_16",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "prerrequisitos: ninguno\n--------------------------------------------------------------------------------\nmateria: bases de datos carrera: iia semestre: 3 objetivo: construye modelos y bases de datos a partir de metodologias de diseno, sistemas gestores de bases de datos y el lenguaje sql.\ntemario: unidad 1: sistemas de bases de datos (contenidos detallados no visibles en los extractos.)\nunidad 2: modelo entidad-relacion (contenidos detallados no visibles en los extractos.)\nunidad 3: modelo relacional gestiona bases de datos relacionales a partir de su modelo, restricciones y operaciones del algebra relacional. fundamentos del modelo relacional dominios, atributos, tuplas y relaciones caracteristicas y propiedades de las relaciones notacion del modelo relacional"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_17",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad 4: dependencias funcionales y formas normales dependencias funcionales fundamentos de dependencia funcional regla de inferencia equivalencia de conjuntos conjuntos minimos formas normales primera, segunda y tercera forma normal forma normal de boyce - codd\nunidad 5: lenguaje sql gestiona bases de datos relacionales a partir del lenguaje sql. creacion y modificacion de esquemas de bases de datos relacionales con sql instrucciones create database, drop database instrucciones create table, alter table y drop table instrucciones create view, create index instrucciones insert, delete, update y triggers instruccion selec-from-where funciones agregadas y agrupacion procedimientos almacenados (store procedures)\nresultados de aprendizaje: gestiona bases de datos relacionales a partir de su modelo, restricciones y operaciones del algebra relacional. gestiona bases de datos relacionales a partir del lenguaje sql.\nprerrequisitos: algebra lineal algoritmos y estructuras de datos"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_18",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "prerrequisitos: algebra lineal algoritmos y estructuras de datos\n--------------------------------------------------------------------------------\nmateria: calculo multivariable carrera: iia semestre: 2 objetivo: resuelve problemas de ingenieria con base en las derivadas parciales e integrales multiples.\ntemario: unidad 1: vectores y funciones vectoriales reconoce las funciones vectoriales a partir de las operaciones entre vectores. sistemas de coordenadas vectores producto cruz producto punto funciones vectoriales curvas en el espacio\nunidad 2: derivadas parciales (contenidos detallados no visibles en los extractos.)\nunidad 3: integrales multiples (contenidos detallados no visibles en los extractos.)\nunidad 4: teoremas de integracion resuelve aplicaciones en ingenieria a partir de los teoremas de integracion. teorema de green teorema de stokes teorema de gauss aplicaciones"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_19",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "resultados de aprendizaje: reconoce las funciones vectoriales a partir de las operaciones entre vectores. resuelve aplicaciones en ingenieria a partir de los teoremas de integracion.\nprerrequisitos: calculo\n--------------------------------------------------------------------------------\nmateria: calculo carrera: lcd semestre: 1 objetivo: soluciona problemas del area de la ingenieria a partir del calculo diferencial y tecnicas de integracion.\ntemario: unidad 1: funciones algebraicas y trascendentes analiza las funciones a partir de sus propiedades y las diferentes representaciones. funciones algebraicas representaciones: algebraica, geometrica, numerica y verbal propiedades: monotonia, simetria, periodicidad funciones inversas funciones trascendentes exponenciales naturales y generales logaritmicas naturales y generales trigonometricas y trigonometricas inversas hiperbolicas e hiperbolicas inversas transformaciones de funciones"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_20",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad 2: limites de funciones y continuidad (contenidos detallados no visibles en los extractos.)\nunidad 3: derivada y sus aplicaciones resuelve problemas de razones de cambio relacionadas, diferenciales y optimizacion a partir de las reglas y criterios de derivacion. derivada pendiente, velocidad y razon de cambio derivada en un punto y en diferentes intervalos reglas de derivacion derivacion de funciones algebraicas y trascendentes regla de la cadena derivacion implicita y derivacion explicita derivadas de orden superior razones de cambio relacionadas diferencial de una funcion maximos y minimos criterios de la primera y segunda derivada graficas de funciones optimizacion\nunidad 4: tecnicas de integracion (contenidos detallados no visibles en los extractos.)\nunidad 5: integral definida y sus aplicaciones (contenidos detallados no visibles en los extractos.)"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_21",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad 5: integral definida y sus aplicaciones (contenidos detallados no visibles en los extractos.)\nresultados de aprendizaje: analiza las funciones a partir de sus propiedades y las diferentes representaciones. resuelve problemas de razones de cambio relacionadas, diferenciales y optimizacion a partir de las reglas y criterios de derivacion.\nprerrequisitos: ninguno\n--------------------------------------------------------------------------------\nmateria: computo paralelo carrera: iia semestre: 6 objetivo: disena aplicaciones paralelas con base en el computo paralelo."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_22",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "temario: unidad 1: acercamiento al computo paralelo describe los tipos arquitectura paralela con base en sus alcances, caracteristicas y aplicaciones. motivacion, bases y alcances del computo paralelo: caracteristicas comunicacion entre procesos programas concurrentes, paralelos y distribuidos hilos exactitud de los programas concurrentes sistemas distribuidos arquitecturas de computadoras paralelas procesadores multinucleo arreglos de procesadores computadoras multiprocesadores clusters computadoras de arquitecturas no convencionales redes de interconexion taxonomia de flyn instruccion unica, flujo de datos unico (sisd) instruccion unica, flujo de datos multiple (simd) instrucciones multiples, flujo de datos unico (misd) instrucciones multiples, flujo de datos multiple (mimd) aplicaciones modelos de computo paralelo modelos de memoria compartida modelos interconexion de red, memoria distribuida o paso de mensajes modelo de flujo de datos aplicaciones"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_23",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad 2: diseno y analisis de programas paralelos (contenidos detallados no visibles en los extractos.)\nunidad 3: programacion paralela en sistemas de memoria compartida elabora programas paralelos con base en las politicas y la memoria compartida. computo paralelo usando memoria compartida arquitecturas multi-nucleo y multi-socket modelos de memoria compartida cache numero de caches tamanos del cache mapeo de bloques de memoria a bloques de cache politica de escritura politica write-through politica write-back coherencia de cache protocolos snooping protocolos basados en directorio consistencia de memoria consistencia secuencial interfaces de programacion de aplicaciones (apis) y lenguajes de programacion"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_24",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad 4: programacion paralela en sistemas distribuidos elabora programas paralelos con base en las politicas y la memoria distribuida. computo paralelo usando memoria distribuida arquitecturas de red arquitectura de memoria distribuida con acoplamientos fuerte y debil arquitectura de memoria distribuida con acoplamiento bajo ruteo algoritmos de ruteo para transmision y multitransmision algoritmos de estancamiento y ruteo conmutacion conmutacion de conexion conmutacion de paquetes apis y lenguajes de programacion\nunidad 5: programacion basada en el flujo de datos elabora programas paralelos con base en principios de aceleradores paralelos y procesadores de flujo. computo paralelo usando flujos de datos aceleradores paralelos principios caracteristicas aplicaciones procesadores de flujo apis y lenguajes de programacion"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_25",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "resultados de aprendizaje: describe los tipos arquitectura paralela con base en sus alcances, caracteristicas y aplicaciones. elabora programas paralelos con base en las politicas y la memoria compartida. elabora programas paralelos con base en las politicas y la memoria distribuida. elabora programas paralelos con base en principios de aceleradores paralelos y procesadores de flujo.\nprerrequisitos: algoritmos y estructuras de datos\n--------------------------------------------------------------------------------\nmateria: comunicacion oral y escrita carrera: iia semestre: i objetivo: emplea la expresion oral y escrita asertiva en diferentes contextos y audiencias de acuerdo con las caracteristicas de la comunicacion en el siglo xxi.\ntemario: unidad 1: comunicacion asertiva identifica la importancia de la comunicacion asertiva a partir de sus caracteristicas y aplicaciones en el contexto social."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_26",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad 2: comunicacion oral 1.1 comunicacion oral caracteristicas, elementos y cualidades de la comunicacion oral 1.2 tipos de discurso oral 1.3 planeacion y produccion del discurso publico estrategias y tecnicas para la presentacion oral presentacion oral del discurso\nunidad 3: comunicacion escrita (contenido detallado no visible en los extractos.)\nunidad 4: comunicacion en el siglo xxi modifica su practica comunicativa a partir de las caracteristicas socioculturales y tecnologicas del siglo xxi. 4.1 comunicacion en el siglo xxi la comunicacion como manifestacion sociocultural 4.2 las tecnologias de la informacion y comunicacion y sus diversos usos cambios de habitos y practicas en la comunicacion el acceso y tratamiento de la informacion por medio de las tic potencial y riesgos de las tic"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_27",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "resultados de aprendizaje: identifica la importancia de la comunicacion asertiva a partir de sus caracteristicas y aplicaciones en el contexto social. modifica su practica comunicativa a partir de las caracteristicas socioculturales y tecnologicas del siglo xxi.\nprerrequisitos: ninguno\n--------------------------------------------------------------------------------\nmateria: desarrollo de habilidades sociales para la alta direccion carrera: iia semestre: viii objetivo: desarrolla habilidades personales, sociales y directivas en la integracion de equipos directivos, con base en una vision estrategica de liderazgo y de toma de decisiones.\ntemario: unidad 1: fundamentos de la alta direccion y planeacion estrategica (contenido detallado no visible en los extractos.)"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_28",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "temario: unidad 1: fundamentos de la alta direccion y planeacion estrategica (contenido detallado no visible en los extractos.)\nunidad 2: habilidades personales y sociales para la alta direccion desarrolla habilidades personales y sociales requeridas en la alta direccion a partir del autoconocimiento e inteligencia emocional. 2.1 habilidades personales para la alta direccion autoconocimiento dimensiones fundamentales y areas del autoconocimiento evaluacion de habilidades: manejo del estres y el bienestar, eliminacion de factores estresantes, resiliencia y bienestar administracion del tiempo inteligencia emocional (ie) y alta direccion clasificacion de la ie (personal e interpersonal) y su relacion con el exito del directivo 2.2 habilidades sociales para la alta direccion desarrollo de relaciones sociales positivas comunicacion efectiva, intrapersonal e interpersonal asertividad: caracteristicas de la persona asertiva conducta etica manejo del conflicto"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_29",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad 3: habilidades directivas gestiona equipos de trabajo en las organizaciones a partir del desarrollo de habilidades directivas. 3.1 habilidades organizacionales de comunicacion comunicacion empresarial 3.2 equipos efectivos de trabajo formacion de equipos retos de los equipos de trabajo operacion de equipos de trabajo 3.3 liderazgo estrategico liderazgo para el desarrollo de los colaboradores motivacion en los equipos de trabajo teorias de la motivacion motivacion y desempeno coaching proceso de coaching coaching en la empresa 3.4 toma de decisiones etica en la toma de decisiones 3.5 estrategias de negociacion tecnicas de negociacion obstaculos en las negociaciones relaciones publicas\nresultados de aprendizaje: desarrolla habilidades personales y sociales requeridas en la alta direccion a partir del autoconocimiento e inteligencia emocional. gestiona equipos de trabajo en las organizaciones a partir del desarrollo de habilidades directivas."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_30",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "prerrequisitos: comunicacion oral y escrita ingenieria, etica y sociedad fundamentos economicos finanzas empresariales liderazgo personal\n--------------------------------------------------------------------------------\nmateria: diseno de sistemas digitales carrera: iia semestre: iii objetivo: desarrolla habilidades de diseno de sistemas digitales secuenciales a partir del analisis, sintesis e implementacion de circuitos logicos secuenciales, asi como el desarrollo de algoritmos para su descripcion usando lenguaje de descripcion de hardware (hdl)."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_31",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "temario: unidad 1: registros utiliza los distintos tipos de registros a partir del empleo del lenguaje de descripcion de hardware (hdl) en la transferencia de datos. 1.1 registros y su clasificacion registros entrada serial salida serial registros entrada serial salida paralela registros entrada paralela salida serial registros entrada paralela salida paralela registro barrel shifter 1.2 diseno de registros con control de carga sincrona y asincrona 1.3 programacion de registros con lenguaje de descripcion de hardware"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_32",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad 2: diseno de sistemas digitales desarrolla circuitos logicos secuenciales a partir de los modelos deterministas de mealy y de moore y su descripcion en lenguaje de descripcion de hardware (hdl). 2.1 automata finito determinista con salida y sin salida 2.2 maquina de mealy y de moore 2.3 diseno de maquinas de mealy y moore usando flipflops jk, sr, t, d 2.4 reduccion de estados usando metodo tabular e implicantes primos 2.5 aplicaciones con automatas y lenguaje de descripcion de hardware\nunidad 3: contadores desarrolla distintos tipos de contadores, a partir del lenguaje de descripcion de hardware. 3.1 contadores asincronos y sincronos diseno de contadores secuenciales y no secuenciales 3.2 diseno de contador johnson y su representacion en hdl 3.3 diseno de contador de anillo y su representacion en hdl 3.4 diseno de contador bcd y su representacion en hdl 3.5 aplicaciones con contadores y su representacion en hdl"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_33",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad 4: memorias utiliza los distintos tipos de memorias en aplicaciones en sistemas digitales con base en el lenguaje de descripcion de hardware. 4.1 memorias y su clasificacion 4.2 memorias ram, sram y dram 4.3 memorias rom, prom, eprom, eeprom y flash 4.4 tipos especiales de memorias, fifo y nvram 4.5 modulos de memorias 4.6 manejo de arreglos y diseno de memorias ram, rom y fifo con lenguaje de descripcion de hardware\nunidad 5: maquina de estado algoritmica aplica la metodologia de diseno de circuitos logicos secuenciales con base en el uso de cartas asm, hdl y dispositivos logicos programables. 5.1 carta asm 5.2 diseno de la ruta de datos 5.3 automata de la unidad de control 5.4 manejo de archivos, funciones, procedimientos, paquetes y componentes con lenguaje de descripcion de hardware 5.5 aplicaciones con cartas asm y su representacion con hdl"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_34",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "resultados de aprendizaje: utiliza los distintos tipos de registros a partir del empleo del lenguaje de descripcion de hardware (hdl) en la transferencia de datos. desarrolla circuitos logicos secuenciales a partir de los modelos deterministas de mealy y de moore y su descripcion en lenguaje de descripcion de hardware (hdl). desarrolla distintos tipos de contadores, a partir del lenguaje de descripcion de hardware. utiliza los distintos tipos de memorias en aplicaciones en sistemas digitales con base en el lenguaje de descripcion de hardware. aplica la metodologia de diseno de circuitos logicos secuenciales con base en el uso de cartas asm, hdl y dispositivos logicos programables.\nprerrequisitos: fundamentos de diseno digital\n--------------------------------------------------------------------------------"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_35",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "prerrequisitos: fundamentos de diseno digital\n--------------------------------------------------------------------------------\nmateria: ecuaciones diferenciales carrera: iia semestre: iii objetivo: soluciona problemas de ecuaciones diferenciales de primer orden y de orden superior a traves de las transformadas de laplace y fourier y de otras metodologias.\ntemario: unidad 1: ecuaciones diferenciales de primer orden resuelve las ecuaciones diferenciales de primer orden de acuerdo a sus metodos de solucion. 1.1 clasificacion de las ecuaciones diferenciales 1.2 problemas de valor inicial 1.3 teorema de existencia y unicidad 1.4 metodos de solucion ecuaciones diferenciales de variables separables ecuaciones diferenciales exactas ecuaciones diferenciales lineales soluciones por sustitucion 1.4.5 modelos lineales 1.4.6 modelos no lineales 1.5 aplicaciones"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_36",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad 2: ecuaciones diferenciales de orden superior soluciona problemas de ecuaciones diferenciales de orden superior de acuerdo a sus metodos de solucion. 2.1 problemas de valor inicial y de valor en la frontera 2.2 ecuaciones diferenciales homogeneas y no homogeneas ecuaciones diferenciales con coeficientes constantes 2.3 metodos de solucion reduccion de orden coeficientes indeterminados ecuaciones lineales homogeneas con coeficientes constantes variacion de parametros 2.4 ecuacion de cauchy-euler ecuaciones lineales homogeneas con coeficientes variables ecuaciones lineales no homogeneas con coeficientes variables 2.5 ecuaciones no lineales series de taylor"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_37",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad 3: transformada de laplace resuelve problemas de ecuaciones diferenciales a traves de la transformada de laplace y de sus teoremas de traslacion. 3.1 aspectos importantes de la transformada de laplace linealidad transformada inversa de laplace teorema de convolucion teorema de una derivada y de una integral 3.2 teoremas de traslacion primer teorema de traslacion funcion escalon unitario segundo teorema de traslacion 3.3 funcion delta de dirac transformada de la funcion delta de dirac 3.4 aplicaciones\nunidad 4: transformada de fourier resuelve problemas de ecuaciones diferenciales a traves de las integrales y transformadas de fourier. 4.1 convergencia de una serie de fourier 4.2 integral de fourier convergencia de la integral de fourier integrales seno y coseno de fourier forma compleja 4.3 transformadas de fourier transformada de fourier transformada seno de fourier transformada coseno de fourier transformada discreta de fourier"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_38",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "resultados de aprendizaje: resuelve las ecuaciones diferenciales de primer orden de acuerdo a sus metodos de solucion. soluciona problemas de ecuaciones diferenciales de orden superior de acuerdo a sus metodos de solucion. resuelve problemas de ecuaciones diferenciales a traves de la transformada de laplace y de sus teoremas de traslacion. resuelve problemas de ecuaciones diferenciales a traves de las integrales y transformadas de fourier.\nprerrequisitos: calculo multivariable\n--------------------------------------------------------------------------------\nmateria: finanzas empresariales carrera: iia semestre: 2 objetivo: determina estados financieros pro forma y proyectos de inversion con base en las normas de informacion financiera (nif), el valor del dinero en el tiempo, la planeacion y sus metodos de evaluacion.\ntemario: unidad 1: la empresa y su contexto (contenido detallado no visible en los extractos.)"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_39",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "temario: unidad 1: la empresa y su contexto (contenido detallado no visible en los extractos.)\nunidad 2: importancia y utilizacion de la informacion financiera explica los estados financieros basicos con base en las normas de informacion financiera (nif). 2.1 la informacion financiera 2.2 las normas de informacion financiera (nif) 2.3 estados financieros basicos estado de situacion financiera (balance general) estado de resultados\nunidad 3: analisis financiero analiza la informacion de los estados financieros con base en los metodos de analisis financiero. 3.1 el analisis financiero en la empresa 3.2 metodos para el analisis financiero analisis vertical analisis horizontal 3.3 analisis del punto de equilibrio operacional modelo matematico del punto de equilibrio con un producto modelo matematico del punto de equilibrio con multiproductos"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_40",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad 4: estados financieros proforma calcula estados financieros proforma a partir del valor del dinero en el tiempo y la planeacion financiera. 4.1 valor del dinero en el tiempo valor presente valor futuro 4.2 anualidades 4.3 la planeacion financiera el presupuesto maestro 4.4 estados financieros proforma\nunidad 5: metodos de evaluacion de proyectos de inversion examina los proyectos de inversion a partir de sus metodos de evaluacion. 5.1 los proyectos de inversion 5.2 proceso de preparacion y evaluacion de proyectos 5.3 metodos de evaluacion de proyectos de inversion metodo del periodo de recuperacion de la inversion (pri) metodo del rendimiento sobre la inversion (rsi) costo  beneficio valor presente neto (vpn) tasa interna de rendimiento (tir) indice de rentabilidad (ir)"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_41",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "resultados de aprendizaje: explica los estados financieros basicos con base en las normas de informacion financiera (nif). analiza la informacion de los estados financieros con base en los metodos de analisis financiero. calcula estados financieros proforma a partir del valor del dinero en el tiempo y la planeacion financiera. examina los proyectos de inversion a partir de sus metodos de evaluacion.\nprerrequisitos: fundamentos economicos.\n--------------------------------------------------------------------------------\nmateria: formulacion y evaluacion de proyectos informaticos carrera: iia semestre: vii objetivo: proporcionar los conocimientos que permitan el analisis, diseno, gestion de recursos y riesgos de proyectos informaticos.\ntemario: unidad 1: planteamiento del proyecto plantea un proyecto con base en la idea concepto, los medios de determinacion de alcance y las herramientas de gestion. (contenido detallado no visible en los extractos.)"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_42",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad 2: estudio de factibilidad (contenido detallado no visible en los extractos.)\nunidad 3: desarrollo de un proyecto desarrolla proyectos con base en la metodologia de gestion de riesgos y los sistemas de mejora continua. 3.1 gestion de riesgos de un proyecto analisis cualitativo de los riesgos analisis cuantitativo de los riesgos planes de contingencia monitoreo y control de riesgos 3.2 sistema de mejora continua kaizen metodologia gemba just in time\nunidad 4: (titulo no especificado) (contenido detallado no visible en los extractos.)\nunidad 5: (titulo no especificado) (contenido detallado no visible en los extractos.)\nresultados de aprendizaje: plantea un proyecto con base en la idea concepto, los medios de determinacion de alcance y las herramientas de gestion. desarrolla proyectos con base en la metodologia de gestion de riesgos y los sistemas de mejora continua.\nprerrequisitos: finanzas empresariales."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_43",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "prerrequisitos: finanzas empresariales.\n--------------------------------------------------------------------------------\nmateria: fundamentos de diseno digital carrera: iia semestre: 2 objetivo: construye sistemas logicos combinacionales y de memoria a partir de su representacion booleana, los lenguajes de descripcion de hardware y dispositivos reconfigurables.\ntemario: unidad 1: principios de diseno de sistemas digitales resuelve problemas de diseno de sistemas digitales combinatorios a partir del algebra de boole y los metodos de karnaugh y mccluskey. 1.1 estado del arte de sistemas digitales 1.2 algebra de boole 1.3 metodo grafico de mapa de karnaugh 1.4. metodo tabular de quine mccluskey 1.5 aplicaciones de circuitos digitales combinatorios"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_44",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad 2: tecnologia y lenguajes de descripcion de dispositivos logicos programables utiliza los dispositivos logicos programables y lenguajes de descripcion de hardware a partir de sus caracteristicas y sentencias de programacion. 2.1 escala de integracion de los circuitos integrados (ci) 2.2 caracteristicas de las familias logicas 2.3 dispositivos logicos programables (pld) 2.4 lenguajes de descripcion de hardware (hdl) estructura de un programa en hdl estilos de programacion sentencias concurrentes y secuenciales"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_45",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad 3: logica combinacional desarrolla circuitos de logica combinacional a partir de su representacion booleana y su descripcion en dispositivos logicos programables. 3.1 circuito sumador/restador representacion booleana descripcion en hdl (lenguajes de descripcion de hardware) usando dispositivos logicos programables 3.2 circuito convertidor de codigo representacion booleana descripcion en hdl (lenguajes de descripcion de hardware) usando dispositivos logico programables 3.3 circuito comparador de magnitud representacion booleana descripcion en hdl (lenguajes de descripcion de hardware) usando dispositivos logicos programables 3.4 circuitos multiplexor y demultiplexor teorema de expansion de shannon descripcion en hdl (lenguajes de descripcion de hardware) usando dispositivos logicos programables 3.5 circuitos codificador y decodificador representacion booleana descripcion en hdl (lenguajes de descripcion de hardware) usando dispositivos logicos programables"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_46",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad 4: elementos basicos de memoria desarrolla los elementos basicos de memoria a partir de los multivibradores astables en ci y biestables en flip-flops. 4.1 multivibradores en configuracion monoestable, biestable y astable 4.2 configuraciones monoestable y astable del temporizador 555 4.3 elementos de memoria tipo latch sr, jk, t y d 4.4 elementos de memoria tipo flip-flop sr, jk, t y d 4.5 descripcion con hdl de elementos de memoria"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_47",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "resultados de aprendizaje: resuelve problemas de diseno de sistemas digitales combinatorios a partir del algebra de boole y los metodos de karnaugh y mccluskey. utiliza los dispositivos logicos programables y lenguajes de descripcion de hardware a partir de sus caracteristicas y sentencias de programacion. desarrolla circuitos de logica combinacional a partir de su representacion booleana y su descripcion en dispositivos logicos programables. desarrolla los elementos basicos de memoria a partir de los multivibradores astables en ci y biestables en flip-flops.\nprerrequisitos: matematicas discretas.\n--------------------------------------------------------------------------------\nmateria: fundamentos economicos carrera: iia, lcd semestre: 1, 2 objetivo: examina las economias nacional e internacional con base en los enfoques micro y macroeconomico, asi como la economia circular y la sustentabilidad."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_48",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "temario: unidad 1: economia describe la economia a partir de los sistemas, modelos, el campo y la competencia. (contenido detallado no visible en los extractos.)\nunidad 2: microeconomia compara el comportamiento del productor y consumidor a partir de los equilibrios de compra y de produccion de bienes y servicios. 2.1 elementos de microeconomia 2.2 el comportamiento del consumidor gustos y preferencias de consumo utilidad y preferencia (superficie de utilidad) curvas de indiferencia y sus caracteristicas posibilidades de consumo. la restriccion presupuestal utilidad total y utilidad marginal maximizacion de la utilidad y el equilibrio de compra del consumidor 2.3 el comportamiento del productor importancia de la empresa en el ciclo economico la empresa y su problema economico teoria de produccion de corto y de largo plazo teoria de costos de corto y de largo plazo el equilibrio de produccion de bienes y servicios"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_49",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad 3: teoria del mercado analiza el equilibrio del mercado con base en las leyes de la oferta y la demanda. 3.1 teoria del mercado 3.2 demanda factores de la demanda y ley de la demanda elasticidades precio, ingreso y cruzada 3.3 oferta factores de la oferta y ley de la oferta elasticidades precio y cruzada 3.4 equilibrio del mercado precio como regulador y equilibrio del mercado\nunidad 4: macroeconomia (contenido detallado no visible en los extractos.) 4.4 riesgo pais calificadoras indicadores de referencia 4.5 sistema financiero mexicano bolsa mexicana de valores banco de mexico"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_50",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad 5: economia internacional y sustentabilidad especifica la importancia del ingeniero en inteligencia artificial en la economia circular y la sustentabilidad de acuerdo con el sistema financiero y comercio internacional. 5.1 sistema financiero internacional fondo monetario internacional ocde banco mundial banco interamericano banco de desarrollo 5.2 importancia del comercio internacional el comercio internacional y su impacto e-commerce y sus reglas 5.3 economia circular tecnologia verde: cloud computing: infraestructura, servicios y plataformas. 5.4 el ingeniero en inteligencia artificial y la sustentabilidad organismos internacionales organismos nacionales"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_51",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "resultados de aprendizaje: describe la economia a partir de los sistemas, modelos, el campo y la competencia. compara el comportamiento del productor y consumidor a partir de los equilibrios de compra y de produccion de bienes y servicios. analiza el equilibrio del mercado con base en las leyes de la oferta y la demanda. especifica la importancia del ingeniero en inteligencia artificial en la economia circular y la sustentabilidad.\nprerrequisitos: ninguno\n--------------------------------------------------------------------------------\nmateria: fundamentos de inteligencia artificial carrera: iia semestre: iv objetivo: disena sistemas inteligentes a partir de algoritmos de busqueda, modelos de representacion de conocimiento y aprendizaje de maquina.\ntemario: unidad 1: inteligencia artificial (contenido detallado no visible en los extractos.)"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_52",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "temario: unidad 1: inteligencia artificial (contenido detallado no visible en los extractos.)\nunidad 2: algoritmos de busqueda implementa el algoritmo de busqueda correspondiente con base en la caracterizacion y espacio de busqueda de un problema. 2.1. problemas y espacios de busqueda caracterizacion de problemas espacios de busqueda 2.2. algoritmos de busqueda no informados busqueda en anchura busqueda en profundidad 2.3. algoritmos de busqueda informados heuristica algoritmo de escalada simple y primero el mejor algoritmo a 2.4. busqueda adversaria algoritmo minmax algoritmo poda alpha beta 2.5. comparacion de algoritmos busqueda"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_53",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad 3: modelos de representacion del conocimiento emplea el modelo de representacion de acuerdo con las caracteristicas y taxonomia del conocimiento. 3.1. conocimiento caracteristicas y taxonomia modelos y sus caracteristicas 3.2. logica de primer orden razonamiento en la logica proposicional lenguaje de predicados formas normales 3.3. razonamiento basado en reglas reglas de inferencia encadenamiento hacia adelante y hacia atras ontologias 3.4. modelos de llenado de ranuras redes semanticas y marcos dependencia conceptual y guiones 3.5. modelos de conocimiento incierto e incompleto factores de certidumbre logica difusa"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_54",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad 4: aprendizaje de maquina construye maquinas de aprendizaje validas a partir de los tipos y algoritmos de aprendizaje. 4.1. aprendizaje modelo de aprendizaje supervisado y su... 4.3. algoritmos basados en distancia agrupamiento por k-medias 4.4. arboles de decision representacion algoritmos id3 y c4.5 4.5. metodos de validacion entrenamiento y prueba validacion cruzada: dejar uno fuera, k grupos, bootstrap matriz de confusion\nresultados de aprendizaje: implementa el algoritmo de busqueda correspondiente con base en la caracterizacion y espacio de busqueda de un problema. emplea el modelo de representacion de acuerdo con las caracteristicas y taxonomia del conocimiento. construye maquinas de aprendizaje validas a partir de los tipos y algoritmos de aprendizaje.\nprerrequisitos: analisis y diseno de algoritmos.\n--------------------------------------------------------------------------------"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_55",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "prerrequisitos: analisis y diseno de algoritmos.\n--------------------------------------------------------------------------------\nmateria: fundamentos de programacion carrera: iia semestre: 1 objetivo: programa aplicaciones a partir de sentencias de control, funciones, apuntadores y archivos.\ntemario: unidad 1: programacion estructurada analiza la programacion de computadoras a partir de sus fundamentos, el lenguaje c y el diseno estructurado. 1.1. fundamentos de programacion arquitectura de von neumann clasificaciones de los lenguajes de programacion herramientas de programacion 1.2 programacion en el lenguaje c lenguaje en c tipos de datos primitivos y operadores aritmeticos manejo de la entrada y salida estandar sentencias de control arreglos 1.3 programacion y diseno estructurado teorema de la programacion estructurada caracteristicas de un programa estructurado diseno estructurado - modularidad"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_56",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad 2: apuntadores, tipos de datos estructurados y funciones desarrolla programas en lenguaje c con base en el uso de apuntadores, tipos definidos por el usuario y funciones. 2.1 apuntadores apuntadores y direcciones de memoria operadores de direccion e indireccion aritmetica de apuntadores manejo de arreglos con apuntadores 2.2 datos definidos por el usuario declaracion de una estructura instancia de estructura y apuntador a estructura operadores de estructura arreglos de estructuras estructuras anidadas 2.3 funciones funciones argumentos y parametros paso por valor y paso por referencia retorno de la funcion bibliotecas creadas por el usuario 2.4 funciones recursivas recursion pasos base y pasos recursivos tipos de recursion recursion versus iteracion"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_57",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad 3: manejo de memoria dinamica y archivos elabora programas de computadora a partir del manejo de archivos de texto, binarios y la memoria dinamica. 3.1 arquitectura de memoria harvard von neumann memoria de un proceso en el modelo de memoria unica 3.2 memoria dinamica reservacion dinamica de memoria acceso y direccionamiento a arreglos dinamicos liberacion de memoria memoria estatica vs. memoria dinamica 3.3 archivos archivos de acceso secuencial y de acceso directo creacion y/o apertura de archivos lectura/escritura de archivos en modo texto lectura/escritura de archivos en modo binario cierre de archivos procesamiento y redireccionamiento de flujos de entrada y salida"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_58",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "resultados de aprendizaje: analiza la programacion de computadoras a partir de sus fundamentos, el lenguaje c y el diseno estructurado. desarrolla programas en lenguaje c con base en el uso de apuntadores, tipos definidos por el usuario y funciones. elabora programas de computadora a partir del manejo de archivos de texto, binarios y la memoria dinamica.\nprerrequisitos: ninguno\n--------------------------------------------------------------------------------\nmateria: gestion empresarial carrera: iia semestre: viii objetivo: gestiona organizaciones de innovacion tecnologica con base en las competencias gerenciales."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_59",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "temario: unidad i: aspectos basicos de la gestion empresarial analiza la gestion empresarial con base en su clasificacion y constitucional legal. las organizaciones (clasificacion, constitucion legal segun la ley de sociedades mercantiles y la ley de sociedades civiles) objetivo de la administracion, objetivo de la gestion empresarial funciones basicas de la gestion empresarial, diferencias entre administrar y gestionar."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_60",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad ii: gestion estrategica en las empresas de innovacion tecnologica aplica la gestion estrategica en las empresas de innovacion tecnologica con base en las diferentes herramientas, la filosofia y su cultura organizacional. factores de competitividad que afectan la gestion empresarial filosofia corporativa de empresas de innovacion tecnologica estrategia y cultura organizacional de empresas de innovacion tecnologica implementacion de la estrategia (planes, programas, presupuestos y procedimientos, incluyendo el cuadro de mando integral) herramientas de gestion estrategica (analisis foda y desarrollo de estrategias, modelos de negocio, modelo de diamante de porter, plan comercial, plan maestro)."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_61",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad iii: gestion operativa de la empresa integra la gestion operativa en la empresa, con base en su estructura organizacional y la innovacion tecnologica. estructura organizacional (division del trabajo, coordinacion, especializacion, jerarquizacion, departamentalizacion y unidad de mando) innovacion y tecnologia (la tecnologia como factor intangible de competitividad, tecnologias emergentes) manejo de cambio e innovacion herramientas de gestion operativa (reingenieria de los procesos de negocio, transformacion de la estructura y la cultura organizacional, evaluacion tecnologica de la empresa, optimizacion de los recursos tecnologicos)."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_62",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad iv: gestion del capital humano y la calidad integra la gestion del capital humano y la calidad en la empresa, con base en el marco normativo de las relaciones laborales. capital humano (funciones del departamento), marco normativo de las relaciones laborales calidad (control estadistico, calidad total) herramientas de gestion del capital humano y de calidad (las 5s, just in time, analisis funcional, benchmarking, erp).\nunidad v: tendencias en la gestion empresarial aplica los aspectos legales y sus habilidades digitales con base en las tendencias y tecnologias digitales. aspectos legales (propiedad intelectual, uso de informacion digital) responsabilidad social y sustentabilidad habilidades digitales (learnability, teamability, networking, adaptability) tecnologias y tendencias digitales (internet de las cosas, inteligencia artificial, inteligencia de negocios, blockchain y la nube)."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_63",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "resultados de aprendizaje: analiza la gestion empresarial con base en su clasificacion y constitucional legal. aplica la gestion estrategica en las empresas de innovacion tecnologica con base en las diferentes herramientas, la filosofia y su cultura organizacional. integra la gestion operativa en la empresa, con base en su estructura organizacional y la innovacion tecnologica. integra la gestion del capital humano y la calidad en la empresa, con base en el marco normativo de las relaciones laborales. aplica los aspectos legales y sus habilidades digitales con base en las tendencias y tecnologias digitales.\nprerrequisitos: se relaciona de manera antecedente con fundamentos economicos, finanzas empresariales, formulacion y evaluacion de proyectos informaticos, liderazgo personal e ingenieria de software para sistemas inteligentes y de manera lateral con desarrollo de habilidades sociales para la alta direccion."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_64",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "--------------------------------------------------------------------------------\nmateria: ingenieria de software para sistemas inteligentes carrera: iia semestre: vi objetivo: aplica la ingenieria de software en el desarrollo y gestion de proyectos a partir de las metodologias, los procesos y tecnicas de aseguramiento de la calidad.\ntemario: unidad i: la ingenieria de software y su importancia reconoce la importancia de la ingenieria de software a partir del ciclo de vida del sistema, del desarrollo de software, las caracteristicas de un sistema y la gestion de proyectos. contextualizacion a la ingenieria de software (atributos y caracteristicas del software, importancia y aplicacion) ciclo de vida del sistema ciclo de desarrollo del software (modelos: cascada, incremental, prototipos o desarrollo rapido de aplicaciones, espiral) caracteristicas de un sistema la gestion de proyectos (historia, caracteristicas, nociones)."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_65",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad ii: proceso de gestion de proyectos desarrolla proyectos a partir de su planificacion, los estudios de factibilidad, el analisis del riesgo, la gestion de recursos, metodologias de estimacion y modelos de supervision. estudio de factibilidad (tecnica, temporal, humana u operacional) analisis de riesgo (tipificacion, mapas de riegos, planes de contingencia) recursos (humanos, tecnicos, operativos, integracion) estimacion (metricas, modelos de estimacion) planificacion del proyecto (calendario de actividades, diagrama de gantt, diagrama de pert) supervision y control del plan de proyecto."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_66",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad iii: metodologias de gestion de proyectos desarrolla la gestion de proyectos a partir de las consideraciones y herramientas de las metodologias clasicas y agiles de desarrollo. metodologias clasicas (cascada, ssadm, justo a tiempo (jit), metrica v3, prince 2) metodologias agiles (manifiesto agil, caracteristicas, programacion extrema, crystal) metodologia scrum (planificacion de la pila de producto -product backlog, planeacion de la iteracion -sprint, tipos de reuniones) validacion y aceptacion de proyectos.\nunidad iv: calidad y normas de calidad aplica los criterios de calidad en los sistemas a partir de los modelos y normas de calidad. contextualizacion de la calidad, calidad de sistemas de informacion calidad del producto software modelos y normas de calidad (iso 9000, iso 25000, ieee std 1061-1998, iso/iec 15939)."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_67",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad v: otras tematicas de la ingenieria de software aplica tecnicas adicionales a partir del modelado, aplicacion de pruebas, la atencion de sistemas heredados, el proceso de reingenieria, los modelos de madurez de sistemas y organizaciones. modelado y aplicacion de pruebas (pruebas de caja negra, caja blanca, integracion, sistema) atencion a sistemas heredados reingenieria (procesos de negocio, del software, reestructuracion, ingenieria inversa, ingenieria directa) madurez de sistemas y organizaciones (modelo de capacidad de madurez -cmm, modelo de capacidad de madurez integrado -cmmi, modelos y niveles de madurez en cobit y en itil)."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_68",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "resultados de aprendizaje: reconoce la importancia de la ingenieria de software a partir del ciclo de vida del sistema, del desarrollo de software, las caracteristicas de un sistema y la gestion de proyectos. desarrolla proyectos a partir de su planificacion, los estudios de factibilidad, el analisis del riesgo, la gestion de recursos, metodologias de estimacion y modelos de supervision. desarrolla la gestion de proyectos a partir de las consideraciones y herramientas de las metodologias clasicas y agiles de desarrollo. aplica los criterios de calidad en los sistemas a partir de los modelos y normas de calidad. aplica tecnicas adicionales a partir del modelado, aplicacion de pruebas, la atencion de sistemas heredados, el proceso de reingenieria, los modelos de madurez de sistemas y organizaciones."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_69",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "prerrequisitos: se relaciona de manera antecedente con paradigmas de programacion y bases de datos de manera lateral con analisis y diseno de sistemas y de manera consecuente con formulacion y evaluacion de proyectos informaticos, trabajo terminal i y trabajo terminal ii.\n--------------------------------------------------------------------------------\nmateria: ingenieria, etica y sociedad carrera: iia semestre: 2 objetivo: valora las implicaciones eticas y el impacto social del ejercicio profesional de la ingenieria en inteligencia artificial, a partir del desarrollo historico del conocimiento, la evolucion cientifica y tecnologica, asi como el marco regulatorio de la disciplina."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_70",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "temario: unidad i: desarrollo historico del conocimiento cientifico y tecnologico explica el avance cientifico y tecnologico a partir de la evolucion del conocimiento. evolucion del conocimiento (sujeto y sociedad, conocimiento empirico, cientifico, tecnologico y cultural) desarrollo historico de la tecnologia (artefactos, tecnica y tecnologia, impacto del avance en la sociedad) ciencia moderna (metodos de la ciencia moderna, el metodo cientifico: ventajas y limitaciones, clasificacion de las ciencias, nuevos retos de la ciencia).\nunidad ii: revoluciones industriales: tecnologia e impacto analiza la reconfiguracion social, economica, politica y cultural a partir de las caracteristicas tecnologicas en las revoluciones industriales. las revoluciones industriales (caracteristicas de la tecnologia y su impacto social, economico, politico y cultural), incluyendo la primera, segunda, tercera y cuarta revolucion."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_71",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad iii: ingenieria y sociedad distingue la importancia de la ingenieria en la sociedad, con base en el desarrollo historico y prospectiva de la profesion. importancia de la ingenieria y su funcion social (surgimiento, escuelas de ingenieria, funciones) retos de la ingenieria en el siglo xxi (perfil del ingeniero para las organizaciones inteligentes) la ingenieria como profesion transdisciplinar."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_72",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad iv: etica e ingenieria en inteligencia artificial relaciona la importancia de la inteligencia artificial con sus retos e implicaciones en la sociedad, a partir de los fundamentos eticos y legales. etica y moral (fundamentos, diferencia, principios y valores) la etica y la ingenieria artificial (integridad academica y profesional, mision del profesionista) dilemas eticos en inteligencia artificial (leyes, normas y reglamentos nacionales e internacionales, codigos eticos, codigos profesionales, codigo de etica) retos e implicaciones sociales (sustentabilidad, salud, equidad de genero, derechos humanos)."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_73",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad v: inteligencia artificial, productividad y sustentabilidad plantea la importancia de la sustentabilidad en la practica de la ingenieria en inteligencia artificial, de acuerdo con los principios de pertinencia y equidad de los modelos productivos emergentes. sustentabilidad e inteligencia artificial (modelos productivos emergentes, impacto ambiental, normatividad) principios de eficiencia, eficacia, pertinencia y equidad en los modelos productivos emergentes (sistemas de calidad)."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_74",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "resultados de aprendizaje: explica el avance cientifico y tecnologico a partir de la evolucion del conocimiento. analiza la reconfiguracion social, economica, politica y cultural a partir de las caracteristicas tecnologicas en las revoluciones industriales. distingue la importancia de la ingenieria en la sociedad, con base en el desarrollo historico y prospectiva de la profesion. relaciona la importancia de la inteligencia artificial con sus retos e implicaciones en la sociedad, a partir de los fundamentos eticos y legales. plantea la importancia de la sustentabilidad en la practica de la ingenieria en inteligencia artificial, de acuerdo con los principios de pertinencia y equidad de los modelos productivos emergentes.\nprerrequisitos: se relaciona de manera antecedente con comunicacion oral y escrita y consecuentemente con liderazgo personal.\n--------------------------------------------------------------------------------"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_75",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "--------------------------------------------------------------------------------\nmateria: liderazgo personal carrera: iia semestre: iii objetivo: aplica modelos y estrategias de liderazgo personal en las relaciones colaborativas y en la toma de decisiones con base en sus principios, procedimientos y tecnologia.\ntemario: unidad i: principios del liderazgo reconoce el liderazgo a partir de habilidades personales. principios del liderazgo (tipos y modelos de liderazgo, liderazgo basado en estilos de personalidad, desarrollo del liderazgo, coaching) inteligencia emocional (control de emociones, autodisciplina, manejo de la postergacion, habitos para el exito) administracion del tiempo (gestion de prioridades, eficacia vs. eficiencia, planificacion) mision y vision del lider (autoconocimiento, identidad vs. comportamientos, intereses vs. habilidades)."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_76",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad ii: interaccion e influencia en relaciones colaborativas analiza la interaccion e influencia en las relaciones colaborativas a partir de estrategias, principios y valores. interaccion con personas (espiritu de equipo, escucha activa, empatia, comunicacion de autoconocimiento) principios y valores (defensa de la etica y valores, integridad, manejo de la diversidad, responsabilidad social y ambiental) relaciones y redes (construccion de rapport, manejo de conflictos, uso del humor) persuadir e influir (negociacion y acuerdos, presentacion y comunicacion de informacion)."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_77",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad iii: conocimiento y tecnologias para la toma de decisiones utiliza herramientas tecnologicas de produccion y gestion de conocimiento en la toma de decisiones, con base en sus procedimientos y principios. produccion y gestion del conocimiento (tecnologias para la recopilacion, analisis y evaluacion de la informacion, pensamiento sistemico, redes de gestion del conocimiento) experiencia tecnologica para la toma de decisiones (construccion y aplicacion de la experiencia tecnica, pensamiento global, recursos tecnologicos para la toma de decisiones, creatividad, creacion e innovacion)."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_78",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad iv: liderazgo adaptativo para el desarrollo de talento esboza estrategias de desarrollo de talento con base en las cualidades del liderazgo adaptativo. liderazgo adaptativo (adaptacion y respuesta al cambio, conciencia multicultural, tratamiento de la ambiguedad, enfrentamiento de la presion y autocontrol emocional, equilibrio entre trabajo y vida personal) supervision y desarrollo del talento (delegacion, motivacion, identificacion y seleccion de talento).\nresultados de aprendizaje: reconoce el liderazgo a partir de habilidades personales. analiza la interaccion e influencia en las relaciones colaborativas a partir de estrategias, principios y valores. utiliza herramientas tecnologicas de produccion y gestion de conocimiento en la toma de decisiones, con base en sus procedimientos y principios. esboza estrategias de desarrollo de talento con base en las cualidades del liderazgo adaptativo.\nprerrequisitos: ingenieria, etica y sociedad."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_79",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "prerrequisitos: ingenieria, etica y sociedad.\n--------------------------------------------------------------------------------\nmateria: matematicas avanzadas para la ingenieria carrera: iia semestre: iv objetivo: aplica metodos y modelos matematicos a partir de funciones de variable compleja y vectoriales, de la descomposicion y analisis de matrices y de los principios de entropia e informacion mutua.\ntemario: unidad i: variable compleja, sus funciones y series identifica las funciones analiticas y elementales de una variable compleja a partir de las caracteristicas y propiedades de los numeros complejos. numeros complejos (operaciones, formas exponenciales, conjugados) funciones analiticas (limites, continuidad, derivacion, coordenadas polares) funciones elementales (exponencial, logaritmo, trigonometrica, hiperbolica) integracion (integral definida y de contorno) series (convergencia de series de potencias complejas, serie de taylor, serie de laurent)."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_80",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad ii: optimizacion de funcion vectorial calcula valores maximos y minimos de una funcion vectorial. funcion objetivo (derivada direccional y gradiente, matriz jacobiana, matriz hessiana) metodo de newton-raphson optimizacion basada en gradiente (descenso de gradiente, ascenso de colinas) optimizacion restringida (metodo jacobiano, metodo lagrangiano, metodo de karush-kuhn-tucker (kkt)) ejemplos de optimizacion (minimos cuadrados lineales).\nunidad iii: algebra lineal avanzada determina la descomposicion de una matriz con base en sus normas. normas (l1, l2, norma de frobenius) descomposicion de una matriz (descomposicion en valores propios, descomposicion en valores singulares) operador traza y sus propiedades analisis de componentes principales."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_81",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad iv: teoria de la informacion aplica la teoria de la informacion en diferentes actividades basado en la entropia de las variables aleatorias. entropia de variable discreta (definicion de informacion y entropia, entropia conjunta, condicional, relativa, cruzada, propiedades de entropia) informacion mutua aplicaciones de la teoria de informacion (inteligencia artificial, codificacion de mensajes, compresion de datos, criptografia).\nresultados de aprendizaje: identifica las funciones analiticas y elementales de una variable compleja a partir de las caracteristicas y propiedades de los numeros complejos. calcula valores maximos y minimos de una funcion vectorial. determina la descomposicion de una matriz con base en sus normas. aplica la teoria de la informacion en diferentes actividades basado en la entropia de las variables aleatorias."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_82",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "prerrequisitos: se relaciona de manera antecedente con matematicas discretas, calculo, calculo multivariable, de manera lateral con probabilidad y estadistica y de manera consecuente con aprendizaje de maquina, vision artificial, procesamiento de senales, algoritmos bioinspirados y tecnologias de lenguaje natural.\n--------------------------------------------------------------------------------\nmateria: matematicas discretas carrera: iia semestre: i objetivo: plantea algoritmos matematicos y estructuras discretas a traves de sus propiedades y argumentos validos con un lenguaje formal.\ntemario: unidad i: logica demuestra argumentos y equivalencias con base en el algebra de proposiciones y las reglas de inferencia. equivalencias (proposiciones, equivalencias logicas, algebra de proposiciones) inferencias (reglas de inferencia, demostraciones directas e indirectas) cuantificadores (proposiciones abiertas, lenguaje natural, equivalencias e inferencias)."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_83",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad ii: teoria de conjuntos aplica las propiedades de los conjuntos con base en su algebra y formulas de cardinalidad. conjuntos (operadores, algebra de conjuntos) cardinalidad (formulas basicas, principio de inclusion y exclusion) conjunto potencia y producto cartesiano.\nunidad iii: numeros enteros aplica la induccion matematica y los algoritmos con base en las propiedades algebraicas y de divisibilidad de los numeros enteros. propiedades de los numeros enteros divisibilidad (algoritmo de la division, maximo comun divisor y minimo comun multiplo, teorema fundamental de la aritmetica, algoritmo de euclides) induccion matematica (problemas de igualdad, divisibilidad, orden, generalizacion) sistemas de numeracion (algoritmo de cambio de base, relacion binario/hexadecimal, operaciones en base b)."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_84",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad iv: estructuras discretas para la computacion integra estructuras discretas en problemas computacionales con base en sus propiedades. algebras y funciones booleanas (propiedades, sumas de miniterminos y productos de maxiterminos, representacion en circuitos combinatorios, reduccion por mapas de karnaugh) relaciones (propiedades, relaciones reflexivas, irreflexivas, simetricas, antisimetricas y transitivas) relaciones de orden y relaciones de equivalencia (relaciones de orden total y parcial, conjunto cociente) enteros modulo n (congruencia modulo n, teorema chino del residuo) grafos y arboles (grafos dirigidos/no dirigidos/conexos, recorridos eulerianos/hamiltonianos, algoritmo del camino mas corto, recorridos en profundidad/amplitud)."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_85",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "resultados de aprendizaje: demuestra argumentos y equivalencias con base en el algebra de proposiciones y las reglas de inferencia. aplica las propiedades de los conjuntos con base en su algebra y formulas de cardinalidad. aplica la induccion matematica y los algoritmos con base en las propiedades algebraicas y de divisibilidad de los numeros enteros. integra estructuras discretas en problemas computacionales con base en sus propiedades.\nprerrequisitos: se relaciona de manera lateral con fundamentos de programacion y de manera consecuente con algoritmos y estructuras de datos, fundamentos de diseno digital y bases de datos.\n--------------------------------------------------------------------------------\nmateria: mecanica y electromagnetismo carrera: iia semestre: i objetivo: aplica la mecanica y el electromagnetismo a problemas teoricos a partir de sus principios teoricos basicos."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_86",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "temario: unidad i: mecanica resuelve problemas de ingenieria a partir de los principios basicos de la cinematica, dinamica y conservacion de la energia. cinematica (movimiento rectilineo, movimiento en el plano: tiro parabolico y movimiento circular uniforme) dinamica (leyes de newton, marcos de referencia inerciales, diagrama de cuerpo libre, tipos de fuerzas) conservacion de la energia (trabajo, energia cinetica y energia potencial, conservacion de la energia mecanica)."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_87",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad ii: electrostatica resuelve ejercicios tipicos y problemas de ingenieria a partir de los principios basicos de campo electrico, ley de gauss y el potencial electrico. campo electrico (carga electrica: ley de coulomb, principio de superposicion, particulas cargadas, dipolo electrico) ley de gauss (flujo de campo electrico, aplicaciones de la ley de gauss: esfera, cilindro, plano y linea de carga) potencial electrico (diferencia de potencial, potencial debido a distribuciones de carga, campo electrico como gradiente del potencial).\nunidad iii: magnetismo resuelve problemas de ingenieria a partir de las leyes fisicas que involucran el campo magnetico y la fuerza magnetica. campo magnetico (campo de induccion magnetica, flujo magnetico, ley de gauss para el magnetismo) movimiento de particulas cargadas fuerza magnetica sobre un conductor con corriente fuentes de campo magnetico (ley de biot-savart, ley de ampere)."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_88",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "resultados de aprendizaje: resuelve problemas de ingenieria a partir de los principios basicos de la cinematica, dinamica y conservacion de la energia. resuelve ejercicios tipicos y problemas de ingenieria a partir de los principios basicos de campo electrico, ley de gauss y el potencial electrico. resuelve problemas de ingenieria a partir de las leyes fisicas que involucran el campo magnetico y la fuerza magnetica.\nprerrequisitos: ninguno\n--------------------------------------------------------------------------------\nmateria: metodologia de la investigacion y divulgacion cientifica carrera: iia semestre: vi objetivo: aplica el lenguaje cientifico en un discurso y la metodologia de la investigacion cientifica en un protocolo a partir de sus caracteristicas, criterios, etapas y resultados."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_89",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "temario: unidad i: metodologia de la investigacion cientifica distingue las caracteristicas de la metodologia de la investigacion cientifica, con base en las cualidades del metodo cientifico. conocimiento y ciencia (tipos de conocimiento, clasificacion de la ciencia) el metodo cientifico (caracteristicas, etapas y elementos, aplicacion) metodologia de la investigacion cientifica (etapas de la investigacion, dimensiones, metodos generales y tipos de investigacion)."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_90",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad ii: el protocolo de investigacion construye un protocolo de investigacion, a partir de las caracteristicas y criterios de cada una de sus etapas. el protocolo de investigacion (construccion del objeto de estudio, planteamiento y delimitacion del problema, justificacion, propositos, objetivos y metas, formulacion de hipotesis) diseno de la investigacion (metodologia, tipos e identificacion de variables, muestreo) fundamentacion teorica (funciones del marco teorico y estado del arte, proceso de revision documental, construccion de perspectiva teorica, lenguaje academico, etica y plagio) recogida de datos (tecnicas e instrumentos de recoleccion, experimentacion), cronograma."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_91",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad iii: comunicacion y divulgacion cientifica emplea el discurso cientifico en la divulgacion de los resultados de una investigacion cientifica, a partir de un informe escrito. discurso cientifico y comunicacion cientifica (estructura del discurso cientifico) el informe final (caracteristicas, tipos de informe, analisis de datos, enjuiciamiento y conclusiones, sugerencias y recomendaciones) exposicion de textos cientificos (tipos de textos cientificos, exposicion del protocolo, preparacion del material audiovisual, aspectos para la exposicion oral).\nresultados de aprendizaje: distingue las caracteristicas de la metodologia de la investigacion cientifica, con base en las cualidades del metodo cientifico. construye un protocolo de investigacion, a partir de las caracteristicas y criterios de cada una de sus etapas. emplea el discurso cientifico en la divulgacion de los resultados de una investigacion cientifica, a partir de un informe escrito."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_92",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "prerrequisitos: la presente unidad se relaciona de manera antecedente con comunicacion oral y escrita, y de manera consecuente con trabajo terminal i.\n--------------------------------------------------------------------------------\nmateria: paradigmas de programacion carrera: iia semestre: iii objetivo: crea soluciones computacionales con base en los fundamentos y tecnicas de diferentes lenguajes de programacion y sus paradigmas."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_93",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "temario: unidad i: introduccion a los lenguajes de programacion y sus paradigmas identifica los lenguajes de programacion y sus paradigmas fundamentales con base en sus caracteristicas, abstracciones, manejo de los datos y aplicaciones. lenguajes y paradigmas (criterios, relacion entre lenguajes y paradigmas, paradigmas fundamentales: imperativo y declarativo) programacion funcional (lenguajes funcionales, calculo lambda, funciones puras/de orden superior, expresiones lambda, recursion sobre listas, funciones polimorficas) programacion logica (lenguajes logicos, elementos de la programacion logica, calculo de predicados, logica de primer orden, reglas recursivas)."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_94",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad ii: programacion orientada a objetos disena programas de computo con base en la implementacion de clases y sus diferentes relaciones. clases y objetos (atributos, metodos, constructores y destructores, encapsulamiento) relaciones entre clases (asociacion, agregacion y composicion, herencia simple/multiple) manejo de excepciones polimorfismo (clases abstractas, interfaces).\nunidad iii: lenguajes multiparadigma y de uso especifico evalua casos de uso y aplicaciones con base en el uso de lenguajes multiparadigma y de tendencia. lenguajes orientados a eventos (patron de arquitectura: modelo-vista-controlador, interfaces graficas de usuario) lenguajes orientados a servicios (analisis y diseno orientado a servicios, arquitectura orientada a servicios, microservicios) otros lenguajes de programacion de uso especifico y tendencias (lenguajes para bases de datos, computo cientifico, ciencia de datos, programacion asincrona)."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_95",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "resultados de aprendizaje: identifica los lenguajes de programacion y sus paradigmas fundamentales con base en sus caracteristicas, abstracciones, manejo de los datos y aplicaciones. disena programas de computo con base en la implementacion de clases y sus diferentes relaciones. evalua casos de uso y aplicaciones con base en el uso de lenguajes multiparadigma y de tendencia.\nprerrequisitos: se relaciona de manera antecedente con matematicas discretas, fundamentos de programacion y algoritmos y estructuras de datos lateralmente con analisis y diseno de algoritmos y consecuente con teoria de la computacion y analisis y diseno de sistemas.\n--------------------------------------------------------------------------------\nmateria: probabilidad y estadistica carrera: iia semestre: iv objetivo: construye modelos estadisticos y probabilisticos a partir de la inferencia estadistica parametrica, regresion e inferencia causal."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_96",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "temario: unidad i: estadistica descriptiva caracteriza una muestra de datos a partir de los descriptores, graficas y matriz de covarianza. poblaciones, fuentes de muestras de datos y variabilidad descriptores muestrales de centralizacion y dispersion (media, mediana, varianza muestral, desviacion estandar, intercuartiles) histogramas, graficas de caja y bigote herramientas graficas para observaciones multivariadas covarianza y matriz de covarianza muestral.\nunidad ii: probabilidad distingue las funciones de distribucion de probabilidad a partir de su clasificacion. medidas de probabilidad (eventos independientes, medidas de probabilidad condicional, teorema de bayes) variables aleatorias funciones de distribucion de probabilidad (univariadas, conjuntas, multivariadas, gaussiana) clasificacion de una funcion de distribucion (distribucion geometrica, exponencial, de poisson, binomial, binomial negativa)."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_97",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad iii: inferencia estadistica parametrica prueba hipotesis a diferentes estimadores a partir de inferencias estadisticas. estimadores y estimacion puntual (sesgo, error cuadratico medio, estimadores basados en momentos y maxima verosimilitud) estimacion por intervalos (intervalo de confianza) pruebas de hipotesis (simple, de contraste) elementos de inferencia estadistica (teorema de bayes en el contexto estadistico, distribuciones a priori y a posteriori).\nunidad iv: regresion descubre el comportamiento de variables a partir de los metodos de regresion. regresion lineal (metodo de los minimos cuadrados, multivariable) regresion logistica soluciones numericas del metodo de minimos cuadrados para regresion no lineal prediccion y clasificacion estadistica."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_98",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad v: inferencia causal construye modelos probabilisticos con base en la inferencia causal. inferencia causal (modelos probabilisticos, causalidad) modelos causales (razones para estudiar causalidad, paradoja de simpson, modelos causales estructurales) modelos graficos en la estadistica inferencial (cadenas y tenedores) efectos de intervenciones (criterios backdoor y frontdoor).\nresultados de aprendizaje: caracteriza una muestra de datos a partir de los descriptores, graficas y matriz de covarianza. distingue las funciones de distribucion de probabilidad a partir de su clasificacion. prueba hipotesis a diferentes estimadores a partir de inferencias estadisticas. descubre el comportamiento de variables a partir de los metodos de regresion. construye modelos probabilisticos con base en la inferencia causal."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_99",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "prerrequisitos: esta unidad se relaciona de manera precedente con matematicas discretas, calculo y calculo multivariable, lateralmente con matematicas avanzadas para la ingenieria y de manera consecuente con aprendizaje de maquina, vision artificial, procesamiento de senales y tecnologias de lenguaje natural.\n--------------------------------------------------------------------------------\nmateria: procesamiento digital de imagenes carrera: iia semestre: iv objetivo: aplica diferentes tecnicas en el procesamiento de imagenes digitales con base en los tipos de imagenes y modelos de color. la unidad contribuye al perfil del ingeniero en inteligencia artificial desarrollando conocimientos y habilidades tecnicas para procesar imagenes digitales y aplicarlas posteriormente en el campo de vision artificial."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_100",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "temario: unidad i: imagenes digitales distingue los tipos de imagenes digitales con base en los modelos de color, tipo de almacenamiento y ruido. elementos de la percepcion visual (estructura del ojo humano, formacion de la imagen, adaptacion al brillo, luz y espectro electromagnetico) procesamiento de imagenes digitales (areas de aplicacion, etapas, componentes de un sistema, adquisicion usando sensores) muestreo y cuantizacion de imagenes digitales (representacion, indexacion linear y coordinada, resolucion espacial y de intensidad, teoria del color, modelos del color) clasificacion de imagenes (bitmap vs vector, formatos de archivos) histogramas y estadisticas de imagen (generacion, acumulativo, informacion estadistica, el ruido y su tratamiento)."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_101",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad ii: transformaciones basicas realiza transformaciones de imagenes a partir de la conversion entre modelos de color, histograma, operaciones aritmeticas y operaciones logicas. operaciones basicas de transformacion (geometricas, aritmeticas con un escalar, negativo de una imagen, umbralizado) operaciones entre imagenes (aritmeticas y logicas) conversion entre modelos de color (a escala de grises, a color (pseudocolor), a otros modelos de color) modificacion del histograma (desplazamiento, expansion y contraccion, ecualizacion, correspondencia, transformaciones radiometricas)."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_102",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad iii: transformaciones de vecindad realiza transformaciones de imagenes a partir de relaciones entre pixeles y filtros lineales y no lineales. relaciones basicas entre pixeles (vecinos de un pixel, adyacencia, conectividad, regiones y fronteras, distancia entre pixeles) ruido (tipos de ruido, tipos de filtro) filtros lineales (la convolucion discreta de imagenes, filtros pasa-altas como gradiente, canny, sobel filtros pasa-bajas como promediador, gaussiano) filtros no lineales (filtros de orden como mediana, moda, maximo, minimo) aplicaciones."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_103",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad iv: morfologia matematica realiza transformaciones de imagenes con base en morfologia matematica. morfologia matematica de conjuntos (imagen binaria como conjunto, operaciones entre conjuntos, elemento de estructura, operaciones de dilatacion, erosion, apertura y cierre, otras transformaciones morfologicas como bordes internos y externos, hit-or-miss) morfologia matematica de lattices (imagen en escala de grises como lattice, operaciones entre lattices, operaciones de dilatacion y erosion, apertura y cierre, otras transformaciones morfologicas en lattices como gradiente morfologico, top-hat, bot-hat).\nunidad v: modificacion de la imagen en el dominio de la frecuencia aplica modificaciones a imagenes a partir del filtrado en el dominio de la frecuencia. transformada de fourier y dominio de la frecuencia filtros de suavizado en el dominio de la frecuencia filtros de mejoramiento de nitidez en el dominio de la frecuencia."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_104",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "resultados de aprendizaje: distingue los tipos de imagenes digitales con base en los modelos de color, tipo de almacenamiento y ruido. realiza transformaciones de imagenes a partir de la conversion entre modelos de color, histograma, operaciones aritmeticas y operaciones logicas. realiza transformaciones de imagenes a partir de relaciones entre pixeles y filtros lineales y no lineales. realiza transformaciones de imagenes con base en morfologia matematica. aplica modificaciones a imagenes a partir del filtrado en el dominio de la frecuencia.\nprerrequisitos: esta unidad de aprendizaje se relaciona de manera consecuente con vision artificial.\n--------------------------------------------------------------------------------\nmateria: procesamiento de senales carrera: iia semestre: v objetivo: analizar senales y sistemas discretos con base en la transformada de fourier, z y wavelet para su implementacion computacional."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_105",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "temario: unidad i: senales y sistemas discretos compara diferentes senales y sistemas discretos, asi como sus propiedades. introduccion al procesamiento de senales (digital frente a analogico, elementos de un sistema pds, aplicaciones) definicion de senales en tiempo discreto (secuencias unidimensionales, pares/impares, periodicas/aperiodicas, deterministicas/aleatorias, de energia/potencia, sinusoidales, exponencial real, impulso y escalon) sistemas discretos (definicion, clasificacion, linealidad, invariancia, estabilidad, causalidad) clasificacion de sistemas lti (filtros fir e iir), ecuaciones en diferencia operaciones con senales discretas (convolucion, correlacion, autocorrelacion)."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_106",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad ii: analisis de fourier en tiempo discreto emplea la transformada discreta de fourier (dft) para analisis de senales. transformada discreta de fourier (dft y periodicidad, idft, propiedades) transformada rapida de fourier (algoritmo por diezmacion en tiempo, aplicaciones como convolucion y correlacion lineal) ventaneo y respuesta en frecuencia (contenido espurio, uso de ventanas, ancho de banda y resolucion del analisis espectral).\nunidad iii: transformada z aplica la transformada z en analisis de sistemas discretos. definicion y region de convergencia de la transformada z propiedades funcion de transferencia, polos y ceros transformada z inversa (metodos de expansion en serie de potencias, en fracciones parciales, y el metodo de integral de inversion) causalidad y estabilidad."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_107",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad iv: filtros digitales disena sistemas fir, iir y adaptativos. diseno de filtros fir (estructuras, metodo de la ventana, metodo optimo) diseno de filtros iir (estructura, diseno por transformada bilineal, metodo optimo) filtros adaptativos (filtro fir optimo de wiener, filtros adaptable lms, aplicaciones).\nunidad v: topicos especiales aplica la transformada wavelet en el procesamiento de senales. sistema multi tasa bancos de filtros teoria de wavelets (continua y discreta, wavelet madre y funciones wavelet) transformada wavelet aplicaciones.\nresultados de aprendizaje: compara diferentes senales y sistemas discretos, asi como sus propiedades. emplea la transformada discreta de fourier (dft) para analisis de senales. aplica la transformada z en analisis de sistemas discretos. disena sistemas fir, iir y adaptativos. aplica la transformada wavelet en el procesamiento de senales."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_108",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "prerrequisitos: los antecedentes de esta unidad son calculo multivariable, matematicas avanzadas para ingenieria y procesamiento digital de imagenes. sus consecuentes son reconocimiento de voz y aplicaciones de inteligencia artificial en sistemas embebidos.\n--------------------------------------------------------------------------------\nmateria: reconocimiento de voz carrera: iia semestre: vii objetivo: desarrolla aplicaciones de reconocimiento de voz a partir de patrones estadisticos y redes neuronales."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_109",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "temario: unidad i: analisis de voz analiza las caracteristicas del reconocimiento del habla a partir del uso de modelos y metodos parametricos, no parametricos y estocasticos. reconocimiento de voz en la ia (caracteristicas acusticas, arquitectura de un sistema, aplicaciones) reconocimiento del locutor (adquisicion de la senal, extraccion de caracteristicas, modelado parametrico y no parametrico) reconocimiento del habla (cuantificacion vectorial, ajuste de plantillas, metodos estocasticos, tipos de sistemas de reconocimiento de voz).\nunidad ii: procesamiento de senales acusticas procesa senales acusticas con base en los modelos probabilisticos. muestreo y codificacion de voz (codificadores de lazo abierto, lazo cerrado y en el dominio de la frecuencia) modelado acustico (unidades acusticas, modelos probabilisticos, estimacion del modelo acustico) metodos para el entrenamiento (codificacion predictiva lineal, modelos ocultos de markov, redes neuronales artificiales)."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_110",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad iii: reconocimiento automatico de voz implementa redes neuronales de reconocimiento de voz con base en los principios de transformadas discretas y de fourier. tecnicas de patrones estadisticos (algoritmo k-vecinos mas cercanos (k-nn), algoritmo naive bayes, analisis discriminante con minimos cuadrados parciales y modelos penalizados) transformadas (transformada discreta del coseno, transformada discreta de wavelets, transformada de fourier) redes neuronales (redes neuronales para el reconocimiento de voz, redes neuronales convolucionales, entrenamiento de la red neuronal).\nresultados de aprendizaje: analiza las caracteristicas del reconocimiento del habla a partir del uso de modelos y metodos parametricos, no parametricos y estocasticos. procesa senales acusticas con base en los modelos probabilisticos. implementa redes neuronales de reconocimiento de voz con base en los principios de transformadas discretas y de fourier."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_111",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "prerrequisitos: esta unidad tiene como antecedentes computo paralelo, procesamiento de senales y tecnologias de lenguaje natural. es lateral a trabajo terminal i y consecuente a trabajo terminal ii.\n--------------------------------------------------------------------------------\nmateria: redes neurales y aprendizaje profundo carrera: iia semestre: vi objetivo: evalua modelos de redes neuronales con base en la aplicacion, la arquitectura, el modo de aprendizaje y su desempeno.\ntemario: unidad i: fundamentos de redes neurales examina redes neuronales con base en sus modelos, aplicaciones y desempeno. modelos de red neuronal (biologico, artificial) aplicaciones generales (clasificacion, asociacion y agrupacion, optimizacion) desempeno (habilidad de aproximacion, tiempo de aprendizaje, complejidad) modelo mcculloch-pitts (arquitectura, aplicaciones)."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_112",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad ii: el perceptron implementa el modelo de perceptron en problemas de clasificacion con base en su arquitectura y su regla de aprendizaje. arquitectura regla de aprendizaje perceptron simple perceptron multicapa aplicaciones.\nunidad iii: modelos supervisados implementa una red neuronal supervisada en problemas de asociacion a partir de su arquitectura y su regla de aprendizaje. modelo de propagacion hacia atras (arquitectura, regla de aprendizaje, fundamento teorico, generalizacion, complejidad) funciones de base radial (arquitectura, regla de aprendizaje, aplicaciones) redes recurrentes (memoria de hopfield, perceptron multicapa recurrente, recurrente con propagacion hacia atras) aplicaciones."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_113",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad iv: modelos no supervisados implementa un modelo neuronal no supervisado en problemas de agrupacion con base en la teoria de la resonancia adaptativa (art), mapas auto-organizativos y aplicaciones. teoria de la resonancia adaptativa (art discreto, art continuo, art difuso) mapas auto-organizativos de kohonen (regla de aprendizaje, modelo en una y dos dimensiones) aplicaciones.\nunidad v: redes neuronales profundas implementa una red neuronal profunda en problemas de clasificacion, asociacion y optimizacion a partir de metodos de regularizacion autoencoders, redes recurrentes y recursivas. redes convolucionales (mecanismo de aprendizaje) metodos de regularizacion autoencoders redes recurrentes redes recursivas."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_114",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "resultados de aprendizaje: examina redes neuronales con base en sus modelos, aplicaciones y desempeno. implementa el modelo de perceptron en problemas de clasificacion con base en su arquitectura y su regla de aprendizaje. implementa una red neuronal supervisada en problemas de asociacion a partir de su arquitectura y su regla de aprendizaje. implementa un modelo neuronal no supervisado en problemas de agrupacion con base en la teoria de la resonancia adaptativa (art), mapas auto-organizativos y aplicaciones. implementa una red neuronal profunda en problemas de clasificacion, asociacion y optimizacion a partir de metodos de regularizacion autoencoders, redes recurrentes y recursivas.\nprerrequisitos: esta unidad de aprendizaje tiene como antecedente aprendizaje de maquina. sus consecuentes incluyen reconocimiento de voz.\n--------------------------------------------------------------------------------"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_115",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "--------------------------------------------------------------------------------\nmateria: tecnologias para el desarrollo de aplicaciones web carrera: iia semestre: iv objetivo: desarrolla aplicaciones web a partir de las diferentes arquitecturas, patrones de diseno y buenas practicas.\ntemario: unidad i: contextualizacion y arquitecturas de desarrollo web distingue la importancia e implicaciones del desarrollo web a partir de sus modelos, arquitecturas y buenas practicas. contextualizacion al desarrollo web tecnologias fundamentales (html, java script) modelos de desarrollo (en 2 capas, 3 capas, basados en servicios) arquitecturas de desarrollo web (monoliticas, soap, rest) buenas practicas (control de versiones, patrones de diseno, criterios de seguridad, criterios de usabilidad)."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_116",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad ii: el desarrollo de aplicaciones del lado del servidor desarrolla sistemas y aplicaciones del lado del servidor a partir del manejo de frameworks, las buenas practicas y sus herramientas. uso de orm (mapeo objeto-relacional) frameworks de desarrollo web del lado del servidor (caracteristicas, eleccion, utilizacion) exposicion de servicios mensajes http buenas practicas (blindado de servicios, documentacion de servicios, generacion de componentes, generalizacion y optimizacion de codigo).\nunidad iii: desarrollo del lado cliente desarrolla sistemas y aplicaciones del lado del cliente a traves del manejo de frameworks, y las buenas practicas. diseno de interfaces graficas (html y css, java script, manejo del dom -modelo de objetos del documento) frameworks de desarrollo del lado cliente (caracteristicas, eleccion, utilizacion) consumo de servicios buenas practicas (responsividad, compatibilidad, validacion de campos, manejo de recursos)."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_117",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad iv: manejo y operacion de servidores y servicios establece las condiciones idoneas para las aplicaciones web a traves de contenedores, del montado y configuracion de servicios. tipos de servidores montado y configuracion de servicios manejo de contenedores automatizacion y liberacion de servicios.\nresultados de aprendizaje: distingue la importancia e implicaciones del desarrollo web a partir de sus modelos, arquitecturas y buenas practicas. desarrolla sistemas y aplicaciones del lado del servidor a partir del manejo de frameworks, las buenas practicas y sus herramientas. desarrolla sistemas y aplicaciones del lado del cliente a traves del manejo de frameworks, y las buenas practicas. establece las condiciones idoneas para las aplicaciones web a traves de contenedores, del montado y configuracion de servicios."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_118",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "prerrequisitos: esta unidad tiene como antecedentes paradigmas de programacion y bases de datos. es lateral a analisis y diseno de sistemas y consecuente con computo en la nube y programacion de dispositivos moviles.\n--------------------------------------------------------------------------------\nmateria: tecnologias de lenguaje natural carrera: iia semestre: v objetivo: aplica las tecnologias de lenguaje natural (tln) a partir de los procesos de normalizacion de textos, procesamiento semantico, extraccion de informacion, analisis de personalidad y opinion, de dialogo y traduccion automatica."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_119",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "temario: unidad i: contextualizacion y normalizacion de textos aplica procesos de normalizacion a textos en lenguaje natural. contextualizacion (sistemas y aplicaciones de lenguaje natural, fundamentos linguisticos y matematicos, lenguajes de programacion y librerias) normalizacion de textos (segmentacion en palabras y oraciones, eliminacion de elementos no relevantes, etiquetado con categorias gramaticales)."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_120",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad ii: procesamiento semantico de textos y extraccion de informacion extrae aspectos semanticos e informacion a partir de la representacion vectorial de textos, analisis sintactico y expresiones regulares. representacion vectorial de textos (modelo de bolsa de palabras, modelo de espacio vectorial) seleccion de caracteristicas en vectores (frecuencia, probabilidad de palabras, funciones tf-idf, tecnicas de mapeo de palabras a vectores numericos - word embeddings) extraccion de aspectos semanticos (palabras similares, asociaciones, terminologia, palabras clave) extraccion de informacion (analisis sintactico superficial y profundo, expresiones regulares, resumen automatico) generacion de respuestas a preguntas."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_121",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad iii: analisis de personalidad y opinion analiza aspectos de personalidad en textos a partir de rasgos y deteccion de polaridad. deteccion y analisis de aspectos de personalidad (edad, sexo, rasgos personales: extraversion, neurosis, simpatia, diligencia, franqueza) analisis de opinion (deteccion de polaridad con base en diccionarios o usando algoritmos de aprendizaje de maquina).\nunidad iv: sistemas de dialogo implementa sistemas de dialogo a partir de fundamentos de texto escrito y reconocimiento de voz. tipos y componentes de sistemas dialogo herramientas de implementacion agente conversacional basado en texto escrito agente conversacional basado en reconocimiento de voz y generacion de habla (fundamentos de reconocimiento de voz y generacion de habla)."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_122",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad v: traduccion automatica diferencia los sistemas de traduccion automatica a partir de sus caracteristicas. tipos de sistemas de traduccion automatica (basados en reglas, estadistica, ejemplos, redes neuronales, hibridos) caracterizacion de sistemas existentes (google translate, microsoft translator, ibm watson language translator, bing translator).\nresultados de aprendizaje: aplica procesos de normalizacion a textos en lenguaje natural. extrae aspectos semanticos e informacion a partir de la representacion vectorial de textos, analisis sintactico y expresiones regulares. analiza aspectos de personalidad en textos a partir de rasgos y deteccion de polaridad. implementa sistemas de dialogo a partir de fundamentos de texto escrito y reconocimiento de voz. diferencia los sistemas de traduccion automatica a partir de sus caracteristicas."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_123",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "prerrequisitos: los antecedentes incluyen algoritmos y estructuras de datos, probabilidad y estadistica, matematicas avanzadas para la ingenieria y fundamentos de inteligencia artificial. se relaciona lateralmente con aprendizaje de maquina y es consecuente con metodologia de la investigacion y divulgacion cientifica, y reconocimiento de voz.\n--------------------------------------------------------------------------------\nmateria: teoria de la computacion carrera: iia semestre: v objetivo: aplica los fundamentos y aplicaciones de la teoria de la computacion a partir de la teoria de automatas, expresiones regulares y lenguaje y maquina de turing."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_124",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "temario: unidad i: automatas finitos aplica automatas finitos deterministas (afd) y no deterministas (afnd) a partir de las caracteristicas del problema, manejo de alfabetos, procesamiento de cadenas y notaciones. contextualizacion (alfabetos, cadenas de caracteres, lenguajes) automatas finitos (reglas basicas, automatas de sistema completo) afd (procesamiento de cadenas, notaciones, lenguaje de un afd) afnd (contextualizacion, funcion de transicion extendida, equivalencias entre afd y afnd) automatas finitos con transiciones  ϵ (uso, clausulas epsilon, algoritmo de thompson)."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_125",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad ii: lenguajes y expresiones regulares aplica expresiones regulares a partir de las caracteristicas del problema, el algebra de expresiones regulares y los principios de un lenguaje. expresiones regulares (operadores, construccion, precedencia) automatas finitos y expresiones regulares (afd a expresiones regulares y viceversa) aplicacion de las expresiones regulares (analisis lexico, busqueda de patrones en textos) algebra de expresiones regulares (leyes de asociatividad, conmutatividad, distributivas, idempotencia, etc.) propiedades de los lenguajes naturales (demostracion de lenguajes no regulares, propiedades de clausura y decision de lenguajes regulares, equivalencia y minimizacion de automatas)."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_126",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad iii: automatas de pila aplica automatas de pila a partir de las caracteristicas del problema, el criterio de aceptacion y la aplicacion de gramaticas. definicion formal, notacion grafica y descripciones instantaneas lenguajes de un automata de pila (aceptacion por estado final y por pila vacia, equivalencias) equivalencias entre automatas de pila (gramaticas a automatas de pila y viceversa) automata de pila determinista y su relacion con lenguajes independientes del contexto y gramaticas."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_127",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad iv: maquina de turing construye una maquina de turing a partir de las caracteristicas del problema, su notacion, las tecnicas de programacion y las extensiones de la misma. problemas no computables la maquina de turing (notacion, descripciones instantaneas, diagramas de transicion, lenguaje de una mt, maquina de turing y parada) tecnicas de programacion (almacenamiento en el estado, pistas multiples, subrutinas) extensiones de la mt basica (mt de varias cintas, maquinas de turing no deterministas) maquinas de turing restringidas (mt con cintas semi-infinitas, mt con multiples pilas, maquinas contadoras)."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_128",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "resultados de aprendizaje: aplica automatas finitos deterministas (afd) y no deterministas (afnd) a partir de las caracteristicas del problema, manejo de alfabetos, procesamiento de cadenas y notaciones. aplica expresiones regulares a partir de las caracteristicas del problema, el algebra de expresiones regulares y los principios de un lenguaje. aplica automatas de pila a partir de las caracteristicas del problema, el criterio de aceptacion y la aplicacion de gramaticas. construye una maquina de turing a partir de las caracteristicas del problema, su notacion, las tecnicas de programacion y las extensiones de la misma.\nprerrequisitos: los antecedentes son algoritmos y estructuras de datos, paradigmas de programacion y analisis y diseno de sistemas. es consecuente con computo paralelo.\n--------------------------------------------------------------------------------"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_129",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "--------------------------------------------------------------------------------\nmateria: trabajo terminal i carrera: iia semestre: vii objetivo: desarrolla la primera fase de un proyecto cientifico o tecnologico en computo viable y factible con base en metodologias y tecnicas de desarrollo de sistemas.\ntemario: unidad i: planeacion de proyecto determina el plan de proyecto con base en su tipo y metodologia. proceso de planeacion de desarrollo (identificacion del tipo de proyecto, analisis de metodologias y el ciclo de vida del producto) administracion de proyectos planeacion (equipo de trabajo, delimitacion del proyecto, analisis y gestion de riesgos, metricas y estimacion del proyecto).\nunidad ii: analisis y diseno propone el diseno de un proyecto a partir de su analisis de requerimientos. analisis (delimitacion del proyecto, analisis de requerimientos, propuesta de arquitectura) diseno (modelado de datos, disenos funcionales)."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_130",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad iii: prototipos construye un prototipo con base en los estandares de desarrollo. administracion de cambios (control de versiones) verificacion y validacion (de requerimientos, de diseno, del costo) estandares de desarrollo (prototipos funcionales y no funcionales).\nresultados de aprendizaje: determina el plan de proyecto con base en su tipo y metodologia. propone el diseno de un proyecto a partir de su analisis de requerimientos. construye un prototipo con base en los estandares de desarrollo.\nprerrequisitos: los antecedentes incluyen ingenieria de software para sistemas inteligentes, analisis y diseno de sistemas, paradigmas de programacion y metodologia de la investigacion y divulgacion cientifica. su consecuente es trabajo terminal ii.\n--------------------------------------------------------------------------------"
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_131",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "--------------------------------------------------------------------------------\nmateria: trabajo terminal ii carrera: iia semestre: viii objetivo: implementa un proyecto cientifico o tecnologico en computo, con base en tecnicas y herramientas de desarrollo, y en la documentacion sistematica.\ntemario: unidad i: implementacion y pruebas verifica la implementacion de las partes de un proyecto a partir de pruebas unitarias o modulares. implementacion (estandares y procedimientos de codificacion, integracion de codigo, prototipo o servicios existentes) pruebas (plan de pruebas, elaboracion de escenarios y scripts de pruebas unitarias o modulares).\nunidad ii: integracion y resultados evalua los resultados del proyecto con base en las pruebas de integracion. integracion (interoperabilidad de elementos, pruebas de integracion, verificacion y validacion de resultados) analisis e interpretacion de resultados (identificacion de oportunidades de mejora) trabajo a futuro conclusiones."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_132",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad iii: presentacion y defensa del proyecto justifica el resultado final de un proyecto a partir de un reporte y una presentacion ejecutiva. reporte final del proyecto (analisis de similitud, revision de formatos) articulo tecnico (aplicacion de formatos de escritura de un articulo cientifico) presentacion ejecutiva del proyecto.\nresultados de aprendizaje: verifica la implementacion de las partes de un proyecto a partir de pruebas unitarias o modulares. evalua los resultados del proyecto con base en las pruebas de integracion. justifica el resultado final de un proyecto a partir de un reporte y una presentacion ejecutiva.\nprerrequisitos: los antecedentes incluyen trabajo terminal i, ingenieria de software para sistemas inteligentes, analisis y diseno de sistemas, paradigmas de programacion, formulacion y evaluacion de proyectos informaticos, liderazgo personal y metodologia de la investigacion y divulgacion cientifica."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_133",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "--------------------------------------------------------------------------------\nmateria: vision artificial carrera: iia semestre: v objetivo: implementa sistemas de vision artificial con base en los algoritmos de segmentacion de zonas de interes, extraccion de caracteristicas y reconocimiento.\ntemario: unidad i: fundamentos de vision artificial identifica la vision artificial, sus tareas y las similitudes con la vision humana. sistema visual humano la naturaleza de la vision (proceso de reconocimiento, ubicacion de objetos, analisis de escena, vision como graficos inversos) niveles de vision artificial (bajo nivel, nivel intermedio, alto nivel) aplicaciones."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_134",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad ii: segmentacion procesa imagenes para segmentar las regiones de interes. fundamentos (deteccion de puntos, lineas y bordes, umbralizado) analisis de forma en imagenes binarias (funciones de distancia, esqueletos y adelgazamiento) analisis de perimetro (seguimiento de perimetro, perfil centroidal, codigos de cadena) segmentacion (conexion entre pixeles, etiquetado y conteo, filtrado de tamano, segmentacion por crecimiento de regiones, por separacion-combinacion de regiones, segmentacion de regiones usando agrupamiento y super pixeles)."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_135",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad iii: reconocimiento de objetos en la imagen reconoce objetos en la imagen con base en la extraccion de caracteristicas descriptoras de las regiones en la imagen. sistemas de reconocimiento de imagenes (caracteristicas descriptoras, flujo de datos) caracteristicas descriptoras de perimetro (descriptores basicos, numeros de forma, descriptores de fourier, momentos estadisticos) descriptores de region (basicos, topologicos, de textura) componentes principales clasificacion (patrones y clases, patron vectorial, patron estructural, clasificacion)."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_136",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "unidad iv: vision en multiples dimensiones obtiene informacion de un mundo en tres dimensiones utilizando diferentes tecnicas y herramientas. la percepcion de profundidad (vision estereo y 2.5 dimensiones) multiples dimensiones (tres dimensiones, mas de tres dimensiones) tecnicas de percepcion de profundidad (nubes de puntos, luz estructurada) indicadores 3d en imagenes 2d (perspectiva, marcadores) aplicaciones (reconstruccion de objetos 3d usando vistas 2d, render de volumen, voxels).\nunidad v: seguimiento de movimiento crea programas que dan seguimiento al movimiento de los objetos mediante herramientas y algoritmos. fundamentos (cambios a traves del tiempo, deteccion de cambios) herramientas (geometria afin, estructura afin, triangulacion) flujo optico (vectores de movimiento, rutas de movimiento) seguimiento de movimiento (trayectorias, restricciones)."
+  },
+  {
+    "chunk_id": "TXTS/temarios_ia_normalizado_chunk_137",
+    "source": "TXTS/temarios_ia_normalizado.txt",
+    "text": "resultados de aprendizaje: identifica la vision artificial, sus tareas y las similitudes con la vision humana. procesa imagenes para segmentar las regiones de interes. reconoce objetos en la imagen con base en la extraccion de caracteristicas descriptoras de las regiones en la imagen. obtiene informacion de un mundo en tres dimensiones utilizando diferentes tecnicas y herramientas. crea programas que dan seguimiento al movimiento de los objetos mediante herramientas y algoritmos.\nprerrequisitos: esta unidad se relaciona de manera antecedente con fundamentos de inteligencia artificial."
+  }
+]

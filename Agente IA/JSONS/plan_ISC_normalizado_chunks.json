@@ -1,0 +1,22 @@
+[
+  {
+    "chunk_id": "TXTS/plan_ISC_normalizado_chunk_1",
+    "source": "TXTS/plan_ISC_normalizado.txt",
+    "text": "isc  ingenieria en sistemas computacionales\nmapa curricular 2020\nsemestre 1\n- fundamentos de programacion\n- matematicas discretas\n- calculo\n- comunicacion oral y escrita\n- analisis vectorial\nsemestre 2\n- algoritmos y estructuras de datos\n- calculo aplicado\n- mecanica y electromagnetismo\n- ingenieria etica y sociedad\n- algebra lineal\n- fundamentos economicos\nsemestre 3\n- analisis y diseno de algoritmos\n- paradigmas de programacion\n- ecuaciones diferenciales\n- circuitos electricos\n- fundamentos de diseno digital\n- bases de datos\n- finanzas empresariales\nsemestre 4\n- probabilidad y estadistica\n- matematicas avanzadas para la ingenieria\n- electronica analogica\n- diseno de sistemas digitales\n- tecnologias de desarrollo de aplicaciones web\n- sistemas operativos\n- teoria de la computacion\nsemestre 5\n- procesamiento de senales digitales\n- instrumentacion y control\n- arquitectura de computadoras\n- analisis y diseno de sistemas\n- formulacion y evaluacion de proyectos informaticos\n- compiladores"
+  },
+  {
+    "chunk_id": "TXTS/plan_ISC_normalizado_chunk_2",
+    "source": "TXTS/plan_ISC_normalizado.txt",
+    "text": "- arquitectura de computadoras\n- analisis y diseno de sistemas\n- formulacion y evaluacion de proyectos informaticos\n- compiladores\n- redes de computadoras\nsemestre 6\n- sistemas en chip\n- optativa a1\n- optativa b1\n- metodos cuantitativos para la toma de decisiones\n- ingenieria de software\n- inteligencia artificial\n- aplicaciones para comunicaciones en red\nsemestre 7\n- desarrollo de aplicaciones moviles nativas\n- optativa a2\n- optativa b2\n- trabajo terminal i\n- sistemas distribuidos\n- administracion de servicios en red\nsemestre 8\n- gestion empresarial\n- trabajo terminal ii\n- estancia profesional\n- desarrollo de habilidades sociales para la alta direccion\n- liderazgo personal\noptativas semestre 6\n- seguridad informatica\n- algoritmos geneticos\n- introduccion a la criptografia\n- aprendizaje automatico\n- aseguramiento de la calidad del software y patrones de diseno\n- bioinformatica\n- gobernanza de ti\n- procesamiento del lenguaje natural\n- temas seleccionados de criptografia"
+  },
+  {
+    "chunk_id": "TXTS/plan_ISC_normalizado_chunk_3",
+    "source": "TXTS/plan_ISC_normalizado.txt",
+    "text": "- bioinformatica\n- gobernanza de ti\n- procesamiento del lenguaje natural\n- temas seleccionados de criptografia\n- realidad virtual y aumentada\n- marcos de desarrollo de clientes web y backend\n- big data\n- sistemas complejos\n- informatica temas seleccionados i\n- informatica temas seleccionados ii\n- mineria de datos\n- ingenieria economica\n- analisis de imagenes\n- internet de las cosas\n- instrumentacion virtual\n- aplicaciones de instrumentacion virtual\n- celula automatizada\n- sistemas embebidos\n- gestion de empresas de alta tecnologia\n- bases de datos no relacionales\n- herramientas estadisticas para analisis de datos\noptativas semestre 6\n- genetic algorithms\n- computer graphics\n- bioinformatics\n- natural language processing\n- machine learning\n- big data\n- computing selected topics i\n- data mining\n- image analysis\n- virtual instrumentation\n- cellula automata\n- high technology enterprise management\n- statistical tools for data analytics\noptativas semestre 7\n- virtual and augmented reality"
+  },
+  {
+    "chunk_id": "TXTS/plan_ISC_normalizado_chunk_4",
+    "source": "TXTS/plan_ISC_normalizado.txt",
+    "text": "- high technology enterprise management\n- statistical tools for data analytics\noptativas semestre 7\n- virtual and augmented reality\n- computer security\n- introduction to cryptography\n- software quality assurance and design patterns\n- it governance\n- selected topics of cryptography\n- web client and backend development frameworks\n- complex systems\n- computing selected topics ii\n- economic engineering\n- internet of things\n- virtual instrumentation applications\n- embedded systems\n- non relational databases"
+  }
+]

@@ -1,0 +1,106 @@
+/* Contenedor principal */
+.ets-container {
+  background-color: #f7f9fc;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Contenido central */
+.ets-content {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Título principal */
+.ets-title {
+  text-align: center;
+  color: #222;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Secciones (ETS y tabla) */
+.ets-section {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Subtítulos */
+.ets-section h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Grid de inputs */
+.ets-periodo-inputs,
+.ets-datos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.ets-periodo-inputs div,
+.ets-datos-grid div {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+}
+
+/* Botones centrados */
+.ets-agregar,
+.ets-imprimir {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Tabla de alumnos */
+.ets-tabla-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.ets-tabla-section th,
+.ets-tabla-section td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.ets-tabla-section th {
+  background-color: #f0f0f0;
+}
+
+.ets-tabla-section tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #425AA1;
+}

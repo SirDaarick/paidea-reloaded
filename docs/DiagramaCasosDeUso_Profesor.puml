@@ -1,0 +1,163 @@
+@startuml Diagrama_CasosDeUso_Profesor
+!theme cerulean
+skinparam actorStyle awesome
+skinparam packageStyle rectangle
+skinparam usecase {
+    BackgroundColor WhiteSmoke
+    BorderColor DarkSlateGray
+    ArrowColor DarkSlateGray
+}
+
+title Diagrama de Casos de Uso - Actor: Profesor\n(Sistema PAIDEA)
+
+left to right direction
+skinparam usecaseFontColor Black
+skinparam packageFontColor Black
+skinparam defaultFontColor Black
+
+actor "Profesor" as Profesor #LightGreen
+actor "Agente IA\n(TecnoBurro)" as AgenteIA #Gold
+
+' ==========================================
+' PAQUETE: AUTENTICACIÓN Y PERFIL
+' ==========================================
+rectangle "Autenticación y Perfil" {
+    usecase "Iniciar Sesión" as UC_Login
+    usecase "Cambiar Contraseña" as UC_CambiarPass
+    usecase "Consultar Datos Personales" as UC_ConsultarDatos
+    usecase "Editar Datos Personales" as UC_EditarDatos
+}
+
+' ==========================================
+' PAQUETE: GESTIÓN DE GRUPOS
+' ==========================================
+rectangle "Gestión de Grupos" {
+    usecase "Consultar Grupos Asignados" as UC_GruposAsignados
+    usecase "Ver Lista de Alumnos" as UC_ListaAlumnos
+    usecase "Consultar Horario de Clase" as UC_HorarioClase
+    usecase "Consultar Salones" as UC_Salones
+}
+
+' ==========================================
+' PAQUETE: CALIFICACIONES
+' ==========================================
+rectangle "Calificaciones" {
+    usecase "Registrar Calificaciones" as UC_RegistrarCalif
+    usecase "Registrar Calificación Ordinaria" as UC_CalifOrdinaria
+    usecase "Registrar Calificación ETS" as UC_CalifETS
+    usecase "Modificar Calificación" as UC_ModificarCalif
+}
+
+' ==========================================
+' PAQUETE: ASISTENCIAS
+' ==========================================
+rectangle "Asistencias" {
+    usecase "Registrar Asistencia" as UC_RegistrarAsistencia
+    usecase "Consultar Historial de Asistencias" as UC_HistorialAsistencia
+}
+
+' ==========================================
+' PAQUETE: EXÁMENES ETS
+' ==========================================
+rectangle "Exámenes ETS" {
+    usecase "Consultar ETS Asignados" as UC_ETSAsignados
+    usecase "Ver Lista de Alumnos ETS" as UC_ListaAlumnosETS
+    usecase "Calificar Examen ETS" as UC_CalificarETS
+}
+
+' ==========================================
+' PAQUETE: REPORTES Y ANÁLISIS
+' ==========================================
+rectangle "Reportes y Análisis" {
+    usecase "Consultar Desempeño Grupal" as UC_DesempenoGrupal
+    usecase "Generar Reportes" as UC_GenerarReportes
+    usecase "Ver Estadísticas de Grupo" as UC_EstadisticasGrupo
+    usecase "Identificar Alumnos en Riesgo" as UC_AlumnosRiesgo
+    usecase "Identificar Mejores Estudiantes" as UC_TopEstudiantes
+}
+
+' ==========================================
+' PAQUETE: CALENDARIO
+' ==========================================
+rectangle "Calendario" {
+    usecase "Consultar Calendario Académico" as UC_Calendario
+    usecase "Consultar Horario Semanal" as UC_HorarioSemanal
+    usecase "Consultar Clases del Día" as UC_ClasesDia
+}
+
+' ==========================================
+' PAQUETE: AGENTE IA (CHATBOT)
+' ==========================================
+rectangle "Asistente Inteligente" #LightYellow {
+    usecase "Interactuar con Agente IA" as UC_ChatIA
+    usecase "Consultar Datos vía Chat" as UC_ConsultaChatDatos
+    usecase "Obtener Reporte de Promedios" as UC_ReportePromedios
+    usecase "Consultar Alumno Específico" as UC_ConsultarAlumnoChat
+    usecase "Verificar Avance de Calificaciones" as UC_AvanceCalif
+    usecase "Consultar Horario vía Chat" as UC_HorarioChat
+    usecase "Consultar Sobre Reglamentos" as UC_ConsultaReglamentos
+}
+
+' ==========================================
+' RELACIONES PROFESOR -> CASOS DE USO PRINCIPALES
+' ==========================================
+Profesor -- UC_Login
+Profesor -- UC_CambiarPass
+Profesor -- UC_ConsultarDatos
+Profesor -- UC_EditarDatos
+Profesor -- UC_GruposAsignados
+Profesor -- UC_RegistrarCalif
+Profesor -- UC_RegistrarAsistencia
+Profesor -- UC_ETSAsignados
+Profesor -- UC_DesempenoGrupal
+Profesor -- UC_Calendario
+Profesor -- UC_ChatIA
+
+' ==========================================
+' RELACIONES AGENTE IA
+' ==========================================
+AgenteIA <-- UC_ChatIA : interactúa
+
+' ==========================================
+' RELACIONES <<include>> y <<extend>>
+' ==========================================
+
+' --- Perfil ---
+UC_ConsultarDatos ..> UC_EditarDatos : <<extend>>
+
+' --- Grupos ---
+UC_GruposAsignados ..> UC_ListaAlumnos : <<include>>
+UC_GruposAsignados ..> UC_HorarioClase : <<include>>
+UC_GruposAsignados ..> UC_Salones : <<include>>
+
+' --- Calificaciones ---
+UC_RegistrarCalif ..> UC_CalifOrdinaria : <<include>>
+UC_RegistrarCalif ..> UC_CalifETS : <<extend>>
+UC_RegistrarCalif ..> UC_ModificarCalif : <<extend>>
+
+' --- Asistencias ---
+UC_RegistrarAsistencia ..> UC_HistorialAsistencia : <<extend>>
+
+' --- ETS ---
+UC_ETSAsignados ..> UC_ListaAlumnosETS : <<include>>
+UC_ETSAsignados ..> UC_CalificarETS : <<include>>
+
+' --- Reportes ---
+UC_DesempenoGrupal ..> UC_GenerarReportes : <<include>>
+UC_GenerarReportes ..> UC_EstadisticasGrupo : <<include>>
+UC_GenerarReportes ..> UC_AlumnosRiesgo : <<extend>>
+UC_GenerarReportes ..> UC_TopEstudiantes : <<extend>>
+
+' --- Calendario ---
+UC_Calendario ..> UC_HorarioSemanal : <<include>>
+UC_Calendario ..> UC_ClasesDia : <<include>>
+
+' --- Chat IA ---
+UC_ChatIA ..> UC_ConsultaChatDatos : <<include>>
+UC_ChatIA ..> UC_ReportePromedios : <<extend>>
+UC_ChatIA ..> UC_ConsultarAlumnoChat : <<extend>>
+UC_ChatIA ..> UC_AvanceCalif : <<extend>>
+UC_ChatIA ..> UC_HorarioChat : <<extend>>
+UC_ChatIA ..> UC_ConsultaReglamentos : <<extend>>
+
+@enduml

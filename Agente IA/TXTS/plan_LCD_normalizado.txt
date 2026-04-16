@@ -1,0 +1,69 @@
+lcd  licenciatura en ciencia de datos
+mapa curricular 2020
+semestre 1
+- fundamentos de programacion
+- matematicas discretas
+- calculo
+- comunicacion oral y escrita
+- introduccion a la ciencia de datos
+semestre 2
+- algoritmos y estructuras de datos
+- calculo multivariable
+- algebra lineal
+- etica y legalidad
+- fundamentos economicos
+semestre 3
+- analisis y diseno de algoritmos
+- programacion para ciencia de datos
+- probabilidad
+- bases de datos
+- metodos numericos
+- finanzas empresariales
+semestre 4
+- desarrollo de aplicaciones web
+- computo de alto desempeno
+- estadistica
+- bases de datos avanzadas
+- desarrollo de aplicaciones para analisis de datos
+- liderazgo personal
+semestre 5
+- mineria de datos
+- matematicas avanzadas para ciencia de datos
+- procesos estocasticos
+- aprendizaje de maquina e inteligencia artificial
+- analitica y visualizacion de datos
+- metodologias de la investigacion y divulgacion cientifica
+semestre 6
+- modelado predictivo
+- procesamiento de lenguaje natural
+- analisis de series de tiempo
+- analitica avanzada de datos
+- optativa a
+- optativa b
+semestre 7
+- big data
+- modelos econometricos
+- trabajo terminal i
+- administracion de proyectos de ti
+- optativa c
+- optativa d
+semestre 8
+- desarrollo de habilidades sociales para la alta direccion
+- gestion empresarial
+- trabajo terminal ii
+- estancia profesional
+optativas semestre 6
+- estadistica avanzada
+- temas selectos de inteligencia artificial
+- temas selectos de aprendizaje profundo
+- temas selectos de procesamiento de lenguaje natural
+- bioinformatica basica
+- propiedad intelectual
+- simulacion basica
+optativas semestre 7
+- bioinformatica avanzada
+- sistemas de informacion geografica
+- ciberseguridad
+- proteccion de datos
+- innovacion y emprendimientos tecnologico
+- simulacion avanzada

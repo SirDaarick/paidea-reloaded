@@ -1,0 +1,49 @@
+/* src/components/SelectField/SelectField.module.css */
+
+.field {
+  /* Contenedor principal */
+}
+
+.field label {
+  display: inline-block;
+  background: #cbd6fb;
+  color: #1a2b5f;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.field select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #cdd5e1;
+  background: #fff;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Estilo para cuando el select está enfocado */
+.field select:focus {
+  border-color: #304989;
+  box-shadow: 0 0 0 2px rgba(48, 73, 137, 0.1);
+}
+
+/* Clase para campos anchos en grid */
+.wide {
+  grid-column: span 3;
+}
+
+/* Media queries para la clase .wide */
+@media (max-width: 1200px) {
+  .wide {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 700px) {
+  .wide {
+    grid-column: auto;
+  }
+}

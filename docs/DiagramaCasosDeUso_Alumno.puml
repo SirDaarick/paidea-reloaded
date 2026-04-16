@@ -1,0 +1,146 @@
+@startuml Diagrama_CasosDeUso_Alumno
+!theme cerulean
+skinparam actorStyle awesome
+skinparam packageStyle rectangle
+skinparam usecase {
+    BackgroundColor WhiteSmoke
+    BorderColor DarkSlateGray
+    ArrowColor DarkSlateGray
+}
+
+title Diagrama de Casos de Uso - Actor: Alumno\n(Sistema PAIDEA)
+
+left to right direction
+skinparam usecaseFontColor Black
+skinparam packageFontColor Black
+skinparam defaultFontColor Black
+
+actor "Alumno" as Alumno #LightCoral
+actor "Agente IA\n(TecnoBurro)" as AgenteIA #Gold
+
+' ==========================================
+' PAQUETE: AUTENTICACIÓN Y PERFIL
+' ==========================================
+rectangle "Autenticación y Perfil" {
+    usecase "Iniciar Sesión" as UC_Login
+    usecase "Cambiar Contraseña" as UC_CambiarPass
+    usecase "Consultar Datos Personales" as UC_ConsultarDatos
+    usecase "Editar Datos Personales" as UC_EditarDatos
+}
+
+' ==========================================
+' PAQUETE: INFORMACIÓN ACADÉMICA
+' ==========================================
+rectangle "Información Académica" {
+    usecase "Consultar Calendario Académico" as UC_Calendario
+    usecase "Consultar Ocupabilidad y Horarios de Clases" as UC_Ocupabilidad
+    usecase "Consultar Plan de Estudios" as UC_PlanEstudios
+    usecase "Consultar Optativas Disponibles" as UC_Optativas
+    usecase "Consultar Salones" as UC_Salones
+
+    usecase "Consultar Horario" as UC_Horario
+}
+
+' ==========================================
+' PAQUETE: CALIFICACIONES
+' ==========================================
+rectangle "Calificaciones" {
+    usecase "Consultar Calificaciones" as UC_Calificaciones
+    usecase "Consultar Kardex" as UC_Kardex
+    usecase "Consultar Rendimiento Académico" as UC_Rendimiento
+    usecase "Consultar Análisis Académico" as UC_Analisis
+    usecase "Consultar Seguimiento de Irregularidades" as UC_Seguimiento
+}
+
+
+' ==========================================
+' PAQUETE: INSCRIPCIONES
+' ==========================================
+rectangle "Inscripciones" {
+    usecase "Realizar Reinscripción" as UC_Reinscripcion
+    usecase "Seleccionar Materias" as UC_SeleccionarMaterias
+    usecase "Consultar Cita de Reinscripción" as UC_CitaReinscripcion
+    usecase "Confirmar Inscripción" as UC_ConfirmarInscripcion
+}
+
+' ==========================================
+' PAQUETE: EXÁMENES ETS
+' ==========================================
+rectangle "Exámenes ETS" {
+    usecase "Inscribirse a ETS" as UC_InscribirETS
+    usecase "Seleccionar Examen ETS" as UC_SeleccionarETS
+    usecase "Consultar Resultados ETS" as UC_ResultadosETS
+}
+
+' ==========================================
+' PAQUETE: TRÁMITES Y DOCUMENTOS
+' ==========================================
+rectangle "Trámites y Documentos" {
+    usecase "Tramitar Documentos" as UC_SolicitarDoc
+}
+
+' ==========================================
+' PAQUETE: AGENTE IA (CHATBOT)
+' ==========================================
+rectangle "Asistente Inteligente" #LightYellow {
+    usecase "Consultar Información General Institucional" as UC_ChatIA
+    usecase "Consultar Información Académica Personal" as UC_ChatIA2
+
+}
+
+' ==========================================
+' RELACIONES ALUMNO -> CASOS DE USO PRINCIPALES
+' ==========================================
+Alumno -- UC_Login
+Alumno -- UC_CambiarPass
+Alumno -- UC_ConsultarDatos
+Alumno -- UC_PlanEstudios
+Alumno -- UC_Optativas
+Alumno -- UC_Horario
+Alumno -- UC_Ocupabilidad
+Alumno -- UC_Calendario
+Alumno -- UC_Salones
+Alumno -- UC_Calificaciones
+Alumno -- UC_Kardex
+Alumno -- UC_Rendimiento
+Alumno -- UC_Analisis
+Alumno -- UC_Seguimiento
+Alumno -- UC_Reinscripcion
+Alumno -- UC_InscribirETS
+Alumno -- UC_SolicitarDoc
+Alumno -- UC_ChatIA
+Alumno -- UC_ChatIA2
+Alumno -- UC_CitaReinscripcion
+Alumno -- UC_ResultadosETS
+
+' ==========================================
+' RELACIONES AGENTE IA
+' ==========================================
+AgenteIA <-- UC_ChatIA : interactúa
+AgenteIA <-- UC_ChatIA2 : interactúa
+
+' ==========================================
+' RELACIONES <<include>> y <<extend>>
+' ==========================================
+
+' --- Perfil ---
+UC_ConsultarDatos <.. UC_EditarDatos : <<extend>>
+
+' --- Información Académica ---
+UC_PlanEstudios <.. UC_Optativas : <<extend>>
+UC_Horario <.. UC_Salones : <<extend>>
+
+' --- Calificaciones ---
+UC_Kardex <.. UC_Analisis : <<extend>>
+UC_Calificaciones <.. UC_Rendimiento : <<extend>>
+
+' --- Reinscripción ---
+UC_Reinscripcion ..> UC_SeleccionarMaterias : <<include>>
+UC_Reinscripcion ..> UC_ConfirmarInscripcion : <<include>>
+
+' --- ETS ---
+UC_InscribirETS ..> UC_SeleccionarETS : <<include>>
+
+
+
+@enduml

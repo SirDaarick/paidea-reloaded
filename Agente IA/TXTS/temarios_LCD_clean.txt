@@ -1,0 +1,338 @@
+Materia: Administración de Proyectos de TI Carrera: LCD Semestre: VII Objetivo: Desarrolla un Proyecto de Tecnología de Información a partir del marco de trabajo PMBOK.
+Temario: Unidad I: Gestión de Proyectos Identifica la estructura de un proyecto a partir de su tipo. El proyecto (Tipos, Ciclo de vida, Caso de Negocio) La Oficina de Dirección de Proyectos (PMO: Funciones, Nivel de Madurez) Estructura organizacional (Funcional, Matricial, Proyecto)
+Unidad II: Planeación Integral del Proyecto Desarrolla la planeación de un proyecto a partir de su alcance y del desglose de trabajo. Alcance de un proyecto (Herramientas de identificación de requerimientos, determinación y verificación del alcance) Estructura de Desglose de Trabajo (EDT) Acta Constitutiva del Proyecto Matriz de Roles y Responsabilidades (RACI) Planificación y programación de actividades (Diagramas de Gantt, Línea base, PERT, Ruta Crítica)
+Unidad III: Gestión de Costos Desarrolla el plan de gestión de costos a partir de los estudios de factibilidad. Costos (Identificación, Clasificación, Estimación, Plan de Gestión, Determinación de Presupuesto) Estudio de Factibilidad (Operativo, Técnico, Económico, Comercial)
+Unidad IV: Gestión de Riesgos Desarrolla el proceso de gestión de riesgos a partir de su análisis y evaluación. Identificación de riesgos (Tipos, Técnicas) Análisis de riesgos (Cualitativo, Cuantitativo) Evaluación y Control de riesgo Plan de Gestión
+Unidad V: Seguimiento y Cierre del Proyecto Analiza los resultados y posibles desviaciones del proyecto a partir del seguimiento. Monitoreo y Control del Proyecto (Control de Costos, Control de Recursos, Seguimiento, Elaboración de Informes) Cierre del Proyecto (Acta de Cierre, Documento de Lecciones Aprendidas)
+Resultados de aprendizaje: Desarrollar un Proyecto de Tecnología de Información a partir del marco de trabajo PMBOK.
+Prerrequisitos: Se relaciona de manera antecedente con Fundamentos Económicos, Finanzas Empresariales e Ingeniería de software para sistemas inteligentes; de forma lateral con Innovación y Emprendimiento Tecnológico; y de manera consecuente con Trabajo Terminal I y Trabajo Terminal II.
+
+--------------------------------------------------------------------------------
+Materia: Álgebra Lineal Carrera: LCD Semestre: II Objetivo: Aplica los métodos de eliminación de Gauss-Jordan matricial con pivoteo a partir de las transformaciones lineales, los espacios vectoriales, valores y vectores propios. También proporciona habilidades para la solución de ecuaciones utilizadas en la Ciencia de datos y en el desarrollo de algoritmos.
+Temario: Unidad I: Sistemas de Ecuaciones Lineales Resuelve los Sistemas de Ecuaciones Lineales a partir de las matrices, determinantes y la inversa de una matriz.
+Unidad II: Espacios Vectoriales (Contenido no visible en las fuentes)
+Unidad III: Transformaciones Lineales Desarrolla isomorfismos a partir de transformaciones lineales y su representación matricial. Transformaciones Lineales (Propiedades, Imagen y Kernel) Representación Matricial (Matrices Semejantes y cambio de base) Isomorfismos (Transformación Inversa, Ejemplos de espacios isomorfos)
+Unidad IV: Valores y Vectores Propios (Contenido no visible en las fuentes) Diagonalización y Factorización de matrices.
+Resultados de aprendizaje: (No hay resultados específicos puros, solo la descripción de la evaluación en las fuentes)
+Prerrequisitos: Se relaciona de manera lateral con Cálculo multivariable y de manera consecuente con Matemáticas avanzadas para ciencias de datos y Procesamiento de lenguaje natural.
+
+--------------------------------------------------------------------------------
+Materia: Algoritmos y estructuras de datos Carrera: LCD Semestre: 2 Objetivo: Utiliza algoritmos y estructuras de datos con base en sus órdenes de complejidad y características.
+Temario: Unidad I: Algoritmos fundamentales Identifica algoritmos fundamentales de la computación con base en sus órdenes de complejidad. Algoritmia (Características, Representación en pseudocódigo, Orden de complejidad O()) Problema del ordenamiento (por inserción, selección, burbuja, mezcla y comparación de complejidades) Problema de la búsqueda (secuencial, binaria, indexada, y comparación de complejidades) Exploración exhaustiva y vuelta atrás (Programación por vuelta atrás, Nociones de complejidad) Algoritmos de ordenamiento, Algoritmos de búsqueda, Búsqueda exhaustiva, Programación vuelta atrás.
+Unidad II: Estructuras de datos lineales Construye estructuras de datos lineales a partir de especificaciones genéricas. Pila Cola (incluyendo colas de prioridad) Listas (simplemente enlazadas, doblemente enlazadas, circulares) Tablas hash (función hash, resolución de colisiones, tablas cerradas/abiertas) Se estudian especificaciones genéricas, implementaciones (estática/dinámica), nociones de complejidad y aplicaciones para cada estructura. Soluciones con pilas, Soluciones con colas, Implementación de listas, Tablas hash.
+Unidad III: Estructuras de datos no lineales Manipula estructuras de datos no lineales a partir de sus aplicaciones, complejidad y representaciones. Árboles binarios, Montículo, Recorridos en amplitud y en profundidad sobre grafos, Soluciones con grafos.
+Resultados de aprendizaje: (No hay resultados específicos puros, solo la descripción de la evaluación en las fuentes)
+Prerrequisitos: Se relaciona de manera antecedente con Fundamentos de programación y Matemáticas Discretas; lateralmente con Álgebra lineal; y consecuentemente con Análisis y diseño de algoritmos.
+
+--------------------------------------------------------------------------------
+Materia: Análisis y diseño de algoritmos Carrera: LCD Semestre: III Objetivo: Determina el algoritmo más adecuado en la solución de un problema a partir de las estrategias de diseño y la complejidad algorítmica. Contribuye con nociones de la teoría de la complejidad para enfrentar problemas de complejidad NP.
+Temario: Unidad I: Contextualización y Notaciones Determina la complejidad de los algoritmos a partir de los tipos notaciones. Rol de los algoritmos en el cómputo (Nociones de algoritmos y análisis) Tipos de complejidad (temporal y espacial) Funciones de Crecimiento y Notaciones.
+Unidad II: Estrategias de diseño deterministas Estrategia Divide y Vencerás (Problema del máximo subarreglo, Algoritmo de Strassen) Ecuaciones de recurrencia (Método de Sustitución, Iteraciones, Teorema Maestro) Programación dinámica (corte de varilla, multiplicación de una cadena de matrices, elementos, características, aplicaciones) Estrategia avariciosa (greedy) (selección de actividades, Códigos de Huffman, Matroides) Estrategias de Divide y Vencerás, Programación Dinámica, La estrategia Avariciosa.
+Unidad III: Estrategias de Diseño No deterministas Aplica las diferentes estrategias de diseño no deterministas a partir de las características del problema a solucionar. Complejidad algorítmica Clases de complejidad (P vs NP, NP-Completitud) Estrategias para enfrentar a la clase NP Análisis probabilístico y Algoritmos aleatorizados, Análisis amortizado, Estrategias para enfrentar a la clase NP.
+Resultados de aprendizaje: (No hay resultados específicos puros, solo la descripción de la evaluación en las fuentes)
+Prerrequisitos: Se relaciona de manera antecedente con Algoritmos y estructuras de datos.
+
+--------------------------------------------------------------------------------
+Materia: Análisis de series de tiempo Carrera: LCD Semestre: VI Objetivo: Evalúa series de tiempo de datos con base en modelos estadísticos.
+Temario: Unidad I: Características de series de tiempo Análisis descriptivo y exploratorio Series de tiempo estacionarias y no estacionarias Regresión lineal en contexto de series de tiempo Suavizamiento.
+Unidad II: Procesos lineales en tiempo discreto Modelos ARMA (AutoRegressive Moving Average) Estimación de parámetros en modelos ARMA Pronósticos con Modelos ARMA Procesos dependientes de variables externas (ARMAX) Evaluación de órdenes de integración con modelos ARIMA (Autoregressive Integrated Moving Average) Construcción, Inferencia de parámetros y Pronósticos con modelos ARIMA.
+Unidad III: Análisis espectral y filtrado Evalúa series de tiempo a partir de la periodicidad, la densidad espectral y filtros lineales. Comportamiento cíclico y periodicidad, Densidad espectral Periodograma y transformada de Fourier discreta Estimación espectral (Paramétrica y No paramétrica) Series múltiples y espectros cruzados Filtrado (Filtros lineales, Modelos de regresión con retraso, Extracción de señales y filtro óptimo) Periodograma y transformada de Fourier discreta, Filtrado de series de tiempo, Extracción de señales.
+Resultados de aprendizaje: (No hay resultados específicos puros, solo la descripción de la evaluación en las fuentes)
+Prerrequisitos: Ninguno (No se especifican prerrequisitos directos en las fuentes, pero contribuye a desarrollar modelos estadísticos que evolucionan en el tiempo)
+
+--------------------------------------------------------------------------------
+Materia: Analítica avanzada de datos Carrera: LCD Semestre: VI Objetivo: Desarrolla sistemas de analítica avanzados de datos con base en Modelos de regresión avanzados, clasificación y agrupamiento.
+Temario: Unidad I: Modelos de regresión (Contenido no visible en las fuentes)
+Unidad II: Modelos de clasificación (Contenido no visible en las fuentes)
+Unidad III: Modelos de agrupamiento en la analítica avanzada Establece etiquetas a objetos en datos sin etiquetar con base en el agrupamiento basado en prototipos, agrupamiento difuso, y agrupamientos neuronales.
+Resultados de aprendizaje: (No hay resultados específicos puros, solo la descripción de la evaluación en las fuentes)
+Prerrequisitos: Se relaciona de manera consecuente con Analítica y visualización de datos.
+
+--------------------------------------------------------------------------------
+Materia: Analítica y visualización de datos Carrera: LCD Semestre: V Objetivo: Aplica técnicas a datos recolectados a partir de su preprocesamiento, análisis y visualización.
+Temario: Unidad I: Datos y preprocesamiento de datos Integra datos a partir de su recolección, relaciones y preprocesamiento. Datos (Conjunto de Datos de Iris, Escalas de datos) Relaciones (Medidas de disimilitud y similitud, Relaciones de secuencia) Preprocesamiento (Muestreo y cuantificación, Tipos y manejo de error, Filtrado, Transformación e Integración de datos) Muestreo y cuantificación, Filtrado de datos, Transformación de datos.
+Unidad II: Visualización de datos Aplica métodos de proyección lineal y no lineal a partir de la visualización de datos de alta dimensión y técnicas de análisis espectral de datos periódicos. Análisis de componentes principales, Mapeo Sammon, Análisis espectral, Construcción de Tableros.
+Unidad III: Correlación Correlación lineal, Prueba de chi-cuadrada para la independencia.
+Resultados de aprendizaje: (No hay resultados específicos puros, solo la descripción de la evaluación en las fuentes)
+Prerrequisitos: Se relaciona de manera antecedente con Desarrollo de Aplicaciones para Análisis de Datos; lateralmente con Minería de Datos y Aprendizaje de Máquina e Inteligencia Artificial; y consecuentemente con Analítica Avanzada de Datos.
+
+--------------------------------------------------------------------------------
+Materia: Aprendizaje de máquina e inteligencia artificial Carrera: LCD Semestre: V Objetivo: Propone una máquina de aprendizaje con base en los tipos de aprendizaje, algoritmos y medidas de desempeño.
+Temario: Unidad I: Inteligencia artificial y sus Aplicaciones Métodos de validación (Entrenamiento y prueba, Validación cruzada: Dejar uno fuera, K grupos, Bootstrap) IA y el apoyo a la toma de decisiones.
+Unidad II: Algoritmos de aprendizaje supervisado y no supervisado Árboles de decisión (Clasificación y regresión, Algoritmos de construcción, Interpretación) Algoritmo del vecino más cercano (Principio, Clasificación de mínima distancia, Aplicaciones).
+Unidad III: Algoritmos de ensamble Bosque aleatorio y Combinación de Predicciones.
+Resultados de aprendizaje: (No hay resultados específicos puros, solo la descripción de la evaluación en las fuentes)
+Prerrequisitos: La unidad se relaciona de manera antecedente con Estadística; lateralmente con Matemáticas Avanzadas para Ciencia de Datos, Minería de datos; y consecuente con Procesamiento de Lenguaje Natural y Big Data.
+
+--------------------------------------------------------------------------------
+Materia: Bases de Datos Avanzadas Carrera: LCD Semestre: IV Objetivo: Construye sistemas de soporte de decisión a partir de bases de datos no relacionales, tecnologías OLAP y bancos de datos.
+Temario: Unidad I: Sistemas de Soporte de Decisión y almacenes de datos Reconoce los conceptos y aplicación de los sistemas de soporte de decisiones con base en las características y sus arquitecturas.
+Unidad II: Diseño de Almacenes y bancos de datos Diseña bancos de datos a partir de sus arquitecturas y características. Diseño de Almacenes de datos (Data Warehouse) Referencia Arquitectural, Funcionamiento Funciones Extracción, Transformación y Limpieza (ETL) Diseño de Almacenes y bancos de datos, Funciones ETL.
+Unidad III: Diseño de cubos OLAP Diseña cubos de datos a partir de sus arquitecturas, modelado y operadores. Cubos de Datos (OLAP vs OLTP) Arquitecturas OLAP, Modelado de cubos Operadores (Roll up, Drill down, Slice, Dice, Pivot), y Cubos Multidimensionales Cubos de Datos, Operadores de cubos de datos, Cubos multidimensionales.
+Unidad IV: Bases de datos no relacionales Bases de Datos orientadas a objetos, documentos, clave-valor, grafos, y Otras tendencias.
+Resultados de aprendizaje: (No hay resultados específicos puros, solo la descripción de la evaluación en las fuentes)
+Prerrequisitos: Se relaciona de manera antecedente con Algoritmos y estructuras de datos y Bases de datos; laterales Cómputo de alto desempeño y Desarrollo web; y consecuente con Administración de proyectos de TI.
+
+--------------------------------------------------------------------------------
+Materia: Bases de Datos Carrera: LCD Semestre: III Objetivo: Solucionar problemas de gestión de datos mediante el modelado relacional y el lenguaje SQL.
+Temario: Unidad I: Sistemas de Bases de Datos Analiza las arquitecturas de los SGBD a partir de su clasificación y los tipos de bases de datos.
+Unidad II: Modelo Entidad-Relación Modelado Entidad Relación y Modelado Entidad Relación Extendido.
+Unidad III: Modelo Relacional Gestiona bases de datos relacionales a partir de su modelo, integridad, tipos de restricciones y operaciones del álgebra relacional. Fundamentos del modelo relacional (Dominios, atributos, tuplas, relaciones) Integridad (referencial, llaves foráneas) Operaciones del álgebra relacional (Selección, Proyección, Reunión (Join), Intersección, Diferencia, División, Funciones de agregación y de agrupación) Operaciones del álgebra relacional.
+Unidad V: Lenguaje SQL Gestiona bases de datos relacionales a partir del lenguaje SQL. Creación y modificación de esquemas (CREATE, DROP, ALTER TABLE, VIEW, INDEX) Instrucciones INSERT, DELETE, UPDATE y TRIGGERS Instrucción SELEC-FROM-WHERE Funciones agregadas y agrupación, y Procedimientos Almacenados (Store procedures) Creación de bases de datos y operaciones básicas con SQL.
+Resultados de aprendizaje: (No hay resultados específicos puros, solo la descripción de la evaluación en las fuentes)
+Prerrequisitos: Es antecedente para Bases de Datos Avanzadas.
+
+--------------------------------------------------------------------------------
+Materia: Big Data Carrera: LCD Semestre: VII Objetivo: Aplicar principios y tecnologías de grandes volúmenes de datos para la analítica y toma de decisiones.
+Temario: Unidad I: Principios de grandes volúmenes de datos Gobierno de datos para Big Data, Clúster, servidores en premisa y en la nube.
+Unidad II: Plataformas de grandes volúmenes de datos Analíticos descriptivos y de diagnóstico Analítico predictivo Analítico prescriptivo Analítico cognitivo Ingesta de datos, Análisis Bayesiano y Sentimental, Analítica empresarial para Big Data.
+Unidad III: Capas de presentación Demuestra los principios aplicados de big data con base en la narrativa de los datos. Narrativa de datos (Principios de inteligencia de negocios, Indicadores de desempeño, Modelado y presentación de reportes) Principios aplicados de Big Data para ciencia de datos (Notebooks, Motores Unificados para Analíticos) Narrativa de Datos, El Desarrollo de tableros.
+Resultados de aprendizaje: (No hay resultados específicos puros, solo la descripción de la evaluación en las fuentes)
+Prerrequisitos: Se relaciona de manera consecuente con Aprendizaje de máquina e Inteligencia Artificial.
+
+--------------------------------------------------------------------------------
+Materia: Cálculo multivariable Carrera: LCD Semestre: 2 Objetivo: Resuelve problemas de ingeniería con base en las derivadas parciales e integrales múltiples.
+Temario: Unidad I: Vectores y funciones vectoriales Reconoce las funciones vectoriales a partir de las operaciones entre vectores. Sistemas de coordenadas, Vectores (Producto cruz, Producto punto) Funciones vectoriales, y Curvas en el espacio.
+Unidad IV: Teoremas de integración Resuelve aplicaciones en ingeniería a partir de los teoremas de integración. Teorema de Green, Teorema de Stokes, Teorema de Gauss, y Aplicaciones.
+Resultados de aprendizaje: (No hay resultados específicos puros, solo la descripción de la evaluación en las fuentes)
+Prerrequisitos: Se relaciona de manera lateral con Álgebra lineal.
+
+--------------------------------------------------------------------------------
+Materia: Cálculo Carrera: LCD Semestre: 1 Objetivo: Soluciona problemas del área de la ingeniería a partir del cálculo diferencial y técnicas de integración.
+Temario: Unidad I: Funciones algebraicas y trascendentes Analiza las funciones a partir de sus propiedades y las diferentes representaciones. Funciones algebraicas (Representaciones: algebraica, geométrica, numérica y verbal; Propiedades: monotonía, simetría, periodicidad) Funciones inversas, Funciones trascendentes (Exponenciales, Logarítmicas, Trigonométricas, Hiperbólicas, y sus inversas) Transformaciones de funciones.
+Unidad III: Derivada y sus aplicaciones Resuelve problemas de razones de cambio relacionadas, diferenciales y optimización a partir de las reglas y criterios de derivación. Derivada (Pendiente, velocidad y razón de cambio) Reglas de derivación (Regla de la cadena, Derivación implícita/explícita, Derivadas de orden superior), Diferencial Máximos y mínimos (Criterios de la primera y segunda derivada, Optimización).
+Unidad V: La Integral definida y sus aplicaciones Resuelve problemas de área de regiones y superficial, volumen, y longitud de arco a partir de la integral definida. Integral definida (Teorema fundamental del Cálculo) Integración numérica (Trapecio, Simpson) Aplicaciones (Área entre curvas, Volúmenes de sólidos de revolución, Longitud de arco y área de superficie).
+Resultados de aprendizaje: (No hay resultados específicos puros, solo la descripción de la evaluación en las fuentes)
+Prerrequisitos: Ninguno
+
+--------------------------------------------------------------------------------
+Materia: Cómputo de alto desempeño Carrera: LCD Semestre: (No especificado) Objetivo: (Objetivo no visible en los extractos, pero se enfoca en el desarrollo de sistemas distribuidos y en malla)
+Temario: Unidad I: Arquitecturas de Cómputo de Alto Desempeño (Contenido no visible en las fuentes)
+Unidad II: Cómputo Paralelo (Contenido no visible en las fuentes)
+Unidad III: Sistemas Distribuidos Construye sistemas distribuidos a partir de los modelos de sistema, transacciones distribuidas, control de concurrencia, y replicación. Caracterización de los Sistemas distribuidos, Internet e intranets, Recursos compartidos, y Desafíos de los sistemas Distribuidos.
+Unidad IV: Arquitecturas de cómputo en Malla (GRID) Construye sistemas malla a partir de sus recursos, Nodos de control, estándares y arquitecturas Grid específicas. Arquitecturas de computación en malla (Grid) y sus Características Integración de acceso de datos (OGSA-DAI), Grid-FTP, WSRF, y Servicios de GRID.
+Resultados de aprendizaje: (No hay resultados específicos puros, solo la descripción de la evaluación en las fuentes)
+Prerrequisitos: (Prácticas mencionan: Arquitecturas en paralelo, Actividades para conseguir el paralelismo, Manejo de Memoria, Tolerancia a Fallas, Modelos de Sistemas Distribuidos, etc., pero no hay una lista formal de prerrequisitos)
+
+--------------------------------------------------------------------------------
+Materia: Comunicación oral y escrita Carrera: LCD Semestre: I Objetivo: Emplea la expresión oral y escrita asertiva en diferentes contextos y audiencias de acuerdo con las características de la comunicación en el siglo XXI.
+Temario: Unidad I: Comunicación asertiva Identifica la importancia de la comunicación asertiva a partir de sus características y aplicaciones en el contexto social.
+Unidad II: Comunicación oral Características, elementos y cualidades de la comunicación oral Tipos de discurso oral Planeación y producción del discurso público (Estrategias y técnicas para la presentación oral y Presentación oral del discurso).
+Unidad III: Comunicación escrita (Contenido no visible en las fuentes)
+Unidad IV: Comunicación en el siglo XXI Modifica su práctica comunicativa a partir de las características socioculturales y tecnológicas del siglo XXI. Cambios de hábitos y prácticas en la comunicación El acceso y tratamiento de la información por medio de las TIC, Potencial y riesgos de las TIC.
+Resultados de aprendizaje: (No hay resultados específicos puros, solo la descripción de la evaluación en las fuentes)
+Prerrequisitos: Tiene como unidades de aprendizaje consecuentes a Ética y Legalidad, Liderazgo Personal y Desarrollo de Habilidades Sociales para la Alta Dirección.
+
+--------------------------------------------------------------------------------
+Materia: Desarrollo de Aplicaciones para análisis de Datos Carrera: LCD Semestre: IV Objetivo: Desarrolla aplicaciones de análisis de datos a partir de su adquisición, preprocesamiento, y extracción de conocimiento.
+Temario: Unidad I: Programación con Lenguaje Python Analiza la programación de computadoras a partir de sus fundamentos y el lenguaje Python.
+Unidad II: Adquisición y almacenamiento de Datos Diseño de una base de datos con MongoDB Diferentes técnicas de Web scraping (con API-REST, BeautifulSoup, y Selenium) Uso de estructuras de datos con Panda
+Unidad III: Aprendizaje automático Elabora programas en lenguaje Python y bibliotecas a partir del aprendizaje automático y el procesamiento distribuido con Apache Spark. Aplicaciones de Aprendizaje supervisado y no supervisado con Scikit-learn Manejo de conjuntos de datos distribuidos resilientes, Spark SQL y Spark MLlib.
+Resultados de aprendizaje: (No hay resultados específicos puros, solo la descripción de la evaluación en las fuentes)
+Prerrequisitos: (No especificado)
+
+--------------------------------------------------------------------------------
+Materia: Desarrollo de aplicaciones Web Carrera: LCD Semestre: IV Objetivo: Desarrolla aplicaciones Web a partir del manejo de las diferentes arquitecturas, patrones de diseño y buenas prácticas.
+Temario: Unidad I: Contextualización y arquitecturas de desarrollo web Distingue la importancia e implicaciones del desarrollo web a partir de sus modelos, arquitecturas y buenas prácticas.
+Unidad II: Sistemas y aplicaciones del lado del servidor Desarrolla Sistemas del lado del servidor a partir de frameworks, las buenas prácticas y sus herramientas. Manejo de ORM (Mapeo objeto-Relacional) Frameworks de desarrollo web, Exposición de servicios Mensajes HTTP Buenas prácticas como el Blindado del lado servidor y Documentación de endpoints.
+Unidad III: Desarrollo del lado cliente (Contenido no visible en las fuentes)
+Unidad IV: Manejo y operación de servidores y servicios Establece las condiciones idóneas de operación a partir del montado configuración de servicios y contenedores. Tipos de servidores, Montado de servicios Configuración de servicios, Manejo de contenedores Automatización y Liberación de servicios.
+Resultados de aprendizaje: (No hay resultados específicos puros, solo la descripción de la evaluación en las fuentes)
+Prerrequisitos: (No especificado)
+
+--------------------------------------------------------------------------------
+Materia: Desarrollo de habilidades sociales para la alta dirección Carrera: LCD Semestre: VIII Objetivo: Desarrolla habilidades personales, sociales y directivas en la integración de equipos directivos, con base en una visión estratégica de liderazgo y de toma de decisiones.
+Temario: Unidad I: Fundamentos de la alta dirección y planeación estratégica Explica las bases sobre alta dirección y planeación estratégica. Principios de la alta dirección Principios de la planeación estratégica (misión, visión, objetivos de largo plazo).
+Unidad II: Habilidades personales y sociales para la alta dirección Desarrolla habilidades personales y sociales requeridas en la alta dirección a partir del autoconocimiento e inteligencia emocional. Administración del tiempo, Manejo del estrés Comunicación efectiva, Asertividad y Manejo del conflicto.
+Unidad III: Habilidades directivas Gestiona equipos de trabajo en las organizaciones a partir del desarrollo de habilidades directivas. Equipos efectivos de trabajo Liderazgo estratégico (Coaching) Toma de decisiones (Ética), y Estrategias de negociación.
+Resultados de aprendizaje: (No hay resultados específicos puros, solo la descripción de la evaluación en las fuentes)
+Prerrequisitos: Esta unidad se relaciona con Comunicación oral y escrita, Ingeniería, ética y sociedad, Fundamentos económicos, Finanzas empresariales y Liderazgo personal como antecedentes.
+
+--------------------------------------------------------------------------------
+Materia: Estadística Carrera: LCD Semestre: IV Objetivo: Construye modelos estadísticos a partir de la inferencia paramétrica, no paramétrica, causal y la regresión.
+Temario: Unidad I: Estadística descriptiva Explica las principales características de los datos a partir de descriptores muéstrales de centralización y dispersión, y herramientas gráficas. Características principales de un conjunto de datos (I)
+Unidad II: Inferencia estadística paramétrica Infiere los parámetros de una distribución de probabilidad subyacente a partir de estimadores, pruebas de hipótesis y elementos de inferencia Bayesiana. Distribuciones a priori (II)
+Unidad III: Estadística no paramétrica Estimadores con uso Bootstrap (III)
+Unidad IV: Regresión Modelo de regresión lineal (IV)
+Unidad V: Inferencia causal Causalidad en variables (V)
+Resultados de aprendizaje: (No hay resultados específicos puros, solo la descripción de la evaluación en las fuentes)
+Prerrequisitos: (No especificado)
+
+--------------------------------------------------------------------------------
+Materia: Ética y Legalidad Carrera: LCD Semestre: 2 Objetivo: Valora las implicaciones éticas y el impacto social del ejercicio profesional de la ciencia de datos, a partir del desarrollo histórico del conocimiento, la evolución científica y tecnológica, así como el marco regulatorio de la disciplina.
+Temario: Unidad I: Desarrollo histórico del conocimiento científico y tecnológico (Contenido no visible en las fuentes)
+Unidad II: Revoluciones Industriales: tecnología e impacto (Contenido no visible en las fuentes)
+Unidad III: Ética en la ciencia de datos y su función social Distingue el impacto social y las implicaciones del ejercicio profesional ético del científico de datos.
+Unidad IV: Marco regulatorio de la Ciencia de Datos Relaciona la importancia del manejo responsable de datos con sus retos e implicaciones en la sociedad, a partir del marco regulatorio de la disciplina. El Big Data y el manejo de datos Uso responsable de datos personales (Principios de Licitud y Lealtad, Derechos) Leyes, normas y políticas públicas.
+Unidad V: Ciencia de datos, productividad y sustentabilidad Plantea la importancia de la sustentabilidad en la práctica de la ciencia de datos.
+Resultados de aprendizaje: (No hay resultados específicos puros, solo la descripción de la evaluación en las fuentes)
+Prerrequisitos: (No especificado)
+
+--------------------------------------------------------------------------------
+Materia: Finanzas empresariales Carrera: LCD Semestre: III Objetivo: Determina estados financieros pro forma y proyectos de inversión con base en las NIF, el valor del dinero en el tiempo, la planeación y sus métodos de evaluación.
+Temario: Unidad I: La empresa y su contexto (Contenido no visible en las fuentes)
+Unidad II: Importancia y utilización de la información financiera Explica los estados financieros básicos (Estado de Situación Financiera/Balance General y Estado de Resultados) con base en las Normas de Información Financiera (NIF).
+Unidad III: Análisis financiero (Contenido no visible en las fuentes)
+Unidad IV: Estados financieros proforma Calcula estados financieros proforma a partir del valor del dinero en el tiempo (Valor presente, Valor futuro, Anualidades) y la planeación financiera (El presupuesto maestro).
+Unidad V: Métodos de evaluación de proyectos de inversión Examina los proyectos de inversión a partir de sus métodos de evaluación. Métodos incluyen: PRI, RSI, Costo – beneficio, VPN, TIR, IR.
+Resultados de aprendizaje: (No hay resultados específicos puros, solo la descripción de la evaluación en las fuentes)
+Prerrequisitos: Antecedente de Fundamentos Económicos (Implícito).
+
+--------------------------------------------------------------------------------
+Materia: Fundamentos Económicos Carrera: LCD Semestre: 2 Objetivo: Examina las economías nacional e internacional con base en los enfoques micro y macroeconómico, así como la economía circular y la sustentabilidad.
+Temario: Unidad I: Economía (Contenido no visible en las fuentes)
+Unidad II: Microeconomía Comportamiento del consumidor (Utilidad Total y Marginal, Curvas de indiferencia, Restricción presupuestal) Comportamiento del productor (Teoría de Producción y Costos de corto y largo plazo).
+Unidad III: Teoría del Mercado Analiza el equilibrio del mercado con base en las leyes de la oferta y la demanda. Incluye: Elasticidades precio, ingreso y cruzada.
+Unidad IV: Macroeconomía Riesgo país (Calificadoras) Sistema financiero mexicano (Bolsa Mexicana de Valores, Banco de México).
+Unidad V: Economía Internacional y sustentabilidad Especifica la importancia del Ingeniero en Inteligencia Artificial en la economía circular y la sustentabilidad. Sistema Financiero Internacional (FMI, OCDE, Banco Mundial) e-commerce Tecnología verde: cloud computing (infraestructura, servicios y plataformas).
+Resultados de aprendizaje: (No hay resultados específicos puros, solo la descripción de la evaluación en las fuentes)
+Prerrequisitos: (No especificado)
+
+--------------------------------------------------------------------------------
+Materia: Fundamentos de programación Carrera: LCD Semestre: 1 Objetivo: Programa aplicaciones a partir de sentencias de control, funciones, apuntadores y archivos.
+Temario: Unidad I: Programación Estructurada Analiza la programación a partir de sus fundamentos, el lenguaje C y el diseño estructurado. Arquitectura de Von Neumann Tipos de datos primitivos, Sentencias de control, Arreglos Diseño estructurado - Modularidad.
+Unidad II: Apuntadores, Tipos de Datos Estructurados y funciones (Contenido no visible en las fuentes) Apuntadores en C (II) Estructuras y funciones (II), Recursividad (II)
+Unidad III: Manejo de Memoria Dinámica y Archivos Elabora programas de computadora a partir del manejo de archivos de texto, binarios y la memoria dinámica. Arquitectura de Memoria (Harvard, Von Neumann) Reservación dinámica de memoria Archivos de acceso secuencial y directo. Memoria dinámica (III) y Archivos de acceso secuencial y directo (III).
+Resultados de aprendizaje: (No hay resultados específicos puros, solo la descripción de la evaluación en las fuentes)
+Prerrequisitos: (No especificado)
+
+--------------------------------------------------------------------------------
+Materia: Gestión empresarial Carrera: LCD Semestre: VIII Objetivo: Gestiona organizaciones de innovación tecnológica con base en las competencias gerenciales.
+Temario: Unidad I: Aspectos básicos de la gestión empresarial Analiza la gestión empresarial con base en su clasificación y constitución legal (Ley de Sociedades Mercantiles y Ley de Sociedades Civiles).
+Unidad II: Gestión estratégica en las empresas de innovación tecnológica Aplica la gestión estratégica en las empresas de innovación tecnológica. Herramientas de gestión estratégica como Cuadro de mando integral, Análisis FODA, Modelos de negocio y Diamante de Porter.
+Unidad III: Gestión operativa de la empresa Estructura organizacional, Innovación y tecnología (Tecnologías emergentes) Herramientas de gestión operativa (Reingeniería de los procesos de negocio).
+Unidad IV: Gestión del capital humano y la calidad Marco normativo de las relaciones laborales Calidad (Control estadístico, Calidad total) Herramientas como Las 5´s, Just in Time, Benchmarking, ERP.
+Unidad V: Tendencias en la gestión empresarial Aplica los aspectos legales y sus habilidades digitales. Aspectos legales (Propiedad intelectual) Habilidades digitales (Learnability, Teamability, Networking, Adaptability) Tecnologías y tendencias digitales (Internet de las cosas, Inteligencia Artificial, Inteligencia de negocios, Blockchain y la nube).
+Resultados de aprendizaje: (No hay resultados específicos puros, solo la descripción de la evaluación en las fuentes)
+Prerrequisitos: (No especificado)
+
+--------------------------------------------------------------------------------
+Materia: Introducción a la Ciencia de datos Carrera: LCD Semestre: I Objetivo: Explica la importancia de la ciencia de datos a partir de sus campos de acción, áreas de aplicación y tendencias.
+Temario: Unidad I: Contextualización histórica de la Ciencia de datos Reconoce el impacto de la tecnología e información a partir de su evolución. Historia de la Computación (Migración a lo electrónico/Digital, La Era de la información) Las Revoluciones Industriales (1ra, 2da, 3ra, 4ta).
+Unidad II: Campos y recursos (Contenido no visible en las fuentes)
+Unidad III: Áreas de aplicación Diferencia las áreas de acción de la Ciencia de datos con base en su impacto. Áreas de aplicación (Industria, Sociedad, Gobierno, Empresas) Aspectos Éticos de la CD (Dilemas Éticos).
+Unidad IV: Tendencias en la Ciencia de datos Discute los cambios y direcciones de la Ciencia de datos. Aportes en la Inteligencia de Negocios Migración a sistemas y plataformas de nube Nuevas tecnologías en el aprendizaje autónomo.
+Resultados de aprendizaje: (No hay resultados específicos puros, solo la descripción de la evaluación en las fuentes)
+Prerrequisitos: (No especificado)
+
+--------------------------------------------------------------------------------
+Materia: Liderazgo Personal Carrera: LCD Semestre: IV Objetivo: Aplica modelos y estrategias de liderazgo personal en las relaciones colaborativas y en la toma de decisiones con base en sus principios, procedimientos y tecnología.
+Temario: Unidad 1: Principios del liderazgo (Contenido no visible en las fuentes)
+Unidad 2: Interacción e influencia en relaciones colaborativas Persuadir e influir Generación de Impacto apelando a las emociones Promoción de Ideas Negociación y acuerdos Presentar y comunicar la información Proyección de credibilidad
+Unidad 3: Conocimiento y tecnologías para la toma de decisiones (Contenido no visible en las fuentes)
+Resultados de aprendizaje: Analiza la interacción e influencia en las relaciones colaborativas a partir de estrategias, principios y valores. Utiliza herramientas tecnológicas de producción y gestión de conocimiento en la toma de decisiones, con base en sus procedimientos y principios.
+Prerrequisitos: Ingeniería, Ética y Sociedad
+
+--------------------------------------------------------------------------------
+Materia: Matemáticas avanzadas para la ciencia de datos Carrera: LCD Semestre: V Objetivo: Resuelve problemas de optimización y teoría de la información a partir de técnicas algorítmicas de problemas lineales y no lineales y la entropía.
+Temario: Unidad 1: Optimización lineal Método Simplex Dualidad Aplicaciones de la programación lineal
+Unidad 2: Optimización no lineal Búsqueda sobre una línea y método de máxima pendiente Método de gradientes conjugados Métodos de Newton y cuasi Newton Métodos Primales Métodos de penalización y de barrera Métodos duales Métodos de Lagrange
+Unidad 3: Teoría de la información Entropía de distribuciones discretas y continuas densidad Distribución normal multivariada tiene máxima entropía Problema de entropía máxima con anomalía Distancia de Kullback-Leibler e información mutua
+Resultados de aprendizaje: Determina soluciones óptimas a problemas modelados con funciones lineales a partir de métodos de programación lineal. Determina soluciones óptimas a problemas modelados con funciones no lineales a partir de métodos de optimización no lineal. Determina información en conjuntos de variables aleatorias, a partir de la entropía de Shannon y la información mutua.
+Prerrequisitos: Álgebra Lineal Avanzada Cálculo Multivariable Probabilidad
+
+--------------------------------------------------------------------------------
+Materia: Matemáticas discretas Carrera: LCD Semestre: 1 Objetivo: Plantea algoritmos matemáticos y estructuras discretas con base en sus propiedades y argumentos válidos con lenguaje formal.
+Temario: Unidad 1: Lógica 1.1 Equivalencias Proposiciones atómicas, compuestas y jerarquía de operadores Equivalencias lógicas Álgebra de proposiciones Contrapositiva, recíproca e inversa de una condicional 1.2 Inferencias Reglas de inferencia Demostraciones directas e indirectas 1.3 Cuantificadores Proposiciones abiertas y cuantificadores Lenguaje natural y cuantificadores Equivalencias e inferencias con cuantificadores
+Unidad 2: Teoría de Conjuntos (Contenido no visible en las fuentes)
+Unidad 3: Números Enteros 3.1 Números Enteros Propiedades de los números enteros 3.2 Divisibilidad Propiedades de la divisibilidad Algoritmo de la división Máximo común divisor y mínimo común múltiplo Teorema Fundamental de la Aritmética Algoritmo de Euclides 3.3 Inducción matemática Problemas de igualdad con sumas y productos Problemas de divisibilidad Problemas de orden Problemas de generalización 3.4 Sistemas de numeración Algoritmo de cambio de base Relación entre los sistemas binario y hexadecimal Operaciones básicas en base b
+Unidad 4: Estructuras Discretas para la Computación 4.1 Álgebras y Funciones booleanas Propiedades de las álgebras booleanas Funciones booleanas Sumas de minitérminos y productos de maxitérminos Representación en circuitos combinatorios Reducción por mapas de Karnaugh 4.2 Relaciones Representaciones de las relaciones Propiedades de la Inversa y la Composición de las relaciones Propiedades de las funciones Relaciones reflexivas, irreflexivas, simétricas, antisimétricas y transitivas 4.3 Relaciones de orden y relaciones de equivalencia Relaciones de orden total y de orden parcial Mínimos, máximos, minimales y maximales Relaciones de equivalencia Conjunto Cociente y clases de equivalencia 4.4 Enteros módulo n Congruencia módulo n como relación de equivalencia Aritmética de los enteros módulo n Teorema chino del residuo 4.5 Grafos y Árboles Grafos dirigidos, no dirigidos y conexos Recorridos y circuitos eulerianos y hamiltonianos Algoritmo del camino más corto Recorridos en profundidad y amplitud Recorridos en pre-orden, in-orden y post- orden de árboles binarios
+Resultados de aprendizaje: Demuestra argumentos y equivalencias con base en el álgebra de proposiciones y las reglas de inferencia. Aplica la inducción matemática y los algoritmos con base en las propiedades algebraicas y de divisibilidad de los números enteros. Integra estructuras discretas en problemas computacionales con base en sus propiedades.
+Prerrequisitos: Fundamentos de Programación
+
+--------------------------------------------------------------------------------
+Materia: Metodología de la investigación y divulgación científica Carrera: LCD Semestre: V Objetivo: Aplica métodos y técnicas de investigación documental y de campo, a partir de procedimientos sistemáticos aplicables a la formulación y desarrollo de trabajos de investigación.
+Temario: Unidad 1: Metodología de la investigación en ingeniería (Contenido no visible en las fuentes)
+Unidad 2: El protocolo de investigación 2.1 Planteamiento del estudio Descripción del proyecto y de la realidad problemática Formulación del problema de investigación Objetivos y justificación Alcance y limitaciones 2.2 Marco teórico Antecedentes y base teórica científica Definiciones de términos Referencias bibliográficas Hipótesis y propuestas de solución Variables e indicadores
+Unidad 3: Divulgación de la investigación científica 3.1 Análisis de datos Fuentes de datos Indicadores e índices Variables e índices Análisis de datos, enjuiciamiento y conclusiones Sugerencias y recomendaciones
+Resultados de aprendizaje: Construye un proyecto de investigación, a partir de etapas y criterios metodológicos. Emplea el discurso científico para la divulgación de los resultados de una investigación, a partir del análisis de datos.
+Prerrequisitos: Comunicación oral y escrita
+
+--------------------------------------------------------------------------------
+Materia: Métodos numéricos Carrera: LCD Semestre: III Objetivo: Resuelve problemas complejos con base en algoritmos de métodos numéricos de ecuaciones lineales, no lineales y diferenciales, de derivación e integración, de álgebra lineal, de interpolación y de aproximación.
+Temario: Unidad 1: Ecuaciones de una variable (Contenido no visible en las fuentes)
+Unidad 2: Derivación e integración numérica (Contenido no visible en las fuentes)
+Unidad 3: Ecuaciones diferenciales ordinarias (Contenido no visible en las fuentes)
+Unidad 4: Álgebra lineal numérica (Contenido no visible en las fuentes)
+Unidad 5: Interpolación y aproximación (Contenido no visible en las fuentes)
+Resultados de aprendizaje: Diseña, crea y aplica algoritmos de métodos numéricos en la solución de problemas de raíces de ecuaciones lineales y no lineales, de álgebra lineal, de derivación e integración, de interpolación y aproximación.
+Prerrequisitos: Algoritmos y estructuras de datos Álgebra lineal Cálculo multivariable Cálculo
+
+--------------------------------------------------------------------------------
+Materia: Minería de Datos Carrera: LCD Semestre: V Objetivo: Implementa procesos de minería de datos con base en los modelos de datos, el procesamiento analítico en línea y las técnicas de minado de datos.
+Temario: Unidad 1: Gestión de cubos OLAP 1.1 Administración de Cubos Agregado de funcionalidades Importación de datos y uso de conectores Configuraciones adicionales 1.2 Operación de Cubos Búsqueda de Información Administración de incidentes y Problemas Informes y análisis de almacenamiento de datos 1.3 Uso de Cubos OLAP para análisis avanzado 1.4 Solución de Problemas de los cubos OLAP
+Unidad 2: El proceso de minado de datos 2.1 La Minería de Datos 2.2 Metodologías del proceso de minado de datos Muestrear, explorar, modificar, modelar y evaluar (SEMMA) El modelo CRISP-DM (Cross Industry Standard Process) 2.3 Tipos de problemas de Minería de Datos y el enfoque para su resolución Problemas descriptivos Problemas predictivos 2.4 Consideraciones para el éxito de un proyecto de minería de Datos Evaluación de un proceso de minería de datos 2.5 Preprocesamiento de datos Limpieza Transformación
+Unidad 3: Técnicas de minería de datos 3.1 Métodos estadísticos 3.2 Reglas de asociación 3.3 Árboles de decisión 3.4 Redes neuronales
+Unidad 4: Plataformas para el proceso de minería de datos (Contenido no visible en las fuentes)
+Resultados de aprendizaje: Gestiona Cubos OLAP a partir de los métodos de administración y su operación. Implementa las tareas de preprocesamiento de datos con base en la metodología del proceso de minado de datos, el tipo de problema a resolver y los criterios de éxito. Experimenta el proceso de minado de datos a partir su metodología y técnicas de minado.
+Prerrequisitos: Ninguno
+
+--------------------------------------------------------------------------------
+Materia: Modelado predictivo Carrera: LCD Semestre: VI Objetivo: Realiza predicciones en el análisis de conjuntos de datos a partir de modelos de regresión y clasificación y estrategias de modelado.
+Temario: Unidad 1: Estrategias para el modelado predictivo 1.3. Ajuste y calibración de modelos Ajuste de un modelo Calibración de un modelo Separación de modelos Técnicas de re muestreo Elección entre varios modelos
+Unidad 2: Modelos predictivos de regresión (Contenido no visible en las fuentes)
+Unidad 3: Modelos predictivos de clasificación 3.1 Evaluación del desempeño de clasificadores Combinación de modelos de clasificación
+Resultados de aprendizaje: Analiza conjuntos de datos a partir de modelos predictivos de regresión, aditivos generalizados y árboles de regresión. Analiza modelos predictivos a partir de clasificadores lineales, no lineales y su desempeño.
+Prerrequisitos: Ninguno
+
+--------------------------------------------------------------------------------
+Materia: Modelos Econométricos Carrera: LCD Semestre: VII Objetivo: Propone modelos econométricos con base en la valoración de los métodos predictivos.
+Temario: Unidad 1: Estrategias para los Modelos Econométricos (Contenido no visible en las fuentes)
+Unidad 2: Evaluación del método econométrico (Contenido no visible en las fuentes)
+Unidad 3: Modelos de rezagos y ecuaciones simultáneas (Contenido no visible en las fuentes)
+Resultados de aprendizaje: Propone modelos econométricos con base en la valoración de los métodos predictivos.
+Prerrequisitos: Ninguno
+
+--------------------------------------------------------------------------------
+Materia: Probabilidad Carrera: LCD Semestre: III Objetivo: Construye modelos de probabilidad a partir de axiomas, variables aleatorias y sus funciones de distribución.
+Temario: Unidad 1: Probabilidad Axiomática (Contenido no visible en las fuentes)
+Unidad 2: Comportamiento asintótico de variables aleatorias (Contenido no visible en las fuentes)
+Unidad 3: (Título no especificado) (Contenido no visible en las fuentes)
+Resultados de aprendizaje: Construye modelos de probabilidad a partir de axiomas, variables aleatorias y sus funciones de distribución.
+Prerrequisitos: Ninguno
+
+--------------------------------------------------------------------------------
+Materia: Procesamiento de lenguaje natural Carrera: LCD Semestre: VI Objetivo: Descubre aspectos relevantes de textos con base la normalización, procesamiento semántico, clasificación y agrupamiento, análisis de personalidad, opinión y relación con otros tipos de datos y extracción de información.
+Temario: Unidad 1: Contextualización y normalización de texto 1.1 Contextualización Sistemas y aplicaciones de lenguaje natural Fundamentos lingüísticos para procesamiento de lenguaje Fundamentos matemáticos para procesamiento de lenguaje Lenguajes de programación, librerías y software para procesamiento de lenguaje 1.2 Normalización de textos Segmentación en palabras y oraciones Eliminación de elementos no relevantes Etiquetado con categorías gramaticales
+Unidad 2: Procesamiento semántico de texto 2.1 Representación vectorial de textos para su procesamiento semántico Modelo de bolsa de palabras Modelo de espacio vectorial para textos 2.2 Selección de características en vectores Frecuencia y probabilidad de palabras Funciones de frecuencia de término (TF) Frecuencia inversa del documento (IDF) Técnicas de mapeo de palabras a vectores numéricos
+Unidad 3: Clasificación y agrupamiento de textos (Contenido no visible en las fuentes)
+Unidad 4: Análisis de personalidad y opinión (Contenido no visible en las fuentes)
+Unidad 5: Análisis de textos en relación con otros tipos de datos 5.1 Textos como datos no estructurados y datos estructurados 5.2 Análisis de textos en relación con datos de geolocalización 5.3 Análisis de textos en relación con datos temporales 5.4 Análisis de textos en series de tiempo 5.5 Análisis de mensajes en redes sociales
+Resultados de aprendizaje: Analiza la normalización a textos en lenguaje natural con base en fundamentos matemáticos, lingüísticos y normalización. Extrae aspectos semánticos e información a partir de la representación vectorial de textos, minería de tópicos, análisis sintáctico y expresiones regulares. Aplica el algoritmo de clasificación o agrupamiento de textos con base a los clasificadores, aprendizaje de máquina supervisado y no supervisado. Detecta relaciones entre textos con otro tipo de datos a partir de su análisis de: geolocalización, datos temporales, series de tiempo y redes sociales.
+Prerrequisitos: Estadística Aprendizaje de máquina e inteligencia artificial Matemáticas avanzadas para ciencia de datos
+
+--------------------------------------------------------------------------------
+Materia: Procesos estocásticos Carrera: LCD Semestre: V Objetivo: Construye modelos estocásticos a partir de caminatas aleatorias, cadenas de Markov y procesos de Poisson.
+Temario: Unidad 1: Descripción de procesos estocásticos (Contenido no visible en las fuentes)
+Unidad 2: Movimiento browniano y caminatas aleatorias (Contenido no visible en las fuentes)
+Unidad 3: Procesos de Poisson (Contenido no visible en las fuentes)
+Unidad 4: Cadenas de Markov (Contenido no visible en las fuentes)
+Unidad 5: Procesos de decisión markovianos (Contenido no visible en las fuentes)
+Resultados de aprendizaje: Describe procesos estocásticos a partir de la clasificación del tiempo de evolución, trayectorias, sus distribuciones finito dimensionales y el tipo de incrementos.
+Prerrequisitos: Probabilidad Programación para ciencia de datos Métodos numéricos
+
+--------------------------------------------------------------------------------
+Materia: Programación para Ciencia de Datos Carrera: LCD Semestre: III Objetivo: Programa técnicas estadísticas con Lenguaje R a partir de análisis exploratorios, técnicas y métodos de modelados.
+Temario: Unidad 1: Programación orientada al manejo de datos en Lenguaje R 1.1 Programación de computadoras Fundamentos 1.2 Estructuras de control 1.3 Estructuras vectoriales y matriciales para análisis de datos 1.4 Programación de funciones 1.5 Manejo de cadenas y expresiones regulares 1.6 Lectura de datos de un archivo en diferentes formatos (.csv, .txt, etc)
+Unidad 2: Análisis exploratorio de datos (Contenido no visible en las fuentes)
+Unidad 3: Técnicas y métodos de modelado 3.1 Técnicas de reducción de la dimensión Análisis de componentes Análisis factorial Análisis factorial rotado Representación gráfica de análisis factorial 3.2 Análisis de conglomerados Conglomerado jerárquico y no jerárquico Análisis gráfico de los resultados 3.3 Modelos predictivos Modelo lineal regresión múltiple Regresión polinómica
+Resultados de aprendizaje: Analiza la programación de computadoras a partir de sus fundamentos y el lenguaje R en el manejo de datos. Elabora programas de análisis de datos a partir de técnicas de reducción y modelos predictivos.
+Prerrequisitos: Algoritmos y Estructuras de Datos
+
+--------------------------------------------------------------------------------
+Materia: Trabajo terminal I Carrera: LCD Semestre: VII Objetivo: Desarrolla la primera fase de un proyecto científico o tecnológico en cómputo viable y factible con base en metodologías y técnicas de desarrollo de sistemas.
+Temario: Unidad 1: Planeación de proyecto (Contenido no visible en las fuentes)
+Unidad 2: Análisis y diseño 2.1 Análisis Delimitación del proyecto (conocimiento del negocio o investigación científica) Análisis de requerimientos Propuesta de arquitectura 2.2 Diseño Modelado de datos Diseños funcionales
+Unidad 3: Prototipos Controlador de versiones Validación del proyecto Prototipo del proyecto
+Resultados de aprendizaje: Determina el plan de proyecto con base en su tipo y metodología. Propone el diseño de un proyecto a partir de su análisis de requerimientos.
+Prerrequisitos: Analítica avanzada de datos Desarrollo de aplicaciones para análisis de datos Metodología de la investigación y divulgación científica
+
+--------------------------------------------------------------------------------
+Materia: Trabajo terminal II Carrera: LCD Semestre: VIII Objetivo: Implementa un proyecto científico o tecnológico en cómputo, con base en técnicas y herramientas de desarrollo, y en la documentación sistemática.
+Temario: Unidad 1: Implementación y pruebas 1.1 Implementación Estándares y procedimientos de codificación o implementación Integración de código, prototipo o servicios existentes 1.2 Pruebas Plan de pruebas Elaboración de escenarios y scripts de pruebas unitarias o modulares
+Unidad 2: Integración y resultados 2.1 Integración Interoperabilidad de elementos Pruebas de integración Verificación y validación de resultados 2.2 Análisis e interpretación de resultados Identificación de oportunidades de mejora 2.3 Trabajo a futuro 2.4 Conclusiones
+Unidad 3: Presentación y defensa del proyecto 3.1 Reporte final del proyecto Análisis de similitud Revisión de formatos 3.2 Artículo técnico Aplicación de formatos de escritura de un artículo científico 3.3 Presentación ejecutiva del proyecto
+Resultados de aprendizaje: Verifica la implementación de las partes de un proyecto a partir de pruebas unitarias o modulares. Evalúa los resultados del proyecto con base en las pruebas de integración. Justifica el resultado final de un proyecto a partir de un reporte y una presentación ejecutiva.
+Prerrequisitos: Trabajo terminal I Administración de proyectos de TI Liderazgo personal Metodología de la investigación y divulgación científica
+
+--------------------------------------------------------------------------------

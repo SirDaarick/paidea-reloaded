@@ -1,0 +1,102 @@
+/* === CONTENEDOR PRINCIPAL === */
+.copia-container {
+  background-color: #f7f9fc;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* === CONTENIDO CENTRAL === */
+.copia-content {
+  width: 85%;
+  margin: 0 auto;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* === TÍTULOS === */
+.copia-title {
+  text-align: center;
+  color: #222;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.copia-subtitle {
+  text-align: center;
+  color: #1e2f97;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/* === SECCIONES === */
+.copia-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+/* === INPUTS === */
+.copia-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.copia-inputs label {
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.copia-inputs select {
+  width: 230px;
+  padding: 8px;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s ease-in-out;
+}
+
+.copia-inputs select:focus {
+  border-color: #1e2f97;
+}
+
+/* === BOTONES === */
+.copia-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.descargar-container {
+  margin: 20px 0;
+}
+
+.aplicar-container {
+  margin-top: 20px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .copia-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .copia-content {
+    width: 95%;
+  }
+
+  .copia-inputs select {
+    width: 100%;
+  }
+}

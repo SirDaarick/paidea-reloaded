@@ -1,0 +1,30 @@
+
+/* Esto era .btn */
+.button {
+  border: 0;
+  border-radius: 12px;
+  padding: 10px 18px;
+  font-weight: 700;
+  cursor: pointer;
+  /* Recomiendo añadir una transición para que se vea suave */
+  transition: background-color 0.2s ease;
+}
+
+/* Esto era .edp-btn-pri */
+.primary {
+  background: #405589;
+  color: #fff;
+}
+.primary:hover {
+  background: #5a73b4; /* Añadí un hover simple, ajústalo a tu gusto */
+}
+
+
+/* Esto era .edp-btn-sec */
+.secondary {
+  background: #2f3f68;
+  color: #fff;
+}
+.secondary:hover {
+  background: #405589; /* Añadí un hover simple */
+}

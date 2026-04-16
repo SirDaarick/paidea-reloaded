@@ -1,0 +1,124 @@
+{
+  "matutino": {
+    "descripcion": "Horarios matutinos 7:00 - 13:30",
+    "bloques": [
+      {
+        "nombre": "Clase 1",
+        "horario": {
+          "lunes": "692c8dba6b3727a33f35c5a1",
+          "martes": "692c8dba6b3727a33f35c59f",
+          "jueves": "692c8dba6b3727a33f35c5a1"
+        }
+      },
+      {
+        "nombre": "Clase 2",
+        "horario": {
+          "lunes": "692c8dba6b3727a33f35c5a3",
+          "miercoles": "692c8dba6b3727a33f35c5a3",
+          "jueves": "692c8dba6b3727a33f35c5a3"
+        }
+      },
+      {
+        "nombre": "Clase 3",
+        "horario": {
+          "lunes": "692c8dba6b3727a33f35c59d",
+          "jueves": "692c8dba6b3727a33f35c59d",
+          "viernes": "692c8dba6b3727a33f35c59f"
+        }
+      },
+      {
+        "nombre": "Clase 4",
+        "horario": {
+          "lunes": "692c8dba6b3727a33f35c59f",
+          "miercoles": "692c8dba6b3727a33f35c59f",
+          "jueves": "692c8dba6b3727a33f35c59f"
+        }
+      },
+      {
+        "nombre": "Clase 5",
+        "horario": {
+          "martes": "692c8dba6b3727a33f35c5a1",
+          "miercoles": "692c8dba6b3727a33f35c5a1",
+          "viernes": "692c8dba6b3727a33f35c5a1"
+        }
+      },
+      {
+        "nombre": "Clase 6",
+        "horario": {
+          "martes": "692c8dba6b3727a33f35c5a3",
+          "miercoles": "692c8dbb6b3727a33f35c5a5",
+          "viernes": "692c8dba6b3727a33f35c5a3"
+        }
+      },
+      {
+        "nombre": "Clase 7",
+        "horario": {
+          "martes": "692c8dba6b3727a33f35c59d",
+          "miercoles": "692c8dba6b3727a33f35c59d",
+          "viernes": "692c8dba6b3727a33f35c59d"
+        }
+      }
+    ]
+  },
+  "vespertino": {
+    "descripcion": "Horarios vespertinos 13:30 - 21:30",
+    "bloques": [
+      {
+        "nombre": "Clase 1",
+        "horario": {
+          "lunes": "692c8dbb6b3727a33f35c5a9",
+          "miercoles": "692c8dbb6b3727a33f35c5a9",
+          "jueves": "692c8dbb6b3727a33f35c5a9"
+        }
+      },
+      {
+        "nombre": "Clase 2",
+        "horario": {
+          "lunes": "692c8dbb6b3727a33f35c5a7",
+          "jueves": "692c8dbb6b3727a33f35c5a7",
+          "viernes": "692c8dbb6b3727a33f35c5a9"
+        }
+      },
+      {
+        "nombre": "Clase 3",
+        "horario": {
+          "martes": "692c8dbb6b3727a33f35c5ab",
+          "miercoles": "692c8dbb6b3727a33f35c5ab",
+          "viernes": "692c8dbb6b3727a33f35c5ab"
+        }
+      },
+      {
+        "nombre": "Clase 4",
+        "horario": {
+          "martes": "692c8dbb6b3727a33f35c5a9",
+          "miercoles": "692c8dbc6b3727a33f35c5ad",
+          "jueves": "692c8dbb6b3727a33f35c5ab"
+        }
+      },
+      {
+        "nombre": "Clase 5",
+        "horario": {
+          "martes": "692c8dbb6b3727a33f35c5a7",
+          "miercoles": "692c8dbb6b3727a33f35c5a7",
+          "viernes": "692c8dbb6b3727a33f35c5a7"
+        }
+      },
+      {
+        "nombre": "Clase 6",
+        "horario": {
+          "lunes": "692c8dbc6b3727a33f35c5ad",
+          "miercoles": "692c8dbc6b3727a33f35c5ad",
+          "jueves": "692c8dbc6b3727a33f35c5ad"
+        }
+      },
+        {
+            "nombre": "Clase 7",
+            "horario": {
+            "lunes": "692c8dbb6b3727a33f35c5a5",
+            "martes": "692c8dbb6b3727a33f35c5a5",
+            "jueves": "692c8dbb6b3727a33f35c5a5"
+            }
+        }
+    ]
+  }
+}

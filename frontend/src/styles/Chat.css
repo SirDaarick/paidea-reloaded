@@ -1,0 +1,272 @@
+.chat-bubble {
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: transparent;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1000;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition:
+    transform 0.5s ease-out,
+    filter 0.2s ease,
+    box-shadow 0.15s ease;
+  cursor: grab;
+}
+
+.chat-bubble.dragging {
+  cursor: grabbing;
+}
+
+/* Hover */
+.chat-bubble:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+/* Ventana de Chat estilo Facebook */
+.chat-window {
+  position: fixed;
+  right: 2cm;
+  bottom: 0;
+  width: 350px;
+  height: 50vh;
+  background: white;
+  border: 3px solid #3E517D;
+  border-bottom: none;
+  border-radius: 8px 8px 0 0;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  animation: slideUp 0.3s ease forwards;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0.3;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Header estilo Windows */
+.chat-window-header {
+  background: #3E517D;
+  color: white;
+  padding: 10px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #2f3c5b;
+  font-family: "Freeman", sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 5px 5px 0 0;
+}
+
+.chat-window-title {
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  font-size: 0.95em;
+}
+
+.chat-window-controls {
+  display: flex;
+  gap: 6px;
+}
+
+.control-btn {
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+  padding: 0;
+  line-height: 1;
+}
+
+.control-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.control-btn.minimize:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.control-btn.close:hover {
+  background: #c42b1c;
+}
+
+/* Estructura del Chat */
+.chat-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px;
+  background: #f7f9fb;
+  display: flex;
+  flex-direction: column;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@keyframes fadeInMsg {
+  from {
+    transform: translateY(6px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.msg {
+  padding: 9px 12px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  max-width: 80%;
+  animation: fadeInMsg 0.25s ease;
+}
+
+.msg.user {
+  background: #9acaf1;
+  align-self: flex-end;
+  color: #003366;
+}
+
+.msg.bot {
+  background: #f6f9fc;
+  align-self: flex-start;
+  color: #333;
+}
+
+/* Entrada de texto*/
+.chat-input {
+  display: flex;
+  border-top: 1px solid #ddd;
+  padding: 8px;
+  background: white;
+}
+
+.chat-input input {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  outline: none;
+  border-radius: 4px;
+  background: #f2f2f2;
+  font-size: 0.95em;
+  font-family: sans-serif;
+}
+
+.chat-input button {
+  background: #3E517D;
+  color: white;
+  border: none;
+  padding: 0 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: 6px;
+  transition: background 0.3s ease, transform 0.15s ease;
+}
+
+.chat-input button:hover {
+  background: #2f3c5b;
+  transform: scale(1.05);
+}
+
+.loader {
+  display: flex;
+  gap: 6px;
+}
+
+.loader span {
+  width: 8px;
+  height: 8px;
+  background: #555;
+  border-radius: 50%;
+  display: inline-block;
+  animation: bounce 0.6s infinite alternate;
+}
+
+.loader span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.loader span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to   { transform: translateY(-8px); }
+}
+
+.chat-window {
+  position: fixed;
+  
+  /* 1. OBLIGAR A TOCAR EL FONDO */
+  bottom: 0 !important;   /* El !important asegura que nada lo sobrescriba */
+  margin-bottom: 0 !important; 
+  
+  /* Mantén la distancia a la derecha si quieres */
+  right: 20px; 
+
+  /* 2. QUITAR REDONDEO INFERIOR (Crucial para efecto "pegado") */
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  
+  /* Mantén redondeo solo arriba para que se vea bien */
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+
+  /* Resto de estilos... */
+  background-color: white;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  
+  /* Asegura tamaños base */
+  width: 350px;
+  height: 500px;
+  box-shadow: 0 -5px 20px rgba(0,0,0,0.1); /* Sombra hacia arriba */
+}
+
+/* MODO EXPANDIDO */
+.chat-window.expanded {
+  width: 800px;
+  height: 85vh; /* 85% de la altura de la pantalla */
+  max-width: 100vw; /* Asegura no pasarse del ancho en móviles */
+  
+  /* Aseguramos que siga pegado abajo al expandirse */
+  bottom: 0 !important;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+/* Opcional: Ajustar el botón nuevo */
+.control-btn.expand {
+  font-size: 14px;
+  margin-right: 5px;
+}

@@ -1,0 +1,71 @@
+iia  ingenieria en inteligencia artificial
+mapa curricular 2020
+semestre 1
+- fundamentos de programacion
+- matematicas discretas
+- calculo
+- comunicacion oral y escrita
+- mecanica y electromagnetismo
+- fundamentos economicos
+semestre 2
+- ingenieria, etica y sociedad
+- calculo multivariable
+- algebra lineal
+- finanzas empresariales
+- fundamentos de diseno digital
+- algoritmos y estructuras de datos
+semestre 3
+- analisis y diseno de algoritmos
+- paradigmas de programacion
+- ecuaciones diferenciales
+- bases de datos
+- diseno de sistemas digitales
+- liderazgo personal
+semestre 4
+- fundamentos de inteligencia artificial
+- probabilidad y estadistica
+- matematicas avanzadas para la ingenieria
+- tecnologias para el desarrollo de aplicaciones web
+- analisis y diseno de sistemas
+- procesamiento digital de imagenes
+semestre 5
+- aprendizaje de maquina
+- vision artificial
+- teoria de la computacion
+- procesamiento de senales
+- algoritmos bioinspirados
+- tecnologias de lenguaje natural
+semestre 6
+- computo paralelo
+- redes neuronales y aprendizaje profundo
+- ingenieria de software para sistemas inteligentes
+- optativa a
+- optativa b
+- metodologia de la investigacion y divulgacion cientifica
+semestre 7
+- reconocimiento de voz
+- trabajo terminal i
+- formulacion y evaluacion de proyectos informaticos
+- optativa c
+- optativa d
+semestre 8
+- gestion empresarial
+- trabajo terminal ii
+- estancia profesional
+- desarrollo de habilidades sociales para la alta direccion
+optativas semestre 6
+- innovacion y emprendimiento tecnologico
+- sistemas multiagentes
+- mineria de datos
+- temas selectos de inteligencia artificial
+- tecnicas de programacion para robots moviles
+optativas semestre 7
+- interaccion humano-maquina
+- programacion de dispositivos moviles
+- aplicaciones de inteligencia artificial en sistemas embebidos
+- topicos selectos de algoritmos bioinspirados
+- propiedad intelectual
+- aplicaciones de lenguaje natural
+- aplicaciones de sistemas multiagentes
+- big data
+- computo en la nube

@@ -1,0 +1,42 @@
+/* Sección principal de análisis académico */
+.analisis-main {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  padding: 40px;
+  flex: 1;
+  min-height: calc(100vh - 160px);
+}
+
+
+/* Sidebar de datos generales */
+.datos-sidebar {
+  flex: 0 0 350px; /* Ancho fijo de 350px */
+  max-width: 350px;
+  min-width: 300px;
+}
+
+/* Contenedor de la gráfica - toma el resto del espacio */
+.grafica-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Título de la sección de análisis */
+.grafica-box h2 {
+  text-align: left;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #000000;
+}
+
+/* Gráfica centrada y grande */
+.grafica-chart {
+  width: 100% !important;
+  max-width: 800px;
+  height: 400px !important;
+}

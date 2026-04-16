@@ -1,0 +1,356 @@
+.reinscripciones-container {
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9fc;
+  min-height: 100vh;
+}
+
+.reinscripciones-content {
+  width: 85%;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.reinscripciones-content h2 {
+  text-align: center;
+  color: #1b2a7c;
+  margin-bottom: 25px;
+  font-size: 26px;
+}
+
+/* === Filtros === */
+.reinscripciones-filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.filtro {
+  display: flex;
+  flex-direction: column;
+  min-width: 220px;
+}
+
+.filtro label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.filtro select,
+.filtro input {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+/* === Secciones de grupos === */
+.grupo {
+  margin: 35px auto;
+  border-top: 2px solid #e4e4e4;
+  padding-top: 25px;
+  max-width: 900px;
+  background-color: #fafafa;
+  border-radius: 12px;
+  padding: 25px 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.grupo h3 {
+  color: #1b2a7c;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.grupo h3 span {
+  color: #444;
+  font-size: 14px;
+}
+
+/* === Filas dentro de los grupos === */
+.fila {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;
+  align-items: center;
+}
+
+.fila div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fila label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.fila input[type="text"],
+.fila input[type="number"] {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 8px;
+  width: 170px;
+  text-align: center;
+}
+
+/* === Slider doble (Horario) === */
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+}
+
+.range-container {
+  position: relative;
+  width: 220px;
+  height: 6px;
+  background: #e5e5e5;
+  border-radius: 5px;
+}
+
+.range-container .range {
+  position: absolute;
+  width: 100%;
+  pointer-events: none;
+  appearance: none;
+  background: transparent;
+  height: 6px;
+}
+
+.range::-webkit-slider-thumb {
+  pointer-events: all;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #222;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+.range::-moz-range-thumb {
+  pointer-events: all;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #222;
+  cursor: pointer;
+}
+
+.slider span {
+  font-size: 13px;
+  color: #555;
+}
+
+.subtext {
+  font-size: 12px;
+  color: #999;
+}
+
+/* === Botones === */
+.botones {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.btn-principal,
+.btn-secundario {
+  padding: 12px 25px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-principal {
+  background-color: #2b49d5;
+  color: white;
+}
+
+.btn-secundario {
+  background-color: #d9def9;
+  color: #1b2a7c;
+}
+
+.btn-principal:hover {
+  background-color: #1e35a3;
+}
+
+.btn-secundario:hover {
+  background-color: #c2c9f0;
+}
+
+/*Mensaje resumen*/
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(27, 42, 124, 0.3);
+  backdrop-filter: blur(3px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  padding: 30px 40px;
+  width: 480px;
+  text-align: center;
+  animation: aparecer 0.4s ease-in-out;
+}
+
+.modal-content h3 {
+  color: #1b2a7c;
+  margin-bottom: 15px;
+}
+
+.modal-content h4 {
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.modal-content p,
+.modal-content li {
+  color: #555;
+  font-size: 15px;
+  margin: 4px 0;
+}
+
+.modal-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cerrar-modal {
+  background-color: #1b2a7c;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cerrar-modal:hover {
+  background-color: #2b49d5;
+}
+
+@keyframes aparecer {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* === Modal personal === */
+.personal-modal {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  width: 480px;
+  max-width: 90%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  text-align: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.personal-modal h3 {
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #1a1a5a;
+}
+
+.subtitulo-csv {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #1a1a5a;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  flex: 1;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #4b56d2;
+}
+
+.csv-upload {
+  background-color: #c9cdf4;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.csv-upload input[type="file"] {
+  display: block;
+  margin: 0 auto;
+}
+
+.archivo-nombre {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Animación suave */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+

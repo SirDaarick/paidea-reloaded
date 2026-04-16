@@ -1,0 +1,81 @@
+LCD — LICENCIATURA EN CIENCIA DE DATOS
+Mapa curricular 2020
+
+#SEMESTRE 1
+- Fundamentos De Programación
+- Matemáticas Discretas
+- Cálculo
+- Comunicación Oral Y Escrita
+- Introducción A La Ciencia De Datos
+
+#SEMESTRE 2
+- Algoritmos Y Estructuras De Datos
+- Cálculo Multivariable
+- Álgebra Lineal
+- Ética Y Legalidad
+- Fundamentos Económicos
+
+#SEMESTRE 3
+- Análisis Y Diseño De Algoritmos
+- Programación Para Ciencia De Datos
+- Probabilidad
+- Bases De Datos
+- Métodos Numéricos
+- Finanzas Empresariales
+
+#SEMESTRE 4
+- Desarrollo De Aplicaciones Web
+- Cómputo De Alto Desempeño
+- Estadística
+- Bases De Datos Avanzadas
+- Desarrollo De Aplicaciones Para Análisis De Datos
+- Liderazgo Personal
+
+#SEMESTRE 5
+- Minería De Datos
+- Matemáticas Avanzadas Para Ciencia De Datos
+- Procesos Estocásticos
+- Aprendizaje De Máquina E Inteligencia Artificial
+- Analítica Y Visualización De Datos
+- Metodologías De La Investigación Y Divulgación Científica
+
+#SEMESTRE 6
+- Modelado Predictivo
+- Procesamiento De Lenguaje Natural
+- Análisis De Series De Tiempo
+- Analítica Avanzada De Datos
+- Optativa A
+- Optativa B
+
+#SEMESTRE 7
+- Big Data
+- Modelos Econométricos
+- Trabajo Terminal I
+- Administración De Proyectos De TI
+- Optativa C
+- Optativa D
+
+#SEMESTRE 8
+- Desarrollo De Habilidades Sociales Para La Alta Dirección
+- Gestión Empresarial
+- Trabajo Terminal II
+- Estancia Profesional
+
+OPTATIVAS SEMESTRE 6
+- Estadística Avanzada
+- Temas Selectos De Inteligencia Artificial
+- Temas Selectos De Aprendizaje Profundo
+- Temas Selectos De Procesamiento De Lenguaje Natural
+- Bioinformática Básica
+- Propiedad Intelectual
+- Simulación Básica
+
+
+#OPTATIVAS SEMESTRE 7
+- Bioinformática Avanzada
+- Sistemas De Información Geográfica
+- Ciberseguridad
+- Protección De Datos
+- Innovación Y Emprendimientos Tecnológico
+- Simulación Avanzada
+

@@ -1,0 +1,138 @@
+/* ===== HORARIO FINAL ===== */
+.horario-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 32px;
+  padding: 40px 60px;
+  background: #ffffff;
+}
+
+.horario-side {
+  background-color: #dde1f2;
+  border-radius: 20px;
+  padding: 25px 30px;
+  width: 280px;
+  min-width: 260px;
+  color: #1a1a40;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.horario-side h3 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #1a1a40;
+  margin-bottom: 12px;
+}
+
+.horario-side p {
+  margin: 5px 0;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.horario-side strong {
+  font-weight: 900;
+  color: #00003b;
+}
+
+/* ===== COLUMNA DERECHA ===== */
+.horario-main {
+  flex: 1;
+  /* CRUCIAL: Esto permite que el flex item se encoja para activar el scroll */
+  min-width: 0; 
+}
+
+.horario-main h2 {
+  font-size: 24px;
+  font-weight: 800;
+  color: #00003b;
+  margin-bottom: 6px;
+}
+
+.horario-main p {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 18px;
+}
+
+/* ===== CONTENEDOR DE SCROLL PARA TABLA (Nuevo) ===== */
+.table-scroll-wrapper {
+  width: 100%;
+  overflow-x: auto; /* Activa el scroll horizontal */
+  padding-bottom: 5px; /* Espacio para que el scroll no tape texto */
+  margin-top: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: white;
+}
+
+/* Quitar bordes duplicados cuando la tabla está dentro del wrapper */
+.table-scroll-wrapper table,
+.table-scroll-wrapper .horario-table {
+  border: none;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+/* ===== ESTILOS GENERALES DE TABLA ===== */
+.horario-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  /* Estos bordes se aplicarán si la tabla se usa fuera del wrapper */
+  border: 1px solid #d1d5db; 
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.horario-table th {
+  background-color: #2e3c7e;
+  color: white;
+  padding: 10px 6px;
+  text-align: center;
+  border-right: 1px solid #c8d0f0;
+  font-weight: 700;
+  white-space: nowrap; /* Evita que los encabezados se rompan feo */
+}
+
+.horario-table th:last-child {
+  border-right: none;
+}
+
+.horario-table td {
+  text-align: center;
+  border: 1px solid #ccc; /* Borde interno de celdas */
+  padding: 8px 5px;
+  color: #1f2937;
+  min-width: 100px; /* Asegura un ancho mínimo para que no se apriete demasiado */
+}
+
+.horario-table td:nth-child(3) {
+  text-align: left;
+  padding-left: 10px;
+  min-width: 200px; /* Dar más espacio a la columna de Materia */
+}
+
+.horario-table tr:nth-child(even) {
+  background-color: #f6f7fb;
+}
+
+.horario-table tr:hover {
+  background-color: #eaf0ff;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 1100px) {
+  .horario-container {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .horario-side {
+    width: 100%;
+  }
+}

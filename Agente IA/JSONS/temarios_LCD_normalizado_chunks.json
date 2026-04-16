@@ -1,0 +1,332 @@
+[
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_1",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "materia: administracion de proyectos de ti carrera: lcd semestre: vii objetivo: desarrolla un proyecto de tecnologia de informacion a partir del marco de trabajo pmbok.\ntemario: unidad i: gestion de proyectos identifica la estructura de un proyecto a partir de su tipo. el proyecto (tipos, ciclo de vida, caso de negocio) la oficina de direccion de proyectos (pmo: funciones, nivel de madurez) estructura organizacional (funcional, matricial, proyecto)\nunidad ii: planeacion integral del proyecto desarrolla la planeacion de un proyecto a partir de su alcance y del desglose de trabajo. alcance de un proyecto (herramientas de identificacion de requerimientos, determinacion y verificacion del alcance) estructura de desglose de trabajo (edt) acta constitutiva del proyecto matriz de roles y responsabilidades (raci) planificacion y programacion de actividades (diagramas de gantt, linea base, pert, ruta critica)"
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_2",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "unidad iii: gestion de costos desarrolla el plan de gestion de costos a partir de los estudios de factibilidad. costos (identificacion, clasificacion, estimacion, plan de gestion, determinacion de presupuesto) estudio de factibilidad (operativo, tecnico, economico, comercial)\nunidad iv: gestion de riesgos desarrolla el proceso de gestion de riesgos a partir de su analisis y evaluacion. identificacion de riesgos (tipos, tecnicas) analisis de riesgos (cualitativo, cuantitativo) evaluacion y control de riesgo plan de gestion\nunidad v: seguimiento y cierre del proyecto analiza los resultados y posibles desviaciones del proyecto a partir del seguimiento. monitoreo y control del proyecto (control de costos, control de recursos, seguimiento, elaboracion de informes) cierre del proyecto (acta de cierre, documento de lecciones aprendidas)\nresultados de aprendizaje: desarrollar un proyecto de tecnologia de informacion a partir del marco de trabajo pmbok."
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_3",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "resultados de aprendizaje: desarrollar un proyecto de tecnologia de informacion a partir del marco de trabajo pmbok.\nprerrequisitos: se relaciona de manera antecedente con fundamentos economicos, finanzas empresariales e ingenieria de software para sistemas inteligentes de forma lateral con innovacion y emprendimiento tecnologico y de manera consecuente con trabajo terminal i y trabajo terminal ii.\n--------------------------------------------------------------------------------\nmateria: algebra lineal carrera: lcd semestre: ii objetivo: aplica los metodos de eliminacion de gauss-jordan matricial con pivoteo a partir de las transformaciones lineales, los espacios vectoriales, valores y vectores propios. tambien proporciona habilidades para la solucion de ecuaciones utilizadas en la ciencia de datos y en el desarrollo de algoritmos."
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_4",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "temario: unidad i: sistemas de ecuaciones lineales resuelve los sistemas de ecuaciones lineales a partir de las matrices, determinantes y la inversa de una matriz.\nunidad ii: espacios vectoriales (contenido no visible en las fuentes)\nunidad iii: transformaciones lineales desarrolla isomorfismos a partir de transformaciones lineales y su representacion matricial. transformaciones lineales (propiedades, imagen y kernel) representacion matricial (matrices semejantes y cambio de base) isomorfismos (transformacion inversa, ejemplos de espacios isomorfos)\nunidad iv: valores y vectores propios (contenido no visible en las fuentes) diagonalizacion y factorizacion de matrices.\nresultados de aprendizaje: (no hay resultados especificos puros, solo la descripcion de la evaluacion en las fuentes)\nprerrequisitos: se relaciona de manera lateral con calculo multivariable y de manera consecuente con matematicas avanzadas para ciencias de datos y procesamiento de lenguaje natural."
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_5",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "--------------------------------------------------------------------------------\nmateria: algoritmos y estructuras de datos carrera: lcd semestre: 2 objetivo: utiliza algoritmos y estructuras de datos con base en sus ordenes de complejidad y caracteristicas.\ntemario: unidad i: algoritmos fundamentales identifica algoritmos fundamentales de la computacion con base en sus ordenes de complejidad. algoritmia (caracteristicas, representacion en pseudocodigo, orden de complejidad o()) problema del ordenamiento (por insercion, seleccion, burbuja, mezcla y comparacion de complejidades) problema de la busqueda (secuencial, binaria, indexada, y comparacion de complejidades) exploracion exhaustiva y vuelta atras (programacion por vuelta atras, nociones de complejidad) algoritmos de ordenamiento, algoritmos de busqueda, busqueda exhaustiva, programacion vuelta atras."
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_6",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "unidad ii: estructuras de datos lineales construye estructuras de datos lineales a partir de especificaciones genericas. pila cola (incluyendo colas de prioridad) listas (simplemente enlazadas, doblemente enlazadas, circulares) tablas hash (funcion hash, resolucion de colisiones, tablas cerradas/abiertas) se estudian especificaciones genericas, implementaciones (estatica/dinamica), nociones de complejidad y aplicaciones para cada estructura. soluciones con pilas, soluciones con colas, implementacion de listas, tablas hash.\nunidad iii: estructuras de datos no lineales manipula estructuras de datos no lineales a partir de sus aplicaciones, complejidad y representaciones. arboles binarios, monticulo, recorridos en amplitud y en profundidad sobre grafos, soluciones con grafos.\nresultados de aprendizaje: (no hay resultados especificos puros, solo la descripcion de la evaluacion en las fuentes)"
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_7",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "resultados de aprendizaje: (no hay resultados especificos puros, solo la descripcion de la evaluacion en las fuentes)\nprerrequisitos: se relaciona de manera antecedente con fundamentos de programacion y matematicas discretas lateralmente con algebra lineal y consecuentemente con analisis y diseno de algoritmos.\n--------------------------------------------------------------------------------\nmateria: analisis y diseno de algoritmos carrera: lcd semestre: iii objetivo: determina el algoritmo mas adecuado en la solucion de un problema a partir de las estrategias de diseno y la complejidad algoritmica. contribuye con nociones de la teoria de la complejidad para enfrentar problemas de complejidad np.\ntemario: unidad i: contextualizacion y notaciones determina la complejidad de los algoritmos a partir de los tipos notaciones. rol de los algoritmos en el computo (nociones de algoritmos y analisis) tipos de complejidad (temporal y espacial) funciones de crecimiento y notaciones."
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_8",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "unidad ii: estrategias de diseno deterministas estrategia divide y venceras (problema del maximo subarreglo, algoritmo de strassen) ecuaciones de recurrencia (metodo de sustitucion, iteraciones, teorema maestro) programacion dinamica (corte de varilla, multiplicacion de una cadena de matrices, elementos, caracteristicas, aplicaciones) estrategia avariciosa (greedy) (seleccion de actividades, codigos de huffman, matroides) estrategias de divide y venceras, programacion dinamica, la estrategia avariciosa.\nunidad iii: estrategias de diseno no deterministas aplica las diferentes estrategias de diseno no deterministas a partir de las caracteristicas del problema a solucionar. complejidad algoritmica clases de complejidad (p vs np, np-completitud) estrategias para enfrentar a la clase np analisis probabilistico y algoritmos aleatorizados, analisis amortizado, estrategias para enfrentar a la clase np."
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_9",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "resultados de aprendizaje: (no hay resultados especificos puros, solo la descripcion de la evaluacion en las fuentes)\nprerrequisitos: se relaciona de manera antecedente con algoritmos y estructuras de datos.\n--------------------------------------------------------------------------------\nmateria: analisis de series de tiempo carrera: lcd semestre: vi objetivo: evalua series de tiempo de datos con base en modelos estadisticos.\ntemario: unidad i: caracteristicas de series de tiempo analisis descriptivo y exploratorio series de tiempo estacionarias y no estacionarias regresion lineal en contexto de series de tiempo suavizamiento."
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_10",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "unidad ii: procesos lineales en tiempo discreto modelos arma (autoregressive moving average) estimacion de parametros en modelos arma pronosticos con modelos arma procesos dependientes de variables externas (armax) evaluacion de ordenes de integracion con modelos arima (autoregressive integrated moving average) construccion, inferencia de parametros y pronosticos con modelos arima.\nunidad iii: analisis espectral y filtrado evalua series de tiempo a partir de la periodicidad, la densidad espectral y filtros lineales. comportamiento ciclico y periodicidad, densidad espectral periodograma y transformada de fourier discreta estimacion espectral (parametrica y no parametrica) series multiples y espectros cruzados filtrado (filtros lineales, modelos de regresion con retraso, extraccion de senales y filtro optimo) periodograma y transformada de fourier discreta, filtrado de series de tiempo, extraccion de senales."
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_11",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "resultados de aprendizaje: (no hay resultados especificos puros, solo la descripcion de la evaluacion en las fuentes)\nprerrequisitos: ninguno (no se especifican prerrequisitos directos en las fuentes, pero contribuye a desarrollar modelos estadisticos que evolucionan en el tiempo)\n--------------------------------------------------------------------------------\nmateria: analitica avanzada de datos carrera: lcd semestre: vi objetivo: desarrolla sistemas de analitica avanzados de datos con base en modelos de regresion avanzados, clasificacion y agrupamiento.\ntemario: unidad i: modelos de regresion (contenido no visible en las fuentes)\nunidad ii: modelos de clasificacion (contenido no visible en las fuentes)\nunidad iii: modelos de agrupamiento en la analitica avanzada establece etiquetas a objetos en datos sin etiquetar con base en el agrupamiento basado en prototipos, agrupamiento difuso, y agrupamientos neuronales."
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_12",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "resultados de aprendizaje: (no hay resultados especificos puros, solo la descripcion de la evaluacion en las fuentes)\nprerrequisitos: se relaciona de manera consecuente con analitica y visualizacion de datos.\n--------------------------------------------------------------------------------\nmateria: analitica y visualizacion de datos carrera: lcd semestre: v objetivo: aplica tecnicas a datos recolectados a partir de su preprocesamiento, analisis y visualizacion.\ntemario: unidad i: datos y preprocesamiento de datos integra datos a partir de su recoleccion, relaciones y preprocesamiento. datos (conjunto de datos de iris, escalas de datos) relaciones (medidas de disimilitud y similitud, relaciones de secuencia) preprocesamiento (muestreo y cuantificacion, tipos y manejo de error, filtrado, transformacion e integracion de datos) muestreo y cuantificacion, filtrado de datos, transformacion de datos."
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_13",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "unidad ii: visualizacion de datos aplica metodos de proyeccion lineal y no lineal a partir de la visualizacion de datos de alta dimension y tecnicas de analisis espectral de datos periodicos. analisis de componentes principales, mapeo sammon, analisis espectral, construccion de tableros.\nunidad iii: correlacion correlacion lineal, prueba de chi-cuadrada para la independencia.\nresultados de aprendizaje: (no hay resultados especificos puros, solo la descripcion de la evaluacion en las fuentes)\nprerrequisitos: se relaciona de manera antecedente con desarrollo de aplicaciones para analisis de datos lateralmente con mineria de datos y aprendizaje de maquina e inteligencia artificial y consecuentemente con analitica avanzada de datos.\n--------------------------------------------------------------------------------"
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_14",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "--------------------------------------------------------------------------------\nmateria: aprendizaje de maquina e inteligencia artificial carrera: lcd semestre: v objetivo: propone una maquina de aprendizaje con base en los tipos de aprendizaje, algoritmos y medidas de desempeno.\ntemario: unidad i: inteligencia artificial y sus aplicaciones metodos de validacion (entrenamiento y prueba, validacion cruzada: dejar uno fuera, k grupos, bootstrap) ia y el apoyo a la toma de decisiones.\nunidad ii: algoritmos de aprendizaje supervisado y no supervisado arboles de decision (clasificacion y regresion, algoritmos de construccion, interpretacion) algoritmo del vecino mas cercano (principio, clasificacion de minima distancia, aplicaciones).\nunidad iii: algoritmos de ensamble bosque aleatorio y combinacion de predicciones.\nresultados de aprendizaje: (no hay resultados especificos puros, solo la descripcion de la evaluacion en las fuentes)"
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_15",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "resultados de aprendizaje: (no hay resultados especificos puros, solo la descripcion de la evaluacion en las fuentes)\nprerrequisitos: la unidad se relaciona de manera antecedente con estadistica lateralmente con matematicas avanzadas para ciencia de datos, mineria de datos y consecuente con procesamiento de lenguaje natural y big data.\n--------------------------------------------------------------------------------\nmateria: bases de datos avanzadas carrera: lcd semestre: iv objetivo: construye sistemas de soporte de decision a partir de bases de datos no relacionales, tecnologias olap y bancos de datos.\ntemario: unidad i: sistemas de soporte de decision y almacenes de datos reconoce los conceptos y aplicacion de los sistemas de soporte de decisiones con base en las caracteristicas y sus arquitecturas."
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_16",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "unidad ii: diseno de almacenes y bancos de datos disena bancos de datos a partir de sus arquitecturas y caracteristicas. diseno de almacenes de datos (data warehouse) referencia arquitectural, funcionamiento funciones extraccion, transformacion y limpieza (etl) diseno de almacenes y bancos de datos, funciones etl.\nunidad iii: diseno de cubos olap disena cubos de datos a partir de sus arquitecturas, modelado y operadores. cubos de datos (olap vs oltp) arquitecturas olap, modelado de cubos operadores (roll up, drill down, slice, dice, pivot), y cubos multidimensionales cubos de datos, operadores de cubos de datos, cubos multidimensionales.\nunidad iv: bases de datos no relacionales bases de datos orientadas a objetos, documentos, clave-valor, grafos, y otras tendencias.\nresultados de aprendizaje: (no hay resultados especificos puros, solo la descripcion de la evaluacion en las fuentes)"
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_17",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "resultados de aprendizaje: (no hay resultados especificos puros, solo la descripcion de la evaluacion en las fuentes)\nprerrequisitos: se relaciona de manera antecedente con algoritmos y estructuras de datos y bases de datos laterales computo de alto desempeno y desarrollo web y consecuente con administracion de proyectos de ti.\n--------------------------------------------------------------------------------\nmateria: bases de datos carrera: lcd semestre: iii objetivo: solucionar problemas de gestion de datos mediante el modelado relacional y el lenguaje sql.\ntemario: unidad i: sistemas de bases de datos analiza las arquitecturas de los sgbd a partir de su clasificacion y los tipos de bases de datos.\nunidad ii: modelo entidad-relacion modelado entidad relacion y modelado entidad relacion extendido."
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_18",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "unidad ii: modelo entidad-relacion modelado entidad relacion y modelado entidad relacion extendido.\nunidad iii: modelo relacional gestiona bases de datos relacionales a partir de su modelo, integridad, tipos de restricciones y operaciones del algebra relacional. fundamentos del modelo relacional (dominios, atributos, tuplas, relaciones) integridad (referencial, llaves foraneas) operaciones del algebra relacional (seleccion, proyeccion, reunion (join), interseccion, diferencia, division, funciones de agregacion y de agrupacion) operaciones del algebra relacional.\nunidad v: lenguaje sql gestiona bases de datos relacionales a partir del lenguaje sql. creacion y modificacion de esquemas (create, drop, alter table, view, index) instrucciones insert, delete, update y triggers instruccion selec-from-where funciones agregadas y agrupacion, y procedimientos almacenados (store procedures) creacion de bases de datos y operaciones basicas con sql."
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_19",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "resultados de aprendizaje: (no hay resultados especificos puros, solo la descripcion de la evaluacion en las fuentes)\nprerrequisitos: es antecedente para bases de datos avanzadas.\n--------------------------------------------------------------------------------\nmateria: big data carrera: lcd semestre: vii objetivo: aplicar principios y tecnologias de grandes volumenes de datos para la analitica y toma de decisiones.\ntemario: unidad i: principios de grandes volumenes de datos gobierno de datos para big data, cluster, servidores en premisa y en la nube.\nunidad ii: plataformas de grandes volumenes de datos analiticos descriptivos y de diagnostico analitico predictivo analitico prescriptivo analitico cognitivo ingesta de datos, analisis bayesiano y sentimental, analitica empresarial para big data."
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_20",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "unidad iii: capas de presentacion demuestra los principios aplicados de big data con base en la narrativa de los datos. narrativa de datos (principios de inteligencia de negocios, indicadores de desempeno, modelado y presentacion de reportes) principios aplicados de big data para ciencia de datos (notebooks, motores unificados para analiticos) narrativa de datos, el desarrollo de tableros.\nresultados de aprendizaje: (no hay resultados especificos puros, solo la descripcion de la evaluacion en las fuentes)\nprerrequisitos: se relaciona de manera consecuente con aprendizaje de maquina e inteligencia artificial.\n--------------------------------------------------------------------------------\nmateria: calculo multivariable carrera: lcd semestre: 2 objetivo: resuelve problemas de ingenieria con base en las derivadas parciales e integrales multiples."
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_21",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "temario: unidad i: vectores y funciones vectoriales reconoce las funciones vectoriales a partir de las operaciones entre vectores. sistemas de coordenadas, vectores (producto cruz, producto punto) funciones vectoriales, y curvas en el espacio.\nunidad iv: teoremas de integracion resuelve aplicaciones en ingenieria a partir de los teoremas de integracion. teorema de green, teorema de stokes, teorema de gauss, y aplicaciones.\nresultados de aprendizaje: (no hay resultados especificos puros, solo la descripcion de la evaluacion en las fuentes)\nprerrequisitos: se relaciona de manera lateral con algebra lineal.\n--------------------------------------------------------------------------------\nmateria: calculo carrera: lcd semestre: 1 objetivo: soluciona problemas del area de la ingenieria a partir del calculo diferencial y tecnicas de integracion."
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_22",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "temario: unidad i: funciones algebraicas y trascendentes analiza las funciones a partir de sus propiedades y las diferentes representaciones. funciones algebraicas (representaciones: algebraica, geometrica, numerica y verbal propiedades: monotonia, simetria, periodicidad) funciones inversas, funciones trascendentes (exponenciales, logaritmicas, trigonometricas, hiperbolicas, y sus inversas) transformaciones de funciones.\nunidad iii: derivada y sus aplicaciones resuelve problemas de razones de cambio relacionadas, diferenciales y optimizacion a partir de las reglas y criterios de derivacion. derivada (pendiente, velocidad y razon de cambio) reglas de derivacion (regla de la cadena, derivacion implicita/explicita, derivadas de orden superior), diferencial maximos y minimos (criterios de la primera y segunda derivada, optimizacion)."
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_23",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "unidad v: la integral definida y sus aplicaciones resuelve problemas de area de regiones y superficial, volumen, y longitud de arco a partir de la integral definida. integral definida (teorema fundamental del calculo) integracion numerica (trapecio, simpson) aplicaciones (area entre curvas, volumenes de solidos de revolucion, longitud de arco y area de superficie).\nresultados de aprendizaje: (no hay resultados especificos puros, solo la descripcion de la evaluacion en las fuentes)\nprerrequisitos: ninguno\n--------------------------------------------------------------------------------\nmateria: computo de alto desempeno carrera: lcd semestre: (no especificado) objetivo: (objetivo no visible en los extractos, pero se enfoca en el desarrollo de sistemas distribuidos y en malla)\ntemario: unidad i: arquitecturas de computo de alto desempeno (contenido no visible en las fuentes)\nunidad ii: computo paralelo (contenido no visible en las fuentes)"
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_24",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "unidad ii: computo paralelo (contenido no visible en las fuentes)\nunidad iii: sistemas distribuidos construye sistemas distribuidos a partir de los modelos de sistema, transacciones distribuidas, control de concurrencia, y replicacion. caracterizacion de los sistemas distribuidos, internet e intranets, recursos compartidos, y desafios de los sistemas distribuidos.\nunidad iv: arquitecturas de computo en malla (grid) construye sistemas malla a partir de sus recursos, nodos de control, estandares y arquitecturas grid especificas. arquitecturas de computacion en malla (grid) y sus caracteristicas integracion de acceso de datos (ogsa-dai), grid-ftp, wsrf, y servicios de grid.\nresultados de aprendizaje: (no hay resultados especificos puros, solo la descripcion de la evaluacion en las fuentes)"
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_25",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "resultados de aprendizaje: (no hay resultados especificos puros, solo la descripcion de la evaluacion en las fuentes)\nprerrequisitos: (practicas mencionan: arquitecturas en paralelo, actividades para conseguir el paralelismo, manejo de memoria, tolerancia a fallas, modelos de sistemas distribuidos, etc., pero no hay una lista formal de prerrequisitos)\n--------------------------------------------------------------------------------\nmateria: comunicacion oral y escrita carrera: lcd semestre: i objetivo: emplea la expresion oral y escrita asertiva en diferentes contextos y audiencias de acuerdo con las caracteristicas de la comunicacion en el siglo xxi.\ntemario: unidad i: comunicacion asertiva identifica la importancia de la comunicacion asertiva a partir de sus caracteristicas y aplicaciones en el contexto social."
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_26",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "unidad ii: comunicacion oral caracteristicas, elementos y cualidades de la comunicacion oral tipos de discurso oral planeacion y produccion del discurso publico (estrategias y tecnicas para la presentacion oral y presentacion oral del discurso).\nunidad iii: comunicacion escrita (contenido no visible en las fuentes)\nunidad iv: comunicacion en el siglo xxi modifica su practica comunicativa a partir de las caracteristicas socioculturales y tecnologicas del siglo xxi. cambios de habitos y practicas en la comunicacion el acceso y tratamiento de la informacion por medio de las tic, potencial y riesgos de las tic.\nresultados de aprendizaje: (no hay resultados especificos puros, solo la descripcion de la evaluacion en las fuentes)\nprerrequisitos: tiene como unidades de aprendizaje consecuentes a etica y legalidad, liderazgo personal y desarrollo de habilidades sociales para la alta direccion.\n--------------------------------------------------------------------------------"
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_27",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "--------------------------------------------------------------------------------\nmateria: desarrollo de aplicaciones para analisis de datos carrera: lcd semestre: iv objetivo: desarrolla aplicaciones de analisis de datos a partir de su adquisicion, preprocesamiento, y extraccion de conocimiento.\ntemario: unidad i: programacion con lenguaje python analiza la programacion de computadoras a partir de sus fundamentos y el lenguaje python.\nunidad ii: adquisicion y almacenamiento de datos diseno de una base de datos con mongodb diferentes tecnicas de web scraping (con api-rest, beautifulsoup, y selenium) uso de estructuras de datos con panda\nunidad iii: aprendizaje automatico elabora programas en lenguaje python y bibliotecas a partir del aprendizaje automatico y el procesamiento distribuido con apache spark. aplicaciones de aprendizaje supervisado y no supervisado con scikit-learn manejo de conjuntos de datos distribuidos resilientes, spark sql y spark mllib."
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_28",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "resultados de aprendizaje: (no hay resultados especificos puros, solo la descripcion de la evaluacion en las fuentes)\nprerrequisitos: (no especificado)\n--------------------------------------------------------------------------------\nmateria: desarrollo de aplicaciones web carrera: lcd semestre: iv objetivo: desarrolla aplicaciones web a partir del manejo de las diferentes arquitecturas, patrones de diseno y buenas practicas.\ntemario: unidad i: contextualizacion y arquitecturas de desarrollo web distingue la importancia e implicaciones del desarrollo web a partir de sus modelos, arquitecturas y buenas practicas.\nunidad ii: sistemas y aplicaciones del lado del servidor desarrolla sistemas del lado del servidor a partir de frameworks, las buenas practicas y sus herramientas. manejo de orm (mapeo objeto-relacional) frameworks de desarrollo web, exposicion de servicios mensajes http buenas practicas como el blindado del lado servidor y documentacion de endpoints."
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_29",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "unidad iii: desarrollo del lado cliente (contenido no visible en las fuentes)\nunidad iv: manejo y operacion de servidores y servicios establece las condiciones idoneas de operacion a partir del montado configuracion de servicios y contenedores. tipos de servidores, montado de servicios configuracion de servicios, manejo de contenedores automatizacion y liberacion de servicios.\nresultados de aprendizaje: (no hay resultados especificos puros, solo la descripcion de la evaluacion en las fuentes)\nprerrequisitos: (no especificado)\n--------------------------------------------------------------------------------\nmateria: desarrollo de habilidades sociales para la alta direccion carrera: lcd semestre: viii objetivo: desarrolla habilidades personales, sociales y directivas en la integracion de equipos directivos, con base en una vision estrategica de liderazgo y de toma de decisiones."
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_30",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "temario: unidad i: fundamentos de la alta direccion y planeacion estrategica explica las bases sobre alta direccion y planeacion estrategica. principios de la alta direccion principios de la planeacion estrategica (mision, vision, objetivos de largo plazo).\nunidad ii: habilidades personales y sociales para la alta direccion desarrolla habilidades personales y sociales requeridas en la alta direccion a partir del autoconocimiento e inteligencia emocional. administracion del tiempo, manejo del estres comunicacion efectiva, asertividad y manejo del conflicto.\nunidad iii: habilidades directivas gestiona equipos de trabajo en las organizaciones a partir del desarrollo de habilidades directivas. equipos efectivos de trabajo liderazgo estrategico (coaching) toma de decisiones (etica), y estrategias de negociacion.\nresultados de aprendizaje: (no hay resultados especificos puros, solo la descripcion de la evaluacion en las fuentes)"
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_31",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "resultados de aprendizaje: (no hay resultados especificos puros, solo la descripcion de la evaluacion en las fuentes)\nprerrequisitos: esta unidad se relaciona con comunicacion oral y escrita, ingenieria, etica y sociedad, fundamentos economicos, finanzas empresariales y liderazgo personal como antecedentes.\n--------------------------------------------------------------------------------\nmateria: estadistica carrera: lcd semestre: iv objetivo: construye modelos estadisticos a partir de la inferencia parametrica, no parametrica, causal y la regresion.\ntemario: unidad i: estadistica descriptiva explica las principales caracteristicas de los datos a partir de descriptores muestrales de centralizacion y dispersion, y herramientas graficas. caracteristicas principales de un conjunto de datos (i)"
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_32",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "unidad ii: inferencia estadistica parametrica infiere los parametros de una distribucion de probabilidad subyacente a partir de estimadores, pruebas de hipotesis y elementos de inferencia bayesiana. distribuciones a priori (ii)\nunidad iii: estadistica no parametrica estimadores con uso bootstrap (iii)\nunidad iv: regresion modelo de regresion lineal (iv)\nunidad v: inferencia causal causalidad en variables (v)\nresultados de aprendizaje: (no hay resultados especificos puros, solo la descripcion de la evaluacion en las fuentes)\nprerrequisitos: (no especificado)\n--------------------------------------------------------------------------------\nmateria: etica y legalidad carrera: lcd semestre: 2 objetivo: valora las implicaciones eticas y el impacto social del ejercicio profesional de la ciencia de datos, a partir del desarrollo historico del conocimiento, la evolucion cientifica y tecnologica, asi como el marco regulatorio de la disciplina."
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_33",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "temario: unidad i: desarrollo historico del conocimiento cientifico y tecnologico (contenido no visible en las fuentes)\nunidad ii: revoluciones industriales: tecnologia e impacto (contenido no visible en las fuentes)\nunidad iii: etica en la ciencia de datos y su funcion social distingue el impacto social y las implicaciones del ejercicio profesional etico del cientifico de datos.\nunidad iv: marco regulatorio de la ciencia de datos relaciona la importancia del manejo responsable de datos con sus retos e implicaciones en la sociedad, a partir del marco regulatorio de la disciplina. el big data y el manejo de datos uso responsable de datos personales (principios de licitud y lealtad, derechos) leyes, normas y politicas publicas.\nunidad v: ciencia de datos, productividad y sustentabilidad plantea la importancia de la sustentabilidad en la practica de la ciencia de datos.\nresultados de aprendizaje: (no hay resultados especificos puros, solo la descripcion de la evaluacion en las fuentes)"
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_34",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "resultados de aprendizaje: (no hay resultados especificos puros, solo la descripcion de la evaluacion en las fuentes)\nprerrequisitos: (no especificado)\n--------------------------------------------------------------------------------\nmateria: finanzas empresariales carrera: lcd semestre: iii objetivo: determina estados financieros pro forma y proyectos de inversion con base en las nif, el valor del dinero en el tiempo, la planeacion y sus metodos de evaluacion.\ntemario: unidad i: la empresa y su contexto (contenido no visible en las fuentes)\nunidad ii: importancia y utilizacion de la informacion financiera explica los estados financieros basicos (estado de situacion financiera/balance general y estado de resultados) con base en las normas de informacion financiera (nif).\nunidad iii: analisis financiero (contenido no visible en las fuentes)"
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_35",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "unidad iii: analisis financiero (contenido no visible en las fuentes)\nunidad iv: estados financieros proforma calcula estados financieros proforma a partir del valor del dinero en el tiempo (valor presente, valor futuro, anualidades) y la planeacion financiera (el presupuesto maestro).\nunidad v: metodos de evaluacion de proyectos de inversion examina los proyectos de inversion a partir de sus metodos de evaluacion. metodos incluyen: pri, rsi, costo  beneficio, vpn, tir, ir.\nresultados de aprendizaje: (no hay resultados especificos puros, solo la descripcion de la evaluacion en las fuentes)\nprerrequisitos: antecedente de fundamentos economicos (implicito).\n--------------------------------------------------------------------------------\nmateria: fundamentos economicos carrera: lcd semestre: 2 objetivo: examina las economias nacional e internacional con base en los enfoques micro y macroeconomico, asi como la economia circular y la sustentabilidad."
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_36",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "temario: unidad i: economia (contenido no visible en las fuentes)\nunidad ii: microeconomia comportamiento del consumidor (utilidad total y marginal, curvas de indiferencia, restriccion presupuestal) comportamiento del productor (teoria de produccion y costos de corto y largo plazo).\nunidad iii: teoria del mercado analiza el equilibrio del mercado con base en las leyes de la oferta y la demanda. incluye: elasticidades precio, ingreso y cruzada.\nunidad iv: macroeconomia riesgo pais (calificadoras) sistema financiero mexicano (bolsa mexicana de valores, banco de mexico).\nunidad v: economia internacional y sustentabilidad especifica la importancia del ingeniero en inteligencia artificial en la economia circular y la sustentabilidad. sistema financiero internacional (fmi, ocde, banco mundial) e-commerce tecnologia verde: cloud computing (infraestructura, servicios y plataformas)."
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_37",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "resultados de aprendizaje: (no hay resultados especificos puros, solo la descripcion de la evaluacion en las fuentes)\nprerrequisitos: (no especificado)\n--------------------------------------------------------------------------------\nmateria: fundamentos de programacion carrera: lcd semestre: 1 objetivo: programa aplicaciones a partir de sentencias de control, funciones, apuntadores y archivos.\ntemario: unidad i: programacion estructurada analiza la programacion a partir de sus fundamentos, el lenguaje c y el diseno estructurado. arquitectura de von neumann tipos de datos primitivos, sentencias de control, arreglos diseno estructurado - modularidad.\nunidad ii: apuntadores, tipos de datos estructurados y funciones (contenido no visible en las fuentes) apuntadores en c (ii) estructuras y funciones (ii), recursividad (ii)"
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_38",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "unidad iii: manejo de memoria dinamica y archivos elabora programas de computadora a partir del manejo de archivos de texto, binarios y la memoria dinamica. arquitectura de memoria (harvard, von neumann) reservacion dinamica de memoria archivos de acceso secuencial y directo. memoria dinamica (iii) y archivos de acceso secuencial y directo (iii).\nresultados de aprendizaje: (no hay resultados especificos puros, solo la descripcion de la evaluacion en las fuentes)\nprerrequisitos: (no especificado)\n--------------------------------------------------------------------------------\nmateria: gestion empresarial carrera: lcd semestre: viii objetivo: gestiona organizaciones de innovacion tecnologica con base en las competencias gerenciales.\ntemario: unidad i: aspectos basicos de la gestion empresarial analiza la gestion empresarial con base en su clasificacion y constitucion legal (ley de sociedades mercantiles y ley de sociedades civiles)."
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_39",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "unidad ii: gestion estrategica en las empresas de innovacion tecnologica aplica la gestion estrategica en las empresas de innovacion tecnologica. herramientas de gestion estrategica como cuadro de mando integral, analisis foda, modelos de negocio y diamante de porter.\nunidad iii: gestion operativa de la empresa estructura organizacional, innovacion y tecnologia (tecnologias emergentes) herramientas de gestion operativa (reingenieria de los procesos de negocio).\nunidad iv: gestion del capital humano y la calidad marco normativo de las relaciones laborales calidad (control estadistico, calidad total) herramientas como las 5s, just in time, benchmarking, erp."
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_40",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "unidad v: tendencias en la gestion empresarial aplica los aspectos legales y sus habilidades digitales. aspectos legales (propiedad intelectual) habilidades digitales (learnability, teamability, networking, adaptability) tecnologias y tendencias digitales (internet de las cosas, inteligencia artificial, inteligencia de negocios, blockchain y la nube).\nresultados de aprendizaje: (no hay resultados especificos puros, solo la descripcion de la evaluacion en las fuentes)\nprerrequisitos: (no especificado)\n--------------------------------------------------------------------------------\nmateria: introduccion a la ciencia de datos carrera: lcd semestre: i objetivo: explica la importancia de la ciencia de datos a partir de sus campos de accion, areas de aplicacion y tendencias."
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_41",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "temario: unidad i: contextualizacion historica de la ciencia de datos reconoce el impacto de la tecnologia e informacion a partir de su evolucion. historia de la computacion (migracion a lo electronico/digital, la era de la informacion) las revoluciones industriales (1ra, 2da, 3ra, 4ta).\nunidad ii: campos y recursos (contenido no visible en las fuentes)\nunidad iii: areas de aplicacion diferencia las areas de accion de la ciencia de datos con base en su impacto. areas de aplicacion (industria, sociedad, gobierno, empresas) aspectos eticos de la cd (dilemas eticos).\nunidad iv: tendencias en la ciencia de datos discute los cambios y direcciones de la ciencia de datos. aportes en la inteligencia de negocios migracion a sistemas y plataformas de nube nuevas tecnologias en el aprendizaje autonomo.\nresultados de aprendizaje: (no hay resultados especificos puros, solo la descripcion de la evaluacion en las fuentes)\nprerrequisitos: (no especificado)"
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_42",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "prerrequisitos: (no especificado)\n--------------------------------------------------------------------------------\nmateria: liderazgo personal carrera: lcd semestre: iv objetivo: aplica modelos y estrategias de liderazgo personal en las relaciones colaborativas y en la toma de decisiones con base en sus principios, procedimientos y tecnologia.\ntemario: unidad 1: principios del liderazgo (contenido no visible en las fuentes)\nunidad 2: interaccion e influencia en relaciones colaborativas persuadir e influir generacion de impacto apelando a las emociones promocion de ideas negociacion y acuerdos presentar y comunicar la informacion proyeccion de credibilidad\nunidad 3: conocimiento y tecnologias para la toma de decisiones (contenido no visible en las fuentes)"
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_43",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "unidad 3: conocimiento y tecnologias para la toma de decisiones (contenido no visible en las fuentes)\nresultados de aprendizaje: analiza la interaccion e influencia en las relaciones colaborativas a partir de estrategias, principios y valores. utiliza herramientas tecnologicas de produccion y gestion de conocimiento en la toma de decisiones, con base en sus procedimientos y principios.\nprerrequisitos: ingenieria, etica y sociedad\n--------------------------------------------------------------------------------\nmateria: matematicas avanzadas para la ciencia de datos carrera: lcd semestre: v objetivo: resuelve problemas de optimizacion y teoria de la informacion a partir de tecnicas algoritmicas de problemas lineales y no lineales y la entropia.\ntemario: unidad 1: optimizacion lineal metodo simplex dualidad aplicaciones de la programacion lineal"
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_44",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "temario: unidad 1: optimizacion lineal metodo simplex dualidad aplicaciones de la programacion lineal\nunidad 2: optimizacion no lineal busqueda sobre una linea y metodo de maxima pendiente metodo de gradientes conjugados metodos de newton y cuasi newton metodos primales metodos de penalizacion y de barrera metodos duales metodos de lagrange\nunidad 3: teoria de la informacion entropia de distribuciones discretas y continuas densidad distribucion normal multivariada tiene maxima entropia problema de entropia maxima con anomalia distancia de kullback-leibler e informacion mutua\nresultados de aprendizaje: determina soluciones optimas a problemas modelados con funciones lineales a partir de metodos de programacion lineal. determina soluciones optimas a problemas modelados con funciones no lineales a partir de metodos de optimizacion no lineal. determina informacion en conjuntos de variables aleatorias, a partir de la entropia de shannon y la informacion mutua."
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_45",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "prerrequisitos: algebra lineal avanzada calculo multivariable probabilidad\n--------------------------------------------------------------------------------\nmateria: matematicas discretas carrera: lcd semestre: 1 objetivo: plantea algoritmos matematicos y estructuras discretas con base en sus propiedades y argumentos validos con lenguaje formal.\ntemario: unidad 1: logica 1.1 equivalencias proposiciones atomicas, compuestas y jerarquia de operadores equivalencias logicas algebra de proposiciones contrapositiva, reciproca e inversa de una condicional 1.2 inferencias reglas de inferencia demostraciones directas e indirectas 1.3 cuantificadores proposiciones abiertas y cuantificadores lenguaje natural y cuantificadores equivalencias e inferencias con cuantificadores\nunidad 2: teoria de conjuntos (contenido no visible en las fuentes)"
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_46",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "unidad 2: teoria de conjuntos (contenido no visible en las fuentes)\nunidad 3: numeros enteros 3.1 numeros enteros propiedades de los numeros enteros 3.2 divisibilidad propiedades de la divisibilidad algoritmo de la division maximo comun divisor y minimo comun multiplo teorema fundamental de la aritmetica algoritmo de euclides 3.3 induccion matematica problemas de igualdad con sumas y productos problemas de divisibilidad problemas de orden problemas de generalizacion 3.4 sistemas de numeracion algoritmo de cambio de base relacion entre los sistemas binario y hexadecimal operaciones basicas en base b"
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_47",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "unidad 4: estructuras discretas para la computacion 4.1 algebras y funciones booleanas propiedades de las algebras booleanas funciones booleanas sumas de miniterminos y productos de maxiterminos representacion en circuitos combinatorios reduccion por mapas de karnaugh 4.2 relaciones representaciones de las relaciones propiedades de la inversa y la composicion de las relaciones propiedades de las funciones relaciones reflexivas, irreflexivas, simetricas, antisimetricas y transitivas 4.3 relaciones de orden y relaciones de equivalencia relaciones de orden total y de orden parcial minimos, maximos, minimales y maximales relaciones de equivalencia conjunto cociente y clases de equivalencia 4.4 enteros modulo n congruencia modulo n como relacion de equivalencia aritmetica de los enteros modulo n teorema chino del residuo 4.5 grafos y arboles grafos dirigidos, no dirigidos y conexos recorridos y circuitos eulerianos y hamiltonianos algoritmo del camino mas corto recorridos en profundidad y"
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_48",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "grafos dirigidos, no dirigidos y conexos recorridos y circuitos eulerianos y hamiltonianos algoritmo del camino mas corto recorridos en profundidad y amplitud recorridos en pre-orden, in-orden y post- orden de arboles binarios"
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_49",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "resultados de aprendizaje: demuestra argumentos y equivalencias con base en el algebra de proposiciones y las reglas de inferencia. aplica la induccion matematica y los algoritmos con base en las propiedades algebraicas y de divisibilidad de los numeros enteros. integra estructuras discretas en problemas computacionales con base en sus propiedades.\nprerrequisitos: fundamentos de programacion\n--------------------------------------------------------------------------------\nmateria: metodologia de la investigacion y divulgacion cientifica carrera: lcd semestre: v objetivo: aplica metodos y tecnicas de investigacion documental y de campo, a partir de procedimientos sistematicos aplicables a la formulacion y desarrollo de trabajos de investigacion.\ntemario: unidad 1: metodologia de la investigacion en ingenieria (contenido no visible en las fuentes)"
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_50",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "temario: unidad 1: metodologia de la investigacion en ingenieria (contenido no visible en las fuentes)\nunidad 2: el protocolo de investigacion 2.1 planteamiento del estudio descripcion del proyecto y de la realidad problematica formulacion del problema de investigacion objetivos y justificacion alcance y limitaciones 2.2 marco teorico antecedentes y base teorica cientifica definiciones de terminos referencias bibliograficas hipotesis y propuestas de solucion variables e indicadores\nunidad 3: divulgacion de la investigacion cientifica 3.1 analisis de datos fuentes de datos indicadores e indices variables e indices analisis de datos, enjuiciamiento y conclusiones sugerencias y recomendaciones\nresultados de aprendizaje: construye un proyecto de investigacion, a partir de etapas y criterios metodologicos. emplea el discurso cientifico para la divulgacion de los resultados de una investigacion, a partir del analisis de datos.\nprerrequisitos: comunicacion oral y escrita"
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_51",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "prerrequisitos: comunicacion oral y escrita\n--------------------------------------------------------------------------------\nmateria: metodos numericos carrera: lcd semestre: iii objetivo: resuelve problemas complejos con base en algoritmos de metodos numericos de ecuaciones lineales, no lineales y diferenciales, de derivacion e integracion, de algebra lineal, de interpolacion y de aproximacion.\ntemario: unidad 1: ecuaciones de una variable (contenido no visible en las fuentes)\nunidad 2: derivacion e integracion numerica (contenido no visible en las fuentes)\nunidad 3: ecuaciones diferenciales ordinarias (contenido no visible en las fuentes)\nunidad 4: algebra lineal numerica (contenido no visible en las fuentes)\nunidad 5: interpolacion y aproximacion (contenido no visible en las fuentes)"
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_52",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "unidad 4: algebra lineal numerica (contenido no visible en las fuentes)\nunidad 5: interpolacion y aproximacion (contenido no visible en las fuentes)\nresultados de aprendizaje: disena, crea y aplica algoritmos de metodos numericos en la solucion de problemas de raices de ecuaciones lineales y no lineales, de algebra lineal, de derivacion e integracion, de interpolacion y aproximacion.\nprerrequisitos: algoritmos y estructuras de datos algebra lineal calculo multivariable calculo\n--------------------------------------------------------------------------------\nmateria: mineria de datos carrera: lcd semestre: v objetivo: implementa procesos de mineria de datos con base en los modelos de datos, el procesamiento analitico en linea y las tecnicas de minado de datos."
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_53",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "temario: unidad 1: gestion de cubos olap 1.1 administracion de cubos agregado de funcionalidades importacion de datos y uso de conectores configuraciones adicionales 1.2 operacion de cubos busqueda de informacion administracion de incidentes y problemas informes y analisis de almacenamiento de datos 1.3 uso de cubos olap para analisis avanzado 1.4 solucion de problemas de los cubos olap\nunidad 2: el proceso de minado de datos 2.1 la mineria de datos 2.2 metodologias del proceso de minado de datos muestrear, explorar, modificar, modelar y evaluar (semma) el modelo crisp-dm (cross industry standard process) 2.3 tipos de problemas de mineria de datos y el enfoque para su resolucion problemas descriptivos problemas predictivos 2.4 consideraciones para el exito de un proyecto de mineria de datos evaluacion de un proceso de mineria de datos 2.5 preprocesamiento de datos limpieza transformacion"
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_54",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "unidad 3: tecnicas de mineria de datos 3.1 metodos estadisticos 3.2 reglas de asociacion 3.3 arboles de decision 3.4 redes neuronales\nunidad 4: plataformas para el proceso de mineria de datos (contenido no visible en las fuentes)\nresultados de aprendizaje: gestiona cubos olap a partir de los metodos de administracion y su operacion. implementa las tareas de preprocesamiento de datos con base en la metodologia del proceso de minado de datos, el tipo de problema a resolver y los criterios de exito. experimenta el proceso de minado de datos a partir su metodologia y tecnicas de minado.\nprerrequisitos: ninguno\n--------------------------------------------------------------------------------\nmateria: modelado predictivo carrera: lcd semestre: vi objetivo: realiza predicciones en el analisis de conjuntos de datos a partir de modelos de regresion y clasificacion y estrategias de modelado."
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_55",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "temario: unidad 1: estrategias para el modelado predictivo 1.3. ajuste y calibracion de modelos ajuste de un modelo calibracion de un modelo separacion de modelos tecnicas de re muestreo eleccion entre varios modelos\nunidad 2: modelos predictivos de regresion (contenido no visible en las fuentes)\nunidad 3: modelos predictivos de clasificacion 3.1 evaluacion del desempeno de clasificadores combinacion de modelos de clasificacion\nresultados de aprendizaje: analiza conjuntos de datos a partir de modelos predictivos de regresion, aditivos generalizados y arboles de regresion. analiza modelos predictivos a partir de clasificadores lineales, no lineales y su desempeno.\nprerrequisitos: ninguno\n--------------------------------------------------------------------------------\nmateria: modelos econometricos carrera: lcd semestre: vii objetivo: propone modelos econometricos con base en la valoracion de los metodos predictivos."
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_56",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "temario: unidad 1: estrategias para los modelos econometricos (contenido no visible en las fuentes)\nunidad 2: evaluacion del metodo econometrico (contenido no visible en las fuentes)\nunidad 3: modelos de rezagos y ecuaciones simultaneas (contenido no visible en las fuentes)\nresultados de aprendizaje: propone modelos econometricos con base en la valoracion de los metodos predictivos.\nprerrequisitos: ninguno\n--------------------------------------------------------------------------------\nmateria: probabilidad carrera: lcd semestre: iii objetivo: construye modelos de probabilidad a partir de axiomas, variables aleatorias y sus funciones de distribucion.\ntemario: unidad 1: probabilidad axiomatica (contenido no visible en las fuentes)\nunidad 2: comportamiento asintotico de variables aleatorias (contenido no visible en las fuentes)\nunidad 3: (titulo no especificado) (contenido no visible en las fuentes)"
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_57",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "unidad 3: (titulo no especificado) (contenido no visible en las fuentes)\nresultados de aprendizaje: construye modelos de probabilidad a partir de axiomas, variables aleatorias y sus funciones de distribucion.\nprerrequisitos: ninguno\n--------------------------------------------------------------------------------\nmateria: procesamiento de lenguaje natural carrera: lcd semestre: vi objetivo: descubre aspectos relevantes de textos con base la normalizacion, procesamiento semantico, clasificacion y agrupamiento, analisis de personalidad, opinion y relacion con otros tipos de datos y extraccion de informacion."
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_58",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "temario: unidad 1: contextualizacion y normalizacion de texto 1.1 contextualizacion sistemas y aplicaciones de lenguaje natural fundamentos linguisticos para procesamiento de lenguaje fundamentos matematicos para procesamiento de lenguaje lenguajes de programacion, librerias y software para procesamiento de lenguaje 1.2 normalizacion de textos segmentacion en palabras y oraciones eliminacion de elementos no relevantes etiquetado con categorias gramaticales\nunidad 2: procesamiento semantico de texto 2.1 representacion vectorial de textos para su procesamiento semantico modelo de bolsa de palabras modelo de espacio vectorial para textos 2.2 seleccion de caracteristicas en vectores frecuencia y probabilidad de palabras funciones de frecuencia de termino (tf) frecuencia inversa del documento (idf) tecnicas de mapeo de palabras a vectores numericos\nunidad 3: clasificacion y agrupamiento de textos (contenido no visible en las fuentes)"
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_59",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "unidad 3: clasificacion y agrupamiento de textos (contenido no visible en las fuentes)\nunidad 4: analisis de personalidad y opinion (contenido no visible en las fuentes)\nunidad 5: analisis de textos en relacion con otros tipos de datos 5.1 textos como datos no estructurados y datos estructurados 5.2 analisis de textos en relacion con datos de geolocalizacion 5.3 analisis de textos en relacion con datos temporales 5.4 analisis de textos en series de tiempo 5.5 analisis de mensajes en redes sociales"
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_60",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "resultados de aprendizaje: analiza la normalizacion a textos en lenguaje natural con base en fundamentos matematicos, linguisticos y normalizacion. extrae aspectos semanticos e informacion a partir de la representacion vectorial de textos, mineria de topicos, analisis sintactico y expresiones regulares. aplica el algoritmo de clasificacion o agrupamiento de textos con base a los clasificadores, aprendizaje de maquina supervisado y no supervisado. detecta relaciones entre textos con otro tipo de datos a partir de su analisis de: geolocalizacion, datos temporales, series de tiempo y redes sociales.\nprerrequisitos: estadistica aprendizaje de maquina e inteligencia artificial matematicas avanzadas para ciencia de datos\n--------------------------------------------------------------------------------\nmateria: procesos estocasticos carrera: lcd semestre: v objetivo: construye modelos estocasticos a partir de caminatas aleatorias, cadenas de markov y procesos de poisson."
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_61",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "temario: unidad 1: descripcion de procesos estocasticos (contenido no visible en las fuentes)\nunidad 2: movimiento browniano y caminatas aleatorias (contenido no visible en las fuentes)\nunidad 3: procesos de poisson (contenido no visible en las fuentes)\nunidad 4: cadenas de markov (contenido no visible en las fuentes)\nunidad 5: procesos de decision markovianos (contenido no visible en las fuentes)\nresultados de aprendizaje: describe procesos estocasticos a partir de la clasificacion del tiempo de evolucion, trayectorias, sus distribuciones finito dimensionales y el tipo de incrementos.\nprerrequisitos: probabilidad programacion para ciencia de datos metodos numericos\n--------------------------------------------------------------------------------\nmateria: programacion para ciencia de datos carrera: lcd semestre: iii objetivo: programa tecnicas estadisticas con lenguaje r a partir de analisis exploratorios, tecnicas y metodos de modelados."
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_62",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "temario: unidad 1: programacion orientada al manejo de datos en lenguaje r 1.1 programacion de computadoras fundamentos 1.2 estructuras de control 1.3 estructuras vectoriales y matriciales para analisis de datos 1.4 programacion de funciones 1.5 manejo de cadenas y expresiones regulares 1.6 lectura de datos de un archivo en diferentes formatos (.csv, .txt, etc)\nunidad 2: analisis exploratorio de datos (contenido no visible en las fuentes)\nunidad 3: tecnicas y metodos de modelado 3.1 tecnicas de reduccion de la dimension analisis de componentes analisis factorial analisis factorial rotado representacion grafica de analisis factorial 3.2 analisis de conglomerados conglomerado jerarquico y no jerarquico analisis grafico de los resultados 3.3 modelos predictivos modelo lineal regresion multiple regresion polinomica"
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_63",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "resultados de aprendizaje: analiza la programacion de computadoras a partir de sus fundamentos y el lenguaje r en el manejo de datos. elabora programas de analisis de datos a partir de tecnicas de reduccion y modelos predictivos.\nprerrequisitos: algoritmos y estructuras de datos\n--------------------------------------------------------------------------------\nmateria: trabajo terminal i carrera: lcd semestre: vii objetivo: desarrolla la primera fase de un proyecto cientifico o tecnologico en computo viable y factible con base en metodologias y tecnicas de desarrollo de sistemas.\ntemario: unidad 1: planeacion de proyecto (contenido no visible en las fuentes)\nunidad 2: analisis y diseno 2.1 analisis delimitacion del proyecto (conocimiento del negocio o investigacion cientifica) analisis de requerimientos propuesta de arquitectura 2.2 diseno modelado de datos disenos funcionales\nunidad 3: prototipos controlador de versiones validacion del proyecto prototipo del proyecto"
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_64",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "unidad 3: prototipos controlador de versiones validacion del proyecto prototipo del proyecto\nresultados de aprendizaje: determina el plan de proyecto con base en su tipo y metodologia. propone el diseno de un proyecto a partir de su analisis de requerimientos.\nprerrequisitos: analitica avanzada de datos desarrollo de aplicaciones para analisis de datos metodologia de la investigacion y divulgacion cientifica\n--------------------------------------------------------------------------------\nmateria: trabajo terminal ii carrera: lcd semestre: viii objetivo: implementa un proyecto cientifico o tecnologico en computo, con base en tecnicas y herramientas de desarrollo, y en la documentacion sistematica.\ntemario: unidad 1: implementacion y pruebas 1.1 implementacion estandares y procedimientos de codificacion o implementacion integracion de codigo, prototipo o servicios existentes 1.2 pruebas plan de pruebas elaboracion de escenarios y scripts de pruebas unitarias o modulares"
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_65",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "unidad 2: integracion y resultados 2.1 integracion interoperabilidad de elementos pruebas de integracion verificacion y validacion de resultados 2.2 analisis e interpretacion de resultados identificacion de oportunidades de mejora 2.3 trabajo a futuro 2.4 conclusiones\nunidad 3: presentacion y defensa del proyecto 3.1 reporte final del proyecto analisis de similitud revision de formatos 3.2 articulo tecnico aplicacion de formatos de escritura de un articulo cientifico 3.3 presentacion ejecutiva del proyecto\nresultados de aprendizaje: verifica la implementacion de las partes de un proyecto a partir de pruebas unitarias o modulares. evalua los resultados del proyecto con base en las pruebas de integracion. justifica el resultado final de un proyecto a partir de un reporte y una presentacion ejecutiva.\nprerrequisitos: trabajo terminal i administracion de proyectos de ti liderazgo personal metodologia de la investigacion y divulgacion cientifica"
+  },
+  {
+    "chunk_id": "TXTS/temarios_LCD_normalizado_chunk_66",
+    "source": "TXTS/temarios_LCD_normalizado.txt",
+    "text": "prerrequisitos: trabajo terminal i administracion de proyectos de ti liderazgo personal metodologia de la investigacion y divulgacion cientifica\n--------------------------------------------------------------------------------"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "chunk_id": "plan_IIA_chunk_1",
+    "source": "plan_IIA.txt",
+    "text": "plan de estudios materias unidades de aprendizaje semestre 1 ingenieria en inteligencia artificial iia fundamentos de programacion matematicas discretas calculo comunicacion oral y escrita mecanica y electromagnetismo fundamentos economicos semestre 2 ingenieria en inteligencia artificial iia ingenieria etica y sociedad calculo multivariable algebra lineal finanzas empresariales fundamentos de diseno digital algoritmos y estructuras de datos"
+  },
+  {
+    "chunk_id": "plan_IIA_chunk_2",
+    "source": "plan_IIA.txt",
+    "text": "plan de estudios materias unidades de aprendizaje semestre 3 ingenieria en inteligencia artificial iia analisis y diseno de algoritmos paradigmas de programacion ecuaciones diferenciales bases de datos diseno de sistemas digitales liderazgo personal semestre 4 ingenieria en inteligencia artificial iia fundamentos de inteligencia artificial probabilidad y estadistica matematicas avanzadas para la ingenieria tecnologias para el desarrollo de aplicaciones web analisis y diseno de sistemas procesamiento digital de imagenes"
+  },
+  {
+    "chunk_id": "plan_IIA_chunk_3",
+    "source": "plan_IIA.txt",
+    "text": "plan de estudios materias unidades de aprendizaje semestre 5 ingenieria en inteligencia artificial iia aprendizaje de maquina vision artificial teoria de la computacion procesamiento de senales algoritmos bioinspirados tecnologias de lenguaje natural semestre 6 ingenieria en inteligencia artificial iia computo paralelo redes neuronales y aprendizaje profundo ingenieria de software para sistemas inteligentes metodologia de la investigacion y divulgacion cientifica optativa a optativa b"
+  },
+  {
+    "chunk_id": "plan_IIA_chunk_4",
+    "source": "plan_IIA.txt",
+    "text": "plan de estudios materias unidades de aprendizaje optativas semestre 6 ingenieria en inteligencia artificial iia innovacion y emprendimiento tecnologico sistemas multiagentes mineria de datos temas selectos de inteligencia artificial tecnicas de programacion para robots moviles optativas semestre 7 ingenieria en inteligencia artificial iia interaccion humano maquina programacion de dispositivos moviles aplicaciones de inteligencia artificial en sistemas embebidos topicos selectos de algoritmos bioinspirados propiedad intelectual aplicaciones de lenguaje natural aplicaciones de sistemas multiagentes big data computo en la nube"
+  },
+  {
+    "chunk_id": "plan_IIA_chunk_5",
+    "source": "plan_IIA.txt",
+    "text": "plan de estudios materias unidades de aprendizaje semestre 7 ingenieria en inteligencia artificial iia reconocimiento de voz trabajo terminal i formulacion y evaluacion de proyectos informaticos optativa c optativa d semestre 8 ingenieria en inteligencia artificial iia gestion empresarial trabajo terminal ii estancia profesional desarrollo de habilidades sociales para la alta direccion"
+  }
+]

@@ -1,0 +1,92 @@
+/* Estilo para los botones de acción '+' y '-' en las tablas */
+.actionButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%; /* Círculo */
+  border: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  margin: 0 auto; /* Centrar el botón en la celda */
+}
+
+.actionButton:hover {
+  transform: scale(1.1);
+}
+
+/* Botón Verde para Inscribir */
+.actionButton.inscribir {
+  background-color: #28a745; /* Verde */
+  line-height: 28px; /* Ajuste vertical para el '+' */
+}
+
+.actionButton.inscribir:hover {
+  background-color: #218838;
+}
+
+/* Botón Rojo para Dar de Baja */
+.actionButton.darDeBaja {
+  background-color: #dc3545; /* Rojo */
+  line-height: 26px; /* Ajuste vertical para el '—' */
+}
+
+.actionButton.darDeBaja:hover {
+  background-color: #c82333;
+}
+
+/* Estilo para el widget de créditos en la sidebar */
+.creditosWidget {
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 20px 0;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.creditosWidget h4 {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.creditosWidget span {
+  font-size: 2.5rem; /* Tamaño grande para el número */
+  font-weight: bold;
+  color: #0056b3; /* Color primario (azul IPN/ESCOM) */
+}
+
+/* Espacio extra para el título "Materias Inscritas" */
+.tituloMateriasInscritas {
+  margin-top: 30px;
+}
+
+.tablaWrapper {
+  width: 100%;             /* Ocupa todo el contenedor */
+  overflow-x: auto;        /* Scroll horizontal si se desborda */
+  overflow-y: auto;        /* Scroll vertical si hay muchas filas */
+  max-height: 400px;       /* Ajusta según necesites */
+}
+
+.tablaWrapper table {
+  width: 100%;             /* Que la tabla no crezca más que el contenedor */
+  border-collapse: collapse;
+  table-layout: fixed;     /* Hace que las columnas se ajusten al ancho disponible */
+}
+
+.tablaWrapper th,
+.tablaWrapper td {
+  white-space: nowrap;     /* Evita que las celdas hagan wrap */
+  text-overflow: ellipsis; /* Muestra ... si el contenido es muy largo */
+  overflow: hidden;
+  padding: 6px 10px;
+}
+
+.finalizarWrapper {
+  margin-top: 20px;
+  text-align: center;
+}

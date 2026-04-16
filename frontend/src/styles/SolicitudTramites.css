@@ -1,0 +1,299 @@
+/* SolicitudTramites.css */
+
+.solicitud-tramites-container {
+  display: block;
+  min-height: 100vh;
+  background-color: #f5f7fa;
+}
+
+.solicitud-tramites-main {
+  padding: 40px;
+  max-width: 1600px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.titulo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+/* Tabs de navegación */
+.tabs-navegacion {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 24px;
+  background: white;
+  padding: 8px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.tab {
+  flex: 1;
+  padding: 12px 24px;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #7f8c8d;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.tab:hover {
+  background: #f8f9fa;
+  color: #2c3e50;
+}
+
+.tab.active {
+  background: #007bff;
+  color: white;
+}
+
+/* Tabla */
+.tabla-scroll-container {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow-x: auto;
+}
+
+.loading-container {
+  text-align: center;
+  padding: 60px 20px;
+  color: #7f8c8d;
+  font-size: 1.1rem;
+}
+
+/* Acciones en tabla */
+.acciones-grupo {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.btn-ver {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 4px 8px;
+  transition: transform 0.2s;
+}
+
+.btn-ver:hover {
+  transform: scale(1.2);
+}
+
+/* Modal de procesamiento */
+.modal-procesar-solicitud {
+  background: white;
+  border-radius: 12px;
+  padding: 32px;
+  max-width: 700px;
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+.modal-procesar-solicitud h2 {
+  font-size: 1.75rem;
+  color: #2c3e50;
+  margin-bottom: 24px;
+  text-align: center;
+  border-bottom: 2px solid #e9ecef;
+  padding-bottom: 16px;
+}
+
+/* Información del alumno en modal */
+.info-alumno-modal {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.info-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+
+.info-row:last-child {
+  margin-bottom: 0;
+}
+
+.info-row strong {
+  color: #495057;
+  min-width: 140px;
+  font-weight: 600;
+}
+
+.comentario-texto {
+  flex: 1;
+  margin: 8px 0 0 0;
+  padding: 12px;
+  background: white;
+  border-radius: 6px;
+  border-left: 3px solid #007bff;
+  color: #495057;
+  line-height: 1.5;
+}
+
+.link-archivo {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.link-archivo:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Formulario de procesamiento */
+.form-procesar {
+  margin-top: 24px;
+}
+
+.checkbox-field {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  margin: 16px 0;
+}
+
+.checkbox-field input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.checkbox-field label {
+  font-weight: 500;
+  color: #495057;
+  cursor: pointer;
+  margin: 0;
+}
+
+.archivo-upload-container {
+  margin: 20px 0;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 2px dashed #dee2e6;
+}
+
+.archivo-label {
+  display: block;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+
+.archivo-input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 0.95rem;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+}
+
+.archivo-seleccionado {
+  margin-top: 12px;
+  padding: 10px;
+  background: #d4edda;
+  color: #155724;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+/* Botones del modal */
+.botones-modal {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid #e9ecef;
+}
+
+/* Vista de solicitud completada */
+.solicitud-completada-info {
+  padding: 24px;
+  background: #d4edda;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.solicitud-completada-info p {
+  margin: 12px 0;
+  color: #155724;
+  font-size: 0.95rem;
+}
+
+.link-documento {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 16px;
+  background: white;
+  color: #155724;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.link-documento:hover {
+  background: #c3e6cb;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .solicitud-tramites-main {
+    padding: 20px;
+  }
+
+  .tabs-navegacion {
+    flex-direction: column;
+  }
+
+  .tab {
+    padding: 10px 16px;
+  }
+
+  .modal-procesar-solicitud {
+    padding: 20px;
+  }
+
+  .info-row {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .info-row strong {
+    min-width: auto;
+  }
+
+  .botones-modal {
+    flex-direction: column;
+  }
+
+  .titulo {
+    font-size: 1.5rem;
+  }
+}

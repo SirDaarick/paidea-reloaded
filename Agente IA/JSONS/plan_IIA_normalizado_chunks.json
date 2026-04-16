@@ -1,0 +1,17 @@
+[
+  {
+    "chunk_id": "TXTS/plan_IIA_normalizado_chunk_1",
+    "source": "TXTS/plan_IIA_normalizado.txt",
+    "text": "iia  ingenieria en inteligencia artificial\nmapa curricular 2020\nsemestre 1\n- fundamentos de programacion\n- matematicas discretas\n- calculo\n- comunicacion oral y escrita\n- mecanica y electromagnetismo\n- fundamentos economicos\nsemestre 2\n- ingenieria, etica y sociedad\n- calculo multivariable\n- algebra lineal\n- finanzas empresariales\n- fundamentos de diseno digital\n- algoritmos y estructuras de datos\nsemestre 3\n- analisis y diseno de algoritmos\n- paradigmas de programacion\n- ecuaciones diferenciales\n- bases de datos\n- diseno de sistemas digitales\n- liderazgo personal\nsemestre 4\n- fundamentos de inteligencia artificial\n- probabilidad y estadistica\n- matematicas avanzadas para la ingenieria\n- tecnologias para el desarrollo de aplicaciones web\n- analisis y diseno de sistemas\n- procesamiento digital de imagenes\nsemestre 5\n- aprendizaje de maquina\n- vision artificial\n- teoria de la computacion\n- procesamiento de senales\n- algoritmos bioinspirados\n- tecnologias de lenguaje natural\nsemestre 6"
+  },
+  {
+    "chunk_id": "TXTS/plan_IIA_normalizado_chunk_2",
+    "source": "TXTS/plan_IIA_normalizado.txt",
+    "text": "- vision artificial\n- teoria de la computacion\n- procesamiento de senales\n- algoritmos bioinspirados\n- tecnologias de lenguaje natural\nsemestre 6\n- computo paralelo\n- redes neuronales y aprendizaje profundo\n- ingenieria de software para sistemas inteligentes\n- optativa a\n- optativa b\n- metodologia de la investigacion y divulgacion cientifica\nsemestre 7\n- reconocimiento de voz\n- trabajo terminal i\n- formulacion y evaluacion de proyectos informaticos\n- optativa c\n- optativa d\nsemestre 8\n- gestion empresarial\n- trabajo terminal ii\n- estancia profesional\n- desarrollo de habilidades sociales para la alta direccion\noptativas semestre 6\n- innovacion y emprendimiento tecnologico\n- sistemas multiagentes\n- mineria de datos\n- temas selectos de inteligencia artificial\n- tecnicas de programacion para robots moviles\noptativas semestre 7\n- interaccion humano-maquina\n- programacion de dispositivos moviles\n- aplicaciones de inteligencia artificial en sistemas embebidos"
+  },
+  {
+    "chunk_id": "TXTS/plan_IIA_normalizado_chunk_3",
+    "source": "TXTS/plan_IIA_normalizado.txt",
+    "text": "- interaccion humano-maquina\n- programacion de dispositivos moviles\n- aplicaciones de inteligencia artificial en sistemas embebidos\n- topicos selectos de algoritmos bioinspirados\n- propiedad intelectual\n- aplicaciones de lenguaje natural\n- aplicaciones de sistemas multiagentes\n- big data\n- computo en la nube"
+  }
+]

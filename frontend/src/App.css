@@ -1,0 +1,249 @@
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Si necesitas estilos globales adicionales, agrégalos aquí */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Opcional: Estilos para enlaces si los necesitas */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+.periodos-container {
+  padding: 40px 60px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.titulo {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.contenido {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+/* ==== COLUMNA IZQUIERDA ==== */
+.columna-izquierda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.fechas {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.fechas label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.fechas input {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* ==== TARJETAS ==== */
+.botones-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.tarjeta {
+  background-color: #32427a;
+  color: white;
+  width: 200px;
+  height: 150px;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.tarjeta:hover {
+  transform: scale(1.05);
+}
+
+.boton {
+  background-color: white;
+  color: #32427a;
+  font-weight: bold;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.boton:hover {
+  background-color: #dbe3ff;
+}
+
+.oculto {
+  display: none;
+}
+
+.periodos-container {
+  padding: 40px 60px;
+  background-color: #fff;
+}
+
+/* ==== Encabezado ==== */
+.encabezado {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.titulo-izquierda {
+  font-size: 2.6em;
+  font-weight: 900;
+  color: #2c3362;
+  text-align: left;
+}
+
+/* ==== Contenido principal ==== */
+.contenido {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+/* ==== COLUMNA IZQUIERDA ==== */
+.columna-izquierda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.fechas {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.fechas label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.fechas input {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* ==== TARJETAS ==== */
+.botones-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.tarjeta {
+  background-color: #32427a;
+  color: white;
+  width: 200px;
+  height: 150px;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.tarjeta:hover {
+  transform: scale(1.05);
+}
+
+.boton {
+  background-color: white;
+  color: #32427a;
+  font-weight: bold;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.boton:hover {
+  background-color: #dbe3ff;
+}
+
+.oculto {
+  display: none;
+}
+
+/* ==== COLUMNA DERECHA ==== */
+.columna-derecha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.subtitulo {
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #2c2c2c;
+}
+
+.imagen-calendario {
+  max-width: 380px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border: 1px solid #ccc;
+}
+
+.bloque-fecha {
+  text-align: center;
+}
+
+.fecha-formateada {
+  margin-top: 6px;
+  font-size: 0.95em;
+  color: #333;
+  font-weight: 500;
+}

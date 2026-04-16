@@ -1,0 +1,81 @@
+/* src/components/Table/Table.module.css */
+
+/* Contenedor principal de la tabla */
+.tableWrapper {
+  width: 100%;
+  overflow-x: auto;              /* Activa desplazamiento horizontal */
+  overflow-y: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 24px;
+  border: 1px solid #e0e4f0;
+  -webkit-overflow-scrolling: touch;  /* Scroll suave en móviles */
+}
+
+/* Tabla flexible */
+.table {
+  width: max-content;            /* La tabla se adapta al contenido */
+  min-width: 100%;               /* Evita que sea más chica que el contenedor */
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+/* Celdas */
+.table th,
+.table td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid #eaedf3;
+  white-space: nowrap;           /* ✅ Evita que el texto se corte en varias líneas */
+}
+
+/* Encabezados */
+.table th {
+  background-color: #3E517D;
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  text-align: center;
+  padding: 14px 8px;
+}
+
+/* Celdas de datos */
+.table td {
+  color: #333;
+}
+
+/* Filas alternas */
+.table tbody tr.evenRow {
+  background-color: #f9faff;
+}
+
+/* Hover */
+.table tbody tr.hoverRow:hover {
+  background-color: #f0f3ff;
+}
+
+/* Celda vacía */
+.emptyCell {
+  text-align: center !important;
+  color: #666;
+  font-style: italic;
+  padding: 40px !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .table th,
+  .table td {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  .tableWrapper {
+    border-radius: 8px;
+  }
+}

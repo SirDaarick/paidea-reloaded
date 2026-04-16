@@ -1,0 +1,90 @@
+/* ==== CONTENEDOR PRINCIPAL ==== */
+.kdx-admin-main {
+  padding: 40px 60px;
+  max-width: 1400px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+/* ==== TITULO ==== */
+.kdx-admin-title {
+  font-size: 28px;
+  font-weight: 800;
+  color: #243159;
+  margin-bottom: 20px;
+}
+
+/* ==== INFO DEL ALUMNO ==== */
+.kdx-admin-info {
+  background: #f4f6fa;
+  padding: 18px 25px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  border-left: 6px solid #243159;
+  font-size: 16px;
+}
+
+.kdx-admin-info p {
+  margin: 6px 0;
+}
+
+/* ==== TITULO DE SEMESTRE ==== */
+.kdx-semester-title {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #243159;
+}
+
+/* ==== TABLAS ==== */
+.kdx-table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.kdx-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.kdx-table thead {
+  background: #243159;
+  color: white;
+}
+
+.kdx-table th,
+.kdx-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: left;
+}
+
+.kdx-table tr:hover {
+  background-color: #f5f7ff;
+}
+
+.kdx-table th {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 900px) {
+  .kdx-admin-main {
+    padding: 20px;
+  }
+
+  .kdx-admin-info {
+    font-size: 14px;
+  }
+
+  .kdx-table th,
+  .kdx-table td {
+    font-size: 13px;
+  }
+}

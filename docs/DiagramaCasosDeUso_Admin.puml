@@ -1,0 +1,138 @@
+@startuml Diagrama_CasosDeUso_Admin
+!theme cerulean
+skinparam actorStyle awesome
+skinparam packageStyle rectangle
+skinparam usecase {
+    BackgroundColor WhiteSmoke
+    BorderColor DarkSlateGray
+    ArrowColor DarkSlateGray
+}
+
+title Diagrama de Casos de Uso - Actor: Administrador\n(Sistema PAIDEA)
+skinparam usecaseFontColor Black
+skinparam packageFontColor Black
+skinparam defaultFontColor Black
+left to right direction
+
+actor "Administrador" as Admin #LightBlue
+
+' ==========================================
+' PAQUETE: GESTIÓN DE USUARIOS
+' ==========================================
+rectangle "Gestión de Usuarios" {
+    usecase "Iniciar Sesión" as UC_Login
+    usecase "Cambiar Contraseña" as UC_CambiarPass
+    
+    ' --- Gestión de Alumnos ---
+    usecase "Gestionar Alumnos" as UC_GestionAlumnos
+    usecase "Dar de Alta Alumno" as UC_AltaAlumno
+    usecase "Dar de Baja Alumno" as UC_BajaAlumno
+    usecase "Editar Datos de Alumno" as UC_EditarAlumno
+    usecase "Consultar Kardex de Alumno" as UC_KardexAdmin
+    usecase "Gestionar Materias de Alumno" as UC_GestionMateriasAlumno
+    
+    ' --- Gestión de Profesores ---
+    usecase "Gestionar Profesores" as UC_GestionProfesores
+    usecase "Dar de Alta Profesor" as UC_AltaProfesor
+    usecase "Dar de Baja Profesor" as UC_BajaProfesor
+    usecase "Gestionar Horario de Profesor" as UC_GestionHorarioProf
+}
+
+' ==========================================
+' PAQUETE: GESTIÓN ACADÉMICA
+' ==========================================
+rectangle "Gestión Académica" {
+    ' --- Grupos y Clases ---
+    usecase "Gestionar Grupos" as UC_GestionGrupos
+
+    ' --- Plan de Estudios ---
+    usecase "Gestionar Plan Sintético" as UC_PlanSintetico
+    
+    ' --- Periodos Académicos ---
+    usecase "Gestionar Periodos Académicos" as UC_PeriodosAcad
+}
+
+' ==========================================
+' PAQUETE: INSCRIPCIONES Y CITAS
+' ==========================================
+rectangle "Inscripciones y Citas" {
+    usecase "Asignar Citas de Reinscripción" as UC_AsignarCitas
+}
+
+' ==========================================
+' PAQUETE: EXÁMENES ETS
+' ==========================================
+rectangle "Exámenes ETS" {
+    usecase "Gestionar ETS" as UC_GestionETS
+    usecase "Crear Examen ETS" as UC_CrearETS
+    usecase "Asignar Profesor a ETS" as UC_AsignarProfETS
+    usecase "Configurar Horario y Salón ETS" as UC_ConfigETS
+}
+
+' ==========================================
+' PAQUETE: TRÁMITES Y SOLICITUDES
+' ==========================================
+rectangle "Trámites y Solicitudes" {
+    usecase "Gestionar Solicitudes de Trámites" as UC_GestionSolicitudes
+
+}
+
+' ==========================================
+' PAQUETE: CALIFICACIONES
+' ==========================================
+rectangle "Calificaciones" {
+    usecase "Corregir Actas de Calificación" as UC_CorregirActas
+    usecase "Modificar Calificación" as UC_ModificarCalif
+}
+
+' ==========================================
+' PAQUETE: SISTEMA
+' ==========================================
+rectangle "Sistema" {
+    usecase "Realizar Copia de Seguridad" as UC_CopiaSeguridad
+}
+
+' ==========================================
+' RELACIONES ADMIN -> CASOS DE USO PRINCIPALES
+' ==========================================
+Admin -- UC_Login
+Admin -- UC_CambiarPass
+Admin -- UC_GestionAlumnos
+Admin -- UC_GestionProfesores
+Admin -- UC_GestionGrupos
+Admin -- UC_PlanSintetico
+Admin -- UC_PeriodosAcad
+Admin -- UC_AsignarCitas
+Admin -- UC_GestionETS
+Admin -- UC_GestionSolicitudes
+Admin -- UC_CorregirActas
+Admin -- UC_CopiaSeguridad
+
+' ==========================================
+' RELACIONES <<include>> y <<extend>>
+' ==========================================
+
+' --- Gestión de Alumnos ---
+UC_GestionAlumnos ..> UC_AltaAlumno : <<include>>
+UC_GestionAlumnos ..> UC_BajaAlumno : <<include>>
+UC_GestionAlumnos ..> UC_EditarAlumno : <<include>>
+UC_GestionAlumnos ..> UC_KardexAdmin : <<include>>
+UC_GestionAlumnos ..> UC_GestionMateriasAlumno : <<extend>>
+
+' --- Gestión de Profesores ---
+UC_GestionProfesores ..> UC_AltaProfesor : <<include>>
+UC_GestionProfesores ..> UC_BajaProfesor : <<include>>
+UC_GestionProfesores ..> UC_GestionHorarioProf : <<extend>>
+
+
+' --- ETS ---
+UC_GestionETS ..> UC_CrearETS : <<include>>
+UC_GestionETS ..> UC_AsignarProfETS : <<include>>
+UC_GestionETS ..> UC_ConfigETS : <<include>>
+
+
+
+' --- Corrección Actas ---
+UC_CorregirActas ..> UC_ModificarCalif : <<include>>
+
+@enduml

@@ -1,0 +1,121 @@
+/* --- Contenedor principal del layout --- */
+.gestion-container {
+  max-width: 1400px;
+  margin: 30px auto;
+  display: flex;
+  gap: 30px;
+  padding: 0 20px;
+  align-items: flex-start;
+}
+
+/* --- Barra lateral (Datos del profesor) --- */
+.gestion-aside {
+  flex: 0 0 300px;
+  position: sticky;
+  top: 20px;
+}
+
+/* --- Área principal --- */
+.gestion-main {
+  flex: 1;
+  /* min-width: 0 es CRUCIAL para que el flexbox permita 
+     el scroll interno de la tabla en pantallas chicas */
+  min-width: 0; 
+}
+
+.gestion-title {
+  color: #243159;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+/* --- ESTILOS DE LA TABLA (SCROLL) --- */
+.table-scroll-container {
+  width: 90%;
+  overflow-x: auto; /* Scroll horizontal si es necesario */
+  overflow-y: auto; /* Scroll vertical si excede maxHeight */
+  max-height: 500px; /* Altura máxima fija */
+  border: 1px solid #cdd5e1;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+/* --- SECCIÓN DE ASIGNACIÓN (INPUTS Y BOTÓN +) --- */
+.asignacion-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.inputs-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input-label {
+  font-size: 0.85em;
+  color: #555;
+}
+
+.gestion-input {
+  padding: 8px 12px;
+  border: 1px solid #cdd5e1;
+  border-radius: 5px;
+}
+
+.input-materia {
+  width: 250px; /* Ancho específico para la materia */
+}
+
+/* --- BOTONES CIRCULARES (Agregar y Eliminar) --- */
+.btn-circle {
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.1s ease;
+}
+
+.btn-circle:active {
+  transform: scale(0.95);
+}
+
+/* Botón Verde (Agregar) */
+.btn-add {
+  background: #2ecc71;
+  width: 40px;
+  height: 40px;
+}
+
+.icon-plus {
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1;
+}
+
+/* Botón Rojo (Eliminar - dentro de la tabla) */
+.btn-delete {
+  background: #e74c3c;
+  width: 24px;
+  height: 24px;
+}
+
+.icon-times {
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1;
+}

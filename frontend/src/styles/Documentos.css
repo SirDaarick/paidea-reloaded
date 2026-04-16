@@ -1,0 +1,304 @@
+/* Documentos.css */
+
+.documentos-container {
+  display: block;
+  min-height: 100vh;
+  background-color: #f5f7fa;
+}
+
+.documentos-content {
+  padding: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.titulo-seccion {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.descripcion-seccion {
+  font-size: 1rem;
+  color: #7f8c8d;
+  text-align: center;
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+/* Header con datos del alumno */
+.datos-alumno-header {
+  background: white;
+  border-radius: 12px;
+  padding: 20px 32px;
+  margin-bottom: 32px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.dato-item {
+  font-size: 0.95rem;
+  color: #2c3e50;
+}
+
+.dato-item strong {
+  color: #7f8c8d;
+  margin-right: 8px;
+  font-weight: 600;
+}
+
+/* Info y tablas */
+.info-documentos {
+  background: #e3f2fd;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.info-documentos p {
+  margin: 0;
+  color: #2c3e50;
+}
+
+.info-documentos strong {
+  color: #1976d2;
+  font-weight: 600;
+}
+
+.loading-container {
+  text-align: center;
+  padding: 60px 20px;
+  color: #7f8c8d;
+  font-size: 1.1rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 80px 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.empty-state p {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  margin: 12px 0;
+}
+
+.empty-hint {
+  color: #95a5a6 !important;
+  font-size: 0.95rem !important;
+  font-style: italic;
+}
+
+/* Botón de descarga */
+.btn-descarga {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  transition: transform 0.2s, opacity 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.btn-descarga:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.btn-descarga:active {
+  transform: scale(0.95);
+}
+
+.btn-descarga img {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+/* Badges de estado */
+.badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.badge-success {
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.badge-warning {
+  background: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeaa7;
+}
+
+.badge-info {
+  background: #d1ecf1;
+  color: #0c5460;
+  border: 1px solid #bee5eb;
+}
+
+.badge-danger {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.badge-alert {
+  background: #ffe5b4;
+  color: #8b4513;
+  border: 1px solid #ffd700;
+}
+
+/* Solicitudes en proceso */
+.solicitudes-en-proceso {
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 2px solid #e9ecef;
+}
+
+.solicitudes-en-proceso h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Tabla personalizada */
+.documentos-content table {
+  width: 100%;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.documentos-content thead {
+  background: #f8f9fa;
+}
+
+.documentos-content th {
+  padding: 14px 12px;
+  text-align: left;
+  font-weight: 600;
+  color: #495057;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.documentos-content td {
+  padding: 12px;
+  color: #2c3e50;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #e9ecef;
+  vertical-align: middle;
+}
+
+.documentos-content tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.documentos-content tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .documentos-content {
+    padding: 30px 20px;
+  }
+
+  .datos-alumno-header {
+    padding: 16px 24px;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .documentos-content {
+    padding: 20px 16px;
+  }
+
+  .datos-alumno-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 20px;
+    gap: 12px;
+  }
+
+  .titulo-seccion {
+    font-size: 1.5rem;
+  }
+
+  .descripcion-seccion {
+    font-size: 0.95rem;
+  }
+
+  .empty-state {
+    padding: 60px 16px;
+  }
+
+  .solicitudes-en-proceso {
+    margin-top: 32px;
+    padding-top: 24px;
+  }
+
+  .solicitudes-en-proceso h3 {
+    font-size: 1.25rem;
+  }
+
+  /* Scroll horizontal para tablas en móviles */
+  .documentos-content table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .documentos-content {
+    padding: 16px 12px;
+  }
+
+  .datos-alumno-header {
+    padding: 12px 16px;
+  }
+
+  .dato-item {
+    font-size: 0.9rem;
+  }
+
+  .titulo-seccion {
+    font-size: 1.25rem;
+  }
+
+  .descripcion-seccion {
+    font-size: 0.9rem;
+  }
+}

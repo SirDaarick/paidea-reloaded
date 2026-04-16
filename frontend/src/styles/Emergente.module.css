@@ -1,0 +1,104 @@
+/* --- styles/Emergente.module.css --- */
+
+/* El fondo oscuro semi-transparente */
+.emergenteOverlay {
+  position: fixed; /* Cubre toda la pantalla */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6); /* Negro con 60% opacidad */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Asegura que esté por encima de todo */
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+}
+
+/* El contenedor que "envuelve" a tu CuadroDatos */
+.emergenteContent {
+  position: relative;
+  /* Tu .da-card (el 'children') define el tamaño y fondo */
+}
+
+/* El botón 'X' para cerrar */
+.closeButton {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1A2378; /* Color de tu .da-card */
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+  z-index: 1010;
+  transition: color 0.2s ease;
+}
+
+.closeButton:hover {
+  color: #5277CC; /* Color hover de tu .da-card */
+}
+
+/* --- (El comentario anterior se elimina ya que está integrado) --- */
+
+/*
+ * Contenedor para el contenido de "subir archivo".
+ * Reutiliza el estilo de CuadroDatos que me diste.
+*/
+.subirCard {
+  background: #C5C8E8;
+  border-radius: 22px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra todo */
+  gap: 15px;
+
+  /* --- CAMBIO AQUÍ --- */
+  width: 450px; /* <-- Aumentado de 350px para hacerlo más grande */
+  /* ----------------- */
+  
+  box-sizing: border-box;
+  color: #1A2378;
+}
+
+.subirTitle {
+  font-size: 20px;
+  font-weight: 800;
+  margin: 0;
+  text-align: center;
+}
+
+.subirMateria {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+
+.subirInput {
+  color: #0f172a;
+  font-size: 14px;
+}
+
+/* Estilo para el input de archivo */
+.subirInput::file-selector-button {
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 8px;
+  border: none;
+  background-color: #5277CC;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.subirInput::file-selector-button:hover {
+  filter: brightness(1.1);
+}

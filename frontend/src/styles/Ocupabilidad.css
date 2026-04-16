@@ -1,0 +1,82 @@
+/* Contenedor principal */
+.contenido-con-margen {
+  margin: 1cm;
+  background-color: #fff; 
+  min-height: 80vh;
+}
+
+.titulo-pagina {
+  color: #3E517D;
+  margin-bottom: 8px; /* Un pequeño ajuste visual opcional */
+}
+
+/* Grilla para los filtros */
+.filtros-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin: 16px 0;
+}
+
+/* Responsividad para móviles */
+@media (max-width: 768px) {
+  .filtros-grid {
+    grid-template-columns: 1fr;
+  }
+  .contenido-con-margen {
+    margin: 16px;
+  }
+}
+
+/* Caja de advertencia/tip */
+.tip-box {
+  background: #fef3c7;
+  border: 1px solid #f59e0b;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 16px;
+}
+
+/* Contenedor de la leyenda */
+.leyenda-container {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  background: #eef2ff;
+  border-radius: 12px;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+/* Estilos para el componente Badge */
+.badge-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.badge-color {
+  width: 14px;
+  height: 14px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+/* Se aplica directamente al componente Table para el scroll */
+.tabla-responsive-directa {
+  width: 100%;
+  overflow-x: auto; 
+  display: block;   
+}
+
+/* Estilo para las pastillas de ocupación */
+.ocupacion-pill {
+  border-radius: 8px;
+  padding: 4px 12px;
+  display: inline-block;
+  min-width: 110px;
+  text-align: center;
+  font-weight: 500;
+}

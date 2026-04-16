@@ -1,0 +1,895 @@
+/* Reiniciar márgenes y padding de todo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Contenedor general */
+.bienvenida-container {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Encabezado */
+.bienvenida-header {
+  background-color: #3E517D;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  width: 100%;
+  margin: 0;
+}
+
+/* TÃ­tulo centrado, mÃ¡s grande */
+.bienvenida-header h1 {
+  text-align: center;
+  font-size: 42px;
+  flex: 1;
+  margin: 0;
+}
+
+/* Logos uniformes */
+.logo-poli,
+.logo-escom {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* NavegaciÃ³n */
+.bienvenida-nav {
+  background-color: #425AA1;
+  width: 100%;
+  margin: 0;
+}
+
+/* MenÃº principal horizontal */
+.bienvenida-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px 0;
+  margin: 0;
+  color: white;
+  font-weight: bold;
+}
+
+
+/* Contenido principal centrado */
+.bienvenida-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 40px;
+  flex-wrap: wrap;
+  text-align: left;
+  min-height: calc(100vh - 160px);
+}
+
+.bienvenida-img {
+  width: 300px;
+  height: auto;
+  margin: 0 40px 20px 0;
+}
+
+.bienvenida-text {
+  max-width: 800px;
+  text-align: left;
+}
+
+/* Texto de saludo */
+.saludo {
+  font-size: 26px;
+  text-align: left;
+}
+
+.nombre {
+  font-weight: bold;
+  color: #619BF5;
+  font-size: 28px;
+}
+
+/* TÃ­tulo principal */
+h2 {
+  font-size: 48px;
+  margin: 15px 0;
+  text-align: left;
+}
+
+.paidea {
+  color: #3E517D;
+}
+
+/* DescripciÃ³n */
+.descripcion {
+  font-size: 20px;
+  color: #49454f;
+  text-align: left;
+}
+
+.tecno {
+  color: #3E517D;
+  font-weight: bold;
+}
+
+/* ===== Editar Datos Personales (layout 2 columnas) ===== */
+.edp-container {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 24px;
+  padding: 40px;
+}
+@media (max-width: 1100px) { 
+  .edp-container { 
+    grid-template-columns: 1fr; 
+  } 
+}
+
+.edp-side .edp-title {
+  margin: 0 0 8px 0;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.edp-text { 
+  color: #4b5563; 
+  font-size: 14px; 
+  line-height: 1.5; 
+}
+
+.edp-label { 
+  display: block; 
+  margin: 12px 0 6px; 
+  font-weight: 600; 
+}
+
+.edp-input-icon { 
+  position: relative; 
+}
+
+.edp-input-icon input {
+  width: 100%;
+  padding: 12px 40px 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #d6dae5;
+  background: #f3f5f9;
+  outline: none;
+}
+
+.edp-input-icon .lock {
+  position: absolute; 
+  right: 12px; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  opacity: .7;
+}
+
+.edp-btns { 
+  display: flex; 
+  gap: 12px; 
+  margin-top: 14px; 
+}
+
+.edp-btns.end { 
+  justify-content: flex-end; 
+}
+
+
+
+.edp-form-wrap {
+  border: 3px solid #3d63c6;
+  background: #eef1f8;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.edp-sec-title {
+  margin: 18px 0 8px;
+  font-size: 18px;
+  color: #1f2937;
+  font-weight: 800;
+}
+
+.edp-block { 
+  margin: 8px 0; 
+}
+
+.edp-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(180px, 1fr));
+  gap: 14px 16px;
+}
+
+@media (max-width: 1200px) { 
+  .edp-grid { 
+    grid-template-columns: repeat(2, 1fr); 
+  } 
+}
+
+@media (max-width: 700px) { 
+  .edp-grid { 
+    grid-template-columns: 1fr; 
+  } 
+}
+
+
+/* ===== Rendimiento AcadÃ©mico (layout igual al mock) ===== */
+.ra-container {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 28px;
+  padding: 40px;
+}
+
+@media (max-width: 1100px) { 
+  .ra-container { 
+    grid-template-columns: 1fr; 
+  } 
+}
+
+.ra-side {
+  background: #cfd4ea66;
+  border-radius: 22px;
+  padding: 18px 16px;
+  height: calc(100vh - 150px);
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.ra-side-title {
+  margin: 4px 0 12px 0;
+  font-size: 22px;
+  font-weight: 800;
+  color: #243159;
+}
+
+.ra-row { 
+  display: block; 
+  margin: 12px 0; 
+}
+
+.ra-key {
+  display: inline-block;
+  color: #243159;
+  font-weight: 900;
+  font-size: 18px;
+  margin-right: 6px;
+  text-transform: uppercase;
+}
+
+.ra-val {
+  color: #0f172a;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* TÃ­tulo/desc de la zona derecha */
+.page-subtitle { 
+  font-size: 24px; 
+  font-weight: 900; 
+  margin: 0 0 8px 0; 
+}
+
+/* Barra de controles arriba de la grÃ¡fica */
+.ra-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+/* Marco azul de la grÃ¡fica (como en el mock) */
+.ra-chart-frame {
+  border: 4px solid #3d7ad6;
+  border-radius: 6px;
+  background: #fff;
+  padding: 16px;
+}
+
+.ra-chart { 
+  width: 100%; 
+  height: 420px; 
+}
+
+/* salones */
+
+.salones-container {
+  display: grid;
+  /* Col Izq (Info) | Col Central (Selector/Mapa) | Col Der (Horarios) */
+  grid-template-columns: 360px minmax(400px, 1fr) 1fr;
+  gap: 28px; /* Espacio entre columnas */
+  padding: 40px;
+  flex: 1;
+  min-height: calc(100vh - 160px); 
+}
+
+/* En pantallas medianas, pasamos a 2 columnas (Info | Contenido) */
+@media (max-width: 1200px) {
+  .salones-container {
+    grid-template-columns: 360px 1fr;
+  }
+}
+/* En pantallas chicas, todo a 1 columna */
+@media (max-width: 900px) { 
+  .salones-container { 
+    grid-template-columns: 1fr; 
+  } 
+}
+
+
+/* --- Columna Central (TÃ­tulo, Selector, Mapa) --- */
+.salones-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Espacio vertical entre los elementos */
+}
+
+
+/* --- AJUSTE: TÃ­tulo (usando morado oscuro para contraste) --- */
+.salones-subtitle {
+  font-size: 24px;
+  font-weight: 900;
+  margin: 0;
+  color: #243159; /* Morado oscuro de la caja de info (legible) */
+}
+
+.salones-description {
+  color: #49454f;
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+
+/* --- AJUSTE (PeticiÃ³n 1 y 2): Selector "un cacho" y color --- */
+.salones-semestre-selector {
+  width: fit-content; /* <-- PeticiÃ³n 2: "un cacho" */
+  min-width: 250px;
+}
+
+/* PeticiÃ³n 1: Usar el color #C5C8E8 en el label (tÃ­tulo) del selector */
+.salones-semestre-selector.edp-field label {
+   background: #C5C8E8;
+   color: #1A2378; /* Texto oscuro para buen contraste */
+}
+
+.salones-semestre-selector select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #cdd5e1;
+  background: #fff;
+  outline: none;
+}
+
+
+/* --- Columna Central (Mapa) --- */
+.salones-map-frame {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 10px;
+  width: 100%; /* Ocupa todo el ancho de su columna */
+}
+
+
+.salones-horarios-frame {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 10px;
+  
+  width: 100%; /* Ocupa 100% de su columna grid */
+  height: fit-content; /* Se ajusta al contenido */
+  max-height: 80vh; /* LÃ­mite para que no sea gigante */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .salones-main {
+     /* Selector y mapa van primero */
+     margin-bottom: 20px;
+  }
+  .salones-horarios-frame {
+     height: auto;
+     max-height: 600px; /* LÃ­mite de altura */
+  }
+}
+
+
+/* --- ImÃ¡genes (Mapa y Horarios) --- */
+.salones-map-img,
+.salones-horarios-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.salones-horarios-img {
+    object-fit: contain; /* Se asegura que la imagen quepa sin deformarse */
+    width: 95%;
+    height: 95%;
+    margin-top: 20px;
+}
+
+/*calificaciones*/
+
+/* --- Estilos para la Columna Derecha de Calificaciones --- */
+.calif-main {
+  width: 100%;
+}
+
+/* --- ESTILOS DE TABLA MEJORADOS --- */
+.calif-table-wrapper {
+  width: 100%;
+  overflow-x: auto; /* Mantiene scroll horizontal */
+  border-radius: 12px; /* Bordes mÃ¡s redondeados */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Sombra suave */
+  margin-bottom: 24px;
+  border: 1px solid #e0e4f0; /* Borde suave */
+}
+
+.calif-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.calif-table th,
+.calif-table td {
+  padding: 14px 16px; /* MÃ¡s padding */
+  text-align: left;
+  border-bottom: 1px solid #eaedf3; /* LÃ­neas de separaciÃ³n mÃ¡s suaves */
+  white-space: nowrap;
+}
+
+/* Encabezados de la tabla (Color de tu tema) */
+.calif-table th {
+  background-color: #3E517D; /* Color del Header */
+  color: white; /* Texto blanco */
+  font-weight: bold;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  position: sticky; /* Para que se queden fijos en scroll */
+  top: 0;
+  z-index: 1;
+}
+
+/* Celdas de la tabla */
+.calif-table td {
+  color: #333;
+}
+.calif-table td:first-child { /* Grupo */
+  font-weight: bold;
+  color: #3E517D;
+}
+.calif-table td:nth-child(2) { /* Materia */
+  white-space: normal; /* Permitir que la materia se ajuste */
+  min-width: 300px;
+  font-weight: 600;
+  color: #1a2378;
+}
+
+/* Estilo de filas alternas (tipo "cebra") */
+.calif-table tbody tr:nth-child(even) {
+  background-color: #f9faff; /* Azul muy claro */
+}
+
+/* Naranja: < 8 (y >= 6) */
+.calif-table tbody tr.calif-naranja {
+  background-color: rgba(255, 165, 0, 0.08); 
+  border-left: 4px solid #FFA500; 
+}
+
+/* Rojo: < 6 */
+.calif-table tbody tr.calif-rojo {
+  background-color: rgba(255, 0, 0, 0.05); 
+  border-left: 4px solid #FF0000; 
+}
+
+/* Hover genÃ©rico (NO se aplica si ya es roja o naranja) */
+.calif-table tbody tr:hover:not(.calif-rojo):not(.calif-naranja) {
+  background-color: #f0f3ff; /* Resaltado al pasar el mouse */
+}
+
+/* Hovers especÃ­ficos para roja/naranja */
+.calif-table tbody tr.calif-naranja:hover {
+  background-color: rgba(255, 165, 0, 0.15);
+}
+.calif-table tbody tr.calif-rojo:hover {
+  background-color: rgba(255, 0, 0, 0.15);
+}
+
+/* Hacemos que el texto sea un poco mÃ¡s oscuro en filas de riesgo */
+.calif-table tr.calif-rojo td,
+.calif-table tr.calif-naranja td {
+  font-weight: bold;
+  color: #222;
+}
+.calif-table tr.calif-rojo td:first-child,
+.calif-table tr.calif-naranja td:first-child {
+  color: #3E517D;
+}
+
+
+/* --- SecciÃ³n de Recomendaciones --- */
+.calif-recom-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: #3E517D;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.calif-recomendaciones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f6fc;
+  border-radius: 12px;
+  padding: 20px 24px;
+  gap: 20px;
+  border: 1px solid #e0e4f0;
+}
+
+.calif-recomendaciones p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #303133;
+  margin: 0;
+}
+.calif-recom-lista {
+  margin: 10px 0 0 20px;
+  padding: 0;
+}
+.calif-recom-lista li {
+  font-size: 16px;
+  color: #303133;
+  margin-bottom: 5px;
+}
+.calif-recom-lista li strong {
+  /* Resaltar materias en rojo */
+  color: #c43434; 
+}
+
+.tecnoburro-img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .calif-recomendaciones {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .tecnoburro-img {
+    align-self: center;
+    margin-top: 10px;
+  }
+}
+/* ===== HORARIO FINAL ===== */
+.horario-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 32px;
+  padding: 40px 60px;
+  background: #ffffff;
+}
+
+.horario-side {
+  background-color: #dde1f2;
+  border-radius: 20px;
+  padding: 25px 30px;
+  width: 280px;
+  min-width: 260px;
+  color: #1a1a40;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.horario-side h3 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #1a1a40;
+  margin-bottom: 12px;
+}
+
+.horario-side p {
+  margin: 5px 0;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.horario-side strong {
+  font-weight: 900;
+  color: #00003b;
+}
+
+
+/* ===== COLUMNA DERECHA ===== */
+.horario-main {
+  flex: 1;
+}
+
+.horario-main h2 {
+  font-size: 24px;
+  font-weight: 800;
+  color: #00003b;
+  margin-bottom: 6px;
+}
+
+.horario-main p {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 18px;
+}
+
+/* ===== TABLA ===== */
+.horario-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  border: 1px solid #d1d5db;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.horario-table th {
+  background-color: #2e3c7e;
+  color: white;
+  padding: 10px 6px;
+  text-align: center;
+  border-right: 1px solid #c8d0f0;
+  font-weight: 700;
+}
+
+.horario-table th:last-child {
+  border-right: none;
+}
+
+.horario-table td {
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 8px 5px;
+  color: #1f2937;
+}
+
+.horario-table td:nth-child(3) {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.horario-table tr:nth-child(even) {
+  background-color: #f6f7fb;
+}
+
+.horario-table tr:hover {
+  background-color: #eaf0ff;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 1100px) {
+  .horario-container {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .horario-side {
+    width: 100%;
+  }
+}
+
+ /* ====== CALENDARIO 3 COLUMNAS ====== */
+.cal-3col {
+  display: grid;
+  grid-template-columns: 340px 360px minmax(420px, 1fr);
+  grid-template-areas: "left middle right";
+  gap: 32px;
+  padding: 40px 60px;
+  align-items: start;
+  background: #fff;
+}
+
+.cal-left { grid-area: left; }
+.cal-middle { grid-area: middle; }
+.cal-right { grid-area: right; }
+
+/* Columna izquierda */
+.cal-left h2 {
+  font-size: 26px;
+  font-weight: 900;
+  color: #00003b;
+  margin-bottom: 8px;
+}
+
+.cal-text {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.cal-btn {
+  background-color: #304989;
+  color: #fff;
+  border: 0;
+  border-radius: 14px;
+  padding: 10px 22px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform .15s ease, filter .15s ease;
+  width: fit-content;
+}
+.cal-btn:hover { transform: scale(1.03); filter: brightness(1.02); }
+
+/* Columna media (fechas) */
+.cal-fechas-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: #1a1a40;
+  margin-bottom: 10px;
+}
+
+.cal-card {
+  background: #e8ebf8;
+  border-radius: 14px;
+  padding: 14px 18px;
+  margin-bottom: 12px;
+  color: #1f2937;
+  box-shadow: 0 2px 5px rgba(0,0,0,.05);
+}
+
+.cal-chip {
+  display: inline-block;
+  background: #425aa1;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.cal-sub {
+  font-weight: 800;
+  color: #243159;
+  margin-bottom: 4px;
+}
+
+.cal-card ul { margin: 0; padding-left: 18px; }
+.cal-card li { margin-bottom: 4px; font-size: 15px; }
+
+/* Columna derecha (imagen) */
+.cal-right { display: flex; justify-content: center; }
+.cal-img {
+  width: 100%;
+  max-width: 620px;         /* ajusta si quieres verla mÃ¡s grande */
+  height: auto;
+  border: 3px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+  object-fit: contain;
+}
+
+/* ===== Responsivo ===== */
+/* 2 columnas: texto y fechas arriba, imagen abajo ocupando ancho completo */
+@media (max-width: 1200px) {
+  .cal-3col {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "left middle"
+      "right right";
+  }
+  .cal-right { justify-content: flex-start; }
+  .cal-img { max-width: 100%; }
+}
+
+/* 1 columna en mÃ³viles */
+@media (max-width: 750px) {
+  .cal-3col {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "left"
+      "middle"
+      "right";
+    padding: 28px;
+    gap: 24px;
+  }
+}
+
+/* ===== MENÃš PROFESORES ===== */
+.menu-container {
+  width: 100%;
+}
+
+.menu-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 12px 0;
+  margin: 0;
+  font-weight: bold;
+  color: white;
+}
+
+.menu-list > li {
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  padding: 10px 16px;
+}
+
+.menu-list > li:hover {
+  background-color: #3E517D;
+  border-radius: 4px;
+}
+
+/* SubmenÃºs */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #425AA1;
+  list-style: none;
+  margin: 0;
+  padding: 6px 0;
+  border-radius: 0 0 8px 8px;
+  min-width: 220px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu-list > li:hover .submenu {
+  display: block;
+}
+
+.submenu li {
+  padding: 8px 16px;
+}
+
+.submenu li button {
+  background: none;
+  border: none;
+  color: white;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+}
+
+.submenu li button:hover {
+  background-color: #3E517D;
+}

@@ -1,0 +1,116 @@
+isc  ingenieria en sistemas computacionales
+mapa curricular 2020
+semestre 1
+- fundamentos de programacion
+- matematicas discretas
+- calculo
+- comunicacion oral y escrita
+- analisis vectorial
+semestre 2
+- algoritmos y estructuras de datos
+- calculo aplicado
+- mecanica y electromagnetismo
+- ingenieria etica y sociedad
+- algebra lineal
+- fundamentos economicos
+semestre 3
+- analisis y diseno de algoritmos
+- paradigmas de programacion
+- ecuaciones diferenciales
+- circuitos electricos
+- fundamentos de diseno digital
+- bases de datos
+- finanzas empresariales
+semestre 4
+- probabilidad y estadistica
+- matematicas avanzadas para la ingenieria
+- electronica analogica
+- diseno de sistemas digitales
+- tecnologias de desarrollo de aplicaciones web
+- sistemas operativos
+- teoria de la computacion
+semestre 5
+- procesamiento de senales digitales
+- instrumentacion y control
+- arquitectura de computadoras
+- analisis y diseno de sistemas
+- formulacion y evaluacion de proyectos informaticos
+- compiladores
+- redes de computadoras
+semestre 6
+- sistemas en chip
+- optativa a1
+- optativa b1
+- metodos cuantitativos para la toma de decisiones
+- ingenieria de software
+- inteligencia artificial
+- aplicaciones para comunicaciones en red
+semestre 7
+- desarrollo de aplicaciones moviles nativas
+- optativa a2
+- optativa b2
+- trabajo terminal i
+- sistemas distribuidos
+- administracion de servicios en red
+semestre 8
+- gestion empresarial
+- trabajo terminal ii
+- estancia profesional
+- desarrollo de habilidades sociales para la alta direccion
+- liderazgo personal
+optativas semestre 6
+- seguridad informatica
+- algoritmos geneticos
+- introduccion a la criptografia
+- aprendizaje automatico
+- aseguramiento de la calidad del software y patrones de diseno
+- bioinformatica
+- gobernanza de ti
+- procesamiento del lenguaje natural
+- temas seleccionados de criptografia
+- realidad virtual y aumentada
+- marcos de desarrollo de clientes web y backend
+- big data
+- sistemas complejos
+- informatica temas seleccionados i
+- informatica temas seleccionados ii
+- mineria de datos
+- ingenieria economica
+- analisis de imagenes
+- internet de las cosas
+- instrumentacion virtual
+- aplicaciones de instrumentacion virtual
+- celula automatizada
+- sistemas embebidos
+- gestion de empresas de alta tecnologia
+- bases de datos no relacionales
+- herramientas estadisticas para analisis de datos
+optativas semestre 6
+- genetic algorithms
+- computer graphics
+- bioinformatics
+- natural language processing
+- machine learning
+- big data
+- computing selected topics i
+- data mining
+- image analysis
+- virtual instrumentation
+- cellula automata
+- high technology enterprise management
+- statistical tools for data analytics
+optativas semestre 7
+- virtual and augmented reality
+- computer security
+- introduction to cryptography
+- software quality assurance and design patterns
+- it governance
+- selected topics of cryptography
+- web client and backend development frameworks
+- complex systems
+- computing selected topics ii
+- economic engineering
+- internet of things
+- virtual instrumentation applications
+- embedded systems
+- non relational databases

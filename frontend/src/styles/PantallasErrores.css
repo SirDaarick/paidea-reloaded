@@ -1,0 +1,29 @@
+/* Contenido principal de error */
+.error-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 40px;
+  min-height: calc(100vh - 160px);
+  text-align: center;
+}
+
+/* Recuadro azul del mensaje */
+.error-box {
+  background-color: #C5C8E8;
+  color: #1A2378;
+  padding: 20px 40px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  max-width: 600px;
+  text-align: center; 
+}
+
+
+/* Imagen debajo del mensaje */
+.error-img {
+  width: 300px;
+  height: auto;
+}

@@ -1,0 +1,130 @@
+{
+  "693760d2a5d4dea828f2cf84": {
+    "4": [
+      {
+        "id": "6937729a9c50fd21d5e17791",
+        "nombre": "4AM",
+        "turno": "Matutino"
+      },
+      {
+        "id": "6937729b9c50fd21d5e1779f",
+        "nombre": "4BV",
+        "turno": "Vespertino"
+      }
+    ]
+  },
+  "690eace7b43948f952b924cb": {
+    "4": [
+      {
+        "id": "6937729d9c50fd21d5e177ad",
+        "nombre": "4AM",
+        "turno": "Matutino"
+      },
+      {
+        "id": "6937729e9c50fd21d5e177bb",
+        "nombre": "4BV",
+        "turno": "Vespertino"
+      }
+    ],
+    "5": [
+      {
+        "id": "6937729f9c50fd21d5e177c9",
+        "nombre": "5AM",
+        "turno": "Matutino"
+      },
+      {
+        "id": "693772a19c50fd21d5e177d7",
+        "nombre": "5BV",
+        "turno": "Vespertino"
+      }
+    ]
+  },
+  "690eace7b43948f952b924c9": {
+    "4": [
+      {
+        "id": "693772a29c50fd21d5e177e5",
+        "nombre": "4AM",
+        "turno": "Matutino"
+      },
+      {
+        "id": "693772a39c50fd21d5e177f3",
+        "nombre": "4BV",
+        "turno": "Vespertino"
+      }
+    ],
+    "5": [
+      {
+        "id": "693772a59c50fd21d5e17801",
+        "nombre": "5AM",
+        "turno": "Matutino"
+      },
+      {
+        "id": "693772a69c50fd21d5e1780f",
+        "nombre": "5BV",
+        "turno": "Vespertino"
+      }
+    ],
+    "6": [
+      {
+        "id": "693772a79c50fd21d5e1781d",
+        "nombre": "6AM",
+        "turno": "Matutino"
+      },
+      {
+        "id": "693772a89c50fd21d5e17827",
+        "nombre": "6BV",
+        "turno": "Vespertino"
+      }
+    ]
+  },
+  "690eace7b43948f952b924c7": {
+    "4": [
+      {
+        "id": "693772a99c50fd21d5e17831",
+        "nombre": "4AM",
+        "turno": "Matutino"
+      },
+      {
+        "id": "693772aa9c50fd21d5e1783f",
+        "nombre": "4BV",
+        "turno": "Vespertino"
+      }
+    ],
+    "5": [
+      {
+        "id": "693772ac9c50fd21d5e1784d",
+        "nombre": "5AM",
+        "turno": "Matutino"
+      },
+      {
+        "id": "693772ad9c50fd21d5e1785b",
+        "nombre": "5BV",
+        "turno": "Vespertino"
+      }
+    ],
+    "6": [
+      {
+        "id": "693772ae9c50fd21d5e17869",
+        "nombre": "6AM",
+        "turno": "Matutino"
+      },
+      {
+        "id": "693772af9c50fd21d5e17873",
+        "nombre": "6BV",
+        "turno": "Vespertino"
+      }
+    ],
+    "7": [
+      {
+        "id": "693772b09c50fd21d5e1787d",
+        "nombre": "7AM",
+        "turno": "Matutino"
+      },
+      {
+        "id": "693772b19c50fd21d5e17885",
+        "nombre": "7BV",
+        "turno": "Vespertino"
+      }
+    ]
+  }
+}

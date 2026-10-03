@@ -3,7 +3,7 @@ import Button from 'components/Button';
 import Mensaje from 'components/Mensaje';
 import 'styles/modalForms.css';
 
-const ADMIN_PASSWORD = process.env.REACT_APP_ADMIN_PASSWORD || '';
+const ADMIN_PASSWORD = import.meta.env.VITE_ADMIN_PASSWORD || '';
 
 const ModalBajaProfesor = ({ onBajaSubmit, listaProfesores = [] }) => {
   // Estados del formulario individual

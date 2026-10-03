@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import apiCall from "consultas/APICall";
+import { useAuth } from "context/AuthContext";
 import fondoLogin from "assets/ESCOMFOTO.jpg";
 
 const Login = () => {
   const navigate = useNavigate();
+  const { login } = useAuth();
 
   // Estados de Login
   const [identifier, setIdentifier] = useState("");
@@ -69,73 +70,27 @@ const Login = () => {
     }
 
     try {
-      let userData = null;
+      // 1. Llamada atómica y segura de autenticación JWT mediante AuthContext
+      const res = await login(identifier.trim(), password);
+      const role = res.role;
 
-      // 1. Buscar usuario
-      try {
-        if (isBoleta(clean)) {
-          userData = await apiCall(`/usuario/boleta/${clean}`, "GET");
-        } else if (isRFCRegex(clean) || startsWith4Letters(clean)) {
-          userData = await apiCall(`/usuario/rfc/${clean}`, "GET");
-        } else {
-          throw new Error("Formato no válido.");
-        }
-      } catch (err) {
-        setError("Usuario no encontrado.");
-        setLoading(false);
-        return;
-      }
-
-      if (!userData || !userData._id) {
-        setError("Error: Usuario sin ID válido.");
-        setLoading(false);
-        return;
-      }
-
-      // 2. Comparar password
-      const pwdCheck = await apiCall(`/usuario/compare-password/${userData._id}`, "POST", { password });
-
-      if (!pwdCheck.isMatch) {
-        setError("Contraseña incorrecta.");
-        setLoading(false);
-        return;
-      }
-
-      // 3. Guardar sesión
-      const rawRole = userData.rol || "";
-      const role = rawRole.toString().toLowerCase();
-
-      localStorage.setItem("usuarioId", userData._id);
-      localStorage.setItem("userRole", role);
-      localStorage.setItem("nombre", userData.nombre);
-
-      if (role === "alumno") localStorage.setItem("boletaAlumno", userData.boleta);
-      else if (role === "profesor") localStorage.setItem("rfcProfesor", userData.datosPersonales?.rfc || clean);
-
-      // 4. Primer inicio
-      if (userData.primerInicio && role !== "admin" && role !== "administrativo") {
-        const rutaCambio = role === "alumno" ? "/alumno/cambiar-contraseña" : "/profesor/cambiar-contraseña";
-        navigate(rutaCambio, { state: { primerInicio: true }, replace: true });
-        return;
-      }
-
-      // 5. Redirección
+      // 2. Redirección según rol
       const rutas = {
         alumno: "/alumno/Bienvenida",
         profesor: "/profesor/bienvenida",
         admin: "/administrador/BienvenidaAdministrador",
-        administrativo: "/administrador/BienvenidaAdministrador"
+        administrativo: "/administrador/BienvenidaAdministrador",
       };
 
       if (rutas[role]) {
-        navigate(rutas[role], { state: { user: userData } });
+        navigate(rutas[role], { state: { user: res.user } });
       } else {
-        setError(`Rol desconocido: ${rawRole}`);
+        setError(`Rol desconocido: ${role}`);
       }
-
     } catch (err) {
-      console.error(err);
-      setError("Error de conexión. Intente más tarde.");
+      console.error("[Login]", err);
+      const serverMsg = err.response?.data?.detail || err.message;
+      setError(typeof serverMsg === "string" ? serverMsg : "Error al iniciar sesión. Verifica tus credenciales.");
     }
     setLoading(false);
   };

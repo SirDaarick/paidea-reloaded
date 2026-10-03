@@ -64,27 +64,56 @@ import PeriodosAcademicos from "pages/administradores/PeriodosAcademicos";
 import PlanSintetico from "pages/administradores/PlanSintetico";
 import KardexAdmin from "./pages/administradores/KardexAdmin";
 import PeriodosAcademicos2 from "pages/administradores/PeriodosAcademicos2";
+import { AuthProvider } from "context/AuthContext";
+import ProtectedRoute from "components/shared/ProtectedRoute";
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        {/* ================= ALUMNO ================= */}
-        <Route path="/alumno/*" element={<RutasAlumno />} />
+    <AuthProvider>
+      <Router>
+        <Routes>
+          {/* ================= LOGIN PÚBLICO ================= */}
+          <Route path="/" element={<Login />} />
+          <Route path="/login" element={<Login />} />
 
-        {/* ================= PROFESOR ================= */}
-        <Route path="/profesor/*" element={<RutasProfesor />} />
+          {/* ================= ALUMNO (PROTEGIDO) ================= */}
+          <Route
+            path="/alumno/*"
+            element={
+              <ProtectedRoute allowedRoles={["alumno"]}>
+                <RutasAlumno />
+              </ProtectedRoute>
+            }
+          />
 
-        {/* ================= ADMINISTRADOR ================= */}
-        <Route path="/administrador/*" element={<RutasAdministrador />} />
+          {/* ================= PROFESOR (PROTEGIDO) ================= */}
+          <Route
+            path="/profesor/*"
+            element={
+              <ProtectedRoute allowedRoles={["profesor"]}>
+                <RutasProfesor />
+              </ProtectedRoute>
+            }
+          />
 
-        {/* ================= FALLBACK GLOBAL ================= */}
-        <Route path="*" element={<Login />} />
-      </Routes>
+          {/* ================= ADMINISTRADOR (PROTEGIDO) ================= */}
+          <Route
+            path="/administrador/*"
+            element={
+              <ProtectedRoute allowedRoles={["admin", "administrador"]}>
+                <RutasAdministrador />
+              </ProtectedRoute>
+            }
+          />
 
-      {/* === Widget del burrito === */}
-      <ChatWidget />
-    </Router>
+          {/* ================= FALLBACK GLOBAL ================= */}
+          <Route path="*" element={<Login />} />
+        </Routes>
+
+        {/* === Widget del burrito === */}
+        <ChatWidget />
+      </Router>
+    </AuthProvider>
   );
 }
 

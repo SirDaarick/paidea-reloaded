@@ -1,7 +1,16 @@
 // src/services/api.js
 import axios from "axios";
 
-const API_URL = "https://paidea.onrender.com"; // ✅ sin /api
+const API_URL = import.meta.env?.VITE_API_URL ?? "";
+
+// Interceptor para inyectar token JWT automáticamente
+axios.interceptors.request.use((config) => {
+  const token = localStorage.getItem("token");
+  if (token) {
+    config.headers.Authorization = `Bearer ${token}`;
+  }
+  return config;
+});
 
 // ========== USUARIOS / PROFESORES ==========
 

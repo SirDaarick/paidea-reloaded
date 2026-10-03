@@ -218,9 +218,8 @@ const ChatWidget = () => {
         .filter(m => !m.loader)
         .slice(-6);
 
-      console.log(`📤 Enviando: "${text}" | ID: ${identificadorReal} (${rolDetectadoVisual})`);
-
-      const res = await fetch("https://6b7a27edf2b6.ngrok-free.app/preguntar", {
+      const apiUrl = import.meta.env?.VITE_API_URL ? `${import.meta.env.VITE_API_URL}/preguntar` : "/preguntar";
+      const res = await fetch(apiUrl, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

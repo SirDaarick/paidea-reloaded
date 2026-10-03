@@ -1,19 +1,22 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react-swc'
-import path from "path";
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import path from 'path';
 
-// https://vite.dev/config/
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import path from 'path'
-
+// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  define: {
+    'process.env': {}
+  },
   server: {
-    port: 3000,
+    port: 5173,
     proxy: {
       '/api': {
-        target: 'http://localhost:3001',
+        target: 'http://127.0.0.1:8000',
+        changeOrigin: true,
+      },
+      '/preguntar': {
+        target: 'http://127.0.0.1:8000',
         changeOrigin: true,
       }
     }
@@ -21,9 +24,17 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
+      'pages': path.resolve(__dirname, './src/pages'),
+      'components': path.resolve(__dirname, './src/components'),
+      'styles': path.resolve(__dirname, './src/styles'),
+      'assets': path.resolve(__dirname, './src/assets'),
+      'consultas': path.resolve(__dirname, './src/consultas'),
+      'context': path.resolve(__dirname, './src/context'),
+      'hooks': path.resolve(__dirname, './src/hooks'),
+      'services': path.resolve(__dirname, './src/services'),
     },
   },
   build: {
     outDir: 'dist'
   }
-})
+});

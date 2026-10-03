@@ -12,6 +12,7 @@ from app.models.inscripcion import (
     CalificacionETS,
 )
 from app.models.tramite import CitaReinscripcion, SolicitudTramite
+from app.models.chat import ChatThread, ChatMessage
 
 __all__ = [
     "Base",
@@ -35,4 +36,6 @@ __all__ = [
     "CalificacionETS",
     "CitaReinscripcion",
     "SolicitudTramite",
+    "ChatThread",
+    "ChatMessage",
 ]

@@ -1,3 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .clay-card {
+    background-color: #FFFFFF;
+    border-radius: 24px;
+    box-shadow: 16px 20px 40px rgba(62, 81, 125, 0.12), -10px -10px 24px #FFFFFF, inset 1px 1px 3px rgba(255, 255, 255, 0.95);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .clay-card:hover {
+    box-shadow: 18px 24px 48px rgba(62, 81, 125, 0.16), -12px -12px 28px #FFFFFF, inset 1px 1px 3px rgba(255, 255, 255, 1);
+    transform: translateY(-2px);
+  }
+  .clay-card-static {
+    background-color: #FFFFFF;
+    border-radius: 24px;
+    box-shadow: 12px 16px 32px rgba(62, 81, 125, 0.10), -8px -8px 20px #FFFFFF, inset 1px 1px 2px rgba(255, 255, 255, 0.95);
+  }
+  .clay-input {
+    background-color: #EEF4FB;
+    border-radius: 16px;
+    box-shadow: inset 2px 2px 5px rgba(62, 81, 125, 0.08), inset -2px -2px 5px #FFFFFF;
+    transition: all 0.2s ease;
+  }
+  .clay-input:focus-within {
+    background-color: #FFFFFF;
+    box-shadow: 0 0 0 3px rgba(97, 155, 245, 0.35), inset 1px 1px 2px rgba(255, 255, 255, 0.9);
+  }
+  .clay-btn-primary {
+    background-color: #3E517D;
+    color: #FFFFFF;
+    border-radius: 16px;
+    box-shadow: 4px 6px 14px rgba(62, 81, 125, 0.25), inset 1px 1px 2px rgba(255, 255, 255, 0.3);
+    transition: all 0.15s ease-out;
+  }
+  .clay-btn-primary:hover {
+    background-color: #2F3E61;
+    transform: translateY(-1px);
+    box-shadow: 6px 8px 18px rgba(62, 81, 125, 0.32), inset 1px 1px 2px rgba(255, 255, 255, 0.4);
+  }
+  .clay-btn-primary:active {
+    transform: scale(0.98);
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  .clay-btn-accent {
+    background-color: #619BF5;
+    color: #0F2752;
+    border-radius: 16px;
+    box-shadow: 4px 6px 14px rgba(97, 155, 245, 0.3), inset 1px 1px 2px rgba(255, 255, 255, 0.6);
+    transition: all 0.15s ease-out;
+  }
+  .clay-pill {
+    border-radius: 9999px;
+    background-color: #F3F7FD;
+    box-shadow: inset 1px 1px 2px rgba(62, 81, 125, 0.06), 1px 1px 2px #FFFFFF;
+  }
+}
+
 /* Reiniciar márgenes y padding de todo */
 * {
   margin: 0;

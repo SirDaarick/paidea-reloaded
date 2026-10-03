@@ -1,4 +1,5 @@
 import os
+import re
 from typing import List, Dict, Any, Optional
 import chromadb
 from app.core.config import settings
@@ -33,7 +34,9 @@ class ChromaStore:
     def count(self) -> int:
         return self.collection.count()
 
-    def query_by_embedding(self, query_vector: List[float], top_k: int = 5, where: Optional[Dict[str, Any]] = None) -> List[Dict[str, Any]]:
+    def query_by_embedding(
+        self, query_vector: List[float], top_k: int = 5, where: Optional[Dict[str, Any]] = None
+    ) -> List[Dict[str, Any]]:
         """Busca chunks usando el vector de embedding de 768 dimensiones."""
         kwargs: Dict[str, Any] = {
             "query_embeddings": [query_vector],
@@ -48,33 +51,72 @@ class ChromaStore:
             docs = results["documents"][0]
             metadatas = results["metadatas"][0] if "metadatas" in results and results["metadatas"] else [{}] * len(docs)
             distances = results["distances"][0] if "distances" in results and results["distances"] else [0.0] * len(docs)
-            
+
             for doc, meta, dist in zip(docs, metadatas, distances):
                 chunks.append({
                     "text": doc,
-                    "metadata": meta,
-                    "similarity": 1.0 - dist,
+                    "metadata": meta or {},
+                    "similarity": round(1.0 - dist, 4),
                 })
         return chunks
 
-    def query_by_text(self, query_text: str, top_k: int = 5, where: Optional[Dict[str, Any]] = None) -> List[Dict[str, Any]]:
-        """Busca chunks vectorizando la consulta con el modelo multilingüe."""
+    def query_by_text(
+        self, query_text: str, top_k: int = 5, where: Optional[Dict[str, Any]] = None
+    ) -> List[Dict[str, Any]]:
+        """Búsqueda Híbrida: combina coincidencia léxica de artículos exactos + embeddings densos."""
+        seen_texts = set()
+        combined_chunks: List[Dict[str, Any]] = []
+
+        # 1. Búsqueda Léxica de Artículos Normativos Específicos (ej. 'Artículo 41', 'Art. 47')
+        art_matches = re.findall(r'(?:art[íi]culo|art\.?)\s*(\d+)', query_text, re.IGNORECASE)
+        for num in art_matches:
+            try:
+                # Intentar localizar chunks que contengan el artículo textual
+                lexical_res = self.collection.get(
+                    where_document={"$contains": f"{num}"},
+                    limit=3,
+                )
+                if lexical_res and "documents" in lexical_res:
+                    for doc, meta in zip(lexical_res["documents"], lexical_res.get("metadatas", [])):
+                        if f"artículo {num}" in doc.lower() or f"art. {num}" in doc.lower():
+                            if doc not in seen_texts:
+                                seen_texts.add(doc)
+                                combined_chunks.append({
+                                    "text": doc,
+                                    "metadata": meta or {},
+                                    "similarity": 0.98,  # Alta prioridad por coincidencia léxica exacta
+                                    "matched_type": "lexical_article",
+                                })
+            except Exception:
+                pass
+
+        # 2. Búsqueda Densa Semántica con SentenceTransformer
+        dense_chunks = []
         model = self.embedding_model
         if model is not None:
             vector = model.encode(query_text).tolist()
-            return self.query_by_embedding(vector, top_k=top_k, where=where)
+            dense_chunks = self.query_by_embedding(vector, top_k=top_k, where=where)
+        else:
+            # Fallback sin embeddings
+            try:
+                results = self.collection.get(limit=top_k)
+                if results and "documents" in results:
+                    for doc, meta in zip(results["documents"], results.get("metadatas", [])):
+                        dense_chunks.append({"text": doc, "metadata": meta or {}, "similarity": 0.85})
+            except Exception:
+                dense_chunks = []
 
-        # Fallback si el modelo de embedding no está listo: obtener documentos relevantes por palabras clave
-        try:
-            results = self.collection.get(limit=top_k)
-            chunks = []
-            if results and "documents" in results:
-                for doc, meta in zip(results["documents"], results.get("metadatas", [])):
-                    chunks.append({"text": doc, "metadata": meta, "similarity": 1.0})
-            return chunks
-        except Exception:
-            return []
+        # 3. Fusión y Deduplicación
+        for c in dense_chunks:
+            if c["text"] not in seen_texts:
+                seen_texts.add(c["text"])
+                combined_chunks.append(c)
+
+        # Ordenar por similitud decreciente y recortar al top_k
+        combined_chunks.sort(key=lambda x: x["similarity"], reverse=True)
+        return combined_chunks[:top_k]
 
 
 # Instancia singleton
 chroma_store = ChromaStore()
+

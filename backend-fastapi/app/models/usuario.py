@@ -7,6 +7,7 @@ from app.models.base import Base, TimestampMixin
 if TYPE_CHECKING:
     from app.models.alumno import Alumno
     from app.models.profesor import Profesor
+    from app.models.chat import ChatThread
 
 
 class RolUsuario(str, enum.Enum):
@@ -45,6 +46,9 @@ class Usuario(Base, TimestampMixin):
     )
     profesor: Mapped[Optional["Profesor"]] = relationship(
         "Profesor", back_populates="usuario", uselist=False, cascade="all, delete-orphan"
+    )
+    chat_threads: Mapped[List["ChatThread"]] = relationship(
+        "ChatThread", back_populates="usuario", cascade="all, delete-orphan"
     )
 
     @property

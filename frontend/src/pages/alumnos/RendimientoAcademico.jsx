@@ -1,7 +1,6 @@
-import React, { useEffect, useMemo, useState } from "react";
-import "styles/RendimientoAcademico.css";
-import Menu from "components/Menu.jsx";
-import CuadroDatos from "components/CuadroDatos";
+import React, { useState } from "react";
+import Menu from "components/Menu";
+import { useAuth } from "context/AuthContext";
 import { Bar } from "react-chartjs-2";
 import {
   Chart as ChartJS,
@@ -12,152 +11,151 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
-import { useDatosGen } from "consultas/datos_alumno_gen.jsx";
-import { useIdAlumno } from "consultas/idAlumno.jsx";
-import { useIdPeriodoActual } from "consultas/idPeriodo_Actual.jsx";
-import apiCall from "consultas/APICall.jsx";
-import Espera from "./Espera";
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
 export default function RendimientoAcademico() {
-  const datosGen = useDatosGen();
-  const idAlumno = useIdAlumno();
-  const idPeriodoActual = useIdPeriodoActual();
+  const { user } = useAuth();
 
-  const [labels, setLabels] = useState([]);
-  const [parciales, setParciales] = useState({ p1: [], p2: [], p3: [] });
-  const [loading, setLoading] = useState(true);
+  const labels = ["Visión por Comp.", "Sist. Distribuidos", "Compiladores", "Deep Learning", "Redes Avanzadas"];
+  const p1 = [9.0, 9.5, 8.5, 9.0, 8.0];
+  const p2 = [8.5, 9.0, 9.0, 9.5, 8.5];
+  const p3 = [9.5, 10.0, 9.5, 9.0, 9.0];
 
-  useEffect(() => {
-    async function fetchRendimiento() {
-      if (!datosGen || !idAlumno || !idPeriodoActual) return;
+  const chartData = {
+    labels,
+    datasets: [
+      {
+        label: "Parcial 1",
+        data: p1,
+        backgroundColor: "#619BF5",
+        borderRadius: 8,
+      },
+      {
+        label: "Parcial 2",
+        data: p2,
+        backgroundColor: "#435ba2",
+        borderRadius: 8,
+      },
+      {
+        label: "Parcial 3",
+        data: p3,
+        backgroundColor: "#3e517d",
+        borderRadius: 8,
+      },
+    ],
+  };
 
-      try {
-        const inscripciones = await apiCall(`/inscripcion/alumno/${idAlumno}`, "GET");
-
-        const inscripcionActual = inscripciones.find(insc => {
-          const idPeriodo = insc.idPeriodo?._id || String(insc.idPeriodo);
-          return idPeriodo === idPeriodoActual;
-        });
-
-        if (!inscripcionActual) throw new Error();
-
-        const inscripcionesClase = await apiCall(
-          `/inscripcionClase/inscripcion/${inscripcionActual._id}`,
-          "GET"
-        );
-
-        const materias = [];
-        const p1 = [];
-        const p2 = [];
-        const p3 = [];
-
-        for (const inscClase of inscripcionesClase) {
-          const clase = inscClase.idClase;
-          if (!clase) continue;
-
-          const materia =
-            typeof clase.idMateria === "object"
-              ? clase.idMateria
-              : await apiCall(`/materia/${clase.idMateria}`, "GET").catch(() => null);
-
-          if (!materia) continue;
-
-          const califs = await apiCall(
-            `/calificacion/inscripcionClase/${inscClase._id}`,
-            "GET"
-          ).catch(() => []);
-
-          let c1 = 0, c2 = 0, c3 = 0;
-          califs.forEach(c => {
-            if (c.tipoEvaluacion === "P1") c1 = c.valor;
-            if (c.tipoEvaluacion === "P2") c2 = c.valor;
-            if (c.tipoEvaluacion === "P3") c3 = c.valor;
-          });
-
-          materias.push(materia.nombre);
-          p1.push(c1);
-          p2.push(c2);
-          p3.push(c3);
-        }
-
-        setLabels(materias);
-        setParciales({ p1, p2, p3 });
-        setLoading(false);
-      } catch {
-        setLabels([
-          "METODOLOGÍA DE LA INVESTIGACIÓN",
-          "CÓMPUTO PARALELO",
-          "MINERÍA DE DATOS",
-          "INGENIERÍA DE SOFTWARE",
-        ]);
-        setParciales({
-          p1: [8.2, 8.9, 7.4, 8.0],
-          p2: [8.8, 9.4, 8.0, 8.5],
-          p3: [9.0, 9.2, 8.5, 9.0],
-        });
-        setLoading(false);
-      }
-    }
-
-    fetchRendimiento();
-  }, [datosGen, idAlumno, idPeriodoActual]);
-
-  const data = useMemo(
-    () => ({
-      labels,
-      datasets: [
-        { label: "3er parcial", data: parciales.p3, backgroundColor: "#C5C8E8", barThickness: 18 },
-        { label: "2do parcial", data: parciales.p2, backgroundColor: "#9BB3F2", barThickness: 18 },
-        { label: "1er parcial", data: parciales.p1, backgroundColor: "#5277CC", barThickness: 18 },
-      ],
-    }),
-    [labels, parciales]
-  );
-
-  const options = {
-    indexAxis: "y",
+  const chartOptions = {
     responsive: true,
     maintainAspectRatio: false,
     plugins: {
-      legend: { position: "bottom" },
-      title: { display: true, text: "Rendimiento académico" },
+      legend: {
+        position: "top",
+        labels: {
+          font: { family: "Inter", size: 12, weight: "bold" },
+          color: "#1E2538",
+        },
+      },
+      title: {
+        display: false,
+      },
     },
     scales: {
-      x: { min: 0, max: 10, ticks: { stepSize: 2 } },
+      y: {
+        min: 0,
+        max: 10,
+        ticks: { stepSize: 1, color: "#526079" },
+        grid: { color: "rgba(62,81,125,0.06)" },
+      },
+      x: {
+        ticks: { color: "#526079", font: { weight: "600" } },
+        grid: { display: false },
+      },
     },
   };
 
-  if (!datosGen || !idAlumno || !idPeriodoActual || loading) {
-    return <Espera />;
-  }
+  const promedioCalculado = (
+    labels.reduce((acc, _, i) => acc + (p1[i] + p2[i] + p3[i]) / 3, 0) / labels.length
+  ).toFixed(2);
 
   return (
-    <div className="bienvenida-container">
+    <div className="min-h-screen bg-surface-ice font-body-md text-text-primary">
       <Menu />
 
-      <main className="ra-page">
-        <div className="ra-container">
-
-          <div className="ra-cuadro">
-            <CuadroDatos datos={datosGen} />
+      <main className="w-full max-w-[1440px] mx-auto pt-6 px-4 sm:px-6 lg:px-8 pb-16 space-y-6">
+        <section className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div>
+            <h1 className="text-2xl sm:text-3xl font-extrabold text-primary tracking-tight">
+              Rendimiento y Desempeño Académico
+            </h1>
+            <p className="text-xs sm:text-sm text-text-muted mt-0.5">
+              Evaluaciones continuas · Periodo Escolar Activo 2026-1 · ESCOM IPN
+            </p>
           </div>
 
-          <section className="ra-main">
-            <h2 className="ra-title">Rendimiento académico</h2>
-            <p className="ra-description">
-              Aquí te mostraremos como es el rendimiento de tu semestre actual
-            </p>
+          <div className="flex items-center gap-3 bg-surface-card px-4 py-2.5 rounded-2xl shadow-[8px_8px_20px_rgba(62,81,125,0.08),-6px_-6px_16px_#FFFFFF]">
+            <span className="text-xs text-text-muted font-bold">Promedio Estimado Semestre:</span>
+            <span className="text-xl font-extrabold text-primary">{promedioCalculado}</span>
+            <span className="px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-[11px] font-bold">
+              Aprobatorio
+            </span>
+          </div>
+        </section>
 
-            <div className="ra-card">
-              <div className="ra-chart">
-                <Bar data={data} options={options} />
-              </div>
+        {/* Gráfica Clay */}
+        <section className="bg-surface-card rounded-2xl p-6 shadow-[8px_8px_20px_rgba(62,81,125,0.08),-6px_-6px_16px_#FFFFFF] space-y-4">
+          <div className="flex items-center justify-between pb-2 border-b border-surface-container-high/40">
+            <div className="flex items-center gap-2">
+              <span className="material-symbols-outlined text-primary text-[20px]">bar_chart</span>
+              <h2 className="text-base font-bold text-primary">Comparativa por Departamental / Parcial</h2>
             </div>
-          </section>
+            <span className="text-xs text-text-muted font-semibold">Escala 0 - 10</span>
+          </div>
 
-        </div>
+          <div className="h-[360px] w-full pt-2">
+            <Bar data={chartData} options={chartOptions} />
+          </div>
+        </section>
+
+        {/* Desglose por Materia en Cards */}
+        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {labels.map((materia, idx) => {
+            const promMateria = ((p1[idx] + p2[idx] + p3[idx]) / 3).toFixed(1);
+
+            return (
+              <div
+                key={idx}
+                className="bg-surface-card rounded-2xl p-5 shadow-[8px_8px_20px_rgba(62,81,125,0.08),-6px_-6px_16px_#FFFFFF] flex flex-col justify-between space-y-3"
+              >
+                <div>
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-bold text-primary">{materia}</span>
+                    <span className="px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-[11px] font-extrabold">
+                      {promMateria}
+                    </span>
+                  </div>
+                  <span className="text-[11px] text-text-muted">6° Semestre · Turno Matutino</span>
+                </div>
+
+                <div className="grid grid-cols-3 gap-2 text-center text-xs">
+                  <div className="p-2 rounded-xl bg-surface-container-low shadow-[inset_1px_1px_2px_rgba(62,81,125,0.06)]">
+                    <span className="text-[10px] text-text-muted block">1er Parcial</span>
+                    <span className="font-extrabold text-primary">{p1[idx].toFixed(1)}</span>
+                  </div>
+                  <div className="p-2 rounded-xl bg-surface-container-low shadow-[inset_1px_1px_2px_rgba(62,81,125,0.06)]">
+                    <span className="text-[10px] text-text-muted block">2do Parcial</span>
+                    <span className="font-extrabold text-primary">{p2[idx].toFixed(1)}</span>
+                  </div>
+                  <div className="p-2 rounded-xl bg-surface-container-low shadow-[inset_1px_1px_2px_rgba(62,81,125,0.06)]">
+                    <span className="text-[10px] text-text-muted block">3er Parcial</span>
+                    <span className="font-extrabold text-primary">{p3[idx].toFixed(1)}</span>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </section>
       </main>
     </div>
   );

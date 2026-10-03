@@ -3,6 +3,8 @@ import Button from 'components/Button';
 import apiCall from 'consultas/APICall'; 
 import Mensaje from 'components/Mensaje';
 import 'styles/modalForms.css';
+import { DEMO_ALUMNOS_EJEMPLO } from '../../demo/mockData';
+import { isDemoActive } from '../../demo/isDemoMode';
 
 // Mapeo de carreras a códigos
 const CARRERA_CODIGO = {
@@ -345,6 +347,16 @@ const ModalAltaAlumno = ({ onAltaSubmit }) => {
     reader.readAsArrayBuffer(file);
   };
 
+  const isDemo = isDemoActive();
+
+  const handleCargarEjemploDemo = () => {
+    setArchivoSeleccionado({ name: "alumnos_demo_escom_2026.xlsx" });
+    setNombreArchivo("alumnos_demo_escom_2026.xlsx");
+    setDatosArchivo(DEMO_ALUMNOS_EJEMPLO);
+    setPasswordAdminArchivo("admin123");
+    setErrorsArchivo({});
+  };
+
   const limpiarArchivo = () => {
     setArchivoSeleccionado(null);
     setDatosArchivo([]);
@@ -664,6 +676,15 @@ const ModalAltaAlumno = ({ onAltaSubmit }) => {
           >
             Seleccionar archivo
           </Button>
+          {isDemo && (
+            <Button 
+              variant="secondary" 
+              style={{ backgroundColor: '#10b981', color: '#fff', border: 'none' }}
+              onClick={handleCargarEjemploDemo}
+            >
+              ⚡ Cargar Alumnos de Ejemplo
+            </Button>
+          )}
           <Button 
             variant="primary" 
             style={{ 

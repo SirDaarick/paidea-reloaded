@@ -9,10 +9,14 @@ from app.agent.rag.chroma_store import chroma_store
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    print("🚀 Iniciando PAIDEA FastAPI Backend...")
-    print(f"📊 ChromaDB conectado. Chunks en base de conocimiento: {chroma_store.count()}")
+    print("[PAIDEA] Iniciando FastAPI Backend...")
+    try:
+        count = chroma_store.count()
+        print(f"[PAIDEA] ChromaDB conectado. Chunks en base de conocimiento: {count}")
+    except Exception as e:
+        print(f"[PAIDEA] ChromaDB status: {e}")
     yield
-    print("🛑 Deteniendo PAIDEA FastAPI Backend...")
+    print("[PAIDEA] Deteniendo FastAPI Backend...")
 
 
 app = FastAPI(

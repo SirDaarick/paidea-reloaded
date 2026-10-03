@@ -1,1019 +1,602 @@
-import React, { useState, useMemo, useEffect, useCallback } from "react"; 
-import "styles/index.css";
-import styles from "styles/Reinscripciones.module.css";
-import Espera from "./Espera";
-import Menu from "components/Menu.jsx";
-import Button from "components/Button";
-import Table from "components/Table";
-import SelectField from "components/SelectField.jsx";
-import Mensaje from "components/Mensaje.jsx";
-import apiCall from "consultas/APICall.jsx";
-import { useIdAlumno } from "consultas/idAlumno.jsx";
-import { useIdPeriodoActual } from "consultas/idPeriodo_Actual.jsx";
-import { useDatosGen } from "consultas/datos_alumno_gen.jsx";
-
-const MAX_CREDITOS = 50;
-const MAX_OPTATIVAS_SEXTO = 2;
-const MAX_OPTATIVAS_SEPTIMO = 2;
-
-// Función auxiliar para obtener ID limpio
-const obtenerId = (campo) => {
-  if (!campo) return null;
-  if (typeof campo === 'object' && campo._id) return campo._id.toString();
-  return campo.toString();
-};
+import React, { useState, useEffect } from "react";
+import Menu from "components/Menu";
+import { useAuth } from "context/AuthContext";
+import apiCall from "consultas/APICall";
 
 export default function Reinscripciones() {
-  const [materiasDisponibles, setMateriasDisponibles] = useState([]);
-  const [materiasInscritas, setMateriasInscritas] = useState([]);
-  const [creditosRestantes, setCreditosRestantes] = useState(MAX_CREDITOS);
-  
-  // Filtros
-  const [filtroSemestre, setFiltroSemestre] = useState("");
-  const [filtroGrupo, setFiltroGrupo] = useState("");
-  const [filtroMateria, setFiltroMateria] = useState("");
-  
-  const [mensaje, setMensaje] = useState({ visible: false, titulo: "", texto: "" });
-  const [cargando, setCargando] = useState(true);
-  const [idInscripcion, setIdInscripcion] = useState(null);
-  const [semestresDisponibles, setSemestresDisponibles] = useState([]);
-  
-  // ✅ Estado para rastrear optativas cursadas y en inscripción actual
-  const [optativasCursadasSexto, setOptativasCursadasSexto] = useState(0);
-  const [optativasCursadasSeptimo, setOptativasCursadasSeptimo] = useState(0);
-  const [errorValidacion, setErrorValidacion] = useState(null);
-  
-  const idAlumno = useIdAlumno();
-  const idPeriodoActual = useIdPeriodoActual();
-  const datosGen = useDatosGen();
+  const { user } = useAuth();
+  const [loading, setLoading] = useState(true);
+  const [cita, setCita] = useState(null);
+  const [timeLeft, setTimeLeft] = useState({ minutes: 41, seconds: 48 });
+  const [selectedSemester, setSelectedSemester] = useState("6");
+  const [searchQuery, setSearchQuery] = useState("");
+  const [enrolledCourses, setEnrolledCourses] = useState(["IA-604", "IA-602", "IA-601"]);
+  const [successModal, setSuccessModal] = useState(false);
 
-  // ----------------------------- 1. CARGA DE DATOS -----------------------------
+  // Catálogo completo de grupos disponibles para reinscripción en ESCOM
+  const catalog = [
+    {
+      clave: "IA-603",
+      materia: "Visión por Computadora",
+      semestre: 6,
+      creditos: 7.5,
+      prerrequisitos: "Procesamiento Digital de Señales",
+      grupos: [
+        {
+          grupo: "6IA1",
+          profesor: "Dra. Amparo Morales",
+          horario: "Mar, Jue 08:30 - 10:00",
+          salon: "Edif. 1 · Salón 1204",
+          cupo_actual: 31,
+          cupo_max: 35,
+          estado: "disponible",
+        },
+        {
+          grupo: "6IA2",
+          profesor: "M. en C. Roberto Palacios Nava",
+          horario: "Mar, Jue 10:00 - 12:15",
+          salon: "Edif. 1 · Salón 1204",
+          cupo_actual: 34,
+          cupo_max: 35,
+          estado: "disponible",
+        },
+        {
+          grupo: "6IA3",
+          profesor: "Dr. Ulises Vélez Saldaña",
+          horario: "Lun, Mié 13:00 - 15:15",
+          salon: "Lab. Visión y Gráficos",
+          cupo_actual: 35,
+          cupo_max: 35,
+          estado: "agotado",
+        },
+      ],
+    },
+    {
+      clave: "IA-604",
+      materia: "Aprendizaje Profundo (Deep Learning)",
+      semestre: 6,
+      creditos: 8.0,
+      prerrequisitos: "Redes Neuronales y Métodos Estadísticos",
+      grupos: [
+        {
+          grupo: "6IA1",
+          profesor: "Dr. José Martínez Ramos",
+          horario: "Mar, Jue 10:00 - 12:15",
+          salon: "Laboratorio de IA 1 (Edif. 1)",
+          cupo_actual: 23,
+          cupo_max: 35,
+          estado: "disponible",
+        },
+      ],
+    },
+    {
+      clave: "IA-602",
+      materia: "Compiladores",
+      semestre: 6,
+      creditos: 7.0,
+      prerrequisitos: "Teoría de la Computación",
+      grupos: [
+        {
+          grupo: "6IA1",
+          profesor: "Dr. Edgardo Franco Martínez",
+          horario: "Lun, Mié 11:30 - 13:00",
+          salon: "Edif. 2 · Salón 2201",
+          cupo_actual: 27,
+          cupo_max: 35,
+          estado: "disponible",
+        },
+      ],
+    },
+    {
+      clave: "IA-601",
+      materia: "Sistemas Distribuidos",
+      semestre: 6,
+      creditos: 6.5,
+      prerrequisitos: "Sistemas Operativos y Redes",
+      grupos: [
+        {
+          grupo: "6IA1",
+          profesor: "M. en C. Roberto Palacios",
+          horario: "Lun, Mié, Vie 07:00 - 08:30",
+          salon: "Edif. 1 · Salón 1204",
+          cupo_actual: 32,
+          cupo_max: 35,
+          estado: "disponible",
+        },
+      ],
+    },
+    {
+      clave: "IA-504",
+      materia: "Redes de Computadoras Avanzadas",
+      semestre: 5,
+      creditos: 6.5,
+      prerrequisitos: "Arquitectura de Computadoras",
+      grupos: [
+        {
+          grupo: "5IA2",
+          profesor: "Ing. Sandra Ortiz Mendoza",
+          horario: "Lun, Mié 07:00 - 09:00",
+          salon: "Edif. 1 · Salón 1102",
+          cupo_actual: 29,
+          cupo_max: 35,
+          estado: "conflicto", // Se empalma con 6IA1 si está inscrito a las 07:00
+        },
+      ],
+    },
+  ];
+
+  // Temporizador regresivo en vivo
   useEffect(() => {
-    let montado = true;
+    const timer = setInterval(() => {
+      setTimeLeft((prev) => {
+        if (prev.seconds > 0) {
+          return { ...prev, seconds: prev.seconds - 1 };
+        } else if (prev.minutes > 0) {
+          return { minutes: prev.minutes - 1, seconds: 59 };
+        }
+        return prev;
+      });
+    }, 1000);
+    return () => clearInterval(timer);
+  }, []);
 
-    const fetchDatos = async () => {
+  // Carga de cita desde FastAPI
+  useEffect(() => {
+    async function loadCita() {
       try {
-        if (!idAlumno || !idPeriodoActual || !datosGen) {
-          return;
-        }
-
-        setCargando(true);
-        console.log("Iniciando carga de datos...");
-        console.time("Carga total");
-
-        console.time("Carga paralela inicial");
-        const [
-          todasInscripciones,
-          usuarioData,
-          materiasRes,
-          clasesRes,
-          diasSemanaRes,
-          gruposRes
-        ] = await Promise.all([
-          apiCall(`/inscripcion/alumno/${idAlumno}`, 'GET').catch(() => []),
-          apiCall(`/usuario/${idAlumno}`, 'GET'),
-          apiCall("/materia", "GET"),
-          apiCall("/clase", "GET"),
-          apiCall("/diaSemana", "GET"),
-          apiCall("/grupo", "GET")
-        ]);
-        console.timeEnd("Carga paralela inicial");
-
-        if (!montado) return;
-
-        // Obtener o crear inscripción para el periodo actual
-        let inscripcionActual = todasInscripciones.find(insc => {
-          const idPeriodo = obtenerId(insc.idPeriodo);
-          return idPeriodo === idPeriodoActual?.toString();
-        });
-
-if (!inscripcionActual) {
-  console.log("Creando nueva inscripción para el periodo actual...");
-  
-  try {
-    inscripcionActual = await apiCall('/inscripcion/validacion', 'POST', {
-      idAlumno: idAlumno,
-      idPeriodo: idPeriodoActual,
-      creditos: 0
-    });
-  } catch (error) {
-    console.error("Error en validación:", error);
-    
-    // Extraer código de error
-    let errorCode = 'ERROR_DESCONOCIDO';
-    
-    if (error.response?.data?.error) {
-      errorCode = error.response.data.error;
-    }
-    
-    // Guardar error en el estado
-    if (montado) {
-      setErrorValidacion(errorCode);
-      setCargando(false);
-    }
-    return; // ✅ Este return SÍ funciona (sale del useEffect)
-  }
-} else {
-  // SÍ EXISTE -> Verificar si ya tiene materias inscritas
-  console.log("Inscripción encontrada, verificando materias inscritas...");
-  
-  const idInsc = obtenerId(inscripcionActual);
-  
-  const inscripcionesClaseEstePeriodo = await apiCall(
-    `/inscripcionClase/inscripcion/${idInsc}`, 
-    'GET'
-  ).catch(() => []);
-  
-  const tieneMateriasInscritas = inscripcionesClaseEstePeriodo.some(
-    inscClase => inscClase.estatus === 'Inscrito'
-  );
-  
-  if (tieneMateriasInscritas) {
-    console.log("⚠️ El alumno ya completó su reinscripción");
-    if (montado) {
-      setErrorValidacion('YA_INSCRITO');
-      setCargando(false);
-    }
-    return; // ✅ Este return SÍ funciona (sale del useEffect)
-  }
-  
-  console.log("✓ Inscripción existe pero sin materias, puede continuar");
-}
-
-        const idInsc = obtenerId(inscripcionActual);
-        setIdInscripcion(idInsc);
-
-        console.time("Carga inscripciones clases");
-        const inscripcionesClasePromises = todasInscripciones.map(inscripcion => 
-          apiCall(`/inscripcionClase/inscripcion/${obtenerId(inscripcion)}`, 'GET').catch(() => [])
-        );
-        const inscripcionesClaseArrays = await Promise.all(inscripcionesClasePromises);
-        const todasInscripcionesClase = inscripcionesClaseArrays.flat();
-        console.timeEnd("Carga inscripciones clases");
-
-        // Crear mapas de búsqueda rápida
-        const materiasMap = {};
-        if (materiasRes) {
-          materiasRes.forEach(m => {
-            if (m._id) materiasMap[m._id.toString()] = m;
-          });
-        }
-
-        const clasesMap = {};
-        if (clasesRes) {
-          clasesRes.forEach(c => {
-            if (c._id) clasesMap[c._id.toString()] = c;
-          });
-        }
-
-        const diasSemanaMap = {};
-        if (diasSemanaRes) {
-          diasSemanaRes.forEach(d => {
-            if (d._id) diasSemanaMap[d._id.toString()] = d;
-          });
-        }
-
-        const gruposMap = {};
-        if (gruposRes) {
-          gruposRes.forEach(g => {
-            if (g._id) gruposMap[g._id.toString()] = g;
-          });
-        }
-
-        const idCarreraAlumno = obtenerId(usuarioData.dataAlumno?.idCarrera);
-
-        console.time("Procesamiento inscripciones");
-        const materiasYaCursadas = new Set();
-        const materiasYaInscritasEstePeriodo = [];
-        const materiasConIntentos = {};
-        const semestresAprobadosPorMateria = {};
-        
-        // ✅ Contar optativas ya cursadas (Aprobadas o Inscritas)
-        let optativasSextoYaCursadas = 0;
-        let optativasSeptimoYaCursadas = 0;
-
-        for (const inscClase of todasInscripcionesClase) {
-          const idClase = obtenerId(inscClase.idClase);
-          
-          const clase = typeof inscClase.idClase === 'object' ? inscClase.idClase : clasesMap[idClase];
-          if (!clase) continue;
-
-          const idMateria = obtenerId(clase.idMateria);
-          
-          // Contar intentos
-          if (!materiasConIntentos[idMateria]) {
-            materiasConIntentos[idMateria] = 0;
-          }
-          materiasConIntentos[idMateria]++;
-
-          // Materias cursadas
-          if (inscClase.estatus === 'Aprobado' || inscClase.estatus === 'Inscrito') {
-            materiasYaCursadas.add(idMateria);
-            
-            // ✅ Contar optativas cursadas
-            let materiaObj = typeof clase.idMateria === 'object' ? clase.idMateria : materiasMap[idMateria];
-            
-            if (materiaObj && materiaObj.optativa) {
-              const semestre = materiaObj.semestre;
-              if (semestre === 6) {
-                optativasSextoYaCursadas++;
-              } else if (semestre === 7) {
-                optativasSeptimoYaCursadas++;
-              }
-            }
-          }
-
-          // Semestres aprobados
-          if (inscClase.estatus === 'Aprobado') {
-            let materiaObj = typeof clase.idMateria === 'object' ? clase.idMateria : materiasMap[idMateria];
-            
-            if (materiaObj && materiaObj.semestre) {
-              if (!semestresAprobadosPorMateria[materiaObj.semestre]) {
-                semestresAprobadosPorMateria[materiaObj.semestre] = new Set();
-              }
-              semestresAprobadosPorMateria[materiaObj.semestre].add(idMateria);
-            }
-          }
-
-          // Materias inscritas este periodo
-          if (inscClase.estatus === 'Inscrito' && obtenerId(inscClase.idInscripcion) === idInsc) {
-            materiasYaInscritasEstePeriodo.push({
-              idInscripcionClase: obtenerId(inscClase),
-              idClase: idClase
-            });
-          }
-        }
-        console.timeEnd("Procesamiento inscripciones");
-
-        console.log("Optativas de 6° ya cursadas:", optativasSextoYaCursadas);
-        console.log("Optativas de 7° ya cursadas:", optativasSeptimoYaCursadas);
-        
-        setOptativasCursadasSexto(optativasSextoYaCursadas);
-        setOptativasCursadasSeptimo(optativasSeptimoYaCursadas);
-
-        console.log("Materias ya cursadas:", materiasYaCursadas.size);
-        console.log("Materias inscritas este periodo:", materiasYaInscritasEstePeriodo.length);
-        console.log("Materias con intentos:", Object.keys(materiasConIntentos).length);
-
-        // Calcular último semestre completado
-        const materiasCarrera = materiasRes.filter(m => 
-          obtenerId(m.idCarrera) === idCarreraAlumno
-        );
-
-        const materiasPorSemestre = {};
-        for (const materia of materiasCarrera) {
-          const sem = materia.semestre;
-          if (!materiasPorSemestre[sem]) {
-            materiasPorSemestre[sem] = [];
-          }
-          materiasPorSemestre[sem].push(obtenerId(materia));
-        }
-
-        let ultimoSemestreCompletado = 0;
-        const semestresOrdenados = Object.keys(materiasPorSemestre).map(Number).sort((a, b) => a - b);
-        
-        for (const sem of semestresOrdenados) {
-          const materiasDelSemestre = materiasPorSemestre[sem];
-          const materiasAprobadas = semestresAprobadosPorMateria[sem] || new Set();
-          const todasAprobadas = materiasDelSemestre.every(idMat => materiasAprobadas.has(idMat));
-          
-          if (todasAprobadas) {
-            ultimoSemestreCompletado = sem;
-          } else {
-            break;
-          }
-        }
-
-        console.log("Último semestre completado:", ultimoSemestreCompletado);
-        const maxSemestrePermitido = ultimoSemestreCompletado + 3;
-
-        // Identificar semestres disponibles
-        const semestresConMateriasPendientes = new Set();
-        for (const materia of materiasCarrera) {
-          const idMat = obtenerId(materia);
-          const semestreMateria = materia.semestre;
-          
-          if (!materiasYaCursadas.has(idMat) && 
-              (materiasConIntentos[idMat] || 0) < 2 &&
-              semestreMateria <= maxSemestrePermitido) {
-            semestresConMateriasPendientes.add(semestreMateria);
-          }
-        }
-
-        const semestresArray = Array.from(semestresConMateriasPendientes).sort((a, b) => a - b);
-        setSemestresDisponibles(semestresArray);
-
-        console.time("Carga ocupabilidad");
-        const clasesRelevantes = clasesRes.filter(clase => {
-          const idGrupo = obtenerId(clase.idGrupo);
-          const grupoObj = typeof clase.idGrupo === 'object' ? clase.idGrupo : gruposMap[idGrupo];
-          
-          if (!grupoObj) return false;
-          
-          const idCarreraGrupo = obtenerId(grupoObj.idCarrera);
-          const idPeriodoGrupo = obtenerId(grupoObj.idPeriodo);
-          
-          return idCarreraGrupo === idCarreraAlumno?.toString() && 
-                 idPeriodoGrupo === idPeriodoActual?.toString();
-        });
-
-        const ocupabilidadPromises = clasesRelevantes.map(clase => 
-          apiCall(`/inscripcionClase/clase/${obtenerId(clase)}/conteo`, 'GET')
-            .catch(() => ({ inscritos: 0 }))
-        );
-        const ocupabilidadResults = await Promise.all(ocupabilidadPromises);
-        
-        const ocupabilidadMap = {};
-        clasesRelevantes.forEach((clase, index) => {
-          ocupabilidadMap[obtenerId(clase)] = ocupabilidadResults[index];
-        });
-        console.timeEnd("Carga ocupabilidad");
-
-        console.time("Procesamiento clases");
-        const clasesDisponibles = [];
-        const clasesInscritas = [];
-
-        for (const clase of clasesRelevantes) {
-          try {
-            const idClase = obtenerId(clase);
-            const idGrupo = obtenerId(clase.idGrupo);
-            const idMat = obtenerId(clase.idMateria);
-
-            const grupoObj = typeof clase.idGrupo === 'object' ? clase.idGrupo : gruposMap[idGrupo];
-            if (!grupoObj) continue;
-
-            let materiaObj = materiasMap[idMat];
-            if (!materiaObj && typeof clase.idMateria === 'object') {
-              materiaObj = clase.idMateria;
-            }
-            if (!materiaObj) continue;
-
-            // Validaciones
-            if (materiasYaCursadas.has(idMat)) continue;
-            if ((materiasConIntentos[idMat] || 0) >= 2) continue;
-            
-            const semestreMateria = materiaObj.semestre || 0;
-            if (semestreMateria > maxSemestrePermitido) continue;
-
-            const nombreMateria = materiaObj.nombre || "Desconocida";
-            const creditosMateria = materiaObj.creditos || 0;
-            const nombreGrupo = grupoObj.nombre || "Sin Grupo";
-            const esOptativa = materiaObj.optativa || false;
-
-            // Procesar horarios
-            const horarioProcesado = { 
-              lunes: "-", 
-              martes: "-", 
-              miercoles: "-", 
-              jueves: "-", 
-              viernes: "-" 
-            };
-
-            const idsDia = {};
-
-            if (clase.horario) {
-              const diasKeys = ['lunes', 'martes', 'miercoles', 'jueves', 'viernes', 'sabado'];
-              
-              diasKeys.forEach(diaKey => {
-                let diaInfo = clase.horario[diaKey] || 
-                  clase.horario[diaKey.charAt(0).toUpperCase() + diaKey.slice(1)];
-                
-                if (diaKey === 'miercoles' && !diaInfo) {
-                  diaInfo = clase.horario['Miércoles'] || clase.horario['Miercoles'];
-                }
-
-                if (diaInfo && diaInfo.idDia) {
-                  let inicio, fin, idDia;
-                  
-                  if (typeof diaInfo.idDia === 'object' && diaInfo.idDia !== null) {
-                    inicio = diaInfo.idDia.horarioInicio;
-                    fin = diaInfo.idDia.horarioFinal;
-                    idDia = diaInfo.idDia._id || diaInfo.idDia.id;
-                  } else {
-                    const diaIdStr = diaInfo.idDia.toString();
-                    const diaObj = diasSemanaMap[diaIdStr];
-                    if (diaObj) {
-                      inicio = diaObj.horarioInicio;
-                      fin = diaObj.horarioFinal;
-                      idDia = diaIdStr;
-                    }
-                  }
-
-                  if (inicio && fin && idDia) {
-                    horarioProcesado[diaKey] = `${inicio} - ${fin}`;
-                    idsDia[`${diaKey}_idDia`] = idDia.toString();
-                  }
-                }
-              });
-            }
-
-            const conteoInscripciones = ocupabilidadMap[idClase] || { inscritos: 0 };
-            const inscritos = conteoInscripciones.inscritos || 0;
-            const cupoMaximo = clase.cupoMaximo || 30;
-            const ocupabilidad = `${inscritos}/${cupoMaximo}`;
-
-            const claseData = {
-              idClase: idClase,
-              grupo: nombreGrupo,
-              semestre: semestreMateria,
-              salon: clase.salon || "-",
-              materia: nombreMateria,
-              creditos: creditosMateria,
-              esOptativa: esOptativa, // ✅ Agregar flag de optativa
-              ...horarioProcesado,
-              ...idsDia,
-              ocupabilidad,
-              inscritos,
-              cupoMaximo
-            };
-
-            const yaInscrita = materiasYaInscritasEstePeriodo.find(m => m.idClase === idClase);
-            
-            if (yaInscrita) {
-              clasesInscritas.push({
-                ...claseData,
-                idInscripcionClase: yaInscrita.idInscripcionClase
-              });
-            } else {
-              clasesDisponibles.push(claseData);
-            }
-
-          } catch (error) {
-            console.error("Error procesando clase:", error);
-          }
-        }
-        console.timeEnd("Procesamiento clases");
-
-        const creditosUsados = clasesInscritas.reduce((sum, clase) => sum + (clase.creditos || 0), 0);
-        const creditosRestantes = MAX_CREDITOS - creditosUsados;
-
-        console.log("Clases disponibles:", clasesDisponibles.length);
-        console.log("Clases inscritas:", clasesInscritas.length);
-
-        setMateriasDisponibles(clasesDisponibles);
-        setMateriasInscritas(clasesInscritas);
-        setCreditosRestantes(creditosRestantes);
-
-        console.timeEnd("Carga total");
-
-      } catch (error) {
-        console.error("Error cargando datos:", error);
-        if (montado) {
-          setMensaje({ 
-            visible: true, 
-            titulo: "Error", 
-            texto: "Error al cargar datos de reinscripción." 
-          });
-        }
+        setLoading(true);
+        const data = await apiCall("/api/v1/alumnos/me/cita", "GET");
+        setCita(data);
+      } catch (err) {
+        console.warn("[Reinscripcion] Error fetching cita:", err);
       } finally {
-        if (montado) setCargando(false);
-      }
-    };
-
-    fetchDatos();
-
-    return () => { montado = false; };
-  }, [idAlumno, idPeriodoActual, datosGen]);
-
-  // *** FUNCIÓN DE VALIDACIÓN DE TRASLAPES DE HORARIO ***
-  const verificarTraslapesHorario = useCallback((materiaAInscribir, materiasYaInscritas) => {
-    const conflictos = [];
-    const diasSemana = ['lunes', 'martes', 'miercoles', 'jueves', 'viernes', 'sabado'];
-    
-    for (const dia of diasSemana) {
-      const horarioNuevo = materiaAInscribir[dia];
-      
-      if (!horarioNuevo || horarioNuevo === "-") continue;
-      
-      const idDiaNuevo = materiaAInscribir[`${dia}_idDia`];
-      if (!idDiaNuevo) continue;
-
-      for (const materiaInscrita of materiasYaInscritas) {
-        const horarioInscrito = materiaInscrita[dia];
-        
-        if (!horarioInscrito || horarioInscrito === "-") continue;
-        
-        const idDiaInscrito = materiaInscrita[`${dia}_idDia`];
-        if (!idDiaInscrito) continue;
-
-        if (idDiaNuevo.toString() === idDiaInscrito.toString()) {
-          const diaCapitalizado = dia.charAt(0).toUpperCase() + dia.slice(1);
-          conflictos.push({
-            dia: diaCapitalizado,
-            materiaConflicto: materiaInscrita.materia,
-            horario: horarioInscrito
-          });
-        }
+        setLoading(false);
       }
     }
-
-    return conflictos;
+    loadCita();
   }, []);
 
-  // ✅ Calcular optativas inscritas en período actual
-  const optativasInscritasActual = useMemo(() => {
-    let sexto = 0;
-    let septimo = 0;
-    
-    for (const materia of materiasInscritas) {
-      if (materia.esOptativa) {
-        if (materia.semestre === 6) sexto++;
-        if (materia.semestre === 7) septimo++;
-      }
+  const toggleCourseEnrollment = (clave) => {
+    if (enrolledCourses.includes(clave)) {
+      setEnrolledCourses(enrolledCourses.filter((c) => c !== clave));
+    } else {
+      setEnrolledCourses([...enrolledCourses, clave]);
     }
-    
-    return { sexto, septimo };
-  }, [materiasInscritas]);
+  };
 
-  // ----------------------------- 2. HANDLERS -----------------------------
-  const handleInscribir = useCallback((materia) => {
-    // VALIDACIÓN 1: Verificar créditos disponibles
-    if (creditosRestantes - materia.creditos < 0) {
-      setMensaje({ 
-        visible: true, 
-        titulo: "Créditos Insuficientes", 
-        texto: `No puedes inscribir esta materia. Te faltan ${materia.creditos - creditosRestantes} créditos.` 
-      });
-      return;
-    }
+  // Calcular créditos inscritos
+  const totalCreditos = enrolledCourses.reduce((acc, clave) => {
+    const found = catalog.find((c) => c.clave === clave);
+    return acc + (found ? found.creditos : 0);
+  }, 0);
 
-    // VALIDACIÓN 2: Verificar si ya está inscrita esta clase específica
-    if (materiasInscritas.some(m => m.idClase === materia.idClase)) {
-      return;
-    }
+  const alumnoNombre = user?.nombre_completo || "Carlos Pérez Ramírez";
+  const carrera = user?.alumno?.carrera?.nombre || "Ingeniería en Sistemas Computacionales";
+  const promedio = user?.alumno?.promedio || 8.92;
 
-    // VALIDACIÓN 3: No permitir inscribir dos clases de la misma materia
-    const materiaYaInscrita = materiasInscritas.find(m => m.materia === materia.materia);
-    if (materiaYaInscrita) {
-      setMensaje({ 
-        visible: true, 
-        titulo: "Materia Duplicada", 
-        texto: `Ya tienes inscrita la materia "${materia.materia}" en el grupo ${materiaYaInscrita.grupo}. No puedes inscribir la misma materia en dos grupos diferentes.` 
-      });
-      return;
-    }
-
-    // ✅ VALIDACIÓN 4: Verificar límite de optativas
-    if (materia.esOptativa) {
-      if (materia.semestre === 6) {
-        const totalSexto = optativasCursadasSexto + optativasInscritasActual.sexto;
-        if (totalSexto >= MAX_OPTATIVAS_SEXTO) {
-          setMensaje({ 
-            visible: true, 
-            titulo: "Límite de Optativas", 
-            texto: `Ya has cursado o inscrito el máximo de optativas permitidas para 6° semestre (${MAX_OPTATIVAS_SEXTO}). No puedes inscribir más optativas de este semestre.` 
-          });
-          return;
-        }
-      } else if (materia.semestre === 7) {
-        const totalSeptimo = optativasCursadasSeptimo + optativasInscritasActual.septimo;
-        if (totalSeptimo >= MAX_OPTATIVAS_SEPTIMO) {
-          setMensaje({ 
-            visible: true, 
-            titulo: "Límite de Optativas", 
-            texto: `Ya has cursado o inscrito el máximo de optativas permitidas para 7° semestre (${MAX_OPTATIVAS_SEPTIMO}). No puedes inscribir más optativas de este semestre.` 
-          });
-          return;
-        }
-      }
-    }
-
-    // VALIDACIÓN 5: Verificar traslapes de horarios
-    if (materiasInscritas.length > 0) {
-      const conflictos = verificarTraslapesHorario(materia, materiasInscritas);
-      
-      if (conflictos.length > 0) {
-        const mensajeConflictos = `"${conflictos[0].materiaConflicto}"`;
-        
-        setMensaje({ 
-          visible: true, 
-          titulo: "Traslape de Horarios", 
-          texto: `No puedes inscribir "${materia.materia}" debido a que se traslapa con \n\n${mensajeConflictos}` 
-        });
-        return;
-      }
-    }
-
-    // Si pasa todas las validaciones, inscribir la materia
-    setMateriasInscritas(prev => [...prev, materia]);
-    setCreditosRestantes(prev => prev - materia.creditos);
-    setMateriasDisponibles(prev => prev.filter(m => m.idClase !== materia.idClase));
-  }, [
-    creditosRestantes, 
-    materiasInscritas, 
-    verificarTraslapesHorario, 
-    optativasCursadasSexto, 
-    optativasCursadasSeptimo,
-    optativasInscritasActual
-  ]);
-
-  const handleDarDeBaja = useCallback(async (materia) => {
-    try {
-      if (materia.idInscripcionClase) {
-        await apiCall(`/inscripcionClase/${materia.idInscripcionClase}`, 'DELETE');
-      }
-
-      setMateriasInscritas(prev => prev.filter(m => m.idClase !== materia.idClase));
-      setCreditosRestantes(prev => prev + materia.creditos);
-      
-      const materiaSinId = { ...materia };
-      delete materiaSinId.idInscripcionClase;
-      setMateriasDisponibles(prev => [...prev, materiaSinId]);
-
-    } catch (error) {
-      console.error("Error al dar de baja:", error);
-      setMensaje({ 
-        visible: true, 
-        titulo: "Error", 
-        texto: "No se pudo dar de baja la materia." 
-      });
-    }
-  }, []);
-
-  const handleFinalizarInscripcion = useCallback(async () => {
-    if (creditosRestantes < 0) {
-      setMensaje({ 
-        visible: true, 
-        titulo: "Error", 
-        texto: "Has excedido el límite de créditos." 
-      });
-      return;
-    }
-
-    const materiasNuevas = materiasInscritas.filter(m => !m.idInscripcionClase);
-
-    if (materiasNuevas.length === 0) {
-      setMensaje({ 
-        visible: true, 
-        titulo: "Información", 
-        texto: "No hay nuevas materias para inscribir." 
-      });
-      return;
-    }
-
-    if (!idInscripcion) {
-      setMensaje({ 
-        visible: true, 
-        titulo: "Error", 
-        texto: "No se encontró la inscripción activa." 
-      });
-      return;
-    }
-
-    try {
-      console.log("Guardando inscripciones...");
-      let exitosas = 0;
-      let fallidas = 0;
-
-      for (const materia of materiasNuevas) {
-        try {
-          await apiCall("/inscripcionClase", "POST", {
-            idInscripcion: idInscripcion,
-            idClase: materia.idClase,
-            estatus: "Inscrito"
-          });
-          exitosas++;
-          console.log(`✓ Inscrita: ${materia.materia}`);
-        } catch (error) {
-          fallidas++;
-          console.error(`✗ Error: ${materia.materia}`, error);
-        }
-      }
-
-      if (exitosas > 0) {
-        const creditosUsados = MAX_CREDITOS - creditosRestantes;
-        await apiCall(`/inscripcion/${idInscripcion}`, 'PUT', {
-          creditos: creditosUsados
-        });
-
-        setMensaje({ 
-          visible: true, 
-          titulo: "Éxito", 
-          texto: `Se inscribieron ${exitosas} materia(s) correctamente.${fallidas > 0 ? ` ${fallidas} fallaron.` : ''}` 
-        });
-
-        setTimeout(() => window.location.reload(), 2000);
-      } else {
-        setMensaje({ 
-          visible: true, 
-          titulo: "Error", 
-          texto: "No se pudo inscribir ninguna materia." 
-        });
-      }
-
-    } catch (error) {
-      console.error("Error al guardar inscripción:", error);
-      setMensaje({ 
-        visible: true, 
-        titulo: "Error", 
-        texto: "Error al guardar la inscripción." 
-      });
-    }
-  }, [creditosRestantes, materiasInscritas, idInscripcion]);
-
-  // ----------------------------- 3. CONFIGURACIÓN TABLA -----------------------------
-  const columnasBase = useMemo(() => [
-    { key: "grupo", label: "Grupo", width: "80px" },
-    { key: "salon", label: "Salón", width: "80px" },
-    { key: "materia", label: "Materia", width: "250px" },
-    { key: "creditos", label: "Créditos", width: "80px" },
-    { key: "lunes", label: "Lunes", width: "110px" },
-    { key: "martes", label: "Martes", width: "110px" },
-    { key: "miercoles", label: "Miércoles", width: "110px" },
-    { key: "jueves", label: "Jueves", width: "110px" },
-    { key: "viernes", label: "Viernes", width: "110px" },
-    { key: "ocupabilidad", label: "Ocupabilidad", width: "100px" },
-  ], []);
-
-  const columnasDisponibles = useMemo(() => 
-    [...columnasBase, { key: "accion", label: "", width: "80px" }], 
-  [columnasBase]);
-  
-  const columnasInscritas = useMemo(() => 
-    [...columnasBase, { key: "accion", label: "", width: "100px" }], 
-  [columnasBase]);
-
-  const renderCellDisponibles = useCallback((item, key) => {
-    if (key === "accion") {
-      const lleno = item.inscritos >= item.cupoMaximo;
-      const sinCreditos = creditosRestantes - item.creditos < 0;
-
-      return (
-        <button
-          className={`${styles.actionButton} ${styles.inscribir}`}
-          onClick={() => handleInscribir(item)}
-          disabled={lleno || sinCreditos}
-          style={(lleno || sinCreditos) ? { backgroundColor: '#ccc', cursor: 'not-allowed' } : {}}
-          title={lleno ? "Grupo lleno" : sinCreditos ? "Créditos insuficientes" : "Inscribir"}
-        >
-          {lleno ? "Lleno" : "+"}
-        </button>
-      );
-    }
-    
-    // ✅ Marcar optativas visualmente
-    if (key === "materia" && item.esOptativa) {
-      return (
-        <span>
-          {item[key]} <span style={{ color: '#0066cc', fontWeight: 'bold' }}>[Optativa]</span>
-        </span>
-      );
-    }
-    
-    return item[key] || "-";
-  }, [handleInscribir, creditosRestantes]);
-
-  const renderCellInscritas = useCallback((item, key) => {
-    if (key === "accion") {
-      return (
-        <button
-          className={`${styles.actionButton} ${styles.darDeBaja}`}
-          onClick={() => handleDarDeBaja(item)}
-          title="Dar de baja"
-        >
-          —
-        </button>
-      );
-    }
-    
-    // ✅ Marcar optativas visualmente
-    if (key === "materia" && item.esOptativa) {
-      return (
-        <span>
-          {item[key]} <span style={{ color: '#0066cc', fontWeight: 'bold' }}>[Optativa]</span>
-        </span>
-      );
-    }
-    
-    return item[key] || "-";
-  }, [handleDarDeBaja]);
-
-  // ----------------------------- 4. FILTRADO -----------------------------
-  
-  const gruposDisponibles = useMemo(() => {
-    let materias = materiasDisponibles;
-    
-    if (filtroSemestre) {
-      materias = materias.filter(m => m.semestre === parseInt(filtroSemestre));
-    }
-    
-    const grupos = new Set(materias.map(m => m.grupo));
-    return Array.from(grupos).sort();
-  }, [materiasDisponibles, filtroSemestre]);
-
-  const materiasFiltradas = useMemo(() => {
-    let resultado = materiasDisponibles;
-    
-    if (filtroSemestre) {
-      resultado = resultado.filter(m => m.semestre === parseInt(filtroSemestre));
-    }
-    
-    if (filtroGrupo) {
-      resultado = resultado.filter(m => m.grupo === filtroGrupo);
-    }
-    
-    if (filtroMateria.trim()) {
-      const filtroLower = filtroMateria.toLowerCase().trim();
-      resultado = resultado.filter(m => 
-        m.materia.toLowerCase().includes(filtroLower)
-      );
-    }
-    
-    return resultado;
-  }, [materiasDisponibles, filtroSemestre, filtroGrupo, filtroMateria]);
-
-
-
-  if (errorValidacion) {
-  switch (errorValidacion) {
-    case 'YA_INSCRITO':
-      return (
-        <Espera 
-          mensaje1="Reinscripción Realizada"
-          mensaje2="Si crees que esto es un error, consulta en Subdirección."
-        />
-      );
-    
-    case 'FUERA_DE_PERIODO':
-      return (
-        <Espera 
-          mensaje1="No te encuentras dentro del periodo oficial de reinscripción"
-          mensaje2="Consulta el calendario académico."
-        />
-      );
-    
-    case 'SIN_CITA':
-      return (
-        <Espera 
-          mensaje1="Cita no asignada"
-          mensaje2="Sé paciente, pronto se asignará tu cita."
-        />
-      );
-    
-    case 'CITA_FUTURA':
-      return (
-        <Espera 
-          mensaje1="Aún no es momento de tu reinscripción"
-          mensaje2="Sé paciente, espera a tu hora indicada en la cita de Reinscripción."
-        />
-      );
-    
-    case 'CITA_EXPIRADA':
-      return (
-        <Espera 
-          mensaje1="Reinscripción no realizada"
-          mensaje2="Consulta en Subdirección."
-        />
-      );
-    
-    default:
-      return (
-        <Espera 
-          mensaje1="Error en la validación"
-          mensaje2="Por favor, consulta en Subdirección."
-        />
-      );
-  }
-}
-
-  // ----------------------------- UI -----------------------------
-  if (cargando || !idAlumno || !idPeriodoActual || !datosGen) {
-    return <Espera />;
-  }
+  const filteredCatalog = catalog.filter((item) => {
+    const matchSem = selectedSemester === "all" || String(item.semestre) === String(selectedSemester);
+    const q = searchQuery.toLowerCase().trim();
+    const matchSearch =
+      !q || item.materia.toLowerCase().includes(q) || item.clave.toLowerCase().includes(q);
+    return matchSem && matchSearch;
+  });
 
   return (
-    <div className="bienvenida-container">
+    <div className="min-h-screen bg-surface-ice font-body-md text-text-primary">
       <Menu />
-      <main className="page">
-        <div className="horario-container">
-          <aside className="horario-side">
-            <h3>Reinscripciones</h3>
 
-            <div className={styles.creditosWidget}>
-              <h4>Créditos disponibles</h4>
-              <span className={creditosRestantes < 0 ? styles.creditosError : ""}>
-                {creditosRestantes} / {MAX_CREDITOS}
-              </span>
+      <main className="w-full max-w-[1440px] mx-auto pt-6 px-4 sm:px-6 lg:px-8 pb-16 space-y-6">
+        {/* 1. Banner & Header con Cita */}
+        <section className="flex flex-col gap-4 w-full">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-2">
+            <div className="flex flex-col">
+              <div className="flex items-center gap-1.5 text-text-muted text-xs uppercase tracking-wider mb-1">
+                <span className="material-symbols-outlined text-[16px] text-accent-blue">school</span>
+                <span>ESCOM · Dirección de Asuntos Escolares y SAES</span>
+              </div>
+              <h1 className="text-2xl sm:text-3xl font-extrabold text-primary tracking-tight">
+                Proceso de Reinscripción Semestral
+              </h1>
+              <p className="text-xs sm:text-sm text-text-muted mt-0.5">
+                Periodo Escolar 2026-1 · Plan 2020 · {carrera}
+              </p>
             </div>
 
-            {/* ✅ Widget de optativas */}
-            <div className={styles.creditosWidget} style={{ marginTop: '15px' }}>
-              <h4>Optativas</h4>
-              <div style={{ fontSize: '0.9em' }}>
-                <div>
-                  <strong>6° Semestre:</strong> {optativasCursadasSexto + optativasInscritasActual.sexto} / {MAX_OPTATIVAS_SEXTO}
-                  {optativasInscritasActual.sexto > 0 && (
-                    <span style={{ color: '#666', fontSize: '0.85em' }}>
-                      {' '}(+{optativasInscritasActual.sexto} en inscripción)
+            <div className="flex items-center gap-2 bg-surface-card px-4 py-2 rounded-full shadow-[4px_4px_10px_rgba(62,81,125,0.08),-2px_-2px_6px_#ffffff] text-xs font-semibold text-text-muted">
+              <span className="material-symbols-outlined text-[18px] text-tertiary">calendar_today</span>
+              <span>
+                Cita Ordinaria: <strong className="text-text-primary">14 de Febrero de 2026</strong>
+              </span>
+            </div>
+          </div>
+
+          {/* Tarjeta Clay Principal de Cita */}
+          <div className="bg-surface-card rounded-2xl p-5 sm:p-6 shadow-[8px_8px_20px_rgba(62,81,125,0.08),-6px_-6px_16px_#FFFFFF] relative overflow-hidden">
+            <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+              {/* Info Cita */}
+              <div className="lg:col-span-7 flex flex-col gap-3">
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold shadow-[inset_1px_1px_2px_rgba(16,185,129,0.15)]">
+                    <span className="relative flex h-2 w-2">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                      <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-600"></span>
                     </span>
-                  )}
+                    Cita Activa · Turno en Curso
+                  </span>
+                  <span className="px-3 py-1 rounded-full bg-secondary-fixed text-primary text-xs font-semibold">
+                    Turno Preferente #142
+                  </span>
                 </div>
-                <div style={{ marginTop: '5px' }}>
-                  <strong>7° Semestre:</strong> {optativasCursadasSeptimo + optativasInscritasActual.septimo} / {MAX_OPTATIVAS_SEPTIMO}
-                  {optativasInscritasActual.septimo > 0 && (
-                    <span style={{ color: '#666', fontSize: '0.85em' }}>
-                      {' '}(+{optativasInscritasActual.septimo} en inscripción)
-                    </span>
-                  )}
+
+                <div>
+                  <h2 className="text-lg sm:text-xl font-extrabold text-primary">
+                    Viernes 14 de Febrero de 2026 · 10:30 AM
+                  </h2>
+                  <p className="text-xs sm:text-sm text-text-muted leading-relaxed mt-1">
+                    Cita asignada por algoritmo de prelación SAES-PAIDEA:{" "}
+                    <strong className="text-text-primary">Promedio General {promedio} (Top 12%)</strong> · Alumno Regular sin adeudos académicos ni administrativos.
+                  </p>
+                </div>
+
+                {/* Mini estadísticas de carga */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+                  <div className="p-3 rounded-xl bg-surface-container-low flex items-center gap-3 shadow-[inset_1px_1px_2px_rgba(62,81,125,0.06)]">
+                    <div className="p-2 rounded-lg bg-surface-card text-primary shadow-sm">
+                      <span className="material-symbols-outlined text-[20px]">award_star</span>
+                    </div>
+                    <div className="flex flex-col">
+                      <span className="text-[10px] text-text-muted font-medium">Créditos autorizados</span>
+                      <span className="text-xs font-bold text-text-primary">Hasta 45.0 SATCA máx.</span>
+                    </div>
+                  </div>
+
+                  <div className="p-3 rounded-xl bg-surface-container-low flex items-center gap-3 shadow-[inset_1px_1px_2px_rgba(62,81,125,0.06)]">
+                    <div className="p-2 rounded-lg bg-surface-card text-tertiary shadow-sm">
+                      <span className="material-symbols-outlined text-[20px]">auto_stories</span>
+                    </div>
+                    <div className="flex flex-col">
+                      <span className="text-[10px] text-text-muted font-medium">Carga sugerida</span>
+                      <span className="text-xs font-bold text-text-primary">5 a 6 Unidades de Aprendizaje</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Temporizador Volumétrico Clay 3D */}
+              <div className="lg:col-span-5 flex flex-col items-center justify-center p-5 rounded-2xl bg-gradient-to-b from-surface-ice to-surface-card shadow-[inset_1px_1px_3px_#ffffff,4px_4px_12px_rgba(62,81,125,0.08)]">
+                <div className="flex items-center gap-1.5 text-text-muted text-xs uppercase tracking-wide font-bold mb-2">
+                  <span className="material-symbols-outlined text-[16px] text-amber-500">timer</span>
+                  <span>Tiempo restante de ventana:</span>
+                </div>
+
+                <div className="flex items-center justify-center gap-2 font-mono font-extrabold text-3xl sm:text-4xl text-primary my-1">
+                  <div className="px-3 py-1.5 rounded-xl bg-surface-card shadow-[4px_4px_10px_rgba(62,81,125,0.1),-2px_-2px_6px_#ffffff] flex flex-col items-center">
+                    <span>00</span>
+                    <span className="text-[9px] text-text-muted font-sans font-normal uppercase">hrs</span>
+                  </div>
+                  <span className="text-secondary opacity-40 -mt-2">:</span>
+                  <div className="px-3 py-1.5 rounded-xl bg-surface-card shadow-[4px_4px_10px_rgba(62,81,125,0.1),-2px_-2px_6px_#ffffff] flex flex-col items-center text-primary-container">
+                    <span>{String(timeLeft.minutes).padStart(2, "0")}</span>
+                    <span className="text-[9px] text-text-muted font-sans font-normal uppercase">min</span>
+                  </div>
+                  <span className="text-secondary opacity-40 -mt-2">:</span>
+                  <div className="px-3 py-1.5 rounded-xl bg-surface-card shadow-[4px_4px_10px_rgba(62,81,125,0.1),-2px_-2px_6px_#ffffff] flex flex-col items-center text-accent-blue">
+                    <span>{String(timeLeft.seconds).padStart(2, "0")}</span>
+                    <span className="text-[9px] text-text-muted font-sans font-normal uppercase">seg</span>
+                  </div>
+                </div>
+
+                <div className="w-full mt-3 flex flex-col gap-1.5">
+                  <div className="h-2.5 w-full bg-surface-container-high rounded-full overflow-hidden p-0.5 shadow-[inset_1px_1px_3px_rgba(62,81,125,0.12)]">
+                    <div
+                      className="h-full rounded-full bg-gradient-to-r from-accent-blue to-primary transition-all duration-700"
+                      style={{ width: `${(timeLeft.minutes / 60) * 100}%` }}
+                    ></div>
+                  </div>
+                  <div className="flex justify-between items-center text-text-muted text-[11px]">
+                    <span>Ventana de 60 minutos</span>
+                    <span className="text-primary font-bold">Cierra 11:30 AM</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 2. Área Split View: Catálogo vs Carrito Inscrito */}
+        <section className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+          {/* Columna Izquierda: Catálogo de Asignaturas (7 cols) */}
+          <div className="lg:col-span-7 flex flex-col gap-4">
+            <div className="bg-surface-card rounded-2xl p-4 shadow-[8px_8px_20px_rgba(62,81,125,0.08),-6px_-6px_16px_#FFFFFF] flex flex-col gap-3">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                <div className="flex items-center gap-2">
+                  <span className="material-symbols-outlined text-primary text-[22px]">list_alt</span>
+                  <h2 className="text-base sm:text-lg font-bold text-text-primary">
+                    Catálogo de Grupos Disponibles
+                  </h2>
+                </div>
+                <span className="px-2.5 py-0.5 rounded-full bg-primary-fixed text-primary text-xs font-semibold">
+                  6° Semestre · Tronco Profesional
+                </span>
+              </div>
+
+              {/* Buscador y filtro */}
+              <div className="grid grid-cols-1 sm:grid-cols-12 gap-2">
+                <div className="sm:col-span-8 relative flex items-center">
+                  <span className="material-symbols-outlined absolute left-3 text-text-muted text-[18px]">
+                    search
+                  </span>
+                  <input
+                    type="text"
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    placeholder="Buscar materia por nombre o clave..."
+                    className="w-full pl-9 pr-3 py-2 rounded-xl bg-surface-container-low text-xs sm:text-sm placeholder:text-text-muted focus:outline-none focus:bg-surface-card transition-all shadow-[inset_1px_1px_3px_rgba(62,81,125,0.08)]"
+                  />
+                </div>
+                <div className="sm:col-span-4 relative flex items-center">
+                  <select
+                    value={selectedSemester}
+                    onChange={(e) => setSelectedSemester(e.target.value)}
+                    className="w-full px-3 py-2 rounded-xl bg-surface-container-low text-xs font-semibold text-text-primary appearance-none cursor-pointer focus:outline-none shadow-[inset_1px_1px_3px_rgba(62,81,125,0.08)]"
+                  >
+                    <option value="6">6° Semestre (Plan 2020)</option>
+                    <option value="5">5° Semestre (Recursamiento)</option>
+                    <option value="all">Todos los Semestres</option>
+                  </select>
                 </div>
               </div>
             </div>
 
-            <div className={styles.filtrosContainer}>
-              <h4>Filtros:</h4>
-              
-              <SelectField
-                label="Semestre"
-                value={filtroSemestre}
-                onChange={(e) => {
-                  setFiltroSemestre(e.target.value);
-                  setFiltroGrupo("");
-                }}
-                options={[
-                  { value: "", label: "Todos" },
-                  ...semestresDisponibles.map(s => ({
-                    value: s.toString(),
-                    label: `${s}º Semestre`
-                  }))
-                ]}
-              />
+            {/* Lista de Asignaturas del Catálogo */}
+            <div className="space-y-3.5">
+              {filteredCatalog.map((item) => {
+                const isEnrolled = enrolledCourses.includes(item.clave);
 
-              <SelectField
-                label="Grupo"
-                value={filtroGrupo}
-                onChange={(e) => setFiltroGrupo(e.target.value)}
-                options={[
-                  { value: "", label: "Todos" },
-                  ...gruposDisponibles.map(g => ({
-                    value: g,
-                    label: g
-                  }))
-                ]}
-              />
+                return (
+                  <div
+                    key={item.clave}
+                    className="bg-surface-card rounded-2xl p-4 sm:p-5 shadow-[8px_8px_20px_rgba(62,81,125,0.08),-6px_-6px_16px_#FFFFFF] flex flex-col gap-3 transition-transform hover:-translate-y-0.5"
+                  >
+                    <div className="flex items-start justify-between gap-3">
+                      <div className="flex items-start gap-3">
+                        <div className="w-10 h-10 rounded-xl bg-secondary-fixed flex items-center justify-center text-primary font-bold text-sm shadow-[inset_1px_1px_2px_rgba(62,81,125,0.06)] shrink-0">
+                          <span className="material-symbols-outlined text-[22px]">school</span>
+                        </div>
+                        <div>
+                          <div className="flex items-center gap-2 flex-wrap">
+                            <h3 className="text-sm sm:text-base font-bold text-text-primary">{item.materia}</h3>
+                            <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-surface-container-low text-text-muted font-bold">
+                              {item.clave}
+                            </span>
+                          </div>
+                          <span className="text-xs text-text-muted block mt-0.5">
+                            {item.creditos} Créditos SATCA · Prerrequisito: {item.prerrequisitos}
+                          </span>
+                        </div>
+                      </div>
 
-              <label style={{ marginTop: '10px', display: 'block' }}>
-                <strong>Buscar materia:</strong>
-              </label>
-              <input
-                type="text"
-                placeholder="Nombre de la materia..."
-                value={filtroMateria}
-                onChange={(e) => setFiltroMateria(e.target.value)}
-                className={styles.inputFiltro}
-                style={{ 
-                  width: '100%', 
-                  padding: '8px', 
-                  marginTop: '5px',
-                  border: '1px solid #ccc',
-                  borderRadius: '4px'
-                }}
-              />
+                      <span
+                        className={`px-2.5 py-1 rounded-full text-[11px] font-bold shrink-0 ${
+                          isEnrolled ? "bg-emerald-100 text-emerald-800" : "bg-blue-100 text-secondary"
+                        }`}
+                      >
+                        {isEnrolled ? "En Carrito" : "Disponible"}
+                      </span>
+                    </div>
+
+                    {/* Grupos disponibles de la materia */}
+                    <div className="space-y-2 pt-1 border-t border-surface-container-high/40">
+                      {item.grupos.map((g, gIdx) => {
+                        const isConflict = g.estado === "conflicto";
+                        const isFull = g.estado === "agotado";
+
+                        return (
+                          <div
+                            key={gIdx}
+                            className={`p-3 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 ${
+                              isConflict
+                                ? "bg-red-50/70 border border-red-200"
+                                : isFull
+                                ? "bg-surface-container-low/60 opacity-60"
+                                : "bg-surface-container-low"
+                            }`}
+                          >
+                            <div className="flex flex-col gap-0.5">
+                              <div className="flex items-center gap-2">
+                                <span className={`text-xs font-bold ${isConflict ? "text-error" : "text-text-primary"}`}>
+                                  Grupo {g.grupo}
+                                </span>
+                                <span className="text-xs text-text-muted">· {g.profesor}</span>
+                              </div>
+                              <div className="flex items-center gap-3 text-[11px] text-text-muted flex-wrap">
+                                <span className="flex items-center gap-1">
+                                  <span className="material-symbols-outlined text-[14px] text-accent-blue">schedule</span>
+                                  {g.horario}
+                                </span>
+                                <span className="flex items-center gap-1">
+                                  <span className="material-symbols-outlined text-[14px] text-secondary">meeting_room</span>
+                                  {g.salon}
+                                </span>
+                              </div>
+                            </div>
+
+                            <div className="flex items-center justify-between sm:justify-end gap-2.5 shrink-0">
+                              <span
+                                className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${
+                                  isFull
+                                    ? "bg-surface-container-high text-text-muted"
+                                    : isConflict
+                                    ? "bg-red-100 text-error"
+                                    : g.cupo_max - g.cupo_actual <= 3
+                                    ? "bg-amber-100 text-amber-800"
+                                    : "bg-emerald-100 text-emerald-800"
+                                }`}
+                              >
+                                {isFull ? "Cupo Agotado" : `${g.cupo_max - g.cupo_actual} lugares`}
+                              </span>
+
+                              {isFull ? (
+                                <button
+                                  disabled
+                                  className="px-3 py-1.5 rounded-lg bg-surface-container-high text-text-muted text-xs font-semibold cursor-not-allowed"
+                                >
+                                  Sin Cupo
+                                </button>
+                              ) : isConflict ? (
+                                <button
+                                  onClick={() => alert("Conflicto de horario: Se empalma con otra materia ya inscrita.")}
+                                  className="px-3 py-1.5 rounded-lg bg-red-100 text-error text-xs font-bold flex items-center gap-1"
+                                >
+                                  <span className="material-symbols-outlined text-[16px]">warning</span>
+                                  Empalme
+                                </button>
+                              ) : isEnrolled ? (
+                                <button
+                                  onClick={() => toggleCourseEnrollment(item.clave)}
+                                  className="px-3 py-1.5 rounded-lg bg-surface-card text-emerald-800 text-xs font-bold shadow-[2px_2px_6px_rgba(62,81,125,0.1)] flex items-center gap-1 hover:bg-red-50 hover:text-error transition-all cursor-pointer group"
+                                  title="Quitar del carrito"
+                                >
+                                  <span className="material-symbols-outlined text-[16px] text-emerald-600 group-hover:hidden">
+                                    check_circle
+                                  </span>
+                                  <span className="material-symbols-outlined text-[16px] text-error hidden group-hover:inline">
+                                    close
+                                  </span>
+                                  <span className="group-hover:hidden">Inscrita</span>
+                                  <span className="hidden group-hover:inline">Quitar</span>
+                                </button>
+                              ) : (
+                                <button
+                                  onClick={() => toggleCourseEnrollment(item.clave)}
+                                  className="px-3.5 py-1.5 rounded-lg bg-primary-container text-white text-xs font-bold shadow-sm hover:opacity-95 transition-all flex items-center gap-1 cursor-pointer"
+                                >
+                                  <span className="material-symbols-outlined text-[16px]">add</span>
+                                  <span>+ Inscribir</span>
+                                </button>
+                              )}
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                );
+              })}
             </div>
+          </div>
 
-            <Button 
-              variant="primary" 
-              onClick={handleFinalizarInscripcion}
-              disabled={materiasInscritas.filter(m => !m.idInscripcionClase).length === 0}
-              style={{ marginTop: '20px' }}
-            >
-              Finalizar inscripción
-            </Button>
-          </aside>
+          {/* Columna Derecha: Carrito de Reinscripción y Resumen (5 cols) */}
+          <div className="lg:col-span-5 sticky top-24 space-y-4">
+            <div className="bg-surface-card rounded-2xl p-5 sm:p-6 shadow-[8px_8px_20px_rgba(62,81,125,0.08),-6px_-6px_16px_#FFFFFF] flex flex-col space-y-4">
+              <div className="flex items-center justify-between pb-3 border-b border-surface-container-high/40">
+                <div className="flex items-center gap-2">
+                  <span className="material-symbols-outlined text-primary text-[20px]">assignment_turned_in</span>
+                  <span className="text-xs font-bold text-text-muted uppercase tracking-wider">
+                    Mi Pre-Horario Seleccionado
+                  </span>
+                </div>
+                <span className="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-primary text-xs font-bold">
+                  {enrolledCourses.length} Asignaturas
+                </span>
+              </div>
 
-          <section className="horario-main">
-            <h2>Materias Disponibles</h2>
-            <div className={styles.tablaWrapper}>
-              <Table
-                columns={columnasDisponibles}
-                data={materiasFiltradas}
-                renderCell={renderCellDisponibles}
-                emptyMessage="No hay materias disponibles con los filtros seleccionados."
-                striped={true}
-                hover={true}
-              />
+              {/* Barra de Créditos SATCA */}
+              <div className="space-y-1.5">
+                <div className="flex justify-between items-center text-xs font-bold">
+                  <span className="text-text-muted">Créditos Acumulados:</span>
+                  <span className="text-primary">{totalCreditos} / 45.0 SATCA máx.</span>
+                </div>
+                <div className="h-2.5 w-full bg-surface-container-high rounded-full overflow-hidden">
+                  <div
+                    className="h-full bg-gradient-to-r from-accent-blue to-primary rounded-full transition-all duration-300"
+                    style={{ width: `${Math.min(100, (totalCreditos / 45) * 100)}%` }}
+                  ></div>
+                </div>
+              </div>
+
+              {/* Lista de Materias en el carrito */}
+              <div className="space-y-2 pt-1 max-h-[360px] overflow-y-auto pr-1">
+                {enrolledCourses.length === 0 ? (
+                  <div className="p-6 text-center text-text-muted text-xs">
+                    No has agregado asignaturas aún. Selecciona materias del catálogo.
+                  </div>
+                ) : (
+                  enrolledCourses.map((clave) => {
+                    const found = catalog.find((c) => c.clave === clave);
+                    if (!found) return null;
+
+                    return (
+                      <div
+                        key={clave}
+                        className="p-3 rounded-xl bg-surface-container-low flex items-center justify-between gap-3 shadow-[inset_1px_1px_2px_rgba(62,81,125,0.06)]"
+                      >
+                        <div className="flex flex-col">
+                          <span className="text-xs font-bold text-text-primary">{found.materia}</span>
+                          <span className="text-[10px] text-text-muted">
+                            {found.clave} · {found.creditos} Créditos · Grupo {found.grupos[0]?.grupo}
+                          </span>
+                        </div>
+                        <button
+                          onClick={() => toggleCourseEnrollment(clave)}
+                          className="w-7 h-7 rounded-lg bg-surface-card text-error hover:bg-red-100 flex items-center justify-center transition-colors shadow-sm cursor-pointer"
+                          title="Eliminar del pre-registro"
+                        >
+                          <span className="material-symbols-outlined text-[16px]">delete</span>
+                        </button>
+                      </div>
+                    );
+                  })
+                )}
+              </div>
+
+              {/* Botón de Confirmación Definitiva */}
+              <div className="pt-3 border-t border-surface-container-high/40 space-y-2">
+                <button
+                  type="button"
+                  onClick={() => setSuccessModal(true)}
+                  disabled={enrolledCourses.length === 0}
+                  className="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-primary to-primary-container text-white font-bold text-sm shadow-[4px_6px_16px_rgba(62,81,125,0.25)] hover:shadow-xl transition-all active:scale-[0.98] flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  <span className="material-symbols-outlined text-[20px]">how_to_reg</span>
+                  <span>Confirmar Reinscripción Definitiva</span>
+                </button>
+                <p className="text-[11px] text-text-muted text-center leading-tight">
+                  Al confirmar, se reservan tus lugares en el SAES y se emite tu comprobante oficial con sello digital.
+                </p>
+              </div>
             </div>
+          </div>
+        </section>
 
-            <h2 className={styles.tituloMateriasInscritas}>Materias Inscritas</h2>
-            <div className={styles.tablaWrapper}>
-              <Table
-                columns={columnasInscritas}
-                data={materiasInscritas}
-                renderCell={renderCellInscritas}
-                emptyMessage="No has inscrito materias aún."
-                striped={true}
-                hover={true}
-              />
+        {/* Modal de Éxito al Confirmar Reinscripción */}
+        {successModal && (
+          <div className="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm flex items-center justify-center p-4">
+            <div className="bg-surface-card rounded-3xl p-6 sm:p-8 max-w-md w-full shadow-[16px_20px_40px_rgba(62,81,125,0.2)] text-center space-y-4">
+              <div className="w-16 h-16 rounded-full bg-emerald-100 text-emerald-800 mx-auto flex items-center justify-center shadow-[inset_1px_1px_2px_rgba(16,185,129,0.2)]">
+                <span className="material-symbols-outlined text-[36px]">check_circle</span>
+              </div>
+              <h3 className="text-xl font-extrabold text-primary">¡Reinscripción Exitosa!</h3>
+              <p className="text-xs sm:text-sm text-text-muted">
+                Tus <strong>{enrolledCourses.length} asignaturas</strong> han sido registradas para el periodo{" "}
+                <strong>2026-1</strong> con {totalCreditos} créditos SATCA.
+              </p>
+              <div className="p-3 bg-surface-container-low rounded-xl text-xs font-mono text-text-muted">
+                FOLIO REINSC: REINS-2026-1-ESCOM-{Math.floor(100000 + Math.random() * 900000)}
+              </div>
+              <div className="flex gap-2 justify-center pt-2">
+                <button
+                  onClick={() => setSuccessModal(false)}
+                  className="px-6 py-2.5 rounded-xl bg-primary text-white text-xs font-bold shadow-md hover:bg-primary-container transition-all"
+                >
+                  Aceptar y Ver Horario
+                </button>
+              </div>
             </div>
-          </section>
-        </div>
+          </div>
+        )}
       </main>
-
-      <Mensaje
-        visible={mensaje.visible}
-        titulo={mensaje.titulo}
-        mensaje={mensaje.texto}
-        onCerrar={() => setMensaje({ ...mensaje, visible: false })}
-      />
     </div>
   );
 }

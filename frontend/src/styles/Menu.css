@@ -17,9 +17,14 @@
 }
 
 .header-logo {
-  width: 100px;
-  height: 100px;
+  width: 115px;
+  height: 115px;
   object-fit: contain;
+  background: linear-gradient(135deg, #1B396A, #263A64);
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.28);
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
 }
 
 /* === Menú === */

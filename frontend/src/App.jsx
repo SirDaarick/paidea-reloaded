@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import ChatWidget from "./components/ChatWidget";
+import DemoRoleSwitcher from "./components/shared/DemoRoleSwitcher";
 
 // ===LOGIN===
 import Login from "./pages/index/Login";
@@ -112,6 +113,9 @@ function App() {
 
         {/* === Widget del burrito === */}
         <ChatWidget />
+
+        {/* === Role Switcher Flotante en Modo Demostración === */}
+        <DemoRoleSwitcher />
       </Router>
     </AuthProvider>
   );
@@ -140,10 +144,16 @@ function RutasAlumno() {
       <Route path="cambiar-contraseña" element={<CambioContraseña />} />
       <Route path="documentos" element={<Documentos />} />
       <Route path="solicitar-documentos" element={<SolicitarDocumentos />} />
-      <Route path="*" element={<ErrorAlumno />} />
       <Route path="inscribir-ETS" element={<InscripcionETS />} />
-      <Route path="cita-Reinscripcion" element={<CitaReinscripcion/>}/>
-      <Route path="Resultados-ETS" element={<ResultadosETS/>}/>
+      <Route path="inscribir-ets" element={<InscripcionETS />} />
+      <Route path="inscribirets" element={<InscripcionETS />} />
+      <Route path="cita-Reinscripcion" element={<CitaReinscripcion />} />
+      <Route path="cita-reinscripcion" element={<CitaReinscripcion />} />
+      <Route path="Resultados-ETS" element={<ResultadosETS />} />
+      <Route path="resultados-ets" element={<ResultadosETS />} />
+      <Route path="planEstudios" element={<PlanEstudios />} />
+      <Route path="rendimientoAcademico" element={<RendimientoAcademico />} />
+      <Route path="*" element={<ErrorAlumno />} />
     </Routes>
   );
 }

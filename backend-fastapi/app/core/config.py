@@ -14,6 +14,7 @@ class Settings(BaseSettings):
     ENVIRONMENT: str = "development"
     PROJECT_NAME: str = "PAIDEA Reloaded API"
     API_V1_PREFIX: str = "/api/v1"
+    DEMO_MODE: bool = False
 
     # Database
     DATABASE_URL: str = "sqlite+aiosqlite:///./paidea.db"
@@ -32,7 +33,10 @@ class Settings(BaseSettings):
             return [origin.strip() for origin in self.ALLOWED_ORIGINS.split(",") if origin.strip()]
         return self.ALLOWED_ORIGINS
 
-    # AI & ChromaDB
+    # AI Providers (Google Gemini & Groq)
+    LLM_PROVIDER: str = "gemini"
+    GEMINI_API_KEY: str = ""
+    GEMINI_MODEL: str = "gemini-3.5-flash-lite"
     GROQ_API_KEY: str = ""
     GROQ_MODEL: str = "llama-3.1-8b-instant"
     CHROMA_PERSIST_DIRECTORY: str = "./chroma_data"

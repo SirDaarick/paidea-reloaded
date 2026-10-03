@@ -1,570 +1,499 @@
-import React, { useState, useMemo, useEffect } from "react";
-import "styles/index.css";
-import styles from "styles/InscripcionETS.module.css";
-import { useNavigate } from "react-router-dom";
-import { useDatosGen } from "consultas/datos_alumno_gen.jsx";
-import { useIdAlumno } from "consultas/idAlumno.jsx";
-import { useIdPeriodoActual } from "consultas/idPeriodo_Actual.jsx";
-import apiCall from "consultas/APICall.jsx";
-import Espera from "./Espera";
-import Emergente from "components/Emergente";
-import emergenteStyles from "styles/Emergente.module.css";
-import Menu from "components/Menu.jsx";
-import Button from "components/Button";
-import Table from "components/Table";
-import Mensaje from "components/Mensaje.jsx";
+import React, { useState } from "react";
+import Menu from "components/Menu";
+import { useAuth } from "context/AuthContext";
 
-// --- Componente principal ---
-export default function InscripcionETS() {
-  const navigate = useNavigate();
-  const datosGen = useDatosGen();
-  const idAlumno = useIdAlumno();
-  const idPeriodoActual = useIdPeriodoActual();
-  
-  const [etsDisponiblesData, setEtsDisponiblesData] = useState([]);
-  const [etsInscritos, setEtsInscritos] = useState([]);
-  const [inscripcionesETSExistentes, setInscripcionesETSExistentes] = useState([]);
-  const [materiasReprobadasData, setMateriasReprobadasData] = useState([]);
-  const [cargando, setCargando] = useState(true);
-  const [estadoAlumno, setEstadoAlumno] = useState("Regular");
-  const [idInscripcion, setIdInscripcion] = useState(null);
+export default function InscribirETS() {
+  const { user } = useAuth();
+  const [activeTab, setActiveTab] = useState("inscribir"); // 'inscribir' | 'inscritos' | 'historial'
+  const [searchQuery, setSearchQuery] = useState("");
+  const [registeredEts, setRegisteredEts] = useState([
+    {
+      clave: "IA-301",
+      materia: "Probabilidad y Estadística Aplicada",
+      profesor: "Dr. Benjamín Luna Benoso",
+      fecha: "Jueves 26 de Febrero, 2026",
+      horario: "10:00 - 12:00 hrs",
+      aula: "Edif. 1 · Salón 1205",
+      turno: "Matutino",
+      creditos: 7.0,
+      folio: "ETS-2026-1-84920",
+    },
+  ]);
+  const [modalConfirm, setModalConfirm] = useState(null);
 
-  // --- Estados para mensajes ---
-  const [mensajeVisible, setMensajeVisible] = useState(false);
-  const [mensajeTitulo, setMensajeTitulo] = useState("");
-  const [mensajeTexto, setMensajeTexto] = useState("");
+  // Catálogo de ETS disponibles para el alumno en ESCOM
+  const availableEts = [
+    {
+      clave: "IA-402",
+      materia: "Teoría de la Computación",
+      profesor: "M. en C. Roberto Palacios Nava",
+      fecha: "Viernes 27 de Febrero, 2026",
+      horario: "08:00 - 10:00 hrs",
+      aula: "Edificio 1 · Salón 1104",
+      turno: "Matutino",
+      creditos: 7.5,
+      cupo_disponible: 14,
+      cupo_total: 30,
+      icon: "terminal",
+    },
+    {
+      clave: "IA-401",
+      materia: "Arquitectura de Computadoras",
+      profesor: "M. en C. Miguel Ángel Sánchez",
+      fecha: "Lunes 23 de Febrero, 2026",
+      horario: "12:00 - 14:00 hrs",
+      aula: "Edificio 2 · Salón 2101",
+      turno: "Matutino",
+      creditos: 7.0,
+      cupo_disponible: 8,
+      cupo_total: 25,
+      icon: "memory",
+    },
+    {
+      clave: "IA-303",
+      materia: "Álgebra Lineal Avanzada",
+      profesor: "Dra. Gabriela Corona",
+      fecha: "Martes 24 de Febrero, 2026",
+      horario: "14:00 - 16:00 hrs",
+      aula: "Edificio 1 · Auditorio 2",
+      turno: "Vespertino",
+      creditos: 6.5,
+      cupo_disponible: 22,
+      cupo_total: 40,
+      icon: "calculate",
+    },
+    {
+      clave: "IA-204",
+      materia: "Ecuaciones Diferenciales",
+      profesor: "Dr. Fernando Arreola",
+      fecha: "Miércoles 25 de Febrero, 2026",
+      horario: "10:00 - 12:00 hrs",
+      aula: "Edificio 2 · Salón 2203",
+      turno: "Matutino",
+      creditos: 7.5,
+      cupo_disponible: 5,
+      cupo_total: 30,
+      icon: "functions",
+    },
+  ];
 
-  const mostrarMensaje = (titulo, texto) => {
-    setMensajeTitulo(titulo);
-    setMensajeTexto(texto);
-    setMensajeVisible(true);
-  };
+  // Historial de ETS previamente presentados
+  const historyEts = [
+    {
+      periodo: "2025-2",
+      clave: "IA-202",
+      materia: "Matemáticas Discretas",
+      profesor: "Dr. Edgardo Franco Martínez",
+      calificacion: 8.0,
+      estado: "Aprobado",
+      fecha: "Junio 2025",
+    },
+    {
+      periodo: "2025-1",
+      clave: "IA-102",
+      materia: "Física Clásica y Termodinámica",
+      profesor: "M. en C. Juan Carlos Moreno",
+      calificacion: 9.0,
+      estado: "Aprobado",
+      fecha: "Enero 2025",
+    },
+  ];
 
-  const cerrarMensaje = () => {
-    setMensajeVisible(false);
-    setMensajeTitulo("");
-    setMensajeTexto("");
-  };
+  const maxEts = 2;
+  const currentCount = registeredEts.length;
 
-  // --- Estados para el emergente ---
-  const [isEmergenteOpen, setIsEmergenteOpen] = useState(false);
-  const [etsSeleccionado, setEtsSeleccionado] = useState(null);
-  const [archivo, setArchivo] = useState(null);
-
-  // --- useEffect para cargar datos iniciales ---
-  useEffect(() => {
-    async function cargarDatos() {
-      if (!datosGen || !idAlumno || !idPeriodoActual) return;
-
-      try {
-        console.log("=== CARGANDO DATOS INSCRIPCIÓN ETS ===");
-        console.time("Carga total ETS");
-        setCargando(true);
-
-        // *** PASO 1: Cargar datos en paralelo ***
-        console.time("Carga paralela inicial");
-        const [todasInscripciones, materiasRes, profesoresRes, diasSemanaRes] = await Promise.all([
-          apiCall(`/inscripcion/alumno/${idAlumno}`, 'GET').catch(() => []),
-          apiCall('/materia', 'GET').catch(() => []),
-          apiCall('/usuario', 'GET').catch(() => []),
-          apiCall('/diaSemana', 'GET').catch(() => [])
-        ]);
-        console.timeEnd("Carga paralela inicial");
-
-        // Buscar inscripción del periodo actual
-        const inscripcionActual = todasInscripciones.find(insc => {
-          const idPeriodo = insc.idPeriodo?._id || insc.idPeriodo;
-          return idPeriodo?.toString() === idPeriodoActual?.toString();
-        });
-
-        if (!inscripcionActual) {
-          mostrarMensaje("Error", "No tienes una inscripción activa en este periodo.");
-          setCargando(false);
-          return;
-        }
-
-        const idInsc = inscripcionActual._id || inscripcionActual.id;
-        setIdInscripcion(idInsc);
-        console.log("ID Inscripción:", idInsc);
-
-        // *** PASO 2: Obtener inscripciones ETS existentes ***
-        const inscripcionesETS = await apiCall(`/inscripcionETS/inscripcion/${idInsc}`, 'GET')
-          .catch(() => []);
-        
-        setInscripcionesETSExistentes(inscripcionesETS);
-        console.log("Inscripciones ETS existentes:", inscripcionesETS.length);
-
-        // *** PASO 3: Usar la nueva ruta optimizada para obtener materias reprobadas ***
-        console.time("Obtención materias reprobadas");
-        const materiasReprobadas = await apiCall(
-          `/inscripcionClase/alumno/${idAlumno}/materias-reprobadas`, 
-          'GET'
-        ).catch(() => []);
-        console.timeEnd("Obtención materias reprobadas");
-
-        console.log("Materias reprobadas encontradas:", materiasReprobadas.length);
-        console.log("Materias:", materiasReprobadas);
-
-        // *** PASO 4: Crear mapas de búsqueda rápida ***
-        const materiasMap = {};
-        materiasRes.forEach(m => {
-          if (m._id) materiasMap[m._id.toString()] = m;
-        });
-
-        const profesoresMap = {};
-        // No filtrar por rol, todos los usuarios pueden ser profesores
-        profesoresRes.forEach(p => {
-          if (p._id) profesoresMap[p._id.toString()] = p;
-        });
-
-        const diasSemanaMap = {};
-        diasSemanaRes.forEach(d => {
-          if (d._id) diasSemanaMap[d._id.toString()] = d;
-        });
-
-        // *** PASO 5: Obtener IDs de materias reprobadas ***
-        const idsMateriasReprobadas = [];
-        const materiasReprobadasInfo = [];
-
-        for (const materiaRep of materiasReprobadas) {
-          // Buscar la materia en el mapa por nombre (ya que la ruta devuelve nombre)
-          const materiaEncontrada = Object.values(materiasMap).find(m => 
-            m.nombre === materiaRep.materia
-          );
-
-          if (materiaEncontrada) {
-            const idMateria = materiaEncontrada._id.toString();
-            idsMateriasReprobadas.push(idMateria);
-            materiasReprobadasInfo.push({
-              idMateria: idMateria,
-              codigo: materiaEncontrada.clave || "-",
-              materia: materiaEncontrada.nombre,
-              periodo: materiaRep.periodo,
-              status: materiaRep.status
-            });
-          }
-        }
-
-        setMateriasReprobadasData(materiasReprobadasInfo);
-        console.log("IDs de materias reprobadas:", idsMateriasReprobadas);
-
-        // *** PASO 6: Obtener todos los ETS de las materias reprobadas en paralelo ***
-        console.time("Carga ETS disponibles");
-        const etsPromises = idsMateriasReprobadas.map(idMateria =>
-          apiCall(`/ets/materia/${idMateria}`, 'GET')
-            .catch(() => [])
-            .then(etsArray => ({ idMateria, etsArray }))
-        );
-
-        const etsResults = await Promise.all(etsPromises);
-        console.timeEnd("Carga ETS disponibles");
-
-        // *** PASO 7: Procesar todos los ETS ***
-        const etsDisponibles = [];
-
-        for (const { idMateria, etsArray } of etsResults) {
-          const materiaInfo = materiasReprobadasInfo.find(m => m.idMateria === idMateria);
-          
-          for (const ets of etsArray) {
-            try {
-              // *** Obtener datos del profesor ***
-              let profesor = { nombre: "N/A", correo: "N/A" };
-              
-              // Primero intentar obtener del mapa
-              const idProfesor = ets.idProfesor?._id?.toString() || ets.idProfesor?.toString();
-              
-              if (idProfesor) {
-                // Si el profesor viene como objeto en el ETS, usarlo directamente
-                if (typeof ets.idProfesor === 'object' && ets.idProfesor !== null && ets.idProfesor.nombre) {
-                  profesor = {
-                    nombre: ets.idProfesor.nombre || "N/A",
-                    correo: ets.idProfesor.correo || "N/A"
-                  };
-                } 
-                // Si no, buscar en el mapa
-                else if (profesoresMap[idProfesor]) {
-                  profesor = {
-                    nombre: profesoresMap[idProfesor].nombre || "N/A",
-                    correo: profesoresMap[idProfesor].correo || "N/A"
-                  };
-                }
-                // Si no está en el mapa, hacer llamada individual (fallback)
-                else {
-                  console.log(`Profesor ${idProfesor} no encontrado en mapa, obteniendo de API...`);
-                  const profesorAPI = await apiCall(`/usuario/${idProfesor}`, 'GET')
-                    .catch(() => null);
-                  
-                  if (profesorAPI) {
-                    profesor = {
-                      nombre: profesorAPI.nombre || "N/A",
-                      correo: profesorAPI.correo || "N/A"
-                    };
-                  }
-                }
-              }
-
-              // *** Obtener datos del horario del mapa ***
-              let horario = "- / -";
-              const idDiaSemana = ets.idDiaSemana?._id?.toString() || ets.idDiaSemana?.toString();
-              
-              if (idDiaSemana) {
-                // Si el día viene como objeto en el ETS, usarlo directamente
-                if (typeof ets.idDiaSemana === 'object' && ets.idDiaSemana !== null) {
-                  const inicio = ets.idDiaSemana.horarioInicio || "-";
-                  const fin = ets.idDiaSemana.horarioFinal || "-";
-                  horario = `${inicio} - ${fin}`;
-                }
-                // Si no, buscar en el mapa
-                else if (diasSemanaMap[idDiaSemana]) {
-                  const inicio = diasSemanaMap[idDiaSemana].horarioInicio || "-";
-                  const fin = diasSemanaMap[idDiaSemana].horarioFinal || "-";
-                  horario = `${inicio} - ${fin}`;
-                }
-              }
-
-              etsDisponibles.push({
-                idETS: ets._id?.toString() || ets.id?.toString(),
-                idMateria: idMateria,
-                codigo: materiaInfo?.codigo || "-",
-                materia: materiaInfo?.materia || "N/A",
-                profesor: profesor.nombre,
-                correo: profesor.correo,
-                horario: horario,
-                salon: ets.salon || "N/A"
-              });
-
-              console.log(`✓ ETS procesado: ${materiaInfo?.materia} - Profesor: ${profesor.nombre}`);
-            } catch (error) {
-              console.error("Error procesando ETS:", error);
-            }
-          }
-        }
-
-        console.log("Total ETS encontrados:", etsDisponibles.length);
-
-        // *** PASO 8: Filtrar ETS ya inscritos ***
-        const idsETSInscritos = new Set(inscripcionesETS.map(ins => {
-          const idETS = ins.idETS?._id || ins.idETS;
-          return idETS?.toString();
-        }));
-
-        const etsNoInscritos = etsDisponibles.filter(ets => 
-          !idsETSInscritos.has(ets.idETS.toString())
-        );
-
-        // *** PASO 9: Cargar ETS ya inscritos con sus datos ***
-        const etsYaInscritos = [];
-        for (const inscETS of inscripcionesETS) {
-          const idETSBuscado = (inscETS.idETS?._id || inscETS.idETS)?.toString();
-          const etsEncontrado = etsDisponibles.find(ets => 
-            ets.idETS.toString() === idETSBuscado
-          );
-          
-          if (etsEncontrado) {
-            etsYaInscritos.push({
-              ...etsEncontrado,
-              idInscripcionETS: inscETS._id || inscETS.id
-            });
-          }
-        }
-
-        // *** PASO 10: Configurar estados finales ***
-        setEtsDisponiblesData(etsNoInscritos);
-        setEtsInscritos(etsYaInscritos);
-
-        if (materiasReprobadas.length === 0) {
-          setEstadoAlumno("Regular");
-        } else {
-          setEstadoAlumno("Irregular");
-        }
-
-        console.log("ETS disponibles (no inscritos):", etsNoInscritos.length);
-        console.log("ETS ya inscritos:", etsYaInscritos.length);
-        console.timeEnd("Carga total ETS");
-        console.log("=== CARGA COMPLETADA ===");
-
-      } catch (error) {
-        console.error("Error al cargar datos:", error);
-        mostrarMensaje("Error", "Ocurrió un error al cargar los datos.");
-      } finally {
-        setCargando(false);
-      }
+  const handleRegisterConfirm = () => {
+    if (modalConfirm) {
+      setRegisteredEts([
+        ...registeredEts,
+        {
+          ...modalConfirm,
+          folio: `ETS-2026-1-${Math.floor(10000 + Math.random() * 90000)}`,
+        },
+      ]);
+      setModalConfirm(null);
     }
+  };
 
-    cargarDatos();
-  }, [datosGen, idAlumno, idPeriodoActual]);
+  const handleCancelEts = (clave) => {
+    setRegisteredEts(registeredEts.filter((e) => e.clave !== clave));
+  };
 
-  // --- Handlers ---
-  const handleInscribirETS = (etsAInscribir) => {
-    // Agregar a la lista temporal
-    setEtsInscritos(prev => [...prev, etsAInscribir]);
-    
-    // Quitar de disponibles
-    setEtsDisponiblesData(prev => 
-      prev.filter(ets => ets.idETS !== etsAInscribir.idETS)
+  const filteredAvailable = availableEts.filter((item) => {
+    const q = searchQuery.toLowerCase().trim();
+    return (
+      !q ||
+      item.materia.toLowerCase().includes(q) ||
+      item.clave.toLowerCase().includes(q) ||
+      item.profesor.toLowerCase().includes(q)
     );
-  };
-
-  const handleDarDeBajaETS = async (etsADarDeBaja) => {
-    try {
-      // Si ya está guardado en BD, eliminarlo
-      if (etsADarDeBaja.idInscripcionETS) {
-        await apiCall(`/inscripcionETS/${etsADarDeBaja.idInscripcionETS}`, 'DELETE');
-        mostrarMensaje("Baja exitosa", `ETS de ${etsADarDeBaja.materia} eliminado correctamente.`);
-      }
-
-      // Quitar de inscritos
-      setEtsInscritos(prev => 
-        prev.filter(ets => ets.idETS !== etsADarDeBaja.idETS)
-      );
-
-      // Agregar de vuelta a disponibles
-      const etsSinIdInscripcion = { ...etsADarDeBaja };
-      delete etsSinIdInscripcion.idInscripcionETS;
-      
-      setEtsDisponiblesData(prev => [...prev, etsSinIdInscripcion]);
-
-    } catch (error) {
-      console.error("Error al dar de baja ETS:", error);
-      mostrarMensaje("Error", "No se pudo dar de baja el ETS.");
-    }
-  };
-
-  // --- Validación final ---
-  const handleConfirmarInscripcion = async () => {
-    // Filtrar solo los que no tienen idInscripcionETS (los nuevos)
-    const etsNuevos = etsInscritos.filter(ets => !ets.idInscripcionETS);
-
-    if (etsNuevos.length === 0) {
-      mostrarMensaje("Inscripción", "No hay nuevos ETS para inscribir.");
-      return;
-    }
-
-    if (!idInscripcion) {
-      mostrarMensaje("Error", "No se encontró tu inscripción activa.");
-      return;
-    }
-
-    try {
-      console.log("Confirmando inscripción de ETS...");
-
-      let exitosos = 0;
-      let fallidos = 0;
-
-      for (const ets of etsNuevos) {
-        try {
-          const inscripcionETSData = {
-            idETS: ets.idETS,
-            idInscripcion: idInscripcion
-          };
-
-          await apiCall('/inscripcionETS', 'POST', inscripcionETSData);
-          exitosos++;
-          console.log(`✓ ETS inscrito: ${ets.materia}`);
-        } catch (error) {
-          fallidos++;
-          console.error(`✗ Error al inscribir ETS ${ets.materia}:`, error);
-        }
-      }
-
-      if (exitosos > 0) {
-        mostrarMensaje(
-          "Inscripción Exitosa", 
-          `Se inscribieron ${exitosos} ETS correctamente.${fallidos > 0 ? ` ${fallidos} fallaron.` : ''}`
-        );
-
-        // Recargar datos después de 2 segundos
-        setTimeout(() => window.location.reload(), 2000);
-      } else {
-        mostrarMensaje("Error", "No se pudo inscribir ningún ETS.");
-      }
-
-    } catch (error) {
-      console.error("Error al confirmar inscripción:", error);
-      mostrarMensaje("Error", "Ocurrió un error al confirmar la inscripción.");
-    }
-  };
-
-  // --- Navegación ---
-  const irASeguimiento = () => {
-    navigate("/alumno/seguimiento");
-  };
-
-  // --- Handlers para el Emergente ---
-  const handleAbrirEmergente = (ets) => {
-    setEtsSeleccionado(ets);
-    setIsEmergenteOpen(true);
-  };
-
-  const handleCerrarEmergente = () => {
-    setIsEmergenteOpen(false);
-    setEtsSeleccionado(null);
-    setArchivo(null);
-  };
-
-  const handleSubirArchivo = () => {
-    if (!archivo) {
-      mostrarMensaje("Subida de Comprobante", "Por favor, selecciona un archivo primero.");
-      return;
-    }
-    mostrarMensaje("Subida de Comprobante", `Archivo ${archivo.name} seleccionado. Funcionalidad pendiente de implementar.`);
-    handleCerrarEmergente();
-  };
-
-  // --- Columnas ---
-  const columnasDisponibles = [
-    { key: 'codigo', label: 'Código', width: '100px' },
-    { key: 'materia', label: 'Materia', width: '200px' },
-    { key: 'profesor', label: 'Profesor', width: '180px' },
-    { key: 'correo', label: 'Correo', width: '180px' },
-    { key: 'horario', label: 'Horario', width: '130px' },
-    { key: 'salon', label: 'Salón', width: '80px' },
-    { key: 'accion', label: 'Inscribir', width: '80px' }
-  ];
-
-  const columnasInscritas = [
-    { key: 'codigo', label: 'Código', width: '100px' },
-    { key: 'materia', label: 'Materia', width: '200px' },
-    { key: 'profesor', label: 'Profesor', width: '180px' },
-    { key: 'horario', label: 'Horario', width: '130px' },
-    { key: 'salon', label: 'Salón', width: '80px' },
-    { key: 'comprobante', label: 'Comprobante de Pago', width: '150px' },
-    { key: 'accion', label: 'Dar de Baja', width: '100px' }
-  ];
-
-  const renderCellDisponibles = (item, key) => {
-    if (key === 'accion') {
-      return (
-        <button
-          className={`${styles.actionButton} ${styles.inscribir}`}
-          onClick={() => handleInscribirETS(item)}
-          title="Inscribir ETS"
-        >
-          +
-        </button>
-      );
-    }
-    const value = item[key];
-    return value === "" || value === undefined ? "-" : value;
-  };
-
-  const renderCellInscritas = (item, key) => {
-    if (key === 'accion') {
-      return (
-        <button
-          className={`${styles.actionButton} ${styles.darDeBaja}`}
-          onClick={() => handleDarDeBajaETS(item)}
-          title="Dar de baja ETS"
-        >
-          —
-        </button>
-      );
-    }
-    
-    if (key === 'comprobante') {
-      return (
-        <Button 
-          variant="secondary" 
-          size="small"
-          onClick={() => handleAbrirEmergente(item)}
-        >
-          Subir
-        </Button>
-      );
-    }
-
-    const value = item[key];
-    return value === "" || value === undefined ? "-" : value;
-  };
-
-  if (!datosGen || !idAlumno || !idPeriodoActual || cargando) {
-    return <Espera />;
-  }
+  });
 
   return (
-    <div className="bienvenida-container">
+    <div className="min-h-screen bg-surface-ice font-body-md text-text-primary">
       <Menu />
-      <main className="page">
-        <div className="horario-container">
 
-          <aside className="horario-side">
-            <h3>Datos del Alumno</h3>
-            <p><strong>Boleta:</strong> {datosGen.boleta}</p>
-            <p><strong>Nombre:</strong> {datosGen.nombre}</p>
-            <p><strong>Carrera:</strong> {datosGen.carrera}</p>
-            <p><strong>Estado:</strong> 
-              <span className={estadoAlumno === "Irregular" ? styles.estadoIrregular : ""}>
-                {estadoAlumno}
-              </span>
+      <main className="w-full max-w-[1440px] mx-auto pt-6 px-4 sm:px-6 lg:px-8 pb-16 space-y-6">
+        {/* Top Header & Actions Bar */}
+        <section className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+          <div className="space-y-1">
+            <div className="flex items-center gap-1.5 text-text-muted text-xs">
+              <span>PAIDEA</span>
+              <span className="material-symbols-outlined text-[14px]">chevron_right</span>
+              <span>Trámites Escolares</span>
+              <span className="material-symbols-outlined text-[14px]">chevron_right</span>
+              <span className="text-primary font-bold">Exámenes a Título de Suficiencia (ETS)</span>
+            </div>
+            <h1 className="text-2xl sm:text-3xl font-extrabold text-primary tracking-tight">
+              Gestión de Exámenes a Título de Suficiencia (ETS)
+            </h1>
+            <p className="text-xs sm:text-sm text-text-muted">
+              Periodo Lectivo 2026-1 · Dirección de Administración Escolar (DAE - ESCOM)
             </p>
-            <Button variant="primary" onClick={irASeguimiento} style={{marginTop: '20px'}}>
-              Seguimiento de irregularidades
-            </Button>
-          </aside>
+          </div>
 
-          <section className="horario-main">
-            <h2>Inscribir ETS</h2>
-
-            <h3 className={styles.tituloSeccion}>ETS Disponibles</h3>
-            <Table
-              columns={columnasDisponibles}
-              data={etsDisponiblesData}
-              renderCell={renderCellDisponibles}
-              emptyMessage="No hay ETS disponibles. Estás en situación regular."
-              striped={true}
-              hover={true}
-            />
-
-            <h3 className={styles.tituloSeccion}>ETS Inscritos</h3>
-            <Table
-              columns={columnasInscritas}
-              data={etsInscritos}
-              renderCell={renderCellInscritas}
-              emptyMessage="No has inscrito ningún ETS"
-              striped={true}
-              hover={true}
-            />
-
-            <Button 
-              variant="primary" 
-              onClick={handleConfirmarInscripcion} 
-              disabled={etsInscritos.filter(e => !e.idInscripcionETS).length === 0}
-              style={{marginTop: '30px', float: 'right'}}
+          <div className="flex items-center gap-3 shrink-0">
+            <button
+              onClick={() => window.print()}
+              className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-surface-card text-primary text-xs sm:text-sm font-bold shadow-[6px_6px_16px_rgba(62,81,125,0.08),-4px_-4px_12px_#ffffff] hover:bg-surface-bright transition-all active:scale-98 cursor-pointer"
             >
-              Confirmar inscripción
-            </Button>
+              <span className="material-symbols-outlined text-accent-blue text-[18px]">picture_as_pdf</span>
+              <span>Descargar Comprobante ETS (PDF)</span>
+            </button>
+          </div>
+        </section>
+
+        {/* Rule / Banner Callout Card */}
+        <section className="relative overflow-hidden bg-surface-card rounded-2xl p-5 sm:p-6 shadow-[8px_8px_20px_rgba(62,81,125,0.08),-6px_-6px_16px_#FFFFFF]">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div className="flex items-start gap-3.5 max-w-3xl">
+              <div className="p-2.5 rounded-xl bg-tertiary-fixed text-primary shrink-0 flex items-center justify-center shadow-[inset_1px_1px_2px_rgba(62,81,125,0.06)]">
+                <span className="material-symbols-outlined text-[24px]">verified_user</span>
+              </div>
+              <div className="space-y-0.5">
+                <div className="flex items-center gap-2">
+                  <span className="text-sm font-bold text-primary">Reglamento General de Estudios del IPN</span>
+                  <span className="px-2 py-0.5 rounded-full bg-surface-container-low text-text-muted text-[10px] font-semibold">
+                    Art. 47
+                  </span>
+                </div>
+                <p className="text-xs sm:text-sm text-text-muted leading-relaxed">
+                  Tienes derecho a presentar un máximo de <strong className="text-text-primary">2 ETS por periodo ordinario</strong>. Las asignaciones de fecha, cupo y sinodales se encuentran sujetas a la capacidad operativa de la ESCOM.
+                </p>
+              </div>
+            </div>
+
+            {/* Counter Pill Indicator */}
+            <div className="px-4 py-2 rounded-xl bg-surface-container-low flex items-center gap-3 shrink-0 self-start md:self-center shadow-[inset_1px_1px_2px_rgba(62,81,125,0.06)]">
+              <div className="flex flex-col">
+                <span className="text-[10px] text-text-muted uppercase tracking-wider font-semibold">Inscripciones</span>
+                <span className="text-base font-extrabold text-primary leading-none">
+                  {currentCount} / {maxEts} <span className="text-xs text-text-muted font-normal">activas</span>
+                </span>
+              </div>
+              <div className="w-8 h-8 rounded-full bg-surface-card p-1 shadow-sm flex items-center justify-center">
+                <span className="material-symbols-outlined text-accent-blue text-[18px]">
+                  {currentCount >= maxEts ? "lock" : "edit_calendar"}
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Navigation Tabs & Search */}
+        <section className="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4">
+          <div className="flex items-center p-1.5 rounded-full bg-surface-container-low gap-1 shrink-0 shadow-[inset_1px_1px_2px_rgba(62,81,125,0.06)]">
+            <button
+              onClick={() => setActiveTab("inscribir")}
+              className={`px-4 py-2 rounded-full text-xs font-semibold flex items-center gap-1.5 transition-all ${
+                activeTab === "inscribir"
+                  ? "bg-primary-container text-white shadow-sm"
+                  : "text-text-muted hover:text-text-primary"
+              }`}
+            >
+              <span className="material-symbols-outlined text-[17px]">edit_calendar</span>
+              <span>Inscribir ETS</span>
+            </button>
+            <button
+              onClick={() => setActiveTab("inscritos")}
+              className={`px-4 py-2 rounded-full text-xs font-semibold flex items-center gap-1.5 transition-all ${
+                activeTab === "inscritos"
+                  ? "bg-primary-container text-white shadow-sm"
+                  : "text-text-muted hover:text-text-primary"
+              }`}
+            >
+              <span className="material-symbols-outlined text-[17px]">checklist_rtl</span>
+              <span>Mis Exámenes Inscritos</span>
+              <span className="px-1.5 py-0.5 rounded-full bg-secondary-fixed text-primary text-[10px] font-bold">
+                {currentCount}
+              </span>
+            </button>
+            <button
+              onClick={() => setActiveTab("historial")}
+              className={`px-4 py-2 rounded-full text-xs font-semibold flex items-center gap-1.5 transition-all ${
+                activeTab === "historial"
+                  ? "bg-primary-container text-white shadow-sm"
+                  : "text-text-muted hover:text-text-primary"
+              }`}
+            >
+              <span className="material-symbols-outlined text-[17px]">history_edu</span>
+              <span>Historial de Resultados ETS</span>
+            </button>
+          </div>
+
+          {activeTab === "inscribir" && (
+            <div className="relative flex-1 max-w-md">
+              <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-text-muted text-[19px]">
+                search
+              </span>
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="Buscar materia por clave o profesor..."
+                className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-surface-container-low text-xs sm:text-sm placeholder:text-text-muted focus:bg-surface-card focus:outline-none transition-all shadow-[inset_1px_1px_3px_rgba(62,81,125,0.06)]"
+              />
+            </div>
+          )}
+        </section>
+
+        {/* Tab 1: Inscribir ETS */}
+        {activeTab === "inscribir" && (
+          <section className="space-y-4">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <div className="flex items-center gap-2 flex-wrap">
+                <h2 className="text-base sm:text-lg font-bold text-primary">
+                  Inscribir Exámenes a Título de Suficiencia
+                </h2>
+                <span className="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-primary text-xs font-semibold flex items-center gap-1">
+                  <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
+                  Periodo ETS Ordinario 2026-1 · Ventana Abierta
+                </span>
+              </div>
+              <span className="text-xs text-text-muted">Cierre: 18 de Febrero, 23:59 hrs</span>
+            </div>
+
+            <div className="space-y-3.5">
+              {filteredAvailable.map((item) => {
+                const isAlreadyInscribed = registeredEts.some((e) => e.clave === item.clave);
+
+                return (
+                  <div
+                    key={item.clave}
+                    className="p-5 rounded-2xl bg-surface-card shadow-[8px_8px_20px_rgba(62,81,125,0.08),-6px_-6px_16px_#FFFFFF] flex flex-col xl:flex-row xl:items-center justify-between gap-4 hover:-translate-y-0.5 transition-transform"
+                  >
+                    <div className="flex items-start gap-4 flex-1">
+                      <div className="w-12 h-12 rounded-xl bg-primary-fixed text-primary flex items-center justify-center shrink-0 shadow-[inset_1px_1px_2px_rgba(62,81,125,0.06)]">
+                        <span className="material-symbols-outlined text-[24px]">{item.icon || "school"}</span>
+                      </div>
+                      <div className="space-y-1">
+                        <div className="flex items-center gap-2 flex-wrap">
+                          <span className="text-xs px-2 py-0.5 rounded-md bg-surface-container-low text-text-muted font-bold font-mono">
+                            Clave: {item.clave}
+                          </span>
+                          <span className="text-xs px-2 py-0.5 rounded-md bg-tertiary-fixed text-primary font-semibold">
+                            {item.creditos} Créditos SATCA
+                          </span>
+                        </div>
+                        <h3 className="text-base font-bold text-text-primary">{item.materia}</h3>
+                        <p className="text-xs text-text-muted flex items-center gap-1.5">
+                          <span className="material-symbols-outlined text-[16px]">person</span>
+                          <span>
+                            Profesor Titular: <strong className="text-text-primary">{item.profesor}</strong>
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 py-2 xl:py-0 border-y xl:border-y-0 border-surface-container-high/40 text-xs">
+                      <div className="flex items-center gap-2">
+                        <div className="p-2 rounded-lg bg-surface-container-low text-primary shadow-sm">
+                          <span className="material-symbols-outlined text-[18px]">calendar_today</span>
+                        </div>
+                        <div>
+                          <span className="text-[10px] text-text-muted block">Fecha de Examen</span>
+                          <span className="font-bold text-text-primary">{item.fecha}</span>
+                        </div>
+                      </div>
+
+                      <div className="flex items-center gap-2">
+                        <div className="p-2 rounded-lg bg-surface-container-low text-primary shadow-sm">
+                          <span className="material-symbols-outlined text-[18px]">schedule</span>
+                        </div>
+                        <div>
+                          <span className="text-[10px] text-text-muted block">Horario y Aula</span>
+                          <span className="font-bold text-text-primary">{item.horario}</span>
+                          <span className="text-[10px] text-text-muted block">{item.aula}</span>
+                        </div>
+                      </div>
+
+                      <div className="flex items-center gap-2">
+                        <div className="p-2 rounded-lg bg-surface-container-low text-primary shadow-sm">
+                          <span className="material-symbols-outlined text-[18px]">group</span>
+                        </div>
+                        <div>
+                          <span className="text-[10px] text-text-muted block">Disponibilidad</span>
+                          <span className="font-bold text-emerald-700">
+                            {item.cupo_disponible} de {item.cupo_total} lugares
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="flex items-center justify-end shrink-0">
+                      {isAlreadyInscribed ? (
+                        <span className="px-4 py-2 rounded-xl bg-emerald-100 text-emerald-800 text-xs font-bold flex items-center gap-1">
+                          <span className="material-symbols-outlined text-[16px]">check_circle</span>
+                          Inscrito
+                        </span>
+                      ) : currentCount >= maxEts ? (
+                        <button
+                          disabled
+                          className="px-4 py-2 rounded-xl bg-surface-container-low text-text-muted text-xs font-semibold cursor-not-allowed"
+                        >
+                          Límite Alcanzado (2/2)
+                        </button>
+                      ) : (
+                        <button
+                          onClick={() => setModalConfirm(item)}
+                          className="px-4 py-2 rounded-xl bg-primary text-white text-xs font-bold shadow-sm hover:bg-primary-container transition-all flex items-center gap-1 cursor-pointer"
+                        >
+                          <span className="material-symbols-outlined text-[16px]">add_circle</span>
+                          <span>Inscribir ETS</span>
+                        </button>
+                      )}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </section>
-        </div>
+        )}
+
+        {/* Tab 2: Mis Exámenes Inscritos */}
+        {activeTab === "inscritos" && (
+          <section className="space-y-4">
+            <h2 className="text-base sm:text-lg font-bold text-primary">Mis Exámenes Inscritos (Periodo 2026-1)</h2>
+            {registeredEts.length === 0 ? (
+              <div className="p-12 bg-surface-card rounded-2xl shadow-[8px_8px_20px_rgba(62,81,125,0.08)] text-center text-text-muted">
+                No tienes exámenes ETS registrados para este periodo.
+              </div>
+            ) : (
+              <div className="space-y-3">
+                {registeredEts.map((item) => (
+                  <div
+                    key={item.clave}
+                    className="p-5 rounded-2xl bg-surface-card shadow-[8px_8px_20px_rgba(62,81,125,0.08),-6px_-6px_16px_#FFFFFF] flex flex-col sm:flex-row sm:items-center justify-between gap-4"
+                  >
+                    <div className="space-y-1">
+                      <div className="flex items-center gap-2">
+                        <span className="text-xs px-2 py-0.5 rounded bg-surface-container-low font-bold text-primary font-mono">
+                          {item.clave}
+                        </span>
+                        <span className="text-xs px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 font-bold">
+                          Registro Activo
+                        </span>
+                      </div>
+                      <h3 className="text-base font-bold text-text-primary">{item.materia}</h3>
+                      <p className="text-xs text-text-muted">
+                        {item.profesor} · {item.fecha} ({item.horario}) · {item.aula}
+                      </p>
+                      <span className="text-[11px] font-mono text-secondary block pt-1">
+                        Folio Comprobante: {item.folio}
+                      </span>
+                    </div>
+
+                    <div className="flex items-center gap-2">
+                      <button
+                        onClick={() => window.print()}
+                        className="px-3.5 py-2 rounded-xl bg-surface-container-low text-primary text-xs font-bold hover:bg-surface-card shadow-sm flex items-center gap-1.5"
+                      >
+                        <span className="material-symbols-outlined text-[16px]">print</span>
+                        <span>Imprimir</span>
+                      </button>
+                      <button
+                        onClick={() => handleCancelEts(item.clave)}
+                        className="px-3.5 py-2 rounded-xl bg-red-50 text-error hover:bg-red-100 text-xs font-bold transition-colors flex items-center gap-1"
+                      >
+                        <span className="material-symbols-outlined text-[16px]">cancel</span>
+                        <span>Dar de baja</span>
+                      </button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+          </section>
+        )}
+
+        {/* Tab 3: Historial de Resultados ETS */}
+        {activeTab === "historial" && (
+          <section className="space-y-4">
+            <h2 className="text-base sm:text-lg font-bold text-primary">Historial de Calificaciones ETS</h2>
+            <div className="space-y-3">
+              {historyEts.map((item, idx) => (
+                <div
+                  key={idx}
+                  className="p-5 rounded-2xl bg-surface-card shadow-[8px_8px_20px_rgba(62,81,125,0.08),-6px_-6px_16px_#FFFFFF] flex items-center justify-between gap-4"
+                >
+                  <div className="space-y-0.5">
+                    <span className="text-xs text-text-muted font-semibold">Periodo {item.periodo} · {item.fecha}</span>
+                    <h3 className="text-base font-bold text-text-primary">{item.materia}</h3>
+                    <p className="text-xs text-text-muted">{item.profesor} · Clave {item.clave}</p>
+                  </div>
+
+                  <div className="flex items-center gap-4">
+                    <div className="text-right">
+                      <span className="text-xl font-extrabold text-emerald-800">{item.calificacion.toFixed(1)}</span>
+                      <span className="text-xs text-emerald-700 font-semibold block">{item.estado}</span>
+                    </div>
+                    <span className="material-symbols-outlined text-emerald-600 text-[24px]">verified</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Modal de Confirmación de Inscripción ETS */}
+        {modalConfirm && (
+          <div className="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm flex items-center justify-center p-4">
+            <div className="bg-surface-card rounded-3xl p-6 sm:p-8 max-w-md w-full shadow-2xl space-y-4">
+              <div className="w-14 h-14 rounded-2xl bg-secondary-fixed text-primary mx-auto flex items-center justify-center shadow-sm">
+                <span className="material-symbols-outlined text-[32px]">edit_calendar</span>
+              </div>
+              <div className="text-center">
+                <h3 className="text-lg font-extrabold text-primary">Confirmar Inscripción a ETS</h3>
+                <p className="text-xs sm:text-sm text-text-muted mt-1">
+                  ¿Deseas inscribir la asignatura <strong>{modalConfirm.materia}</strong> ({modalConfirm.clave})?
+                </p>
+              </div>
+
+              <div className="p-3.5 bg-surface-container-low rounded-xl text-xs space-y-1">
+                <div><strong>Fecha:</strong> {modalConfirm.fecha}</div>
+                <div><strong>Horario:</strong> {modalConfirm.horario}</div>
+                <div><strong>Aula:</strong> {modalConfirm.aula}</div>
+                <div><strong>Sinodal:</strong> {modalConfirm.profesor}</div>
+              </div>
+
+              <div className="flex gap-2 justify-end pt-2">
+                <button
+                  onClick={() => setModalConfirm(null)}
+                  className="px-4 py-2 rounded-xl text-xs font-semibold text-text-muted hover:bg-surface-container-low"
+                >
+                  Cancelar
+                </button>
+                <button
+                  onClick={handleRegisterConfirm}
+                  className="px-5 py-2 rounded-xl bg-primary text-white text-xs font-bold shadow-md hover:bg-primary-container"
+                >
+                  Confirmar Registro
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
       </main>
-
-      <Emergente isOpen={isEmergenteOpen} onClose={handleCerrarEmergente}>
-        <div className={emergenteStyles.subirCard}>
-          <h3 className={emergenteStyles.subirTitle}>
-            Subir Comprobante para:
-          </h3>
-          <p className={emergenteStyles.subirMateria}>
-            {etsSeleccionado?.materia}
-          </p>
-          
-          <input 
-            type="file"
-            className={emergenteStyles.subirInput}
-            onChange={(e) => setArchivo(e.target.files[0])}
-          />
-
-          <Button variant="primary" onClick={handleSubirArchivo}>
-            Confirmar Subida
-          </Button>
-        </div>
-      </Emergente>
-
-      {/* Componente Mensaje */}
-      <Mensaje 
-        titulo={mensajeTitulo} 
-        mensaje={mensajeTexto} 
-        visible={mensajeVisible} 
-        onCerrar={cerrarMensaje} 
-      />
     </div>
   );
 }
